@@ -1,0 +1,7 @@
+## Interface: 20000
+## Author: Tekkub Stoutwrithe
+## Title: WoWWiki Dataminer
+## Notes: Saves item data for WoWWiki
+## SavedVariables: WoWWikiDB
+
+WoWWiki.lua
