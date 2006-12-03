@@ -1,0 +1,11 @@
+## Interface: 20000
+
+## Title: The Low Down
+## Notes: Never forget to scroll a chatframe to the bottom again!
+## Version: 3.0
+## Author: Tekkub Stoutwrithe
+## X-Category: Chat/Communication
+
+## OptionalDeps: Dongle
+
+TheLowDown.lua

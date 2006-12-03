@@ -1,0 +1,12 @@
+## Interface: 20000
+
+## Title: The Big Picture
+## Notes: Never forget to zoom out your minimap again!
+## Author: Tekkub Stoutwrithe
+## Version: 2
+## X-Email: tekkub@gmail.com
+## X-Category: Map
+
+## OptionalDeps: Dongle
+
+TheBigPicture.lua
