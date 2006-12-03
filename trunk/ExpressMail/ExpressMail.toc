@@ -1,0 +1,11 @@
+## Interface: 20000
+
+## Author: Tekkub Stoutwrithe
+## Title: Express Mail
+## Notes: Open mail quickly
+## Version: 1
+## X-Category: Mail
+## X-Email: tekkub@gmail.com
+## X-Website: http://code.google.com/p/tekkub-wow/
+
+ExpressMail.lua
