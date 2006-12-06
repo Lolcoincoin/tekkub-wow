@@ -2,13 +2,11 @@
 collectgarbage("collect")
 local inittime, initmem = GetTime(), collectgarbage("count")
 local longesttime, biggestmem, totalmem, totalgarbage, mostgarbage, gctime = 0, 0, 0, 0, 0, 0
-local lasttime = inittime
 local eventcounts, combatframe = {}, ChatFrame2
 local threshtimes, threshmems = {1.0, 0.5, 0.1}, {1000, 500, 100}
 local threshcolors = {"|cffff0000", "|cffff8000", "|cffffff80", "|cff80ff80"}
 local outframe, sv, intransit, reloading, longestaddon, biggestaddon, varsloadtime, logging, mostgarbageaddon
-local memstack = {}
-table.insert(memstack, initmem)
+local memstack, timestack = {initmem}, {inittime}
 
 local usecombatframe = false
 
@@ -56,10 +54,11 @@ do
 	end
 
 	local loadandpop = function(...)
-		local new = table.remove(memstack)
-		local old = table.remove(memstack)
-		local orig = table.remove(memstack)
-		table.insert(memstack, orig + new - old)
+		local newm, newt = table.remove(memstack), table.remove(timestack)
+		local oldm, oldt = table.remove(memstack), table.remove(timestack)
+		local origm, origt = table.remove(memstack), table.remove(timestack)
+		table.insert(memstack, origm + newm - oldm)
+		table.insert(timestack, origt + newt - oldt)
 		return ...
 	end
 	local lao = LoadAddOn
@@ -67,10 +66,12 @@ do
 		local gt = GetTime()
 		collectgarbage("collect")
 		gctime = gctime + GetTime() - gt
-		lasttime = GetTime()
+		local newtime = GetTime()
 		local newmem = collectgarbage("count")
 		table.insert(memstack, newmem)
 		table.insert(memstack, newmem)
+		table.insert(timestack, newtime)
+		table.insert(timestack, newtime)
 		return loadandpop(lao(...))
 	end
 end
@@ -121,7 +122,8 @@ end
 
 
 function Warmup:ADDON_LOADED(addon)
-	local addontime, addonmem, lastmem = GetTime(), collectgarbage("count"), table.remove(memstack)
+	local addontime, addonmem = GetTime(), collectgarbage("count")
+	local lastmem, lasttime = table.remove(memstack), table.remove(timestack)
 	local diff = addonmem - lastmem
 
 	local gt = GetTime()
@@ -149,7 +151,7 @@ function Warmup:ADDON_LOADED(addon)
 	totalgarbage = totalgarbage + garbage
 	totalmem = totalmem + diff
 	table.insert(memstack, gcmem)
-	lasttime = addontime
+	table.insert(timestack, addontime)
 end
 
 
