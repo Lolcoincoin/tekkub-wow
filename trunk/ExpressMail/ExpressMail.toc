@@ -7,4 +7,6 @@
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Mail
 
+## OptionalDeps: Dongle
+
 ExpressMail.lua
