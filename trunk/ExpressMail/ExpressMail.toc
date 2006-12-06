@@ -9,4 +9,6 @@
 
 ## OptionalDeps: Dongle
 
+Dongle.lua
+
 ExpressMail.lua
