@@ -3,11 +3,12 @@
 ## Title: Cockpit
 ## Notes: Change camera zoom when in flight.
 ## Author: Tekkub Stoutwrithe
-## Version: 2.0
 ## X-Website: http://code.google.com/p/tekkub-wow/
-## X-Email: tekkub@gmail.com
+## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Miscellaneous
 
-## RequiredDeps: Dongle
+## OptionalDeps: Dongle
+
+Dongle.lua
 
 Cockpit.lua
