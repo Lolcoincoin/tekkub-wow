@@ -2,10 +2,14 @@
 
 ## Title: The Low Down
 ## Notes: Never forget to scroll a chatframe to the bottom again!
-## Version: 3.0
 ## Author: Tekkub Stoutwrithe
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
 
 ## OptionalDeps: Dongle
+
+Dongle.lua
+DongleUtils.lua
 
 TheLowDown.lua

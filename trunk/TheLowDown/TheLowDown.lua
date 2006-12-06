@@ -14,7 +14,7 @@ function TheLowDown:Initialize()
 	local _G = getfenv(0)
 	local funcs = {"ScrollUp", "ScrollDown", "ScrollToTop", "PageUp", "PageDown"}
 
-	for i = 1,7 do
+	for i=1,7 do
 		local name = "ChatFrame" .. i
 		local frame = _G[name]
 		scrolldowns[name] = frame.ScrollDown
