@@ -3,11 +3,9 @@
 ## Title: Warmup
 ## Notes: Tracks how long between loadup events
 ## Author: Tekkub Stoutwrithe
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Development Tools
-## X-RelSite-WoWI: 4939
-## X-RelSite-Curse: 3792
-## X-WoWIPortal: tekkub
-## X-AceForum: 669
 
 ## SavedVariables: WarmupSV
 

@@ -7,7 +7,8 @@ local eventcounts, combatframe = {}, ChatFrame2
 local threshtimes, threshmems = {1.0, 0.5, 0.1}, {1000, 500, 100}
 local threshcolors = {"|cffff0000", "|cffff8000", "|cffffff80", "|cff80ff80"}
 local outframe, sv, intransit, reloading, longestaddon, biggestaddon, varsloadtime, logging, mostgarbageaddon
-local memstack = {initmem}
+local memstack = {}
+table.insert(memstack, initmem)
 
 local usecombatframe = false
 
@@ -54,14 +55,23 @@ do
 		rl(...)
 	end
 
+	local loadandpop = function(...)
+		local new = table.remove(memstack)
+		local old = table.remove(memstack)
+		local orig = table.remove(memstack)
+		table.insert(memstack, orig + new - old)
+		return ...
+	end
 	local lao = LoadAddOn
-	LoadAddOn = function (addon, ...)
+	LoadAddOn = function (...)
 		local gt = GetTime()
 		collectgarbage("collect")
 		gctime = gctime + GetTime() - gt
 		lasttime = GetTime()
-		table.insert(memstack, select(1, collectgarbage("count")))
-		return lao(addon)
+		local newmem = collectgarbage("count")
+		table.insert(memstack, newmem)
+		table.insert(memstack, newmem)
+		return loadandpop(lao(...))
 	end
 end
 
