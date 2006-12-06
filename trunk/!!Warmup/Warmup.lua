@@ -42,7 +42,7 @@ end
 local function PutOutAO(name, time, mem, garbage)
 	outframe:AddMessage(string.format("%s%.3f sec|r | %s (%s%d KiB|r - %s%d KiB|r)", GetThreshColor("time", time), time,
 		name, GetThreshColor("mem", mem), mem, GetThreshColor("mem", garbage), garbage))
-	return string.format("%.3f sec|r | %s (%d KiB|r - %d KiB)", time, name, mem, garbage)
+	return string.format("%.3f sec | %s (%d KiB - %d KiB)", time, name, mem, garbage)
 end
 
 
