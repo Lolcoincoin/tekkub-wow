@@ -47,12 +47,6 @@ end
 
 
 do
-	local rl = ReloadUI
-	ReloadUI = function (...)
-		reloading = true
-		rl(...)
-	end
-
 	local loadandpop = function(...)
 		local newm, newt = table.remove(memstack), table.remove(timestack)
 		local oldm, oldt = table.remove(memstack), table.remove(timestack)
@@ -78,7 +72,7 @@ end
 
 
 function Warmup:OnLoad()
-	tinsert(UISpecialFrames,"WarmupOutputFrame")
+	table.insert(UISpecialFrames, "WarmupOutputFrame")
 	frame:RegisterAllEvents()
 end
 
@@ -177,6 +171,13 @@ function Warmup:VARIABLES_LOADED()
 	SlashCmdList["RELOAD"] = ReloadUI
 	SLASH_RELOAD1 = "/rl"
 
+	SlashCmdList["RELOADNODISABLE"] = function()
+		reloading = true
+		EnableAddOn("!!Warmup")
+		ReloadUI()
+	end
+	SLASH_RELOADNODISABLE1 = "/rlnd"
+
 	SlashCmdList["WARMUP"] = function()
 		if WarmupOutputFrame:IsVisible() then WarmupOutputFrame:Hide()
 		else WarmupOutputFrame:Show() end
@@ -186,6 +187,7 @@ function Warmup:VARIABLES_LOADED()
 	SLASH_WARMUP2 = "/warmup"
 
 	collectgarbage("restart")
+	DisableAddOn("!!Warmup")
 end
 
 

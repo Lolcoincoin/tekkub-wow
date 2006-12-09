@@ -1,4 +1,5 @@
 ## Interface: 20000
+## DefaultState: disabled
 
 ## Title: Warmup
 ## Notes: Tracks how long between loadup events
