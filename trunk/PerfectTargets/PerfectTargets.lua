@@ -5,22 +5,23 @@
 
 local compost = AceLibrary("Compost-2.0")
 local metro = AceLibrary("Metrognome-2.0")
+local L = AceLibrary("AceLocale-2.0"):new("PerfectTargets")
 
 local maxbuffs, maxdebuffs = 32, 40
 local delaycount, numtargets, framecount, ptframe = 0, 0, 0, PerfectRaidTargetFrame
 local targets, targetcounts, tanks, tankstrings = {}, {}, {}, {}
 local ccdebuffs = {
-	["Wyvern Sting"] = true,
-	["Scare Beast"] = true,
-	["Polymorph"] = true,
-	["Polymorph: Pig"] = true,
-	["Polymorph: Turtle"] = true,
-	["Sap"] = true,
-	["Seduction"] = true,
-	["Hibernate"] = true,
-	["Shackle Undead"] = true,
-	["Freezing Trap Effect"] = true,
-	["Banish"] = true,
+	[L["Wyvern Sting"]] = true,
+	[L["Scare Beast"]] = true,
+	[L["Polymorph"]] = true,
+	[L["Polymorph: Pig"]] = true,
+	[L["Polymorph: Turtle"]] = true,
+	[L["Sap"]] = true,
+	[L["Seduction"]] = true,
+	[L["Hibernate"]] = true,
+	[L["Shackle Undead"]] = true,
+	[L["Freezing Trap Effect"]] = true,
+	[L["Banish"]] = true,
 }
 
 
@@ -40,23 +41,23 @@ PerfectTargets:RegisterDefaults("profile", {
 PerfectTargets:RegisterChatCommand({"/ptarg"}, {type = "group", handler = PerfectTargets, args = {
 	["lock"] = {
 		type = "toggle",
-		name = "Lock frame",
-		desc = "Lock target frame's position.",
+		name = L["Lock frame"],
+		desc = L["Lock target frame's position."],
 		get = function() return PerfectTargets.db.profile.framelocked end,
 		set = function(v) PerfectTargets.db.profile.framelocked = v end,
 	},
 	["tankinitials"] = {
 		type = "range",
-		name = "Tank Initials",
-		desc = "Number of tank initials to append to the frames.",
+		name = L["Tank Initials"],
+		desc = L["Number of tank initials to append to the frames."],
 		get = function() return PerfectTargets.db.profile.numinitials end,
 		set = function(v) PerfectTargets.db.profile.numinitials = v end,
 		min = 1, max = 10, step = 1,
 	},
 	["rate"] = {
 		type = "range",
-		name = "Update Rate",
-		desc = "Base frame update rate.",
+		name = L["Update Rate"],
+		desc = L["Base frame update rate."],
 		get = function() return PerfectTargets.db.profile.baserate end,
 		set = function(v)
 			local pt = PerfectTargets
@@ -70,8 +71,8 @@ PerfectTargets:RegisterChatCommand({"/ptarg"}, {type = "group", handler = Perfec
 	},
 	["targets"] = {
 		type = "range",
-		name = "Number of targets",
-		desc = "Maximum number of target frames shown.",
+		name = L["Number of targets"],
+		desc = L["Maximum number of target frames shown."],
 		get = function() return PerfectTargets.db.profile.maxframes end,
 		set = function(v) PerfectTargets.db.profile.maxframes = v end,
 		min = 1, max = 20, step = 1,
@@ -362,7 +363,7 @@ end
 
 function PerfectTargets:UnitMarked(unit)
 	for i=1,maxdebuffs do
-		if UnitDebuff(unit, i) == "Hunter's Mark" then return true end
+		if UnitDebuff(unit, i) == L["Hunter's Mark"] then return true end
 	end
 end
 

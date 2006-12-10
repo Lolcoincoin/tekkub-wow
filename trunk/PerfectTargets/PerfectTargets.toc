@@ -16,5 +16,6 @@
 
 ## SavedVariables: PerfectTargetsDB
 
+Localization.lua
 TargetFrame.lua
 PerfectTargets.lua
