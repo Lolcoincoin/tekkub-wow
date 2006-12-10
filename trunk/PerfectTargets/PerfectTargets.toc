@@ -16,19 +16,5 @@
 
 ## SavedVariables: PerfectTargetsDB
 
-## LIBS START
-## X-Embeds: Ace2, CompostLib, Deformat, GratuityLib, Metrognome
-Libs\AceLibrary\AceLibrary.lua
-Libs\AceOO-2.0\AceOO-2.0.lua
-Libs\AceConsole-2.0\AceConsole-2.0.lua
-Libs\AceEvent-2.0\AceEvent-2.0.lua
-Libs\AceAddon-2.0\AceAddon-2.0.lua
-Libs\AceDB-2.0\AceDB-2.0.lua
-Libs\Compost-2.0\Compost-2.0.lua
-Libs\Deformat-2.0\Deformat-2.0.lua
-Libs\Gratuity-2.0\Gratuity-2.0.lua
-Libs\Metrognome-2.0\Metrognome-2.0.lua
-## LIBS END
-
 TargetFrame.lua
-Core.lua
+PerfectTargets.lua

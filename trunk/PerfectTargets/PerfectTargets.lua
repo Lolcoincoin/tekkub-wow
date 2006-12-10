@@ -4,24 +4,11 @@
 ------------------------------
 
 local compost = AceLibrary("Compost-2.0")
-local gratuity = AceLibrary("Gratuity-2.0")
 local metro = AceLibrary("Metrognome-2.0")
 
+local maxbuffs, maxdebuffs = 32, 40
 local delaycount, numtargets, framecount, ptframe = 0, 0, 0, PerfectRaidTargetFrame
 local targets, targetcounts, tanks, tankstrings = {}, {}, {}, {}
-local ccdebufftextures = {
-	["Interface\\Icons\\INV_Spear_02"] = true,
-	["Interface\\Icons\\Ability_Druid_Cower"] = true,
-	["Interface\\Icons\\Ability_Sap"] = true,
-	["Interface\\Icons\\Spell_Shadow_MindSteal"] = true,
-	["Interface\\Icons\\Spell_Nature_Sleep"] = true,
-	["Interface\\Icons\\Spell_Nature_Slow"] = true,
-	["Interface\\Icons\\Spell_Frost_ChainsOfIce"] = true,
-	["Interface\\Icons\\Spell_Shadow_Cripple"] = true,
-	["Interface\\Icons\\Spell_Nature_Polymorph"] = true,
-	["Interface\\Icons\\Spell_Magic_PolymorphPig"] = true,
-	["Interface\\Icons\\Spell_Magic_PolymorphTurtle"] = true,
-}
 local ccdebuffs = {
 	["Wyvern Sting"] = true,
 	["Scare Beast"] = true,
@@ -259,7 +246,6 @@ function PerfectTargets:UpdateUnitFrame(funit, frame, i, resetwidth)
 end
 
 
-
 ------------------------------------
 --      Unit Testing Methods      --
 ------------------------------------
@@ -339,6 +325,7 @@ function PerfectTargets:TestTarget(unit)
 	else table.insert(targetcounts, 0) end
 end
 
+
 function PerfectTargets:IsTargeted(unit,skipPlayer)
 	if not unit or not UnitExists(unit) or tanks[unit] or not UnitExists(unit.."target")
 	or UnitIsCivilian(unit.."target") or UnitIsDead(unit.."target") or UnitIsCorpse(unit.."target")
@@ -353,6 +340,7 @@ function PerfectTargets:IsTargeted(unit,skipPlayer)
 	return
 end
 
+
 function PerfectTargets:AddTank(unit)
 	if not unit or not UnitExists(unit) or not UnitExists(unit.."target") then return end
 
@@ -366,25 +354,15 @@ end
 
 
 function PerfectTargets:UnitUnderControl(unit)
-	for i=1,16 do
-		if ccdebufftextures[UnitDebuff(unit, i)] then
-			gratuity:SetUnitDebuff(unit,i)
-
-			local txt = gratuity:GetLine(1)
-			if txt and ccdebuffs[txt] then return true end
-		end
+	for i=1,maxdebuffs do
+		if ccdebuffs[UnitDebuff(unit, i)] then return true end
 	end
 end
 
 
 function PerfectTargets:UnitMarked(unit)
-	for i=1,16 do
-		if UnitDebuff(unit, i) == "Interface\\Icons\\Ability_Hunter_SniperShot" then
-			gratuity:SetUnitDebuff(unit,i)
-
-			local txt = gratuity:GetLine(1)
-			if txt and txt == "Hunter's Mark" then return true end
-		end
+	for i=1,maxdebuffs do
+		if UnitDebuff(unit, i) == "Hunter's Mark" then return true end
 	end
 end
 
