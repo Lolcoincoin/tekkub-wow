@@ -1,79 +1,13 @@
 
 local lib = {}
-
-function lib:CreateTooltip()
-	self.vars = {}
-	self.vars.tooltip = CreateFrame("GameTooltip")
-	self.vars.tooltip:SetOwner(self.vars.tooltip, "ANCHOR_NONE")
-	self.vars.Llines, self.vars.Rlines = {}, {}
-	for i=1,30 do
-		self.vars.Llines[i], self.vars.Rlines[i] = self.vars.tooltip:CreateFontString(), self.vars.tooltip:CreateFontString()
-		self.vars.Llines[i]:SetFontObject(GameFontNormal); self.vars.Rlines[i]:SetFontObject(GameFontNormal)
-		self.vars.tooltip:AddFontStrings(self.vars.Llines[i], self.vars.Rlines[i])
-	end
-end
-
-function lib:CreateMethods()
-	local methods = {"SetMerchantCostItem", "SetBagItem", "SetAction", "SetAuctionItem", "SetAuctionSellItem", "SetBuybackItem", "SetCraftItem", "SetCraftSpell", "SetHyperlink", "SetInboxItem", "SetInventoryItem", "SetLootItem", "SetLootRollItem", "SetMerchantItem", "SetPetAction", "SetPlayerBuff", "SetQuestItem", "SetQuestLogItem", "SetQuestRewardSpell", "SetSendMailItem", "SetShapeshift", "SetSpell", "SetTalent", "SetTrackingSpell", "SetTradePlayerItem", "SetTradeSkillItem", "SetTradeTargetItem", "SetTrainerService", "SetUnit", "SetUnitBuff", "SetUnitDebuff"}
-	for _,m in pairs(methods) do
-		self[m] = function(self, ...)
-			self:Erase()
-			return self.vars.tooltip[m](self.vars.tooltip, ...)
-		end
-	end
-
-	self.Left, self.Right = {}, {}
-	setmetatable(self.Left, {
-		__index = function(t, key)
-			if self.vars.tooltip:NumLines() >= key and self.vars.Llines[key] then
-				local v = self.vars.Llines[key]:GetText()
-				t[key] = v
-				return v
-			end
-			return nil
-		end,
-	})
-	setmetatable(self.Right, {
-		__index = function(t, key)
-			if self.vars.tooltip:NumLines() >= key and self.vars.Rlines[key] then
-				local v = self.vars.Rlines[key]:GetText()
-				t[key] = v
-				return v
-			end
-			return nil
-		end,
-	})
-end
-
-function lib:Erase() --	Clears the tooltip completely, none of this "erase left, hide right" crap blizzard does
-	self.vars.tooltip:ClearLines() -- Ensures tooltip's NumLines is reset
-	for i=1,30 do
-		self.vars.Rlines[i]:SetText() -- Clear text from right side (ClearLines only hides them)
-		self.Left[i], self.Right[i] = nil, nil
-	end
-	if not self.vars.tooltip:IsOwned(self.vars.tooltip) then self.vars.tooltip:SetOwner(self.vars.tooltip, "ANCHOR_NONE") end
-end
-
-lib:CreateTooltip()
-lib:CreateMethods()
-
-------------------------------------------------------------------------------------------------------
+local grat = DongleStub("GratuityMini"):GetTooltip()
+local sv
 
 local gsctemplate = "{{gsc|%s|%s|%s}}"
 local sctemplate = "{{sc|%s|%s}}"
 local ctemplate = "{{c|%s}}"
 
-local e = {}
-local f = CreateFrame("Frame")
-
-f:SetScript("OnEvent", function()
-	e[event]()
-end)
-
-
-local function print(...)
-	ChatFrame1:AddMessage("WoWWiki: ".. table.concat({...}, ", "))
-end
+WoWWiki = Dongle:New("WoWWiki")
 
 
 local function hexit(r, g, b)
@@ -88,26 +22,28 @@ local function WikifyTooltip(quality)
 	local tip = "{| style=\"{{{{{1|Smalltooltipcss}}}}}\"\n"
 	local s1 = "|-\n| colspan=2 %s| %s"
 	local s2 = "|-\n| %s || align=right | $s "
-	tip = tip..string.format(s1, "", "{{"..quals[quality].."|"..lib.Left[1].."}}\n")
+	tip = tip..string.format(s1, "", "{{"..quals[quality].."|"..grat.L[1].."}}\n")
 	for i=2,30 do
-		local l, r = lib.Left[i], lib.Right[i]
-		local lr, lg, lb = lib.vars.Llines[i]:GetTextColor()
+		local l, r = grat.L[i], grat.R[i]
+		local lr, lg, lb = grat.Llines[i]:GetTextColor()
 		if l then tip = tip..(r and string.format(s2, l, r) or (string.format(s1, hexit(lr, lg, lb), l))).."\n" end
 	end
 	return tip.."|}"
 end
 
 
-function e.ADDON_LOADED()
-	if arg1 == "WoWWiki" then
-		if not WoWWikiDB then WoWWikiDB = {tips = {}, prices = {}, itemids = {}, icons = {}, vendors = {}} end
-	end
+function WoWWiki:Initialize()
+	if not WoWWikiDB then WoWWikiDB = {tips = {}, prices = {}, itemids = {}, icons = {}, vendors = {}} end
+	sv = WoWWikiDB
+	self:RegisterEvent("MERCHANT_SHOW")
 end
 
 
-function e.MERCHANT_SHOW()
+function WoWWiki:MERCHANT_SHOW()
 	local mname = UnitName("target")
-	local mitems = {}
+	local mitemstr = ""
+	local e = true
+
 	for i=1,GetMerchantNumItems() do
 		local name, texture, price, qty, numAvailable, isUsable, extendedCost = GetMerchantItemInfo(i)
 		if name then
@@ -116,8 +52,8 @@ function e.MERCHANT_SHOW()
 				price = ""
 				local items
 				for j=1,MAX_ITEM_COST do
-					lib:SetMerchantCostItem(i, j)
-					local cname = lib.Left[1]
+					grat:SetMerchantCostItem(i, j)
+					local cname = grat.L[1]
 					local itemTexture, itemValue = GetMerchantItemCostItem(i, j)
 
 					if cname and itemValue then items = (items or "").."|"..cname.."|"..itemValue end
@@ -133,32 +69,25 @@ function e.MERCHANT_SHOW()
 				else price = string.format(ctemplate, c) end
 			end
 
-			WoWWikiDB.prices[name] = price
-			WoWWikiDB.itemids[name] = id
-			WoWWikiDB.icons[name] = texture
+			sv.prices[name] = price
+			sv.itemids[name] = id
+			sv.icons[name] = texture
 
-			table.insert(mitems, name)
-			if not WoWWikiDB.tips[name] then
+			mitemstr = mitemstr..(e and "\n|-" or "").. "\n| {{Vendor Item|"..item.."}}"
+			e = not e
+
+			if not sv.tips[name] then
 				local link = GetMerchantItemLink(i)
-				local _, _, slink, id = string.find(link, "(item:(%d+):(%d+):(%d+):(%d+))")
+				local _, _, id = string.find(link, "item:(%d+):(%d+):(%d+):(%d+)")
 				local _, _, itemRarity = GetItemInfo(link)
-				lib:SetHyperlink(link)
-				WoWWikiDB.tips[name] = WikifyTooltip(itemRarity)
-				print("Found item "..name)
+				grat:SetHyperlink(link)
+				sv.tips[name] = WikifyTooltip(itemRarity)
+				self:Print("Found item", name)
 			end
 		end
 	end
 
-	local mitemstr = ""
-	for i,item in ipairs(mitems) do
-		local e = math.fmod(i,2) == 0
-		mitemstr = mitemstr..(e and " || " or "|-\n|").."{{Vendor Item|"..item.."}}"..(e and "\n" or "")
-	end
-	WoWWikiDB.vendors[mname] = "{{Vendor Table Header}}\n"..mitemstr.."|}\n"
+	sv.vendors[mname] = "{{Vendor Table Header}}"..mitemstr.."|}\n"
 end
 
 
-for event in pairs(e) do
-	print("Registering "..event)
-	f:RegisterEvent(event)
-end
