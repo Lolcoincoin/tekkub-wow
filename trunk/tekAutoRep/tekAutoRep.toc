@@ -1,0 +1,25 @@
+## Interface: 11200
+
+## Title: tekAutoRep
+## Notes: Automatically track the last faction you gained reputation with.
+## Author: Tekkub Stoutwrithe
+## Version: 1.0
+## X-ReleaseDate: "$Date: 2006-10-02 06:32:24 -0500 (Mon, 02 Oct 2006) $"
+## X-Website: http://wiki.wowace.com/index.php/tekAutoRep
+## X-Email: tekkub@gmail.com
+## X-Category: Quest
+
+## OptionalDeps: Ace2, Deformat
+## X-Embeds: Ace2, Deformat
+
+## SavedVariables: tekAutoRepDB
+## SavedVariablesPerCharacter: tekAutoRepDBPC
+
+Libs\AceLibrary\AceLibrary.lua
+Libs\AceOO-2.0\AceOO-2.0.lua
+Libs\AceDB-2.0\AceDB-2.0.lua
+Libs\AceEvent-2.0\AceEvent-2.0.lua
+Libs\AceConsole-2.0\AceConsole-2.0.lua
+Libs\Deformat-2.0\Deformat-2.0.lua
+
+tekAutoRep.lua
