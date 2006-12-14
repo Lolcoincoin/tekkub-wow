@@ -66,8 +66,8 @@ local function myconcat(...)
 	for i=2,select("#", ...) do
 		local v = select(i, ...)
 		local t = type(v)
-		str = str.. sep.. v and (colors[math.fmod(i-1,3)+1].. " | arg ".. i.. " ("..v..")"..
-			((t == "string" or t == "number") and (": "..v) or t == "boolean" and (v and ": true" or ": false") or "")) or ""
+		str = str.. sep.. v and (colors[math.fmod(i-1,3)+1].. " | arg ".. i.. " ("..t..")"..
+			((t == "string" or t == "number") and (" "..v) or t == "boolean" and (v and " true" or ": false") or "")) or ""
 	end
 	return str
 end
