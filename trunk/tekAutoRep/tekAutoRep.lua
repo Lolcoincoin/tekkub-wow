@@ -1,63 +1,48 @@
 
-local deformat = AceLibrary("Deformat-2.0")
+local L = {
+	FACTION_STANDING_CHANGED = "You are now .+ with (.+).",
+	FACTION_STANDING_DECREASED = "Your (.+) reputation has decreased by",
+	FACTION_STANDING_INCREASED = "Your (.+) reputation has increased by",
+}
+local inactives = {}
 
-tekAutoRep = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceConsole-2.0", "AceDB-2.0")
-tekAutoRep:RegisterDB("tekAutoRepDB", "tekAutoRepDBPC")
-tekAutoRep:RegisterDefaults("profile", {collapse = true, changebar = true})
-tekAutoRep:RegisterChatCommand({"/tekar", "/tekautorep"}, {type = "group", handler = tekAutoRep, args = {
-	["collapse"] = {
-		type = "toggle",
-		name = "Collapse inactive",
-		desc = "Automatically collapse the 'Inactive' group on loadup.",
-		get = function() return tekAutoRep.db.profile.collapse end,
-		set = function(v) tekAutoRep.db.profile.collapse = v end,
-	},
-	["track"] = {
-		type = "toggle",
-		name = "Auto-track reputation",
-		desc = "Automatically track the latest faction you've gained rep with.",
-		get = function() return tekAutoRep.db.profile.changebar end,
-		set = function(v) tekAutoRep.db.profile.changebar = v end,
-	},
-}})
-
-
-function tekAutoRep:OnInitialize()
-	self:RegisterEvent("AceEvent_FullyInitialized")
-end
-
-
-function tekAutoRep:AceEvent_FullyInitialized()
-	if not self.db.profile.collapse then return end
-
-	for i=1,GetNumFactions() do
-		if GetFactionInfo(i) == "Inactive" then CollapseFactionHeader(i) end
-	end
-end
+tekAutoRep = Dongle:New("tekAutoRep")
 
 
 function tekAutoRep:OnEnable()
 	self:RegisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
-	self:RegisterEvent("tekAutoRep_NewFaction")
+	self:RegisterEvent("UPDATE_FACTION")
 end
 
 
-function tekAutoRep:CHAT_MSG_COMBAT_FACTION_CHANGE()
-	if not self.db.profile.changebar then return end
+function tekAutoRep:UPDATE_FACTION()
+	local inact
+	for i=1,GetNumFactions() do
+		local name = GetFactionInfo(i)
+		if name == "Inactive" then inact = i
+		elseif inact then inactives[name] = true
+		end
+	end
 
-	local _,faction = deformat(arg1, FACTION_STANDING_CHANGED)
-	if not faction then faction = deformat(arg1, FACTION_STANDING_INCREASED) or deformat(arg1, FACTION_STANDING_DECREASED) end
-	if faction then self:TriggerEvent("tekAutoRep_NewFaction", faction) end
+	if inact then
+		CollapseFactionHeader(inact)
+		self:UnregisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
+	end
 end
 
 
-function tekAutoRep:tekAutoRep_NewFaction(faction)
+function tekAutoRep:CHAT_MSG_COMBAT_FACTION_CHANGE(msg)
+	local faction = select(3, string.find(msg, L.FACTION_STANDING_CHANGED)) or
+		select(3, string.find(msg, L.FACTION_STANDING_INCREASED)) or
+		select(3, string.find(msg, L.FACTION_STANDING_DECREASED))
+
+	if not faction then return end
+
 	local current = GetWatchedFactionInfo()
 	for i=1,GetNumFactions() do
 		local name = GetFactionInfo(i)
 		if name == faction and name ~= current then
-			SetWatchedFactionIndex(i)
-			return
+			return SetWatchedFactionIndex(i)
 		end
 	end
 end
