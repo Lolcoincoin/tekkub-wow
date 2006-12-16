@@ -1,0 +1,13 @@
+#labels Addon,DevelopmentTools,Kennel
+#summary Tracks how long between loadup events
+
+I have an addiction. I like fuzzy things. I find my bag overflowing with small furry animals. I have CorkFu to make sure they all get their exercise, but my backpack is crammed. So I made Kennel to help me out. Every time I visit my pets back in town a random one is swapped in for each one in my bag. Any number of pets can be kept in your bag, Kennel will never add or remove a pet, just randomize the ones you have on you. Holiday pets (ones that need a snowball) are handled separately, so you won't find yourself stuck with holiday pets if you don't have in your bags in the first place.
+
+Kennel will hook into CorkFu if present, so that you know when you need to put a new pet out.
+
+== Links ==
+[http://code.google.com/p/tekkub-wow/issues/list?q=label:Kennel Bugs and Feature Suggestions]
+[http://code.google.com/p/tekkub-wow/downloads/list?q=label:Kennel Releases (Google Code)]
+[http://www.wowinterface.com/downloads/info4442 Releases (WoWInterface)]
+[http://tekkub.blogspot.com/search/label/Kennel Blog posts]
+
