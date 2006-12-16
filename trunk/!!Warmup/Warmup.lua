@@ -10,6 +10,26 @@ local memstack, timestack = {initmem}, {inittime}
 
 local usecombatframe = false
 
+local L = {
+	slashShort  = "/wu",
+	slashLong   = "/warmup",
+	slashReload = "/rl",
+	slashRLND   = "/rlnd",
+
+	loadwarn     = "Addon loaded before Warmup: %s",
+	log          = "%.3f sec | %s (%d KiB - %d KiB)",
+	outTMG       = "%s%.3f sec|r | %s (%s%d KiB|r - %s%d KiB|r)",
+	outRL        = "%.3f sec | ".. threshcolors[4].. "ReloadUI",
+	outAddon     = "%.3f sec | ".. threshcolors[4].. "Addon Loadup (%d KiB - %d KiB)"
+	outGC        = "%.3f sec | ".. threshcolors[4].. "Warmup's Garbage Collection"
+	outLongAddon = "%.3f sec | ".. threshcolors[2].. "Longest addon: %s"
+	outBigAddon  = threshcolors[2].. "Biggest addon: %s (%d KiB)"
+	outMostGC    = threshcolors[2].. "Most Garbage: %s (%d KiB)"
+	outEntry     = "%.3f sec | ".. threshcolors[4].. "World entry",
+	outTime      = "%.3f sec | ".. threshcolors[4].. "Total time",
+	outZone      = "%.3f sec | ".. threshcolors[4].. "Zoning",
+	outEvent     = threshcolors[1].. "%d|r | %s%s|r",
+}
 
 local frame = CreateFrame("Frame", "WarmupFrame", UIParent)
 Warmup = {}
@@ -29,20 +49,17 @@ local function GetThreshColor(set, value)
 end
 
 
-local function PutOut(txt, color, time, mem, gc)
-	local outstr = (time and string.format("%.3f sec | ", time) or "")..
-		color.. txt.. (mem and string.format(" (%d KiB", mem) or "")..
-		(gc and string.format(" - %d KiB)", gc) or mem and ")" or "")
-
-	if usecombatframe then combatframe:AddMessage(outstr) end
-	outframe:AddMessage(outstr)
+local function PutOut(...)
+	local txt = string.format(...)
+	if usecombatframe then combatframe:AddMessage(txt) end
+	outframe:AddMessage(txt)
 end
 
 
 local function PutOutAO(name, time, mem, garbage)
-	outframe:AddMessage(string.format("%s%.3f sec|r | %s (%s%d KiB|r - %s%d KiB|r)", GetThreshColor("time", time), time,
+	outframe:AddMessage(string.format(L.outTMG, GetThreshColor("time", time), time,
 		name, GetThreshColor("mem", mem), mem, GetThreshColor("mem", garbage), garbage))
-	return string.format("%.3f sec | %s (%d KiB - %d KiB)", time, name, mem, garbage)
+	return string.format(L.log, time, name, mem, garbage)
 end
 
 
@@ -86,8 +103,9 @@ function Warmup:Init()
 	for i=1,GetNumAddOns() do
 		if IsAddOnLoaded(i) then
 			if GetAddOnInfo(i) ~= "!!Warmup" then
-				if usecombatframe then combatframe:AddMessage("Addon loaded before Warmup: ".. GetAddOnInfo(i)) end
-				outframe:AddMessage("Addon loaded before Warmup: ".. GetAddOnInfo(i))
+				local msg = string.format(L.loadwarn, GetAddOnInfo(i))
+				if usecombatframe then combatframe:AddMessage(msg) end
+				outframe:AddMessage(msg)
 			end
 		end
 	end
@@ -110,7 +128,7 @@ function Warmup:DumpEvents()
 	table.sort(sortt)
 
 	for i,ev in pairs(sortt) do
-		outframe:AddMessage(string.format(threshcolors[1].."%d|r | %s%s|r", eventcounts[ev], threshcolors[4], ev))
+		outframe:AddMessage(string.format(L.outEvent, eventcounts[ev], threshcolors[4], ev))
 	end
 end
 
@@ -159,32 +177,32 @@ function Warmup:VARIABLES_LOADED()
 	local lastmem = collectgarbage("count")
 
 	varsloadtime = GetTime()
-	if sv.time then PutOut("ReloadUI", threshcolors[4], inittime - sv.time) end
-	PutOut("Addon Loadup", threshcolors[4], varsloadtime - inittime - gctime, lastmem - initmem, totalgarbage)
-	PutOut("Warmup's Garbage Collection", threshcolors[4], gctime)
-	PutOut("Longest addon: ".. longestaddon, threshcolors[2], longesttime)
-	PutOut("Biggest addon: ".. biggestaddon, threshcolors[2], nil, biggestmem)
-	PutOut("Most Garbage: "..mostgarbageaddon, threshcolors[2], nil, mostgarbage)
+	if sv.time then PutOut(L.outRL, inittime - sv.time) end
+	PutOut(L.outAddon, varsloadtime - inittime - gctime, lastmem - initmem, totalgarbage)
+	PutOut(L.outGC, gctime)
+	PutOut(L.outLongAddon, longesttime, longestaddon)
+	PutOut(L.outBigAddon, biggestaddon, biggestmem)
+	PutOut(L.outMostGC, mostgarbageaddon, mostgarbage)
 
 	frame:RegisterEvent("PLAYER_LOGIN")
 
 	SlashCmdList["RELOAD"] = ReloadUI
-	SLASH_RELOAD1 = "/rl"
+	SLASH_RELOAD1 = L.slashReload
 
 	SlashCmdList["RELOADNODISABLE"] = function()
 		reloading = true
 		EnableAddOn("!!Warmup")
 		ReloadUI()
 	end
-	SLASH_RELOADNODISABLE1 = "/rlnd"
+	SLASH_RELOADNODISABLE1 = L.slashRLND
 
 	SlashCmdList["WARMUP"] = function()
 		if WarmupOutputFrame:IsVisible() then WarmupOutputFrame:Hide()
 		else WarmupOutputFrame:Show() end
 	end
 
-	SLASH_WARMUP1 = "/wu"
-	SLASH_WARMUP2 = "/warmup"
+	SLASH_WARMUP1 = L.slashShort
+	SLASH_WARMUP2 = L.slashLong
 
 	collectgarbage("restart")
 	DisableAddOn("!!Warmup")
@@ -201,15 +219,15 @@ function Warmup:PLAYER_ENTERING_WORLD()
 	if inittime and logging then
 		local entrytime = GetTime()
 
-		PutOut("World entry", threshcolors[4], entrytime - varsloadtime)
+		PutOut(L.outEntry, entrytime - varsloadtime)
 
-		if sv.time then PutOut("Total time", threshcolors[4], entrytime - sv.time)
-		else PutOut("Total time", threshcolors[4], entrytime - inittime) end
+		if sv.time then PutOut(L.outTime, entrytime - sv.time)
+		else PutOut(L.outTime, entrytime - inittime) end
 
 		sv.time = nil
 		varsloadtime = nil
 	elseif sv.time then
-		PutOut("Zoning", threshcolors[4], GetTime() - sv.time)
+		PutOut(L.outZone, GetTime() - sv.time)
 		sv.time = nil
 	end
 	logging = nil
