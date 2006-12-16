@@ -2,8 +2,7 @@
 
 local metro = DongleStub("MetrognomeNano")
 
-TheBigPicture = {}
-DongleStub("Dongle"):New(TheBigPicture, "TheBigPicture")
+TheBigPicture = Dongle:New("TheBigPicture")
 
 
 local orig = Minimap.SetZoom
