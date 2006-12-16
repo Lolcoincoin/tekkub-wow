@@ -21,7 +21,7 @@ local quals = {"common", "uncommon", "rare", "epic", "legendary", [0] = "poor"}
 local function WikifyTooltip(quality)
 	local tip = "{| style=\"{{{{{1|Smalltooltipcss}}}}}\"\n"
 	local s1 = "|-\n| colspan=2 %s| %s"
-	local s2 = "|-\n| %s || align=right | $s "
+	local s2 = "|-\n| %s || align=right | %s "
 	tip = tip..string.format(s1, "", "{{"..quals[quality].."|"..grat.L[1].."}}\n")
 	for i=2,30 do
 		local l, r = grat.L[i], grat.R[i]
