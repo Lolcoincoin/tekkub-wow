@@ -1,9 +1,9 @@
 #labels Warmup,AddonPages
 
-|Summary=Tracks how long between loadup events
-|Category=Development Tools
-|WoWI=4939
-|Curse=3792
+|| Summary || Tracks how long between loadup events ||
+|| Category || Development Tools ||
+|| WoWI || 4939 ||
+|| Curse || 3792 ||
 
 During my conversion to Ace mods, I started wondering how long each of my mods added to my
 login/reloadui time. So I wrote this little bugger to find out. It will dump times into
@@ -55,7 +55,7 @@ The simplet trick to make Warmup's folder the oldest is:
  1 Open up <WoW Path>\Interface\Addons\<That first addon> on your hard drive
  1 Find the file <That first addon>.toc, open it in a text editor
  1 Add this line: `## OptionalDeps: !!Warmup`
-   _If an `OptionalDeps` line exists, just append `!!Warmup` to it_
+	_If an `OptionalDeps` line exists, just append `!!Warmup` to it_
 
 You can now exit WoW completely and re-login, Warmup should load first
 
