@@ -6,16 +6,11 @@
 || WoWI || 4939 ||
 || Curse || 3792 ||
 
-During my conversion to Ace mods, I started wondering how long each of my mods added to my
-login/reloadui time. So I wrote this little bugger to find out. It will dump times into
-your combat log on startup and reloadUI. You can see how long each mod takes, which mod
-takes the longest, and each step of loadup (Loading the mods, entering the world, etc).
+During my conversion to Ace mods, I started wondering how long each of my mods added to my login/reloadui time. So I wrote this little bugger to find out. It will dump times into your combat log on startup and reloadUI. You can see how long each mod takes, which mod takes the longest, and each step of loadup (Loading the mods, entering the world, etc).
 
 Oh yea, this will also time zoning across an instance
 
-This also provides a /rlnd (Reload, no disable) slash command.  This will ReloadUI and
-time how long it takes.  It will tell you times for Reload, addon loading, entering world,
-total time and time spent in forced GC
+This also provides a /rlnd (Reload, no disable) slash command.  This will ReloadUI and time how long it takes.  It will tell you times for Reload, addon loading, entering world, total time and time spent in forced GC
 
 Don't like Ace2 addons' Warmup numbers?  Check out
 *http://www.wowace.com/wiki/Ace2_Memory_Concerns*
