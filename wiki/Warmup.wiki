@@ -1,6 +1,5 @@
 #labels Warmup,AddonPages
 
-
 |Summary=Tracks how long between loadup events
 |Category=Development Tools
 |WoWI=4939
