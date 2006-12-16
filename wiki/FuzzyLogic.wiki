@@ -1,4 +1,4 @@
-#labels Addon,Inventory,FuzzyLogic,Featured
+#labels Addon,Hunter,FuzzyLogic,Featured
 #summary Easy pet management
 
 !FuzzyLogic condenses Mend, Call, Dismiss and Revive Pet down into a single keybind or macro.  !FuzzyLogic is smart enough to know if your pet is dead, even if it's corpse has despawned.  Mend pet is cast if your pet's HP% is < 90%.
