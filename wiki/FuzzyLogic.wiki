@@ -1,0 +1,33 @@
+#labels Addon,Inventory,FuzzyLogic,Featured
+#summary Easy pet management
+
+FuzzyLogic condenses Mend, Call, Dismiss and Revive Pet down into a single keybind or macro.  FuzzyLogic is smart enough to know if your pet is dead, even if it's corpse has despawned.  Mend pet is cast if your pet's HP% is < 90%.
+
+FuzzyLogic will only load on hunters, it will disable itsself if loaded on any other class.
+
+The prefered means of triggering FuzzyLogic is a simple macro:
+_WoW Patch 2.0.3 is required for this to work_
+{{{
+/click FuzzyLogicFrame
+}}}
+
+== Links ==
+ * [http://code.google.com/p/tekkub-wow/issues/list?q=label:Kennel Bugs and Feature Suggestions]
+ * [http://code.google.com/p/tekkub-wow/downloads/list?q=label:Kennel Releases (Google Code)]
+ * [http://www.wowinterface.com/downloads/info4442 Releases (WoWInterface)]
+ * [http://tekkub.blogspot.com/search/label/Kennel Blog posts]
+
+== Other settings ==
+If you wish to change the threshold for Mend/Dismiss pet out of combat, edit this line of FuzzyLogic.lua:
+{{{
+local healthresh = 0.90
+}}}
+
+To use a ketbind instead of a macro, edit this line in FuzzyLogic.lua:
+{{{
+local binding
+}}}
+For example, to bind to Ctrl-P:
+{{{
+local binding = "CTRL-P"
+}}}
