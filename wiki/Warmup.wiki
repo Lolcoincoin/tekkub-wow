@@ -11,11 +11,11 @@ Don't like Ace2 addons' Warmup numbers?  Check out
 *[http://www.wowace.com/wiki/Ace2_Memory_Concerns Ace2 Memory Concerns]*
 
 == Links ==
-[http://code.google.com/p/tekkub-wow/issues/list?q=label:Warmup Bugs and Feature Suggestions]
-[http://code.google.com/p/tekkub-wow/wiki/WarmupChangelog Changelog]
-[http://code.google.com/p/tekkub-wow/downloads/list?q=label:Warmup Releases (Google Code)]
-[http://www.wowinterface.com/downloads/info4939 Releases (WoWInterface)]
-[http://tekkub.blogspot.com/search/label/Warmup Blog posts]
+ * [http://code.google.com/p/tekkub-wow/issues/list?q=label:Warmup Bugs and Feature Suggestions]
+ * [http://code.google.com/p/tekkub-wow/wiki/WarmupChangelog Changelog]
+ * [http://code.google.com/p/tekkub-wow/downloads/list?q=label:Warmup Releases (Google Code)]
+ * [http://www.wowinterface.com/downloads/info4939 Releases (WoWInterface)]
+ * [http://tekkub.blogspot.com/search/label/Warmup Blog posts]
 
 == Understanding Warmup's output ==
 After loading into the game, type `/wu` to open the Warmup frame.  You'll be flooded with a bunch of numbers.  here's what they all mean:
