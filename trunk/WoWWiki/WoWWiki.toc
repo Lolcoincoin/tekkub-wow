@@ -1,7 +1,15 @@
 ## Interface: 20000
-## Author: Tekkub Stoutwrithe
+
 ## Title: WoWWiki Dataminer
 ## Notes: Saves item data for WoWWiki
+## Author: Tekkub Stoutwrithe
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+
 ## SavedVariables: WoWWikiDB
+
+## OptionalDeps: Dongle
+
+Dongle.lua
 
 WoWWiki.lua
