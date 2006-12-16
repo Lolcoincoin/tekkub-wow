@@ -1,5 +1,5 @@
-#labels Addon,DevelopmentTools,Kennel
-#summary Tracks how long between loadup events
+#labels Addon,Inventory,Kennel
+#summary Swap a random minipet every time you visit the bank
 
 I have an addiction. I like fuzzy things. I find my bag overflowing with small furry animals. I have CorkFu to make sure they all get their exercise, but my backpack is crammed. So I made Kennel to help me out. Every time I visit my pets back in town a random one is swapped in for each one in my bag. Any number of pets can be kept in your bag, Kennel will never add or remove a pet, just randomize the ones you have on you. Holiday pets (ones that need a snowball) are handled separately, so you won't find yourself stuck with holiday pets if you don't have in your bags in the first place.
 
