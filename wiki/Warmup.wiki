@@ -1,4 +1,4 @@
-#labels Warmup,Addon-DevelopmentTools
+#labels Warmup,Addon,DevelopmentTools
 #summary Tracks how long between loadup events
 
 During my conversion to Ace mods, I started wondering how long each of my mods added to my login/reloadui time. So I wrote this little bugger to find out. It will dump times into your combat log on startup and reloadUI. You can see how long each mod takes, which mod takes the longest, and each step of loadup (Loading the mods, entering the world, etc).
