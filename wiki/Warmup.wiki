@@ -11,8 +11,8 @@ Don't like Ace2 addons' Warmup numbers?  Check out
 *[http://www.wowace.com/wiki/Ace2_Memory_Concerns Ace2 Memory Concerns]*
 
 == Links ==
- *[http://www.wowinterface.com/downloads/info4939 Releases (WoWInterface)]
- *[:WarmupChangelog:Changelog]
+[http://www.wowinterface.com/downloads/info4939 Releases (WoWInterface)]
+[:WarmupChangelog:Changelog]
 
 == Understanding Warmup's output ==
 After loading into the game, type `/wu` to open the Warmup frame.  You'll be flooded with a bunch of numbers.  here's what they all mean:
