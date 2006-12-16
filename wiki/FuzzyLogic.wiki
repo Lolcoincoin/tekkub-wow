@@ -12,10 +12,10 @@ _WoW Patch 2.0.3 is required for this to work_
 }}}
 
 == Links ==
- * [http://code.google.com/p/tekkub-wow/issues/list?q=label:Kennel Bugs and Feature Suggestions]
- * [http://code.google.com/p/tekkub-wow/downloads/list?q=label:Kennel Releases (Google Code)]
- * [http://www.wowinterface.com/downloads/info4442 Releases (WoWInterface)]
- * [http://tekkub.blogspot.com/search/label/Kennel Blog posts]
+ * [http://code.google.com/p/tekkub-wow/issues/list?q=label:FuzzyLogic Bugs and Feature Suggestions]
+ * [http://code.google.com/p/tekkub-wow/downloads/list?q=label:FuzzyLogic Releases (Google Code)]
+ * [http://www.wowinterface.com/downloads/info4926 Releases (WoWInterface)]
+ * [http://tekkub.blogspot.com/search/label/FuzzyLogic Blog posts]
 
 == Other settings ==
 If you wish to change the threshold for Mend/Dismiss pet out of combat, edit this line of FuzzyLogic.lua:
