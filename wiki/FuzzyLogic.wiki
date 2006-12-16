@@ -23,7 +23,7 @@ If you wish to change the threshold for Mend/Dismiss pet out of combat, edit thi
 local healthresh = 0.90
 }}}
 
-To use a ketbind instead of a macro, edit this line in !FuzzyLogic.lua:
+To use a keybind instead of a macro, edit this line in !FuzzyLogic.lua:
 {{{
 local binding
 }}}
