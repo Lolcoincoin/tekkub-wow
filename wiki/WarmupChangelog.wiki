@@ -2,4 +2,4 @@
 == v2.0 ==
  * Now shows GC statistics for each addon (will extend loadtime, but tells you how much time was spent on this extra GC)
  * Savedvar log improved, now dumps strings that watch the in-game output
- * Added memory and time stack to show proper stats for addons that call LoadAddOn while they are loading
+ * Added memory and time stack to show proper stats for addons that call `LoadAddOn` while they are loading
