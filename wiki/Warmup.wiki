@@ -20,10 +20,9 @@ Don't like Ace2 addons' WarmUp numbers?  Check out
 *http://www.wowace.com/wiki/Ace2_Memory_Concerns*
 
 == Understanding Warmup's output ==
-After loading into the game, type <tt>/wu</tt> to open the Warmup frame.  You'll be
-flooded with a bunch of numbers.  here's what they all mean:
+After loading into the game, type `/wu` to open the Warmup frame.  You'll be flooded with a bunch of numbers.  here's what they all mean:
 
- 0.535 sec | Sample Addon (245 KiB - 429 KiB)
+~+`0.535 sec | Sample Addon (245 KiB - 429 KiB)`~+
 
 *0.535 sec*
   Estimate on how long this addon took to load.  This is actually the time between `ADDON_LOADED` events, which can include a little more that just this addon's loading, but it's a very close estimate of how long the addon took to load.
@@ -57,8 +56,8 @@ The simplet trick to make Warmup's folder the oldest is:
  1 Scroll to the very top, you should have a whiney message that some addon loaded before Warmup (probably more than one)
  1 Open up <WoW Path>\Interface\Addons\<That first addon> on your hard drive
  1 Find the file <That first addon>.toc, open it in a text editor
- 1 Add this line: <code>## OptionalDeps: !!Warmup</code>
-  ''If an "OptionalDeps" line exists, just append ''<code>, !!Warmup</code> ''to it''
+ 1 Add this line: `## OptionalDeps: !!Warmup`
+  ''If an "OptionalDeps" line exists, just append ''`, !!Warmup` ''to it''
 
 You can now exit WoW completely and re-login, Warmup should load first
 
