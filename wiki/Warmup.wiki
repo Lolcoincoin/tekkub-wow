@@ -25,10 +25,8 @@ flooded with a bunch of numbers.  here's what they all mean:
 
  0.535 sec | Sample Addon (245 KiB - 429 KiB)
 
-; 0.535 sec
-: Estimate on how long this addon took to load.  This is actually the time between
-ADDON_LOADED events, which can include a little more that just this addon's loading, but
-it's a very close estimate of how long the addon took to load.
+'''0.535 sec'''
+  Estimate on how long this addon took to load.  This is actually the time between `ADDON_LOADED` events, which can include a little more that just this addon's loading, but it's a very close estimate of how long the addon took to load.
 ; Sample Addon
 : The addon we loaded
 ; 245 KiB
@@ -61,7 +59,7 @@ and not just Warmup.  The problem is that the !! doesn't always ensure it'll loa
 for everyone.  If you're one of the few who's Warmup won't load first, here's what you do:
 
 === Option 1, Windows users ===
-Windows loads addons in the order their folders were created on the disk, oldest first. 
+Windows loads addons in the order their folders were created on the disk, oldest first.
 The simplet trick to make warmup's folder the oldest is:
  * Move all you addons out of the addons folder to a temporary folder
  * Move !!Warmup back to the addons folder
@@ -70,8 +68,7 @@ The simplet trick to make warmup's folder the oldest is:
 === Option 2, All users ===
  * Launch WoW, log in
  * Open your warmup frame, /wu
- * Scroll to the very top, you should have a whiney message that some addon loaded before
-Warmup (probably more than one)
+ * Scroll to the very top, you should have a whiney message that some addon loaded before Warmup (probably more than one)
  * Open up <WoW Path>\Interface\Addons\<That first addon> on your hard drive
  * Find the file <That first addon>.toc, open it in a text editor
  * Add this line: <code>## OptionalDeps: !!Warmup</code>
@@ -81,8 +78,6 @@ You can now exit WoW completely and re-login, Warmup should load first
 
 == Changelog ==
 === v2.0 ===
- * Now shows GC statistics for each addon (will extend loadtime, but tells you how much
-time was spent on this extra GC)
+ * Now shows GC statistics for each addon (will extend loadtime, but tells you how much time was spent on this extra GC)
  * Savedvar log improved, now dumps strings that watch the in-game output
- * Added memory and time stack to show proper stats for addons that call LoadAddOn while
-they are loading
+ * Added memory and time stack to show proper stats for addons that call LoadAddOn while they are loading
