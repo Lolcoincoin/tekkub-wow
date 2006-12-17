@@ -1,0 +1,10 @@
+## Interface: 20000
+
+## Title: tekGuildTip
+## Notes: Adds a player's guild name to the mouseover tooltip.
+## Author: Tekkub Stoutwrithe
+## X-Credits: Adapted from Gazmik Fizzwidget's Guildentipper
+
+GFWUtils.lua
+Guildentipper.xml
+Guildentipper.lua
