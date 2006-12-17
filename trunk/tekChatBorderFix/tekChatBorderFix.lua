@@ -1,15 +1,20 @@
 
-function fixchatcrap()
-	for i=1,7 do
-		getglobal("ChatFrame"..i.."ResizeBottomLeft"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeBottomRight"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeTopLeft"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeTopRight"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeTop"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeBottom"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeRight"):EnableMouse(false);
-		getglobal("ChatFrame"..i.."ResizeLeft"):EnableMouse(false);
+local frames = {}
+
+
+tekChatBorderFix = Dongle:New("tekChatBorderFix")
+
+
+function tekChatBorderFix:Initialize()
+	local _G = getfenv(0)
+
+	for _,b in ipairs({"ResizeBottomLeft", "ResizeBottomRight", "ResizeTopLeft", "ResizeTopRight", "ResizeTop", "ResizeBottom", "ResizeRight", "ResizeLeft"}) do
+		for i=1,7 do frames[_G["ChatFrame"..i..b]] = true end
 	end
 end
 
---~ WoWWiki = Dongle:New("WoWWiki")
+
+function tekChatBorderFix:Fix()
+	for f in pairs(frames) do f:EnableMouse(false) end
+end
+
