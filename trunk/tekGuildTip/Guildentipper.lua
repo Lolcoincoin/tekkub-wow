@@ -1,93 +1,76 @@
-------------------------------------------------------
--- Guildentipper.lua
--- Based on Micah's GuildOnTooltip mod, with some help from Ross' GoodTip
-------------------------------------------------------
 
-function FGT_OnEvent(event)
-    if (event == "UPDATE_MOUSEOVER_UNIT") then
-		FGT_ModifyTooltipForUnit("mouseover");
-	end
+local gtt = GameTooltip
+local l1, l2, l3, l4 = GameTooltipTextLeft1, GameTooltipTextLeft2, GameTooltipTextLeft3, GameTooltipTextLeft4
+
+
+tekGuildTip = Dongle:New("tekGuildTip")
+
+
+function tekGuildTip:Enable()
+	self:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
 end
 
-function FGT_SetUnit(this, aUnit)
-	FGT_Original_SetUnit(this, aUnit);
-	FGT_ModifyTooltipForUnit(aUnit);
+
+function tekGuildTip:UPDATE_MOUSEOVER_UNIT()
+	self:ModifyTooltip("mouseover")
 end
 
-function FGT_OnHide()
-	local line2orig = GameTooltipTextLeft2:GetText();
-	if(line2orig ~= nil) then
-		if(string.find(line2orig, "<")) then
-			-- We added a line, we need to remove it or it'll show up in all future tooltips
-			GameTooltipTextLeft4:SetText(nil);
-			GameTooltipTextLeft4:Hide();
-			GameTooltipTextLeft3:SetText(nil);
-			GameTooltipTextLeft3:Hide();
+
+function tekGuildTip:ModifyTooltip(unit)
+	if not UnitExists(unit) or not UnitPlayerControlled(unit) then return end
+
+	local guildName = GetGuildInfo(unit)
+	if guildName then
+		local line2orig = l2:GetText()
+		if not line2orig or string.byte(line2orig) == 60 then return end
+
+		if gtt:NumLines() == 3 then
+			local line3orig = l3:GetText()
+			l2:SetText("<"..guildName..">")
+			l3:SetText(line2orig)
+			gtt:AddLine(line3orig, 1.0, 1.0, 1.0)
+		else
+			l2:SetText("<"..guildName..">")
+			gtt:AddLine(line2orig, 1.0, 1.0, 1.0)
 		end
 	end
-	FGT_Original_OnHide();
-end
-
-function FGT_OnLoad()
-	-- Hook the function that displays tooltips
-	FGT_Original_SetUnit = GameTooltip.SetUnit; -- broken in 1.7, no replacement yet in sight...
-	GameTooltip.SetUnit = FGT_SetUnit;
-	FGT_Original_OnHide = GameTooltip_OnHide;
-	GameTooltip_OnHide = FGT_OnHide;
-	
-	GFW_Guildentipper_Frame:RegisterEvent("UPDATE_MOUSEOVER_UNIT");
-
-	local version = GetAddOnMetadata("GFW_Guildentipper", "Version");
-	GFWUtils.Print("Fizzwidget Guildentipper "..version.." initialized!");
-end
-
-function FGT_ModifyTooltipForUnit(aUnit)
-	if(UnitExists(aUnit) and UnitPlayerControlled(aUnit)) then
-		local guildName = GetGuildInfo(aUnit);
-		if(guildName) then
-
-			local line2orig = GameTooltipTextLeft2:GetText();
-			
-			-- Sometimes we get called too early for the tooltip to be set up right.
-			if(line2orig == nil) then return; end
-			
-			-- Sometimes, due to interaction with other UI mods, we get called multiple times for the same tooltip.
-			-- Make sure we only modify it once.
-			if(string.find(line2orig, "<")) then return; end
-
-			if(GameTooltip:NumLines() == 3) then
-				local line3orig = GameTooltipTextLeft3:GetText();
-				GameTooltipTextLeft2:SetText("<"..guildName..">");
-				GameTooltipTextLeft3:SetText(line2orig);
-				GameTooltip:AddLine(line3orig, 1.0, 1.0, 1.0);
-			else
-				GameTooltipTextLeft2:SetText("<"..guildName..">");
-				GameTooltip:AddLine(line2orig, 1.0, 1.0, 1.0);
-			end
-						
-			--if(GameTooltipTextLeft2:GetWidth() + 26 > GameTooltip:GetWidth()) then 
-			--	GameTooltip:SetWidth(GameTooltipTextLeft2:GetWidth() + 26); 
-			--end
+	if UnitIsAFK(unit) then
+		local lineText = l1:GetText()
+		if lineText and not string.find(lineText, CHAT_FLAG_AFK) then
+			l1:SetText(lineText.." "..CHAT_FLAG_AFK)
 		end
-		if (UnitIsAFK(aUnit)) then
-			local lineText = GameTooltipTextLeft1:GetText();
-			if (lineText and string.sub(lineText, 1, string.len(CHAT_FLAG_AFK)) ~= CHAT_FLAG_AFK) then
-				GameTooltipTextLeft1:SetText(CHAT_FLAG_AFK..lineText);
-			end
+	elseif UnitIsDND(unit) then
+		local lineText = l1:GetText()
+		if lineText and not string.find(lineText, CHAT_FLAG_DND) then
+			l1:SetText(lineText.." "..CHAT_FLAG_DND)
 		end
-		if (UnitIsDND(aUnit)) then
-			local lineText = GameTooltipTextLeft1:GetText();
-			if (lineText and string.sub(lineText, 1, string.len(CHAT_FLAG_DND)) ~= CHAT_FLAG_DND) then
-				GameTooltipTextLeft1:SetText(CHAT_FLAG_DND..lineText);
-			end
-		end
-		GameTooltip:Show();
 	end
+	gtt:Show()
 end
 
-------------------------------------------------------
--- Runtime loading
-------------------------------------------------------
 
-FGT_OnLoad();
+---------------------
+--      Hooks      --
+---------------------
+
+local orig_GameTooltip_SetUnit = GameTooltip.SetUnit
+GameTooltip.SetUnit = function(self, unit, ...)
+	orig_GameTooltip_SetUnit(self, unit, ...)
+	tekGuildTip:ModifyTooltip(unit)
+end
+
+
+local orig_GameTooltip_OnHide = GameTooltip_OnHide
+GameTooltip_OnHide = function(...)
+	local line2orig = l2:GetText()
+	if line2orig and string.byte(line2orig) == 60 then
+		-- We added a line, we need to remove it or it'll show up in all future tooltips
+		l4:SetText()
+		l4:Hide()
+		l3:SetText()
+		l3:Hide()
+	end
+	orig_GameTooltip_OnHide(...)
+end
+
 

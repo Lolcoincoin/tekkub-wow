@@ -6,5 +6,4 @@
 ## X-Credits: Adapted from Gazmik Fizzwidget's Guildentipper
 
 GFWUtils.lua
-Guildentipper.xml
 Guildentipper.lua
