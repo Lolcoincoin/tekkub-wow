@@ -53,14 +53,17 @@ end
 --      Hooks      --
 ---------------------
 
-local orig_GameTooltip_SetUnit = GameTooltip.SetUnit
-GameTooltip.SetUnit = function(self, unit, ...)
-	orig_GameTooltip_SetUnit(self, unit, ...)
+local orig1 = GameTooltip.SetUnit
+local function posthook(unit, ...)
 	tekGuildTip:ModifyTooltip(unit)
+	return ...
+end
+GameTooltip.SetUnit = function(self, unit, ...)
+	return posthook(unit, orig1(self, unit, ...))
 end
 
 
-local orig_GameTooltip_OnHide = GameTooltip_OnHide
+local orig2 = GameTooltip_OnHide
 GameTooltip_OnHide = function(...)
 	local line2orig = l2:GetText()
 	if line2orig and string.byte(line2orig) == 60 then
@@ -70,7 +73,7 @@ GameTooltip_OnHide = function(...)
 		l3:SetText()
 		l3:Hide()
 	end
-	orig_GameTooltip_OnHide(...)
+	return orig2(...)
 end
 
 
