@@ -4,6 +4,12 @@
 ## Notes: Adds a player's guild name to the mouseover tooltip.
 ## Author: Tekkub Stoutwrithe
 ## X-Credits: Adapted from Gazmik Fizzwidget's Guildentipper
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Interface Enhancements
 
-GFWUtils.lua
-Guildentipper.lua
+## OptionalDeps: Dongle
+
+Dongle.lua
+
+tekGuildTip.lua
