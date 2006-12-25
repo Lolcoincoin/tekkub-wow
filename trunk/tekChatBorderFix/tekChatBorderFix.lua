@@ -7,7 +7,6 @@ for _,b in ipairs({"ResizeBottomLeft", "ResizeBottomRight", "ResizeTopLeft", "Re
 		frames[i][_G["ChatFrame"..i..b]] = true
 	end
 end
-_G = nil
 
 
 tekChatBorderFix = {}
@@ -15,23 +14,20 @@ tekChatBorderFix = {}
 
 local orig = SetChatWindowLocked
 SetChatWindowLocked = function(index, locked, ...)
-	tekChatBorderFix:Debug(1, index, locked, ...)
-
-	for f in pairs(frames[index]) do
-		f:EnableMouse(not locked)
-	end
-
+	for f in pairs(frames[index]) do f:EnableMouse(not locked) end
 	return orig(index, locked, ...)
 end
 
 
-local orig2 = FCF_Set_ChatLocked
-FCF_Set_ChatLocked = function(lock, ...)
+local f = CreateFrame("Frame")
+local last
+f:SetScript("OnUpdate", function()
+	local n = _G["CHAT_LOCKED"]
+	if n == last then return end
+
 	for i,v in pairs(frames) do
-		for f in pairs(v) do
-			f:EnableMouse(not lock)
-		end
+		for f in pairs(v) do f:EnableMouse(n ~= "1") end
 	end
 
-	return orig2(lock, ...)
-end
+	last = n
+end)
