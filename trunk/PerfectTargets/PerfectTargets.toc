@@ -1,6 +1,6 @@
-## Interface: 11200
+## Interface: 20003
 
-## Title: Perfect Targets |cff7fff7f -Ace2-|r
+## Title: Perfect Targets
 ## Notes: Minimalistic set of target frames
 ## Author: Tekkub Stoutwrithe
 ## Version: 2.0

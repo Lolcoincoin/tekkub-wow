@@ -1,4 +1,4 @@
-## Interface: 20000
+## Interface: 20003
 
 ## Title: tekAutoRep
 ## Notes: Automatically track the last faction you gained reputation with.
