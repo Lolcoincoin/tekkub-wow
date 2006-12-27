@@ -3,7 +3,7 @@ local frames = {}
 local _G = getfenv(0)
 for _,b in ipairs({"ResizeBottomLeft", "ResizeBottomRight", "ResizeTopLeft", "ResizeTopRight", "ResizeTop", "ResizeBottom", "ResizeRight", "ResizeLeft"}) do
 	for i=1,7 do
-		frames[i] = {}
+		frames[i] = frames[i] or {}
 		frames[i][_G["ChatFrame"..i..b]] = true
 	end
 end
@@ -26,7 +26,8 @@ f:SetScript("OnUpdate", function()
 	if n == last then return end
 
 	for i,v in pairs(frames) do
-		for f in pairs(v) do f:EnableMouse(n ~= "1") end
+		local locked = n == "1" or _G["ChatFrame"..i].isLocked
+		for f in pairs(v) do f:EnableMouse(not locked) end
 	end
 
 	last = n
