@@ -1,0 +1,10 @@
+## Interface: 20003
+
+## Title: tekErr
+## Author: Tekkub Stoutwrithe
+## Notes: Dumps error popup dialog text to a chat frame
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Chat/Communication
+
+tekErr.lua
