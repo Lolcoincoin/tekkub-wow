@@ -1,6 +1,8 @@
 
 local cf = ChatFrame5
 local linkstr = "|cffff4040|Htekerr:%s|h%s|h|r"
+local lastName
+
 
 ScriptErrors.Show = function(objData)
 	cf:AddMessage(string.format(linkstr, debugstack(), ScriptErrors_Message:GetText()))
@@ -12,12 +14,11 @@ f:SetScript("OnEvent", function(self, ...)
 	cf:AddMessage(string.join(", ", ...), 0.0, 1.0, 1.0)
 end)
 f:RegisterEvent("ADDON_ACTION_FORBIDDEN")
---~ f:RegisterEvent("ADDON_ACTION_BLOCKED")
+--~ f:RegisterEvent("ADDON_ACTION_BLOCKED")  -- We usually don't care about these, as they aren't fatal
 
 
-local lastName
 local orig = SetItemRef
-SetItemRef = function(link, text, button, ...)
+SetItemRef = function(link, text, ...)
 	local _, _, msg = string.find(link, "tekerr:(.+)");
 	if msg then
 		if ItemRefTooltip:IsVisible() and lastName and lastName == msg then
@@ -40,6 +41,6 @@ SetItemRef = function(link, text, button, ...)
 	end
 
 	lastName = nil
-	orig(link, text, button, ...)
+	orig(link, text, ...)
 end
 
