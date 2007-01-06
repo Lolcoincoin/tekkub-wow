@@ -1,0 +1,17 @@
+## Interface: 11100
+## Author: Tekkub Stoutwrithe
+## Title: ConglomoMod
+## Notes: Misc mod stuff
+## OptionalDeps: FuBar, SpecialEvents, SpecialEventsEmbed, Metrognome
+
+ChatTypeBindings.lua
+ClassMacros.lua
+CleanChat.lua
+Constants.lua
+Desalivate.lua
+FrameFixer.lua
+Panda.lua
+Popbar.lua
+TekTech.lua
+Visor.lua
+ConglomoMod.xml
