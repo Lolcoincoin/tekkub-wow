@@ -1,0 +1,7 @@
+## Interface: 20003
+## Title: tekAccept
+## Notes: Auto-accept invites from guild members and friends
+## Author: Tekkub Stoutwrithe
+
+tekAccept.lua
+
