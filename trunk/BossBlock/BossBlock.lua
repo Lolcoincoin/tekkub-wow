@@ -1,14 +1,14 @@
 
 
-BossBlock = AceLibrary("AceAddon-2.0"):new("AceHook-2.0", "AceEvent-2.0", "AceConsole-2.0", "AceDB-2.0")
-BossBlock:RegisterDB("BossBlockDB")
+--~ BossBlock = AceLibrary("AceAddon-2.0"):new("AceHook-2.0", "AceEvent-2.0", "AceConsole-2.0", "AceDB-2.0")
+--~ BossBlock:RegisterDB("BossBlockDB")
 --~~ BossBlock.cmdtable = {type = "group", args = {}}
 --~~ BossBlock:RegisterChatCommand({"/bossblock"}, BigWigs.cmdtable)
 
---	showtells = true,
---	showraid = true,
---	showraidsay = true,
---	showraidwarn = true,
+local showtells = false
+local showraid = true
+local showraidsay = true
+local showraidwarn = true
 
 local raidchans = {
 	CHAT_MSG_RAID = true,
@@ -29,38 +29,37 @@ local blockregexs = {
 }
 
 
-function BossBlock:OnEnable()
-	self:Hook("ChatFrame_OnEvent")
-	self:Hook("RaidWarningFrame_OnEvent")
-	if CT_RAMessageFrame then self:Hook(CT_RAMessageFrame, "AddMessage", "CTRA_AddMessage") end
-end
-
-
-function BossBlock:ChatFrame_OnEvent(event)
-	if event == "CHAT_MSG_WHISPER" and not self.showtells and self:IsSpam(arg1) then return end
-	if raidchans[event] and not self.showraid and self:IsSpam(arg1) then return end
-
-	self.hooks.ChatFrame_OnEvent.orig(event)
-end
-
-
-function BossBlock:RaidWarningFrame_OnEvent(event, message)
-	if not self.showraidwarn and self:IsSpam(message) then return end
-
-	self.hooks.RaidWarningFrame_OnEvent.orig(event, message)
-end
-
-
-function BossBlock:CTRA_AddMessage(obj, text, red, green, blue, alpha, holdTime)
-	if not self.showraidsay and self:IsSpam(text) then return end
-	self.hooks[CT_RAMessageFrame].AddMessage.orig(obj, text, red, green, blue, alpha, holdTime)
-end
-
-
-function BossBlock:IsSpam(text)
+local function IsSpam(text)
 	if not text then return end
 	if blockstrings[text] then return true end
 	for _,regex in pairs(blockregexs) do if string.find(text, regex) then return true end end
 end
+
+
+local orig1 = ChatFrame_MessageEventHandler
+ChatFrame_MessageEventHandler = function(event, txt, ...)
+	if event == "CHAT_MSG_WHISPER" and not showtells and IsSpam(txt) then return end
+	if raidchans[event] and not showraid and IsSpam(txt) then return end
+
+	orig1(event, txt, ...)
+end
+
+
+local orig2 = RaidWarningFrame_OnEvent
+RaidWarningFrame_OnEvent = function(event, message, ...)
+	if not showraidwarn and IsSpam(message) then return end
+
+	orig2(event, message, ...)
+end
+
+
+--~ function BossBlock:OnEnable()
+--~ 	if CT_RAMessageFrame then self:Hook(CT_RAMessageFrame, "AddMessage", "CTRA_AddMessage") end
+--~ end
+--~ function BossBlock:CTRA_AddMessage(obj, text, ...)
+--~ 	if not self.showraidsay and self:IsSpam(text) then return end
+--~ 	self.hooks[CT_RAMessageFrame].AddMessage.orig(obj, text, ...)
+--~ end
+
 
 
