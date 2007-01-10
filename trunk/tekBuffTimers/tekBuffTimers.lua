@@ -5,7 +5,7 @@ SecondsToTimeAbbrev = function(time)
 	elseif time < 3600 then
 		m = floor(time / 60)
 		s = mod(time, 60)
-		text = (m == 0 and format("%d", s)) or text = format("%d:%02d", m, s)
+		text = (m == 0 and format("%d", s)) or format("%d:%02d", m, s)
 	else
 		hr = floor(time / 3600)
 		m = floor(mod(time, 3600) / 60)
