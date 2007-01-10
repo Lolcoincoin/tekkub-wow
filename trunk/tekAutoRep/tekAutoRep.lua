@@ -26,7 +26,7 @@ function tekAutoRep:UPDATE_FACTION()
 
 	if inact then
 		CollapseFactionHeader(inact)
-		self:UnregisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
+		self:UnregisterEvent("UPDATE_FACTION")
 	end
 end
 
