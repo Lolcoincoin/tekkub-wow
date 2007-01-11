@@ -11,7 +11,7 @@ local flightview, landingview = 1, 5
 --      Addon Declaration      --
 ---------------------------------
 
-Cockpit = Dongle:New("Cockpit")
+Cockpit = DongleStub("Dongle-Beta0"):New("Cockpit")
 
 
 ------------------------------
