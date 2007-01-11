@@ -6,7 +6,7 @@ local L = {
 }
 local inactives = {}
 
-tekAutoRep = Dongle:New("tekAutoRep")
+tekAutoRep = DongleStub("Dongle-Beta0"):New("tekAutoRep")
 
 
 function tekAutoRep:OnEnable()
