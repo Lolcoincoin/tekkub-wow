@@ -2,7 +2,7 @@
 
 local metro = DongleStub("MetrognomeNano")
 
-TheLowDown = Dongle:New("TheLowDown")
+TheLowDown = DongleStub("Dongle-Beta0"):New("TheLowDown")
 
 
 local scrolldowns = {}
