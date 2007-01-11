@@ -9,4 +9,5 @@ FOR /D %%j in (*) do IF EXIST %%j\DongleUtils.lua copy /Y DongleUtils.lua %%j
 
 
 :theend
-pause
+DEL Dongle.lua
+DEL DongleUtils.lua
