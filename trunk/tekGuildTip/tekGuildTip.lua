@@ -3,7 +3,7 @@ local gtt = GameTooltip
 local l1, l2, l3, l4 = GameTooltipTextLeft1, GameTooltipTextLeft2, GameTooltipTextLeft3, GameTooltipTextLeft4
 
 
-tekGuildTip = Dongle:New("tekGuildTip")
+tekGuildTip = DongleStub("Dongle-Beta0"):New("tekGuildTip")
 
 
 function tekGuildTip:Enable()
