@@ -7,37 +7,32 @@ end
 
 
 function ConglomoMod:Chatsize()
-	--  ╔═══════╦═══════╦═══════╗
-	--  ║   6   ║   2   ║   4   ║
-	--  ╠═══════╩═══╦═══╩═══════╣
-	--  ║     3     ║     1     ║
-	--  ╚═══════════╩═══════════╝
+	--      ╔═══════╦═══════╗
+	--      ║   5   ║   6   ║
+	--  ╔═══╩═══╦═══╩═══╦═══╩═══╗
+	--  ║   1   ║   3   ║   4   ║
+	--  ╚═══════╩═══════╩═══════╝
 
-	local width, height = 1024, 100
+	local width, height = UIParent:GetWidth(), 120
 	local hgap, vgap = 3, 10
-	local wtop, wbtm = (width-hgap*4)/3, (width-hgap*3)/2
+	local w = (width-hgap*4)/3
 
-	ChatFrame1:SetWidth(wbtm)
+	for _,i in ipairs({1,3,4,5,6}) do
+			local f = getglobal("ChatFrame"..i)
+			if i ~= 1 then f:ClearAllPoints() end
+			f:SetWidth(w)
+			f:SetHeight(height)
+	end
 
-	ChatFrame3:ClearAllPoints()
-	ChatFrame3:SetPoint("TOPRIGHT", ChatFrame1, "TOPLEFT", -hgap, 0)
-	ChatFrame3:SetWidth(wbtm)
-	ChatFrame3:SetHeight(height+20)
+	ChatFrame3:SetPoint("TOPLEFT", ChatFrame1, "TOPRIGHT", hgap, 0)
+	ChatFrame4:SetPoint("TOPLEFT", ChatFrame3, "TOPRIGHT", hgap, 0)
+	ChatFrame5:SetPoint("BOTTOMRIGHT", ChatFrame3, "TOP", 0, vgap)
+	ChatFrame6:SetPoint("TOPLEFT", ChatFrame5, "TOPRIGHT", hgap, 0)
 
-	ChatFrame4:ClearAllPoints()
-	ChatFrame4:SetPoint("BOTTOMRIGHT", ChatFrame1, "TOPRIGHT", 0, vgap)
-	ChatFrame4:SetHeight(height)
-	ChatFrame4:SetWidth(wtop)
-
-	ChatFrame2:ClearAllPoints()
-	ChatFrame2:SetPoint("BOTTOMRIGHT", ChatFrame4, "BOTTOMLEFT", -hgap, 0)
-	ChatFrame2:SetWidth(wtop)
-	ChatFrame2:SetHeight(height)
-
-	ChatFrame6:ClearAllPoints()
-	ChatFrame6:SetPoint("BOTTOMRIGHT", ChatFrame2, "BOTTOMLEFT", -hgap, 0)
-	ChatFrame6:SetWidth(wtop)
-	ChatFrame6:SetHeight(height)
+	WorldFrame:ClearAllPoints()
+	WorldFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 0, -14)
+	WorldFrame:SetPoint("RIGHT", UIParent, "RIGHT")
+	WorldFrame:SetPoint("BOTTOM", ChatFrame4, "TOP")
 end
 
 
