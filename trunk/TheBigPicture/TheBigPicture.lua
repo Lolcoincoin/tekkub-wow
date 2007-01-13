@@ -1,8 +1,8 @@
 ﻿
 
-local metro = DongleStub("MetrognomeNano")
+local metro = DongleStub("MetrognomeNano-Beta0")
 
-TheBigPicture = Dongle:New("TheBigPicture")
+TheBigPicture = DongleStub("Dongle-Beta0"):New("TheBigPicture")
 
 
 local orig = Minimap.SetZoom
