@@ -11,7 +11,7 @@ end
 
 
 f:SetScript("OnEvent", function(frame, event, name)
-	if ConglomoMod:IsFriend(name) then
+	if IsFriend(name) then
 		AcceptGroup()
 		for i=1, STATICPOPUP_NUMDIALOGS, 1 do
 			local frame = getglobal("StaticPopup"..i)
