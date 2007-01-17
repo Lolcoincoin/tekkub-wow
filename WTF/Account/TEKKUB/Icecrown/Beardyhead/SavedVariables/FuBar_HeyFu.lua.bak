@@ -1,0 +1,22 @@
+
+HeyFuCharDB = {
+	["global"] = {
+		["LastSpoken"] = "Maylena",
+		["Conversations"] = {
+			["Maylena"] = {
+				[1] = {
+					["message"] = "is that all you do?",
+					["time"] = -1158614918,
+				},
+				[2] = {
+					["message"] = " lately :P",
+					["time"] = 1158614930,
+				},
+				[3] = {
+					["message"] = "bah!",
+					["time"] = -1158614955,
+				},
+			},
+		},
+	},
+}

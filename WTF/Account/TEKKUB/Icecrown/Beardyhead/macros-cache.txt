@@ -1,0 +1,3 @@
+MACRO 16777217 "Cork" Spell_Holy_WordFortitude
+/script FuBar_CorkFu:CorkFirst()
+END

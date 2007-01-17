@@ -1,0 +1,2 @@
+
+ClosetGnomePerCharDB = nil

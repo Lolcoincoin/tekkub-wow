@@ -1,0 +1,9 @@
+
+MSBTCooldownsDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

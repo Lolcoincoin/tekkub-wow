@@ -1,0 +1,7 @@
+
+ClosetGnomeSwitcherDBPC = {
+	["namespaces"] = {
+		["Priest"] = {
+		},
+	},
+}
