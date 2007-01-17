@@ -1,0 +1,26 @@
+
+FuBar_NameToggleDB = {
+	["classes"] = {
+		["Hunter"] = {
+			["version"] = 30000,
+		},
+	},
+	["realms"] = {
+		["IcecrownAlliance"] = {
+			["version"] = 30000,
+		},
+	},
+	["chars"] = {
+		["IcecrownTekkub"] = {
+			["version"] = 30000,
+		},
+	},
+	["full"] = {
+		["version"] = 30000,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 30000,
+		},
+	},
+}

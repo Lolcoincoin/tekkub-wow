@@ -1,0 +1,10 @@
+
+BuddySyncDB = {
+	["Icecrown"] = {
+		["FRIEND"] = {
+		},
+		["IGNORE"] = {
+		},
+	},
+	["2.2"] = 1,
+}

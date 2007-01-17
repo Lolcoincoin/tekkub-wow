@@ -1,0 +1,11 @@
+
+InvSortDB = {
+	["profiles"] = {
+		["default"] = {
+			["Categories"] = {
+			},
+			["Columns"] = 10,
+			["UseEquip"] = 1,
+		},
+	},
+}

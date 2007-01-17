@@ -1,0 +1,28 @@
+
+FuBar_MailDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 20000,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 20000,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["total"] = 0,
+			["version"] = 20000,
+			["new"] = 0,
+		},
+	},
+	["full"] = {
+		["version"] = 20000,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 20000,
+		},
+	},
+}

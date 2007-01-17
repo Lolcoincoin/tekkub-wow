@@ -1,0 +1,8 @@
+
+BugSackDB = {
+	["profiles"] = {
+		["Default"] = {
+			["session"] = 1,
+		},
+	},
+}

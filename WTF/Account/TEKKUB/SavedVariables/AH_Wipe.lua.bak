@@ -1,0 +1,10 @@
+
+AHWipeDB = {
+	["profiles"] = {
+		["default"] = {
+			["Show"] = true,
+			["Tooltip"] = true,
+			["HideDR"] = true,
+		},
+	},
+}

@@ -1,0 +1,27 @@
+
+ClockFuDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 909.0295,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 909.0295,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["version"] = 909.0295,
+		},
+	},
+	["full"] = {
+		["version"] = 909.0295,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 909.0295,
+			["bubble"] = false,
+		},
+	},
+}

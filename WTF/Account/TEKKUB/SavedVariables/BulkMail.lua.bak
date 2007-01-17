@@ -1,0 +1,8 @@
+
+BulkMailDB = {
+	["profiles"] = {
+		["default"] = {
+			["opt2"] = 1,
+		},
+	},
+}

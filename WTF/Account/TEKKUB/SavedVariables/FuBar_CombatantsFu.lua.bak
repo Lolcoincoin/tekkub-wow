@@ -1,0 +1,26 @@
+
+FuBar_CombatantsDB = {
+	["classes"] = {
+		["Druid"] = {
+			["version"] = 10000,
+		},
+	},
+	["realms"] = {
+		["DrakaHorde"] = {
+			["version"] = 10000,
+		},
+	},
+	["chars"] = {
+		["DrakaTekkub"] = {
+			["version"] = 10000,
+		},
+	},
+	["full"] = {
+		["version"] = 10000,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 10000,
+		},
+	},
+}

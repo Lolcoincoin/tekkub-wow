@@ -1,0 +1,4 @@
+
+LexanConfig = {
+	["Esc"] = false,
+}

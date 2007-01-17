@@ -1,0 +1,273 @@
+
+PlowKingDB = {
+	["profiles"] = {
+		["Druid"] = {
+			["Layout"] = {
+				["Quiver"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Quiver",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Container"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Container",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Consumable"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Consumable",
+						},
+					},
+					["y"] = 543.4999512699633,
+					["x"] = 913.3400555108642,
+				},
+				["Trade Goods"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Trade Goods",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Miscellaneous"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Miscellaneous",
+						},
+					},
+					["y"] = 358.4999653383345,
+					["x"] = 708.3399618702582,
+				},
+				["Recipe"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Recipe",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Reagent"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Reagent",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Key"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Key",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Projectile"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Projectile",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Armor"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Armor",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Empty"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Empty",
+						},
+					},
+					["y"] = 483.499954070906,
+					["x"] = 768.3400242548904,
+				},
+				["Quest"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Quest",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Weapon"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Weapon",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+			},
+		},
+		["default"] = {
+			["Layout"] = {
+				["Quiver"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Quiver",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Weapon"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Weapon",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Consumable"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Consumable",
+						},
+					},
+					["y"] = 543.4999512699633,
+					["x"] = 913.3400555108642,
+				},
+				["Trade Goods"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Trade Goods",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Miscellaneous"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Miscellaneous",
+						},
+					},
+					["y"] = 358.4999653383345,
+					["x"] = 708.3399618702582,
+				},
+				["Recipe"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Recipe",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Reagent"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Reagent",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Key"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Key",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Armor"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Armor",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Projectile"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Projectile",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Empty"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Empty",
+						},
+					},
+					["y"] = 483.499954070906,
+					["x"] = 768.3400242548904,
+				},
+				["Quest"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Quest",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+				["Container"] = {
+					["Categories"] = {
+						[1] = {
+							["Type"] = "itemType",
+							["Category"] = "Container",
+						},
+					},
+					["y"] = 383.9999755554094,
+					["x"] = 1024,
+				},
+			},
+		},
+	},
+}

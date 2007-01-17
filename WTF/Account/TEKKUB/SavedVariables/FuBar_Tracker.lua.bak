@@ -1,0 +1,27 @@
+
+FuBar_TrackerDB = {
+	["classes"] = {
+		["Hunter"] = {
+			["version"] = 10001,
+		},
+	},
+	["realms"] = {
+		["IcecrownAlliance"] = {
+			["version"] = 10001,
+		},
+	},
+	["chars"] = {
+		["IcecrownTekkub"] = {
+			["version"] = 10001,
+		},
+	},
+	["full"] = {
+		["version"] = 10001,
+	},
+	["profiles"] = {
+		["default"] = {
+			["currTexture"] = "Interface\\Icons\\Spell_Nature_Earthquake",
+			["version"] = 10001,
+		},
+	},
+}

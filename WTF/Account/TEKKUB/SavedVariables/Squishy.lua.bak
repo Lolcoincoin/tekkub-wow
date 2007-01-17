@@ -1,0 +1,13 @@
+
+SquishyDB = {
+	["profiles"] = {
+		["default"] = {
+			["Version"] = "0.3",
+			["CTRAUnitFrames"] = 1,
+			["AudioAggro"] = 1,
+			["ScreenAlert"] = 1,
+			["SquishyFrame"] = 1,
+			["ScaleSize"] = 1,
+		},
+	},
+}

@@ -1,0 +1,10 @@
+
+FuBar_ExperiencedDB = {
+	["profiles"] = {
+		["default"] = {
+			["restedExpPercent"] = true,
+			["version"] = 3,
+			["levelExp"] = false,
+		},
+	},
+}

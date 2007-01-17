@@ -1,0 +1,26 @@
+
+BossPanel_GreedBeaconDB = {
+	["classes"] = {
+		["Hunter"] = {
+			["version"] = 0,
+		},
+	},
+	["realms"] = {
+		["IcecrownAlliance"] = {
+			["version"] = 0,
+		},
+	},
+	["chars"] = {
+		["IcecrownTekkub"] = {
+			["version"] = 0,
+		},
+	},
+	["full"] = {
+		["version"] = 0,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 0,
+		},
+	},
+}

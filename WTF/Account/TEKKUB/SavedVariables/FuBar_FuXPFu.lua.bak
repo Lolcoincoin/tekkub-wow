@@ -1,0 +1,9 @@
+
+FuXPDB = {
+	["profiles"] = {
+		["default"] = {
+			["showText"] = 0,
+			["version"] = 100,
+		},
+	},
+}

@@ -1,0 +1,10 @@
+
+oRAMainTank = {
+	["profiles"] = {
+		["default"] = {
+			["MainTankTable"] = {
+				[1] = "Rohona",
+			},
+		},
+	},
+}

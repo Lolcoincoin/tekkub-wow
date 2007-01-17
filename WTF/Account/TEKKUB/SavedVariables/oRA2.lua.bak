@@ -1,0 +1,21 @@
+
+oRADB = {
+	["namespaces"] = {
+		["inviteleader"] = {
+			["profiles"] = {
+				["Default"] = {
+					["promotes"] = {
+					},
+				},
+			},
+		},
+	},
+}
+oRAFubarDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

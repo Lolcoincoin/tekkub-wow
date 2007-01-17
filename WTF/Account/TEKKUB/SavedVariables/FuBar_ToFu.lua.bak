@@ -1,0 +1,12 @@
+
+ToFuDB = {
+	["full"] = {
+		["paths"] = {
+			["Alliance"] = {
+			},
+		},
+		["version"] = 101.1488,
+	},
+	["profiles"] = {
+	},
+}

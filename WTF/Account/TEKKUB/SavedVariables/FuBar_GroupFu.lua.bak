@@ -1,0 +1,41 @@
+
+GroupFuDB = {
+	["profiles"] = {
+		["default"] = {
+			["Rolls"] = {
+			},
+			["version"] = 102,
+			["RollCount"] = 0,
+			["Colors"] = {
+				[1] = {
+					[1] = "|cffffffff",
+					[2] = "Common",
+				},
+				[2] = {
+					[1] = "|cff1eff00",
+					[2] = "Uncommon",
+				},
+				[3] = {
+					[1] = "|cff0070dd",
+					[2] = "Rare",
+				},
+				[4] = {
+					[1] = "|cffa335ee",
+					[2] = "Epic",
+				},
+				[5] = {
+					[1] = "|cffff8000",
+					[2] = "Legendary",
+				},
+				[6] = {
+					[1] = "|cffe6cc80",
+					[2] = "Artifact",
+				},
+				[0] = {
+					[1] = "|cff9d9d9d",
+					[2] = "Poor",
+				},
+			},
+		},
+	},
+}

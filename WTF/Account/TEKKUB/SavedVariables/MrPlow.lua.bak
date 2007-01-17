@@ -1,0 +1,9 @@
+
+MrPlowDB = {
+	["profiles"] = {
+		["default"] = {
+			["Gag"] = 1,
+			["Reversed"] = false,
+		},
+	},
+}

@@ -1,0 +1,15 @@
+
+DetoxDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+				["offsety"] = 263.9999485645074,
+				["anchor"] = "BOTTOMLEFT",
+				["offsetx"] = 180.0000241899594,
+				["detached"] = true,
+			},
+			["feedback"] = false,
+			["showPriorities"] = false,
+		},
+	},
+}

@@ -1,0 +1,10 @@
+MACRO 139 "." Ability_Mount_BlackPanther
+/click MountMeFrame
+END
+MACRO 158 "Cork" Spell_Nature_Regeneration
+/click CorkFuFrame
+END
+MACRO 125 "Tex" Ability_Seal
+/script ChatFrame1:AddMessage(ActionButton1Icon:GetTexture())
+/script FuBar_Tracker:SetIcon(ActionButton1Icon:GetTexture())
+END

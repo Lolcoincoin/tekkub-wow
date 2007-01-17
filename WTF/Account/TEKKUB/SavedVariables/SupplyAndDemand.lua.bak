@@ -1,0 +1,9 @@
+
+SupplyAndDemandDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

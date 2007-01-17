@@ -1,0 +1,6 @@
+
+BigWigsNefCountDB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
+}

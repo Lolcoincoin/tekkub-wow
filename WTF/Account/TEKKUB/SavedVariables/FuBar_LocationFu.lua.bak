@@ -1,0 +1,27 @@
+
+LocationFuDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 909.0303,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 909.0303,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["version"] = 909.0303,
+		},
+	},
+	["full"] = {
+		["version"] = 909.0303,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 909.0303,
+			["minimapBar"] = false,
+		},
+	},
+}

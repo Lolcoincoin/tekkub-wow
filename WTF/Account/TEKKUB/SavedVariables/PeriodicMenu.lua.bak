@@ -1,0 +1,12 @@
+
+PeriodicMenuDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+				["offsety"] = -184.9999859316289,
+				["anchor"] = "TOPLEFT",
+				["offsetx"] = 205.500001814247,
+			},
+		},
+	},
+}

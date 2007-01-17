@@ -1,0 +1,30 @@
+
+GridDB = {
+	["namespaces"] = {
+		["GridFrame"] = {
+			["profiles"] = {
+				["Default"] = {
+					["statusmap"] = {
+						["border"] = {
+							["debuff_magic"] = true,
+						},
+					},
+				},
+			},
+		},
+		["GridLayout"] = {
+			["profiles"] = {
+				["Default"] = {
+					["PosY"] = 413.6532928502874,
+					["PosX"] = 222.6666499529367,
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

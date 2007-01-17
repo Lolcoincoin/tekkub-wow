@@ -1,0 +1,26 @@
+
+FuBar_VolumeFuDB = {
+	["classes"] = {
+		["Hunter"] = {
+			["version"] = 20700,
+		},
+	},
+	["realms"] = {
+		["IcecrownAlliance"] = {
+			["version"] = 20700,
+		},
+	},
+	["chars"] = {
+		["IcecrownTekkub"] = {
+			["version"] = 20700,
+		},
+	},
+	["full"] = {
+		["version"] = 20700,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 20700,
+		},
+	},
+}

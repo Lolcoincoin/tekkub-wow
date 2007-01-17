@@ -1,0 +1,29 @@
+
+FuBar_FactionsDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 10008,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 10008,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["monitor"] = "|cff00ff00Ironforge|r: |cffffffffFriendly|r (2418/6000)",
+			["version"] = 10008,
+		},
+	},
+	["full"] = {
+		["version"] = 10008,
+	},
+	["profiles"] = {
+		["default"] = {
+			["monitor"] = "|cff00ff00Ironforge|r: |cffffffffFriendly|r (2418/6000)",
+			["showText"] = false,
+			["version"] = 10008,
+		},
+	},
+}

@@ -1,0 +1,8 @@
+
+ImprovedRWFDB = {
+	["profiles"] = {
+		["Default"] = {
+			["showText"] = 0,
+		},
+	},
+}

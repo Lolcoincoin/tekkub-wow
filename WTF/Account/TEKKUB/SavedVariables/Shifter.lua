@@ -1,0 +1,2 @@
+
+ShifterDB = nil

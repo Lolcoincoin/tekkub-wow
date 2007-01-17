@@ -1,0 +1,137 @@
+
+ChatScrollDB = {
+	["profiles"] = {
+		["Huslu of Icecrown"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Ailurus of Icecrown"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Tekkub of Icecrown"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Girth of Vek'nilash"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Druid"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["default"] = {
+			["miniButton"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["editArrows"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Priest"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Beardyhead of Draka"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Hunter"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Wuffi of Icecrown"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+		["Cubbyhole of Icecrown"] = {
+			["editArrows"] = 1,
+			["hideButtons"] = 1,
+			["MoveScrollButtons"] = 1,
+			["hideMenu"] = 1,
+			["frameFilter"] = {
+				[2] = 1,
+			},
+			["timeStamp"] = 1,
+			["miniButton"] = 1,
+			["timeFormat"] = "%H:%M:%S",
+		},
+	},
+}

@@ -1,0 +1,26 @@
+
+FuBar_AspectDB = {
+	["classes"] = {
+		["Hunter"] = {
+			["version"] = 10004,
+		},
+	},
+	["realms"] = {
+		["IcecrownAlliance"] = {
+			["version"] = 10004,
+		},
+	},
+	["chars"] = {
+		["IcecrownTekkub"] = {
+			["version"] = 10004,
+		},
+	},
+	["full"] = {
+		["version"] = 10004,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 10004,
+		},
+	},
+}

@@ -1,0 +1,8 @@
+
+PopDB = {
+	["profiles"] = {
+		["Default"] = {
+			["GroupChat"] = 7,
+		},
+	},
+}

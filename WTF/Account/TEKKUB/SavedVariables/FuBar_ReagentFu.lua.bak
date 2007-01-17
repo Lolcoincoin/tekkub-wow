@@ -1,0 +1,28 @@
+
+ReagentFuDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 100,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 100,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["version"] = 100,
+		},
+	},
+	["full"] = {
+		["version"] = 100,
+	},
+	["profiles"] = {
+		["default"] = {
+			["initialized"] = 1,
+			["disabled"] = 1,
+			["version"] = 100,
+		},
+	},
+}

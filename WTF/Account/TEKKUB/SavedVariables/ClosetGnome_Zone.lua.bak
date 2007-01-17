@@ -1,0 +1,2 @@
+
+ClosetGnomeZoneDB = nil

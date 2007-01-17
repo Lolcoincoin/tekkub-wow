@@ -1,0 +1,26 @@
+
+PerformanceFuDB = {
+	["classes"] = {
+		["Priest"] = {
+			["version"] = 909.0309,
+		},
+	},
+	["realms"] = {
+		["StormscaleAlliance"] = {
+			["version"] = 909.0309,
+		},
+	},
+	["chars"] = {
+		["StormscaleMongalka"] = {
+			["version"] = 909.0309,
+		},
+	},
+	["full"] = {
+		["version"] = 909.0309,
+	},
+	["profiles"] = {
+		["default"] = {
+			["version"] = 909.0309,
+		},
+	},
+}

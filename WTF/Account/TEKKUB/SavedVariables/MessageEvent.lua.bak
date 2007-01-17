@@ -1,0 +1,14 @@
+
+MessageEventdb = {
+	["profiles"] = {
+		["default"] = {
+			["Frame1"] = true,
+			["Frame5"] = true,
+			["Frame6"] = true,
+			["Frame3"] = true,
+			["Frame7"] = true,
+			["Frame4"] = true,
+			["Frame2"] = true,
+		},
+	},
+}
