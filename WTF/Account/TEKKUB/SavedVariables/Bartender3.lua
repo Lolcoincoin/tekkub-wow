@@ -13,6 +13,7 @@ BT3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["SelfCastRightClick"] = true,
 			["SpecialBars"] = {
 				["BAGS"] = {
 					["Hide"] = true,
@@ -21,7 +22,6 @@ BT3DB = {
 					["Hide"] = true,
 				},
 			},
-			["SelfCastRightClick"] = true,
 			["Bars"] = {
 				{
 					["Stances"] = {
@@ -34,9 +34,9 @@ BT3DB = {
 					["PosX"] = 4.886668963109246,
 					["PosY"] = 178.1133586202218,
 					["States"] = {
-						["shift"] = 0,
-						["ctrl"] = 0,
 						["alt"] = 2,
+						["ctrl"] = 0,
+						["shift"] = 0,
 					},
 				}, -- [1]
 				[5] = {

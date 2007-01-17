@@ -1,15 +1,76 @@
 
 ReagentFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
+	["profiles"] = {
+		["Huslu of Icecrown"] = {
+			["initialized"] = 1,
+			["detachedTooltip"] = {
+			},
+			["version"] = "0.13",
+		},
+		["Ailurus of Icecrown"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["Tekkub of Icecrown"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["Girth of Vek'nilash"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["Wuffi of Icecrown"] = {
+			["initialized"] = 1,
+			["version"] = 11,
+		},
+		["Druid"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["default"] = {
+			["initialized"] = 1,
+			["detachedTooltip"] = {
+			},
+			["version"] = 13,
+		},
+		["Priest"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["Beardyhead of Draka"] = {
+			["initialized"] = 1,
+			["version"] = 1100,
+		},
+		["Hunter"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["Cubbyhole of Icecrown"] = {
+			["initialized"] = 1,
+			["version"] = 13,
+		},
+	},
 	["chars"] = {
 		["Huslu of Icecrown"] = {
 			["showReagent"] = {
-				["Wild Thornroot"] = true,
-				["Maple Seed"] = true,
-				["Ashwood Seed"] = true,
-				["Ironwood Seed"] = true,
-				["Hornbeam Seed"] = true,
-				["Stranglethorn Seed"] = true,
 				["Wild Berries"] = true,
+				["Maple Seed"] = true,
+				["Wild Thornroot"] = true,
+				["Ironwood Seed"] = true,
+				["Stranglethorn Seed"] = true,
+				["Hornbeam Seed"] = true,
+				["Ashwood Seed"] = true,
 			},
 		},
 		["Ailurus of Icecrown"] = {
@@ -47,66 +108,5 @@ ReagentFuDB = {
 				["Flash Powder"] = true,
 			},
 		},
-	},
-	["profiles"] = {
-		["Huslu of Icecrown"] = {
-			["initialized"] = 1,
-			["detachedTooltip"] = {
-			},
-			["version"] = "0.13",
-		},
-		["Ailurus of Icecrown"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Tekkub of Icecrown"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["Girth of Vek'nilash"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Druid"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["default"] = {
-			["initialized"] = 1,
-			["detachedTooltip"] = {
-			},
-			["version"] = 13,
-		},
-		["Beardyhead of Draka"] = {
-			["initialized"] = 1,
-			["version"] = 1100,
-		},
-		["Priest"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["Hunter"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-		["Wuffi of Icecrown"] = {
-			["initialized"] = 1,
-			["version"] = 11,
-		},
-		["Cubbyhole of Icecrown"] = {
-			["initialized"] = 1,
-			["version"] = 13,
-		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

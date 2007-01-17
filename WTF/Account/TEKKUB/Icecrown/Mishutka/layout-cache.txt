@@ -46,5 +46,5 @@ X: 473
 Y: -208
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 120
+X: 97
 Y: -835

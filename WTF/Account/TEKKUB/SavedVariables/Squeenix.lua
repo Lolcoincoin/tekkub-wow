@@ -14,12 +14,8 @@ SqueenixDB2 = {
 		["Alliance"] = {
 		},
 	},
-	["profiles"] = {
-		["Tekkub of Icecrown"] = {
-		},
-		["Beardyhead of Icecrown"] = {
-		},
-		["Mishutka of Icecrown"] = {
+	["realm"] = {
+		["Icecrown"] = {
 		},
 	},
 	["class"] = {
@@ -35,8 +31,12 @@ SqueenixDB2 = {
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
 		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 	},
-	["realm"] = {
-		["Icecrown"] = {
+	["profiles"] = {
+		["Tekkub of Icecrown"] = {
+		},
+		["Beardyhead of Icecrown"] = {
+		},
+		["Mishutka of Icecrown"] = {
 		},
 	},
 }
