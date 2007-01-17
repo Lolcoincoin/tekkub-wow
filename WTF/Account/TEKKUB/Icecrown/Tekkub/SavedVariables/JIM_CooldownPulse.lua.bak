@@ -1,0 +1,8 @@
+
+Pulse_size = 128
+Pulse_minCooldown = 0
+Pulse_maxCooldown = 3600
+Pulse_includes = {
+}
+Pulse_excludes = {
+}

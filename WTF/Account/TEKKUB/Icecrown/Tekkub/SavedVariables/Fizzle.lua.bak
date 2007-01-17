@@ -1,0 +1,8 @@
+
+FizzleDB = {
+	["profiles"] = {
+		["default"] = {
+			["Border"] = 1,
+		},
+	},
+}

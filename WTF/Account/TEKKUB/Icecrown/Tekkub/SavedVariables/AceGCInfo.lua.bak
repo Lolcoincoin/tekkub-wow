@@ -1,0 +1,8 @@
+
+AceGCInfoDB = {
+	["profiles"] = {
+		["default"] = {
+			["Locked"] = 1,
+		},
+	},
+}

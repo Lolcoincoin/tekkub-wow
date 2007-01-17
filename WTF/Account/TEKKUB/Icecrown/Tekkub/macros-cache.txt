@@ -1,0 +1,9 @@
+MACRO 16777357 "Follow" Ability_Tracking
+/t Rohona !follow
+END
+MACRO 16777361 "Pet" Ability_Hunter_BeastCall
+/click FuzzyLogicFrame
+END
+MACRO 16777362 "Pet Att" Spell_Frost_IceClaw
+/petattack
+END

@@ -1,0 +1,2 @@
+
+ClosetGnomeSwitcherDBPC = nil

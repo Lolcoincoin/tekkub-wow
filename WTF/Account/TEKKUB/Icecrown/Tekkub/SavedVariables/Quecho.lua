@@ -1,0 +1,2 @@
+
+QuechoDBPerChar = nil
