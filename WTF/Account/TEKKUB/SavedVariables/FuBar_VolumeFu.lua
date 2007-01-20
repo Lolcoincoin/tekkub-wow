@@ -1,15 +1,11 @@
 
 VolumeFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
 		["Default"] = {
-			["master"] = 0.5000000029802301,
 			["detachedTooltip"] = {
 			},
 			["quickfix"] = true,
@@ -19,5 +15,8 @@ VolumeFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

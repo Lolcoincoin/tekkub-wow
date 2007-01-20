@@ -8,7 +8,7 @@ Blizzard_RaidUI: enabled
 Blizzard_TalentUI: enabled
 Blizzard_TradeSkillUI: enabled
 Blizzard_TrainerUI: enabled
-!!Warmup: enabled
+!!Warmup: disabled
 Ace: enabled
 AceDebug: enabled
 AceGUI: enabled
@@ -45,7 +45,7 @@ EquipCompare: enabled
 ErrorRedirect: enabled
 FeralFighter: enabled
 FireShow: enabled
-FuzzyLogic: enabled
+FuzzyLogic: disabled
 GFW_AutoCraft: enabled
 GFW_FeedOMatic: enabled
 GFW_Guildentipper: enabled
@@ -112,3 +112,4 @@ UberActions: disabled
 Visor: enabled
 WatchDog: enabled
 ZooKeeper: enabled
+FuBar-compat-1.2: disabled

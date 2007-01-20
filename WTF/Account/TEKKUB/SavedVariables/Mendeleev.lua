@@ -13,9 +13,9 @@ MendeleevDB = {
 		},
 		["Druid"] = {
 		},
-		["Priest"] = {
-		},
 		["Beardyhead of Draka"] = {
+		},
+		["Priest"] = {
 		},
 		["Hunter"] = {
 		},

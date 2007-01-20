@@ -1,8 +1,5 @@
 
 FuBar_FriendsFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -18,12 +15,15 @@ FuBar_FriendsFuDB = {
 		["Default"] = {
 			["detachedTooltip"] = {
 			},
-			["tooltip"] = {
-				["sort"] = "NAME",
-			},
 			["text"] = {
 				["show_displayed"] = false,
 			},
+			["tooltip"] = {
+				["sort"] = "NAME",
+			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

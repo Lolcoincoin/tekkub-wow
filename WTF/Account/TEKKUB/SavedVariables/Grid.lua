@@ -42,6 +42,17 @@ GridDB = {
 				},
 			},
 		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_aggro"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
 		["GridStatus"] = {
 			["profiles"] = {
 				["class/Priest"] = {
@@ -51,36 +62,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAuras"] = {
+		["GridStatusMana"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["debuff_curse"] = {
-						["range"] = true,
-					},
-					["debuff_poison"] = {
-						["range"] = true,
-					},
-					["debuff_MortalStrike"] = {
-						["range"] = true,
-					},
-					["buff_Rejuvenation"] = {
-						["range"] = true,
-					},
-					["buff_PowerWordShield"] = {
-						["range"] = true,
-					},
-					["buff_Renew"] = {
-						["range"] = true,
-					},
-					["debuff_disease"] = {
-						["range"] = true,
-					},
-					["debuff_WeakenedSoul"] = {
-						["range"] = true,
-					},
-					["debuff_magic"] = {
+					["alert_lowMana"] = {
 						["range"] = true,
 					},
 				},
@@ -95,50 +82,6 @@ GridDB = {
 						["range"] = true,
 						["text"] = "incoming heals",
 					},
-				},
-			},
-		},
-		["GridStatusName"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
-					},
-				},
-			},
-		},
-		["GridStatusAggro"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_aggro"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridStatusTarget"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridLayout"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-					["anchorRel"] = "TOPLEFT",
-					["PosY"] = -492.3734026419318,
-					["PosX"] = 220.1066717933606,
-				},
-				["Default"] = {
-					["anchorRel"] = "TOPLEFT",
-					["showParty"] = true,
-					["FrameDisplay"] = "always",
-					["PosY"] = 0,
-					["PosX"] = 222.6666499529367,
 				},
 			},
 		},
@@ -172,20 +115,74 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusMana"] = {
+		["GridLayout"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["anchorRel"] = "TOPLEFT",
+					["PosY"] = -492.3734026419318,
+					["PosX"] = 220.1066717933606,
+				},
+				["Default"] = {
+					["anchorRel"] = "TOPLEFT",
+					["showParty"] = true,
+					["FrameDisplay"] = "always",
+					["PosY"] = 0,
+					["PosX"] = 222.6666499529367,
+				},
+			},
+		},
+		["GridStatusTarget"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusAuras"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_lowMana"] = {
+					["debuff_curse"] = {
+						["range"] = true,
+					},
+					["debuff_poison"] = {
+						["range"] = true,
+					},
+					["debuff_MortalStrike"] = {
+						["range"] = true,
+					},
+					["buff_Rejuvenation"] = {
+						["range"] = true,
+					},
+					["buff_PowerWordShield"] = {
+						["range"] = true,
+					},
+					["buff_Renew"] = {
+						["range"] = true,
+					},
+					["debuff_WeakenedSoul"] = {
+						["range"] = true,
+					},
+					["debuff_disease"] = {
+						["range"] = true,
+					},
+					["debuff_magic"] = {
 						["range"] = true,
 					},
 				},
 			},
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "class",
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
+				},
+			},
+		},
 	},
 	["profiles"] = {
 		["class/Priest"] = {
@@ -197,5 +194,8 @@ GridDB = {
 			},
 			["showText"] = false,
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "class",
 	},
 }

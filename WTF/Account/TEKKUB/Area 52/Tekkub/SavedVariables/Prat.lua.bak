@@ -1,0 +1,2 @@
+
+PratPerCharDB = nil

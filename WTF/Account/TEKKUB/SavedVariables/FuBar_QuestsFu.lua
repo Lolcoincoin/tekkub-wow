@@ -46,11 +46,11 @@ QuestsFuDB = {
 			},
 		},
 		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
 			["showTextOps"] = {
 				["lastmessage"] = false,
 				["complete"] = true,
+			},
+			["detachedTooltip"] = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
@@ -76,11 +76,6 @@ QuestsFuDB = {
 			},
 			["version"] = 102.3772,
 		},
-		["Tekkub of Icecrown"] = {
-			["hidden"] = {
-				["Blackrock Depths"] = false,
-			},
-		},
 		["Beardyhead of Icecrown"] = {
 			["watchedQuests"] = {
 				["War Banners"] = true,
@@ -88,6 +83,11 @@ QuestsFuDB = {
 			["hidden"] = {
 				["Westfall"] = false,
 				["Seasonal"] = false,
+			},
+		},
+		["Tekkub of Icecrown"] = {
+			["hidden"] = {
+				["Blackrock Depths"] = false,
 			},
 		},
 	},

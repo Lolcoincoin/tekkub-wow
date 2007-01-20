@@ -1,2 +1,0 @@
-
-MSBTCooldownsDB = nil

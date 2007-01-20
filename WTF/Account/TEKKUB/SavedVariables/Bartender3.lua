@@ -13,43 +13,70 @@ BT3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["SelfCastRightClick"] = true,
 			["SpecialBars"] = {
 				["BAGS"] = {
 					["Hide"] = true,
+				},
+				["PET"] = {
+					["PosY"] = 130.8729541965889,
+					["Rows"] = 10,
+					["Style"] = "Default",
+					["PosX"] = -2.479769072691482,
+				},
+				["STANCE"] = {
+					["PosY"] = 132.8867161238524,
+					["PosX"] = 30.79999381402704,
 				},
 				["MICROMENU"] = {
 					["Hide"] = true,
 				},
 			},
+			["SelfCastRightClick"] = true,
 			["Bars"] = {
 				{
 					["Stances"] = {
-						["battle"] = 7,
-						["shadowform"] = 0,
+						["prowl"] = 8,
 						["def"] = 8,
 						["berserker"] = 9,
+						["battle"] = 7,
+						["shadowform"] = 0,
+						["stealth"] = 7,
+						["bear"] = 9,
+						["cat"] = 7,
 					},
 					["Rows"] = 3,
-					["PosX"] = 4.886668963109246,
-					["PosY"] = 178.1133586202218,
+					["PosY"] = 169.5799901249606,
+					["PosX"] = 33.9000079794111,
+					["StatesEnabled"] = false,
+					["HideHotkey"] = true,
+					["Style"] = "Default",
 					["States"] = {
-						["alt"] = 2,
+						["alt"] = 0,
 						["ctrl"] = 0,
 						["shift"] = 0,
 					},
 				}, -- [1]
-				[5] = {
+				nil, -- [2]
+				{
+					["PosX"] = 1191.046871309349,
+					["PosY"] = 128.3999890917356,
+				}, -- [3]
+				{
+					["PosX"] = 1158.646727176263,
+					["PosY"] = 128.3999890917356,
+				}, -- [4]
+				{
 					["PosX"] = 515.1800214559401,
 					["Enabled"] = false,
 					["PosY"] = 319.7132993691978,
-				},
-				[6] = {
+				}, -- [5]
+				{
 					["PosX"] = 501.5267614195314,
 					["Enabled"] = false,
 					["PosY"] = 283.0467139059983,
-				},
+				}, -- [6]
 			},
+			["ButtonLock"] = true,
 		},
 	},
 }

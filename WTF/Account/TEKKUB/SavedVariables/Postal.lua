@@ -1,0 +1,2 @@
+
+Postal_BlackBookDB = nil

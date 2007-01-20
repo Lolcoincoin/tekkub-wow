@@ -1,7 +1,7 @@
 
 SupplyAndDemandDB = {
 	["namespaces"] = {
-		["PvP Flagged"] = {
+		["Misc"] = {
 			["profiles"] = {
 				["char/Beardyhead of Icecrown"] = {
 				},
@@ -17,8 +17,8 @@ SupplyAndDemandDB = {
 				["char/Tekkub of Icecrown"] = {
 				},
 				["Default"] = {
-					["WatchDogOptions"] = false,
 					["Kyubi"] = false,
+					["WatchDogOptions"] = false,
 				},
 			},
 		},
@@ -30,11 +30,17 @@ SupplyAndDemandDB = {
 				},
 			},
 		},
-		["At Mailbox"] = {
+		["In Raid"] = {
 			["profiles"] = {
 				["char/Beardyhead of Icecrown"] = {
+					["oRA2"] = true,
 				},
 				["char/Tekkub of Icecrown"] = {
+					["oRA2"] = true,
+				},
+				["Default"] = {
+					["oRA2"] = true,
+					["Kyubi"] = false,
 				},
 			},
 		},
@@ -61,9 +67,9 @@ SupplyAndDemandDB = {
 		},
 		["At Merchant"] = {
 			["profiles"] = {
-				["char/Beardyhead of Icecrown"] = {
-				},
 				["char/Tekkub of Icecrown"] = {
+				},
+				["char/Beardyhead of Icecrown"] = {
 				},
 			},
 		},
@@ -79,32 +85,22 @@ SupplyAndDemandDB = {
 				},
 			},
 		},
-		["Misc"] = {
+		["PvP Flagged"] = {
 			["profiles"] = {
-				["char/Beardyhead of Icecrown"] = {
-				},
 				["char/Tekkub of Icecrown"] = {
+				},
+				["char/Beardyhead of Icecrown"] = {
 				},
 			},
 		},
-		["In Raid"] = {
+		["At Mailbox"] = {
 			["profiles"] = {
-				["char/Beardyhead of Icecrown"] = {
-					["oRA2"] = true,
-				},
 				["char/Tekkub of Icecrown"] = {
-					["oRA2"] = true,
 				},
-				["Default"] = {
-					["oRA2"] = true,
-					["Kyubi"] = false,
+				["char/Beardyhead of Icecrown"] = {
 				},
 			},
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-		["Tekkub of Icecrown"] = "char",
 	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
@@ -119,5 +115,9 @@ SupplyAndDemandDB = {
 			["detachedTooltip"] = {
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Tekkub of Icecrown"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

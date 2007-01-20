@@ -1,0 +1,2 @@
+
+ImprovedRWFDBPerChar = nil

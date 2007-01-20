@@ -2,14 +2,14 @@
 Denial2DB = {
 	["profiles"] = {
 		["Default"] = {
-			["gos"] = {
-				["bank"] = true,
-			},
-			["count"] = 1,
+			["count"] = 3,
 			["block"] = {
-				["ginv"] = true,
+				["ginv"] = false,
 				["pet"] = true,
 				["duel"] = true,
+			},
+			["gos"] = {
+				["bank"] = true,
 			},
 		},
 	},
