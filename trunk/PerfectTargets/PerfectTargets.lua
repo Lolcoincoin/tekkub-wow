@@ -5,7 +5,8 @@
 
 local compost = AceLibrary("Compost-2.0")
 local metro = AceLibrary("Metrognome-2.0")
-local L = AceLibrary("AceLocale-2.0"):new("PerfectTargets")
+local L = PerfectTargets_Locale
+PerfectTargets_Locale = nil
 
 local maxbuffs, maxdebuffs = 32, 40
 local delaycount, numtargets, framecount, ptframe = 0, 0, 0, PerfectRaidTargetFrame
