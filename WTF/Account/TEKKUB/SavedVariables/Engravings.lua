@@ -14,8 +14,8 @@ EngravingsDB = {
 		[13704] = "Scholomance",
 		[12382] = "Strat",
 		[15778] = "***RAWR!***",
-		[18249] = "Dire Maul",
 		[8489] = false,
+		[18249] = "Dire Maul",
 	},
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
@@ -27,7 +27,11 @@ EngravingsDB = {
 		["Alliance"] = {
 		},
 	},
-	["factionrealm"] = {
+	["class"] = {
+		["Shaman"] = {
+		},
+		["Hunter"] = {
+		},
 	},
 	["char"] = {
 		["Tekkub of Area 52"] = {
@@ -35,11 +39,7 @@ EngravingsDB = {
 		["Mishutka of Area 52"] = {
 		},
 	},
-	["class"] = {
-		["Shaman"] = {
-		},
-		["Hunter"] = {
-		},
+	["factionrealm"] = {
 	},
 	["realm"] = {
 		["Area 52"] = {

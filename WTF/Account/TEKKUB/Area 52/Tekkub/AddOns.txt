@@ -113,3 +113,4 @@ Visor: enabled
 WatchDog: enabled
 ZooKeeper: enabled
 FuBar-compat-1.2: disabled
+ag_UnitFrames: enabled

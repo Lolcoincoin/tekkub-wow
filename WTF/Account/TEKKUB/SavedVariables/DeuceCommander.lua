@@ -1,8 +1,5 @@
 
 DeuceCommanderDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -18,5 +15,8 @@ DeuceCommanderDB = {
 			["detachedTooltip"] = {
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

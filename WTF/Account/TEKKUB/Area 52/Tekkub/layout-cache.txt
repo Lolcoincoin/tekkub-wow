@@ -76,7 +76,7 @@ X: 187
 Y: -833
 Frame: FuBarPluginGuildFuFrame
 FrameLevel: 7
-X: 229
+X: 119
 Y: 4
 Frame: LudwigUIParent
 FrameLevel: 1

@@ -112,3 +112,4 @@ UberActions: disabled
 Visor: enabled
 WatchDog: enabled
 ZooKeeper: enabled
+ag_UnitFrames: enabled

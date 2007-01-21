@@ -8,8 +8,8 @@ devnullDB = {
 				["tsu"] = false,
 				["hoamc"] = false,
 			},
-			["CHAT_MSG_MONSTER_SAY"] = false,
 			["noDrunk"] = false,
+			["CHAT_MSG_MONSTER_SAY"] = false,
 		},
 	},
 }
