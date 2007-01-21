@@ -5,11 +5,6 @@ ModMenuTuFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["showText"] = 0,
-		},
 		["Default"] = {
 			["minimapPositionWild"] = true,
 			["showText"] = 0,
@@ -17,6 +12,11 @@ ModMenuTuFuDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionY"] = 738.9999318225091,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["showText"] = 0,
 		},
 	},
 	["currentProfile"] = {

@@ -4,9 +4,9 @@ OneBagDB = {
 		["default"] = {
 			["colorCoding"] = 1,
 			["point"] = {
-				["parent"] = "UIParent",
-				["left"] = 652.4814352601956,
 				["top"] = 415.1405420561155,
+				["left"] = 652.4814352601956,
+				["parent"] = "UIParent",
 			},
 			["cols"] = 16,
 			["openAtMcht"] = 1,
@@ -15,6 +15,11 @@ OneBagDB = {
 			["columns"] = 7,
 			["openAtMail"] = 1,
 			["noreplace"] = 1,
+			["colors"] = {
+				["bground"] = {
+					["a"] = 0.8299999982118607,
+				},
+			},
 			["disabled"] = 1,
 		},
 	},

@@ -8,50 +8,7 @@ BagnonSets = {
 	["version"] = "6.11.27",
 	["showBagsAtBank"] = 1,
 	["inventory"] = {
-		["y"] = 458.5222289566545,
-		["x"] = 647.6371200187587,
 		["parentScale"] = 0.8999999761581421,
-		["cats"] = {
-			{
-				["name"] = "All",
-				["rule"] = "All",
-			}, -- [1]
-			{
-				["rule"] = "Weapons",
-				["name"] = "Weapons",
-				["hide"] = 1,
-			}, -- [2]
-			{
-				["rule"] = "Armor",
-				["name"] = "Armor",
-				["hide"] = 1,
-			}, -- [3]
-			{
-				["rule"] = "Trinkets",
-				["name"] = "Trinkets",
-				["hide"] = 1,
-			}, -- [4]
-			{
-				["rule"] = "Quest",
-				["name"] = "Quest Items",
-				["hide"] = 1,
-			}, -- [5]
-			{
-				["rule"] = "Trade",
-				["name"] = "Trade Goods",
-				["hide"] = 1,
-			}, -- [6]
-			{
-				["rule"] = "Miscellaneous",
-				["name"] = "Other",
-				["hide"] = 1,
-			}, -- [7]
-			{
-				["rule"] = "Trash",
-				["name"] = "Trash",
-				["hide"] = 1,
-			}, -- [8]
-		},
 		["scale"] = 1,
 		["bags"] = {
 			0, -- [1]
@@ -60,16 +17,67 @@ BagnonSets = {
 			3, -- [4]
 			4, -- [5]
 		},
+		["cols"] = 16,
+		["y"] = 458.5222289566545,
+		["x"] = 647.6371200187587,
+		["cats"] = {
+			{
+				["name"] = "All",
+				["rule"] = "All",
+			}, -- [1]
+			{
+				["name"] = "Weapons",
+				["rule"] = "Weapons",
+				["hide"] = 1,
+			}, -- [2]
+			{
+				["name"] = "Armor",
+				["rule"] = "Armor",
+				["hide"] = 1,
+			}, -- [3]
+			{
+				["name"] = "Trinkets",
+				["rule"] = "Trinkets",
+				["hide"] = 1,
+			}, -- [4]
+			{
+				["name"] = "Quest Items",
+				["rule"] = "Quest",
+				["hide"] = 1,
+			}, -- [5]
+			{
+				["name"] = "Trade Goods",
+				["rule"] = "Trade",
+				["hide"] = 1,
+			}, -- [6]
+			{
+				["name"] = "Other",
+				["rule"] = "Miscellaneous",
+				["hide"] = 1,
+			}, -- [7]
+			{
+				["name"] = "Trash",
+				["rule"] = "Trash",
+				["hide"] = 1,
+			}, -- [8]
+		},
 		["bg"] = {
 			["a"] = 0.5,
-			["b"] = 0,
-			["g"] = 0.2,
 			["r"] = 0,
+			["g"] = 0.2,
+			["b"] = 0,
 		},
-		["cols"] = 16,
 	},
 	["bank"] = {
+		["y"] = 784.3074132509963,
+		["x"] = 562.5484016329175,
 		["parentScale"] = 0.8999999761581421,
+		["bg"] = {
+			["a"] = 0.5,
+			["r"] = 0,
+			["g"] = 0,
+			["b"] = 0.2,
+		},
 		["scale"] = 1,
 		["bags"] = {
 			-1, -- [1]
@@ -81,50 +89,42 @@ BagnonSets = {
 			10, -- [7]
 			11, -- [8]
 		},
-		["cols"] = 16,
-		["y"] = 784.3074132509963,
-		["x"] = 562.5484016329175,
 		["cats"] = {
 			{
 				["name"] = "All",
 				["rule"] = "All",
 			}, -- [1]
 			{
-				["rule"] = "Weapons",
 				["name"] = "Weapons",
+				["rule"] = "Weapons",
 				["hide"] = 1,
 			}, -- [2]
 			{
-				["rule"] = "Armor",
 				["name"] = "Armor",
+				["rule"] = "Armor",
 				["hide"] = 1,
 			}, -- [3]
 			{
-				["rule"] = "Trinkets",
 				["name"] = "Trinkets",
+				["rule"] = "Trinkets",
 				["hide"] = 1,
 			}, -- [4]
 			{
-				["rule"] = "Quest",
 				["name"] = "Quest Items",
+				["rule"] = "Quest",
 				["hide"] = 1,
 			}, -- [5]
 			{
-				["rule"] = "Trade",
 				["name"] = "Trade Goods",
+				["rule"] = "Trade",
 				["hide"] = 1,
 			}, -- [6]
 			{
-				["rule"] = "Miscellaneous",
 				["name"] = "Other",
+				["rule"] = "Miscellaneous",
 				["hide"] = 1,
 			}, -- [7]
 		},
-		["bg"] = {
-			["a"] = 0.5,
-			["b"] = 0.2,
-			["g"] = 0,
-			["r"] = 0,
-		},
+		["cols"] = 16,
 	},
 }

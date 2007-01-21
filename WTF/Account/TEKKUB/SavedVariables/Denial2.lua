@@ -1,16 +1,19 @@
 
 Denial2DB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
 	["profiles"] = {
 		["Default"] = {
-			["count"] = 3,
+			["gos"] = {
+				["bank"] = true,
+			},
 			["block"] = {
 				["ginv"] = false,
 				["pet"] = true,
 				["duel"] = true,
 			},
-			["gos"] = {
-				["bank"] = true,
-			},
+			["count"] = 5,
 		},
 	},
 }

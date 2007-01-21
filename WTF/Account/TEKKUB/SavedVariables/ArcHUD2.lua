@@ -2,12 +2,12 @@
 ArcHUDDB = {
 	["profiles"] = {
 		["Default"] = {
+			["TargetTarget"] = false,
 			["RingVisibility"] = 1,
 			["TargetFrame"] = false,
-			["FadeIC"] = 1,
+			["NamePlates"] = false,
 			["minimapPosition"] = 159.3052276268513,
 			["YLoc"] = 65,
-			["NamePlates"] = false,
 			["HoverMsg"] = false,
 			["TargetTargetTarget"] = false,
 			["FadeFull"] = 0,
@@ -16,7 +16,7 @@ ArcHUDDB = {
 			},
 			["hidden"] = true,
 			["PlayerModel"] = false,
-			["TargetTarget"] = false,
+			["FadeIC"] = 1,
 		},
 	},
 	["disabledModules"] = {

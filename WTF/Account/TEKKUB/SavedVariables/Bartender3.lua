@@ -13,6 +13,7 @@ BT3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["SelfCastRightClick"] = true,
 			["SpecialBars"] = {
 				["BAGS"] = {
 					["Hide"] = true,
@@ -31,29 +32,28 @@ BT3DB = {
 					["Hide"] = true,
 				},
 			},
-			["SelfCastRightClick"] = true,
 			["Bars"] = {
 				{
 					["Stances"] = {
 						["prowl"] = 8,
-						["def"] = 8,
+						["bear"] = 9,
 						["berserker"] = 9,
 						["battle"] = 7,
 						["shadowform"] = 0,
 						["stealth"] = 7,
-						["bear"] = 9,
+						["def"] = 8,
 						["cat"] = 7,
 					},
 					["Rows"] = 3,
-					["PosY"] = 169.5799901249606,
 					["PosX"] = 33.9000079794111,
 					["StatesEnabled"] = false,
-					["HideHotkey"] = true,
 					["Style"] = "Default",
+					["PosY"] = 169.5799901249606,
+					["HideHotkey"] = true,
 					["States"] = {
-						["alt"] = 0,
-						["ctrl"] = 0,
 						["shift"] = 0,
+						["ctrl"] = 0,
+						["alt"] = 0,
 					},
 				}, -- [1]
 				nil, -- [2]

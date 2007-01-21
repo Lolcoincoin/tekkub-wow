@@ -1,11 +1,46 @@
 
 oRADB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
+	["disabledModules"] = {
+		["Default"] = {
+			["Participant/CoolDown"] = true,
+			["Participant/Resist"] = true,
+			["Optional/MainTank"] = true,
+			["Participant/Item"] = true,
+			["Optional/CoolDown"] = true,
+			["Participant/Assist"] = true,
+			["Participant/Durability"] = true,
+			["Leader/Item"] = true,
+			["Leader/MainTank"] = true,
+			["Participant/RaidWarn"] = true,
+			["Options Menu"] = true,
+			["Leader/Assist"] = true,
+			["Participant/Ready"] = true,
+			["Optional/Resurrection"] = true,
+			["Participant/AggroAlert"] = true,
+			["Optional/Zone"] = true,
+			["Participant/Buff"] = true,
+			["Participant/Resurrection"] = true,
+			["Leader/RaidWarn"] = true,
+			["Leader/Ready"] = true,
+			["Participant/MainTank"] = true,
+			["Optional/Version"] = true,
+			["Leader/Resist"] = true,
+			["Optional/PlayerTarget"] = true,
+			["Leader/Invite"] = true,
+			["Leader/Durability"] = true,
+		},
+	},
 	["namespaces"] = {
-		["Leader/Invite"] = {
+		["maintankoptional"] = {
 			["profiles"] = {
 				["Default"] = {
-					["promotes"] = {
-					},
+					["posx"] = 973.9999914698565,
+					["nrmts"] = 0,
+					["targettarget"] = false,
+					["posy"] = 433.9999514927656,
 				},
 			},
 		},
@@ -33,13 +68,11 @@ oRADB = {
 				},
 			},
 		},
-		["maintankoptional"] = {
+		["Leader/Invite"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = 973.9999914698565,
-					["posy"] = 433.9999514927656,
-					["targettarget"] = false,
-					["nrmts"] = 0,
+					["promotes"] = {
+					},
 				},
 			},
 		},
@@ -50,62 +83,29 @@ oRADB = {
 			["bartexture"] = "bantobar",
 		},
 	},
-	["disabled"] = {
-		["Default"] = true,
-	},
-	["disabledModules"] = {
-		["Default"] = {
-			["Participant/CoolDown"] = true,
-			["Participant/Resist"] = true,
-			["Optional/MainTank"] = true,
-			["Participant/Item"] = true,
-			["Optional/CoolDown"] = true,
-			["Participant/Assist"] = true,
-			["Participant/Durability"] = true,
-			["Leader/Item"] = true,
-			["Leader/MainTank"] = true,
-			["Options Menu"] = true,
-			["Leader/Assist"] = true,
-			["Participant/Ready"] = true,
-			["Optional/Resurrection"] = true,
-			["Participant/AggroAlert"] = true,
-			["Participant/RaidWarn"] = true,
-			["Optional/Zone"] = true,
-			["Leader/RaidWarn"] = true,
-			["Leader/Invite"] = true,
-			["Leader/Ready"] = true,
-			["Participant/MainTank"] = true,
-			["Optional/Version"] = true,
-			["Optional/PlayerTarget"] = true,
-			["Leader/Resist"] = true,
-			["Participant/Buff"] = true,
-			["Participant/Resurrection"] = true,
-			["Leader/Durability"] = true,
-		},
-	},
 }
 oRAFubarDB = {
-	["profiles"] = {
-		["char/Beardyhead of Icecrown"] = {
-			["hidden"] = true,
-			["detachedTooltip"] = {
-			},
-		},
-		["Default"] = {
-			["showText"] = false,
-			["detachedTooltip"] = {
-			},
-		},
-		["char/Tekkub of Icecrown"] = {
-			["hidden"] = true,
-			["detachedTooltip"] = {
-			},
-		},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 	["disabled"] = {
 		["Default"] = true,
 	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
+	["profiles"] = {
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["hidden"] = true,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["hidden"] = true,
+		},
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+			["showText"] = false,
+		},
 	},
 }

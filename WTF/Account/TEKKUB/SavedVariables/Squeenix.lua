@@ -11,6 +11,8 @@ SqueenixDB2 = {
 		},
 		["Tekkub of Area 52"] = {
 		},
+		["Mishutka of Area 52"] = {
+		},
 		["Alizarian of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
@@ -33,6 +35,8 @@ SqueenixDB2 = {
 		},
 		["Tekkub of Area 52"] = {
 		},
+		["Mishutka of Area 52"] = {
+		},
 		["Alizarian of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
@@ -54,6 +58,7 @@ SqueenixDB2 = {
 		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
 		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 		["Tekkub of Area 52"] = "Tekkub of Area 52",
+		["Mishutka of Area 52"] = "Mishutka of Area 52",
 		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
 		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
