@@ -1,12 +1,5 @@
 
 GarbageFuDB = {
-	["account"] = {
-		["overrideprices"] = {
-			[8932] = 800,
-			[8952] = 800,
-			[20744] = 2000,
-		},
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -35,19 +28,12 @@ GarbageFuDB = {
 				["gatherskillmining"] = true,
 				["recipe"] = true,
 				["gatherskillherbalism"] = true,
-				["gatherskilldisenchant"] = true,
+				["potionall"] = true,
 				["minipetall"] = true,
 				["scrolls"] = true,
-				["potionall"] = true,
+				["gatherskilldisenchant"] = true,
 				["faire"] = true,
 			},
-			["pricetype"] = true,
-			["dropsets"] = {
-				["foodraw"] = true,
-			},
-			["itemicon"] = true,
-			["sellonlygrey"] = false,
-			["showText"] = true,
 			["keepitem"] = {
 				[18594] = true,
 				[2901] = true,
@@ -58,22 +44,28 @@ GarbageFuDB = {
 				[14530] = true,
 				[11965] = true,
 				[20645] = true,
-				[13209] = true,
-				[22660] = true,
-				[7005] = true,
+				[18986] = true,
+				[16675] = true,
 				[11122] = true,
 				[11285] = true,
 				[11812] = true,
 				[15052] = true,
-				[23082] = true,
+				[18684] = true,
+				[23092] = true,
 				[18047] = true,
 				[9452] = true,
-				[23092] = true,
-				[18684] = true,
+				[23082] = true,
+				[13209] = true,
 				[18638] = true,
-				[16675] = true,
-				[18986] = true,
+				[7005] = true,
+				[22660] = true,
 			},
+			["pricetype"] = true,
+			["dropsets"] = {
+				["foodraw"] = true,
+			},
+			["itemicon"] = true,
+			["sellonlygrey"] = false,
 			["sellallbutton"] = false,
 			["vendoraddonsorder"] = {
 				"ludwig_sellvalue", -- [1]
@@ -89,23 +81,25 @@ GarbageFuDB = {
 				[6377] = true,
 				[18335] = true,
 				[7416] = true,
-				[19816] = true,
 				[7362] = true,
 				[4576] = true,
 				[7091] = true,
-				[6052] = true,
+				[6601] = true,
 				[15276] = true,
 				[15284] = true,
 				[4051] = true,
 				[6394] = true,
+				[12008] = true,
 				[15223] = true,
 				[4705] = true,
-				[6575] = true,
-				[9829] = true,
 				[20744] = true,
-				[12008] = true,
+				[9829] = true,
+				[6575] = true,
+				[19816] = true,
 				[6585] = true,
-				[6601] = true,
+				[6052] = true,
+			},
+			["detachedTooltip"] = {
 			},
 			["threshold"] = 4,
 			["auctionaddonsorder"] = {
@@ -113,15 +107,21 @@ GarbageFuDB = {
 				"-DNU-", -- [2]
 				"-CA-", -- [3]
 			},
-			["version"] = "2.0.20634",
-			["detachedTooltip"] = {
-			},
+			["showText"] = true,
 			["keepsets"] = {
-				["mounts"] = true,
+				["waterall"] = true,
 				["reagentpriest"] = true,
 				["minipetall"] = true,
-				["waterall"] = true,
+				["mounts"] = true,
 			},
+			["version"] = "2.0.20634",
+		},
+	},
+	["account"] = {
+		["overrideprices"] = {
+			[8932] = 800,
+			[8952] = 800,
+			[20744] = 2000,
 		},
 	},
 }

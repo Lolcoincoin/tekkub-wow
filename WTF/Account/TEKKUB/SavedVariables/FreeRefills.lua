@@ -9,6 +9,9 @@ FreeRefillsDB = {
 	["Vek'nilash:Girth"] = {
 		["mood"] = "Optimist",
 	},
+	["Feathermoon:Kub"] = {
+		["mood"] = "Optimist",
+	},
 	["profiles"] = {
 		["char/Wuffi of Icecrown"] = {
 		},
@@ -17,8 +20,6 @@ FreeRefillsDB = {
 		["char/Beardyhead of Icecrown"] = {
 		},
 		["char/Mishutka of Icecrown"] = {
-		},
-		["char/Bear of Uldaman"] = {
 		},
 		["char/Huslu of Icecrown"] = {
 		},
@@ -35,29 +36,22 @@ FreeRefillsDB = {
 		},
 		["char/Tekkub of Uldaman"] = {
 		},
-		["char/Kumanoinkei of Illidan"] = {
-		},
-		["char/Girth of Icecrown"] = {
-		},
-		["char/Quinacridone of Illidan"] = {
-		},
-		["char/Microfiche of Icecrown"] = {
-		},
 		["char/Cubbyhole of Icecrown"] = {
 		},
-		["char/Ailurus of Icecrown"] = {
+		["char/Kumanoinkei of Illidan"] = {
 		},
 		["char/Tekkub - Area 52"] = {
 		},
-	},
-	["Draka:Tekkub"] = {
-		["mood"] = "Optimist",
-	},
-	["Suramar:Huslu"] = {
-		["mood"] = "optimist",
-	},
-	["Feathermoon:Kub"] = {
-		["mood"] = "Optimist",
+		["char/Quinacridone of Illidan"] = {
+		},
+		["char/Ailurus of Icecrown"] = {
+		},
+		["char/Microfiche of Icecrown"] = {
+		},
+		["char/Bear of Uldaman"] = {
+		},
+		["char/Girth of Icecrown"] = {
+		},
 	},
 	["currentProfile"] = {
 		["Huslu of Icecrown"] = "char",
@@ -69,15 +63,24 @@ FreeRefillsDB = {
 		["Quinacridone of Illidan"] = "char",
 		["Kumanoinkei of Illidan"] = "char",
 		["Tekkub of Area 52"] = "char",
-		["Beardyhead of Icecrown"] = "char",
 		["Furry of Eonar"] = "char",
 		["Tekkub of Icecrown"] = "char",
+		["Tekkub - Area 52"] = "char",
 		["Mishutka of Icecrown"] = "char",
 		["Girth of Icecrown"] = "char",
-		["Wuffi of Icecrown"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 		["Microfiche of Icecrown"] = "char",
-		["Tekkub - Area 52"] = "char",
+		["Wuffi of Icecrown"] = "char",
 		["Cubbyhole of Icecrown"] = "char",
+	},
+	["Draka:Tekkub"] = {
+		["mood"] = "Optimist",
+	},
+	["Suramar:Huslu"] = {
+		["mood"] = "optimist",
+	},
+	["Stormscale:Nunuvit"] = {
+		["mood"] = "optimist",
 	},
 	["chars"] = {
 		["Huslu of Icecrown"] = {
@@ -98,26 +101,23 @@ FreeRefillsDB = {
 		},
 		["Tekkub of Area 52"] = {
 		},
-		["Beardyhead of Icecrown"] = {
-		},
 		["Furry of Eonar"] = {
 		},
 		["Tekkub of Icecrown"] = {
+		},
+		["Tekkub - Area 52"] = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
 		["Girth of Icecrown"] = {
 		},
-		["Wuffi of Icecrown"] = {
+		["Beardyhead of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
 		},
-		["Tekkub - Area 52"] = {
+		["Wuffi of Icecrown"] = {
 		},
 		["Cubbyhole of Icecrown"] = {
 		},
-	},
-	["Stormscale:Nunuvit"] = {
-		["mood"] = "optimist",
 	},
 }

@@ -1,47 +1,9 @@
 
 FuBar2DB = {
-	["pluginDB"] = {
-		["PetitionFu"] = {
-			["profiles"] = {
-				["default"] = {
-					["version"] = 102,
-					["disabled"] = true,
-				},
-			},
-		},
-		["CoinPurse"] = {
-			["profiles"] = {
-				["default"] = {
-					["version"] = 100,
-					["disabled"] = true,
-				},
-			},
-		},
-		["oRA Menu"] = {
-			["profiles"] = {
-				["default"] = {
-					["version"] = 2,
-					["disabled"] = true,
-				},
-			},
-		},
-		["KeyQ"] = {
-			["profiles"] = {
-				["default"] = {
-					["version"] = 0,
-					["disabled"] = true,
-				},
-			},
-		},
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["fontSize"] = 12,
 			["loadOnDemand"] = {
-				["FuBar_ReagentFu"] = {
-					["title"] = "ReagentFu",
-					["category"] = "inventory",
-				},
 				["FuBar_QuestsFu"] = {
 					["title"] = "QuestsFu",
 					["category"] = "Quest",
@@ -50,29 +12,33 @@ FuBar2DB = {
 					["title"] = "ToFu",
 					["category"] = "Interface Enhancements",
 				},
-				["FuBar_FuXPFu"] = {
-					["title"] = "FuXP",
-					["category"] = "bars",
-				},
-				["FuBar_GroupFu"] = {
-					["title"] = "GroupFu",
-					["category"] = "interface",
-				},
-				["FuBar_LocationFu"] = {
-					["title"] = "LocationFu",
-					["category"] = "Map",
+				["FuBar_ReagentFu"] = {
+					["title"] = "ReagentFu",
+					["category"] = "inventory",
 				},
 				["FuBar_AmmoFu"] = {
 					["title"] = "AmmoFu",
 					["category"] = "inventory",
 				},
+				["FuBar_ClockFu"] = {
+					["title"] = "ClockFu",
+					["category"] = "Interface Enhancements",
+				},
+				["FuBar_LocationFu"] = {
+					["title"] = "LocationFu",
+					["category"] = "Map",
+				},
+				["FuBar_FuXPFu"] = {
+					["title"] = "FuXP",
+					["category"] = "bars",
+				},
 				["FuBar_VolumeFu"] = {
 					["title"] = "VolumeFu",
 					["category"] = "Audio",
 				},
-				["FuBar_ClockFu"] = {
-					["title"] = "ClockFu",
-					["category"] = "Interface Enhancements",
+				["FuBar_GroupFu"] = {
+					["title"] = "GroupFu",
+					["category"] = "interface",
 				},
 				["FuBar_Transporter"] = {
 					["title"] = "Transporter",
@@ -190,7 +156,15 @@ FuBar2DB = {
 					["yPercent"] = 0.5,
 				}, -- [3]
 			},
-			["minimap"] = {
+			["detached"] = {
+				["PetitionFu"] = true,
+				["Experienced"] = true,
+				["Improved Raid Warning Frame"] = true,
+				["PaintBall"] = true,
+				["CoinPurse"] = true,
+				["FarmerFu"] = true,
+				["KeyQ"] = true,
+				["oRA Menu"] = true,
 			},
 			["thickness"] = 5,
 			["transparency"] = 0.8,
@@ -205,21 +179,13 @@ FuBar2DB = {
 					["PaintBall"] = true,
 					["Experienced"] = true,
 					["CoinPurse"] = true,
-					["FarmerFu"] = true,
-					["Improved Raid Warning Frame"] = true,
-					["KeyQ"] = true,
 					["oRA Menu"] = true,
+					["FarmerFu"] = true,
+					["KeyQ"] = true,
+					["Improved Raid Warning Frame"] = true,
 				},
 			},
-			["detached"] = {
-				["PetitionFu"] = true,
-				["Experienced"] = true,
-				["oRA Menu"] = true,
-				["PaintBall"] = true,
-				["CoinPurse"] = true,
-				["FarmerFu"] = true,
-				["KeyQ"] = true,
-				["Improved Raid Warning Frame"] = true,
+			["minimap"] = {
 			},
 		},
 		["Default"] = {
@@ -321,9 +287,9 @@ FuBar2DB = {
 			["centerSpacing"] = 10,
 			["skinR"] = 0,
 			["loadOnDemand"] = {
-				["FuBar_LockFu"] = {
-					["title"] = "LockFu",
-					["category"] = "others",
+				["FuBar_ReagentFu"] = {
+					["title"] = "ReagentFu",
+					["category"] = "Inventory",
 				},
 				["FuBar_iTemFu"] = {
 					["title"] = "iTemFu",
@@ -340,38 +306,40 @@ FuBar2DB = {
 				["tekSupport"] = {
 				},
 				["FuBar_FwgFu"] = {
-					["disabled"] = true,
 					["title"] = "FelwoodGather",
+					["disabled"] = true,
 					["category"] = "map",
 				},
 				["FuBar_VolumeFu"] = {
 					["title"] = "VolumeFu",
 					["category"] = "Audio",
 				},
-				["FuBar_ClockFu"] = {
-					["title"] = "ClockFu",
-					["disabled"] = true,
-					["category"] = "Interface Enhancements",
+				["FuBar_RefreshmentsFu"] = {
+				},
+				["FuBar_AmmoFu"] = {
+					["title"] = "AmmoFu",
+					["category"] = "Inventory",
 				},
 				["FuBar_PerformanceFu"] = {
 					["title"] = "PerformanceFu",
 					["category"] = "Interface Enhancements",
 				},
-				["FuBar_RefreshmentsFu"] = {
+				["FuBar_QuestsFu"] = {
+					["title"] = "QuestsFu",
+					["category"] = "Quest",
 				},
-				["Watersports"] = {
+				["FuBar_LockFu"] = {
+					["title"] = "LockFu",
+					["category"] = "others",
+				},
+				["FuBar_ClockFu"] = {
+					["disabled"] = true,
+					["title"] = "ClockFu",
+					["category"] = "Interface Enhancements",
 				},
 				["FuBar_GroupFu"] = {
 					["title"] = "GroupFu",
 					["category"] = "Miscellaneous",
-				},
-				["FuBar_LocationFu"] = {
-					["title"] = "LocationFu",
-					["category"] = "Map",
-				},
-				["FuBar_ReagentFu"] = {
-					["title"] = "ReagentFu",
-					["category"] = "Inventory",
 				},
 				["FuBar_FuXPFu"] = {
 					["title"] = "FuXP",
@@ -385,17 +353,15 @@ FuBar2DB = {
 				},
 				["tekProber"] = {
 				},
-				["FuBar_QuestsFu"] = {
-					["title"] = "QuestsFu",
-					["category"] = "Quest",
+				["Watersports"] = {
 				},
 				["FuBar_Transporter"] = {
 					["title"] = "Transporter",
 					["category"] = "others",
 				},
-				["FuBar_AmmoFu"] = {
-					["title"] = "AmmoFu",
-					["category"] = "Inventory",
+				["FuBar_LocationFu"] = {
+					["title"] = "LocationFu",
+					["category"] = "Map",
 				},
 				["Fubar_ExitFu"] = {
 					["title"] = "ExitFu",
@@ -415,30 +381,30 @@ FuBar2DB = {
 				["AceGCInFu"] = true,
 				["FelwoodGather"] = true,
 				["PaintBall"] = true,
-				["Tracker"] = true,
 				["ToFu"] = true,
 				["KeyQ"] = true,
 				["QuestsFu"] = true,
+				["Tracker"] = true,
 				["Improved Raid Warning Frame"] = true,
 				["oRA Menu"] = true,
 				["OneView"] = true,
 				["oRA2"] = true,
 				["MailFu"] = true,
-				["CoinPurse"] = true,
+				["ClockFu"] = true,
 				["Squishy"] = true,
 				["FarmerFu"] = true,
-				["ClockFu"] = true,
+				["CoinPurse"] = true,
 				["Bartender2Fu"] = true,
 			},
 			["skinG"] = 0,
 			["transparency"] = 1,
 			["leftSpacing"] = 10,
-			["thickness"] = 5,
+			["overflow"] = true,
 			["places"] = {
 				["right"] = {
-					["Tracker"] = true,
-					["PetitionFu"] = true,
 					["MailFu"] = true,
+					["PetitionFu"] = true,
+					["Tracker"] = true,
 					["ToFu"] = true,
 					["KeyQ"] = true,
 					["QuestsFu"] = true,
@@ -446,24 +412,24 @@ FuBar2DB = {
 				["center"] = {
 				},
 				["left"] = {
-					["oRA Menu"] = true,
-					["Experienced"] = true,
-					["CoinPurse"] = true,
-					["Manufac"] = true,
-					["ArcHUD"] = true,
-					["AceGCInFu"] = true,
-					["FelwoodGather"] = true,
-					["PaintBall"] = true,
 					["OneView"] = true,
+					["Experienced"] = true,
+					["oRA Menu"] = true,
+					["Manufac"] = true,
+					["Improved Raid Warning Frame"] = true,
+					["AceGCInFu"] = true,
+					["ArcHUD"] = true,
+					["FelwoodGather"] = true,
+					["oRA2"] = true,
 					["ClockFu"] = true,
 					["Squishy"] = true,
 					["FarmerFu"] = true,
-					["Improved Raid Warning Frame"] = true,
-					["oRA2"] = true,
+					["PaintBall"] = true,
+					["CoinPurse"] = true,
 					["Bartender2Fu"] = true,
 				},
 			},
-			["overflow"] = true,
+			["thickness"] = 5,
 		},
 		["char/Tekkub of Icecrown"] = {
 			["fontSize"] = 12,
@@ -614,7 +580,10 @@ FuBar2DB = {
 					["yPercent"] = 0.5,
 				}, -- [4]
 			},
-			["minimap"] = {
+			["detached"] = {
+				["PaintBall"] = true,
+				["KeyQ"] = true,
+				["PetitionFu"] = true,
 			},
 			["thickness"] = 5,
 			["places"] = {
@@ -626,10 +595,41 @@ FuBar2DB = {
 					["KeyQ"] = true,
 				},
 			},
-			["detached"] = {
-				["PaintBall"] = true,
-				["KeyQ"] = true,
-				["PetitionFu"] = true,
+			["minimap"] = {
+			},
+		},
+	},
+	["pluginDB"] = {
+		["PetitionFu"] = {
+			["profiles"] = {
+				["default"] = {
+					["disabled"] = true,
+					["version"] = 102,
+				},
+			},
+		},
+		["CoinPurse"] = {
+			["profiles"] = {
+				["default"] = {
+					["disabled"] = true,
+					["version"] = 100,
+				},
+			},
+		},
+		["oRA Menu"] = {
+			["profiles"] = {
+				["default"] = {
+					["disabled"] = true,
+					["version"] = 2,
+				},
+			},
+		},
+		["KeyQ"] = {
+			["profiles"] = {
+				["default"] = {
+					["disabled"] = true,
+					["version"] = 0,
+				},
 			},
 		},
 	},

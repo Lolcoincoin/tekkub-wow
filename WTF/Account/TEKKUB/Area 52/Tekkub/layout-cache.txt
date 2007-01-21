@@ -72,7 +72,7 @@ X: -3
 Y: -400
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 187
+X: 188
 Y: -833
 Frame: FuBarPluginGuildFuFrame
 FrameLevel: 7

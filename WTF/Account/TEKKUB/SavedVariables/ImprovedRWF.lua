@@ -1,5 +1,8 @@
 
 ImprovedRWFDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -19,8 +22,5 @@ ImprovedRWFDB = {
 			["hidden"] = true,
 			["showText"] = 0,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }
