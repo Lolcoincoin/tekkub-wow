@@ -52,9 +52,9 @@ end
 --      Ace Methods      --
 ---------------------------
 
-function Kyubi:OnEnable()
-	self:RegisterAllEvents("EventsHandler")
-end
+--~ function Kyubi:OnEnable()
+--~ 	self:RegisterAllEvents("EventsHandler")
+--~ end
 
 
 -----------------------------
@@ -66,17 +66,18 @@ local function myconcat(...)
 	for i=2,select("#", ...) do
 		local v = select(i, ...)
 		local t = type(v)
-		str = str.. sep.. v and (colors[math.fmod(i-1,3)+1].. " | arg ".. i.. " ("..t..")"..
-			((t == "string" or t == "number") and (" "..v) or t == "boolean" and (v and " true" or ": false") or "")) or ""
+		str = str.. (v and (colors[math.fmod(i-1,3)+1].. " | arg ".. i.. " ("..t..")"..
+			((t == "string" or t == "number") and (" "..v) or t == "boolean" and (v and " true" or ": false") or "")) or "")
 	end
 	return str
 end
 
-
-function Kyubi:EventsHandler(event, ...)
-	if not self:IsShown(event) then return end
+local f = CreateFrame("Frame")
+f:SetScript("OnEvent", function(frame, event, ...)
+	if not Kyubi:IsShown(event) then return end
 	cf:AddMessage(myconcat(event, ...))
-end
+end)
+f:RegisterAllEvents()
 
 
 function Kyubi:IsShown(event)
