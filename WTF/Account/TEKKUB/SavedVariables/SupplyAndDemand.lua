@@ -17,8 +17,8 @@ SupplyAndDemandDB = {
 				["char/Tekkub of Icecrown"] = {
 				},
 				["Default"] = {
-					["WatchDogOptions"] = false,
 					["Kyubi"] = false,
+					["WatchDogOptions"] = false,
 				},
 			},
 		},
@@ -67,9 +67,9 @@ SupplyAndDemandDB = {
 		},
 		["At Merchant"] = {
 			["profiles"] = {
-				["char/Tekkub of Icecrown"] = {
-				},
 				["char/Beardyhead of Icecrown"] = {
+				},
+				["char/Tekkub of Icecrown"] = {
 				},
 			},
 		},
@@ -95,9 +95,9 @@ SupplyAndDemandDB = {
 		},
 		["At Mailbox"] = {
 			["profiles"] = {
-				["char/Tekkub of Icecrown"] = {
-				},
 				["char/Beardyhead of Icecrown"] = {
+				},
+				["char/Tekkub of Icecrown"] = {
 				},
 			},
 		},

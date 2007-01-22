@@ -23,9 +23,7 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
-		["Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
+		["Wuffi of Icecrown"] = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
@@ -33,16 +31,18 @@ FuBar_GreedBeaconDB = {
 			["detachedTooltip"] = {
 			},
 		},
+		["Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
 		["Girth of Vek'nilash"] = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
 			},
 			["supressitem"] = true,
-		},
-		["Wuffi of Icecrown"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
 		},
 		["Druid"] = {
 			["version"] = 0,
@@ -90,7 +90,7 @@ FuBar_GreedBeaconDB = {
 		},
 	},
 	["realms"] = {
-		["StormscaleAlliance"] = {
+		["Vek'nilashHorde"] = {
 			["version"] = 0,
 		},
 		["FeathermoonAlliance"] = {
@@ -108,7 +108,7 @@ FuBar_GreedBeaconDB = {
 		["SuramarHorde"] = {
 			["version"] = 0,
 		},
-		["Vek'nilashHorde"] = {
+		["StormscaleAlliance"] = {
 			["version"] = 0,
 		},
 	},
@@ -116,13 +116,13 @@ FuBar_GreedBeaconDB = {
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 0,
 		},
-		["FeathermoonKub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 0,
 		},
 		["SuramarHuslu"] = {
 			["version"] = 0,
 		},
-		["StormscaleNunuvit"] = {
+		["FeathermoonKub"] = {
 			["version"] = 0,
 		},
 		["DrakaTekkub"] = {

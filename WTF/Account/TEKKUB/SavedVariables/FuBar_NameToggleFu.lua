@@ -93,9 +93,6 @@ FuBar_NameToggleDB = {
 		},
 	},
 	["chars"] = {
-		["IllidanBear"] = {
-			["version"] = 1532,
-		},
 		["SuramarHuslu"] = {
 			["version"] = 1532,
 		},
@@ -105,10 +102,13 @@ FuBar_NameToggleDB = {
 		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["IllidanBear"] = {
 			["version"] = 1532,
 		},
 		["FeathermoonAaooeeaaooee"] = {
+			["version"] = 1532,
+		},
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {

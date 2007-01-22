@@ -8,10 +8,6 @@ FuBar_FriendsFuDB = {
 				["show_displayed"] = false,
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
 		["Default"] = {
 			["detachedTooltip"] = {
 			},
@@ -20,6 +16,10 @@ FuBar_FriendsFuDB = {
 			},
 			["tooltip"] = {
 				["sort"] = "NAME",
+			},
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
 			},
 		},
 	},

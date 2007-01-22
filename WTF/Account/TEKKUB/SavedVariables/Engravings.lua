@@ -20,11 +20,16 @@ EngravingsDB = {
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
 		["Mishutka of Area 52"] = "global",
+		["Girth of Alterac Mountains"] = "global",
 	},
 	["faction"] = {
-		["Alliance - Area 52"] = {
+		["Horde"] = {
 		},
 		["Alliance"] = {
+		},
+		["Alliance - Area 52"] = {
+		},
+		["Horde - Alterac Mountains"] = {
 		},
 	},
 	["factionrealm"] = {
@@ -34,15 +39,21 @@ EngravingsDB = {
 		},
 		["Mishutka of Area 52"] = {
 		},
+		["Girth of Alterac Mountains"] = {
+		},
 	},
 	["class"] = {
+		["Hunter"] = {
+		},
 		["Shaman"] = {
 		},
-		["Hunter"] = {
+		["Druid"] = {
 		},
 	},
 	["realm"] = {
 		["Area 52"] = {
+		},
+		["Alterac Mountains"] = {
 		},
 	},
 }

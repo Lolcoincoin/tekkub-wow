@@ -17,13 +17,13 @@ Y: -709
 W: 451
 H: 120
 Frame: ChatFrame3
-FrameLevel: 15
+FrameLevel: 17
 X: 459
 Y: -709
 W: 451
 H: 120
 Frame: ChatFrame4
-FrameLevel: 17
+FrameLevel: 15
 X: 913
 Y: -709
 W: 451
@@ -52,8 +52,8 @@ X: 473
 Y: -208
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 187
-Y: -833
+X: 220
+Y: 4
 Frame: TinyPadFrame
 FrameLevel: 8
 X: 480

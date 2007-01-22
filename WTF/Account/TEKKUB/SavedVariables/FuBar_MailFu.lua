@@ -12,10 +12,11 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["hidetext"] = true,
 		},
-		["Tekkub of Icecrown"] = {
-			["minimapPosition"] = 17.79596804289746,
-			["version"] = 904,
+		["Wuffi of Icecrown"] = {
 			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["version"] = 904,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["minimapPosition"] = 236.381591896712,
@@ -23,16 +24,15 @@ FuBar_MailDB = {
 			},
 			["showText"] = false,
 		},
+		["Tekkub of Icecrown"] = {
+			["minimapPosition"] = 17.79596804289746,
+			["version"] = 904,
+			["hidetext"] = true,
+		},
 		["Girth of Vek'nilash"] = {
 			["minimapPosition"] = 14.20671743004535,
 			["version"] = 904,
 			["hidetext"] = true,
-		},
-		["Wuffi of Icecrown"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["version"] = 904,
 		},
 		["Druid"] = {
 			["minimapPositionWild"] = true,
@@ -45,11 +45,11 @@ FuBar_MailDB = {
 			["hidetext"] = true,
 			["detachedTooltip"] = {
 			},
-			["showText"] = true,
 			["showIcon"] = 1,
-			["minimapPosition"] = 245.4009699091313,
-			["textformat"] = "number",
 			["version"] = 904,
+			["minimapPosition"] = 245.4009699091313,
+			["showText"] = true,
+			["textformat"] = "number",
 		},
 		["Priest"] = {
 			["minimapPositionWild"] = true,
@@ -150,12 +150,17 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
+		["IcecrownMicrofiche"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
 		["Vek'nilashGirth"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IllidanBear"] = {
+		["FeathermoonAaooeeaaooee"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -170,7 +175,7 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["IcecrownTekkub"] = {
+		["IllidanBear"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -180,17 +185,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["FeathermoonAaooeeaaooee"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["IcecrownMicrofiche"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["IcecrownAilurus"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["IcecrownTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,

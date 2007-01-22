@@ -4,14 +4,15 @@ CliqueDB = {
 		["Huslu of Icecrown"] = "Huslu of Icecrown",
 		["Ailurus of Icecrown"] = "Ailurus of Icecrown",
 		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
-		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
 		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
-		["Tekkub of Area 52"] = "Tekkub of Area 52",
-		["Mishutka of Area 52"] = "Mishutka of Area 52",
-		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
-		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
-		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
+		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
 		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
+		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
+		["Mishutka of Area 52"] = "Mishutka of Area 52",
+		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
+		["Tekkub of Area 52"] = "Tekkub of Area 52",
+		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
+		["Girth of Alterac Mountains"] = "Girth of Alterac Mountains",
 		["Cubbyhole of Icecrown"] = "Cubbyhole of Icecrown",
 	},
 	["disabledModules"] = {
@@ -45,15 +46,11 @@ CliqueDB = {
 		},
 	},
 	["class"] = {
-		["Druid"] = {
-		},
-		["Priest"] = {
-		},
-		["Hunter"] = {
+		["Rogue"] = {
 		},
 		["Warlock"] = {
 		},
-		["Rogue"] = {
+		["Priest"] = {
 		},
 	},
 	["profiles"] = {
@@ -63,29 +60,19 @@ CliqueDB = {
 		},
 		["Alizarian of Icecrown"] = {
 		},
-		["Tekkub of Uldaman"] = {
-		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Out of Combat"] = {
-				},
-				["Default"] = {
-				},
-				["Harmful actions"] = {
-				},
-			},
-			["blacklist"] = {
-			},
+		["Tekkub of Uldaman"] = {
 		},
-		["Mishutka of Area 52"] = {
+		["Wuffi of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
 		},
+		["Mishutka of Area 52"] = {
+		},
 		["Tekkub of Icecrown"] = {
+		},
+		["Tekkub of Area 52"] = {
 		},
 		["Beardyhead of Icecrown"] = {
 			["clicksets"] = {
@@ -162,7 +149,7 @@ CliqueDB = {
 				},
 			},
 		},
-		["Wuffi of Icecrown"] = {
+		["Girth of Alterac Mountains"] = {
 		},
 		["Cubbyhole of Icecrown"] = {
 		},
@@ -176,8 +163,6 @@ CliqueDB = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
-		},
 		["Alizarian of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
@@ -190,9 +175,7 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
-		["Horde"] = {
-		},
-		["Alliance"] = {
+		["Horde - Alterac Mountains"] = {
 		},
 		["Alliance - Area 52"] = {
 		},
@@ -432,8 +415,6 @@ CliqueDB = {
 	},
 	["realm"] = {
 		["Icecrown"] = {
-		},
-		["Area 52"] = {
 		},
 	},
 }
