@@ -1,7 +1,7 @@
 --[[
 Name: Rating Buster enUS locale
 Revision: $Revision: 1 $
-Translated by: 
+Translated by:
 - Whitetooth@Cenarius (hotdogee@巴哈姆特baha)
 ]]
 local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
@@ -13,26 +13,6 @@ local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
 -- Before: ["Show Item ID"] = true,
 -- After:  ["Show Item ID"] = "顯示物品編號",
 L:RegisterTranslations("enUS", function() return {
-	---------------------------
-	-- Slash Command Options --
-	---------------------------
-	-- /rb itemid
-	["Show Item ID"] = true,
-	["Toggle display of Item ID in tooltip"] = true,
-	-- /rb itemlevel
-	["Show Item Level"] = true,
-	["Toggle display of Item Level in tooltip"] = true,
-	-- /rb usereqlv
-	["Use Required Level"] = true,
-	["Toggle calculate using the required level if you are below the required level"] = true,
-	-- /rb targetlevel
-	["Target Level"] = true,
-	["Changes the Target Level used in rating calculations"] = true,
-	-----------------------
-	-- Item Level and ID --
-	-----------------------
-	["ItemLevel: "] = true,
-	["ItemID: "] = true,
 	-----------------------
 	-- Matching Patterns --
 	-----------------------
@@ -62,11 +42,11 @@ L:RegisterTranslations("enUS", function() return {
 	--
 	-- The second pass searches for the rating name, the names are read from ["ratingNames"] here,
 	-- It will look through the table in order, so you can put common strings at the begining to speed up the search,
-	-- and longer strings should be listed first, like "spell critical strike" should be listed before "critical strike", 
+	-- and longer strings should be listed first, like "spell critical strike" should be listed before "critical strike",
 	-- this way "spell critical strike" does get matched by "critical strike".
 	-- Strings need to be in lower case letters, because string.lower is called on lookup
 	--
-	-- IMPORTANT: there may not exist a one-to-one correspondence, meaning you can't just translate this file, 
+	-- IMPORTANT: there may not exist a one-to-one correspondence, meaning you can't just translate this file,
 	-- but will need to go in game and find out what needs to be put in here.
 	-- For example, in english I found 3 different strings that maps to RB_CRIT_MELEE: "critical strike", "critical hit" and "crit".
 	-- You will need to find out every string that represents RB_CRIT_MELEE, and so on.
@@ -82,12 +62,12 @@ L:RegisterTranslations("enUS", function() return {
 		{pattern = " by (%d+)", separators = {" and "},},
 		{pattern = "%+(%d+)", separators = {"/", " and ", ","},},
 	},
-	["ratingNames"] = {	
+	["ratingNames"] = {
 		{"defense rating", RB_DEFENSE_SKILL},
 		{"dodge rating", RB_DODGE},
 		{"block rating", RB_BLOCK}, -- block enchant: "+10 Shield Block Rating"
 		{"parry rating", RB_PARRY},
-	
+
 		{"spell critical strike rating", RB_CRIT_SPELL},
 		{"spell critical hit rating", RB_CRIT_SPELL},
 		{"spell critical rating", RB_CRIT_SPELL},
@@ -99,18 +79,18 @@ L:RegisterTranslations("enUS", function() return {
 		{"critical strike rating", RB_CRIT_MELEE},
 		{"critical hit rating", RB_CRIT_MELEE},
 		{"crit rating", RB_CRIT_MELEE},
-		
+
 		{"spell hit rating", RB_HIT_SPELL},
 		{"ranged hit rating", RB_HIT_RANGED},
 		{"hit rating", RB_HIT_MELEE},
-		
+
 		{"resilience", RB_RESILIENCE}, -- resilience is implicitly a rating
-		
+
 		{"spell haste rating", RB_HASTE_SPELL},
 		{"ranged haste rating", RB_HASTE_RANGED},
 		{"haste rating", RB_HASTE_MELEE},
 		{"speed rating", RB_HASTE_MELEE}, -- [Drums of Battle]
-		
+
 		{"skill rating", RB_WEAPON_SKILL},
 		--[[
 		{"dagger skill rating", RB_WEAPON_SKILL},

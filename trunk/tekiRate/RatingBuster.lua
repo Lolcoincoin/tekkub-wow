@@ -5,16 +5,16 @@ local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
 local _G = getfenv(0)
 
 
-RatingBuster = AceLibrary("AceAddon-2.0"):new("AceDB-2.0", "AceEvent-2.0")
+tekiRate = DongleStub("Dongle-Beta0"):New("tekiRate")
 
 
 ---------------------
 -- Initializations --
 ---------------------
 
-function RatingBuster:OnInitialize()
+function tekiRate:OnInitialize()
 	-- Build the RatingNameToID table from L["ratingNames"] table
-	RatingBuster.RatingNameToID = {}
+	self.RatingNameToID = {}
 	for _, v in ipairs(L["ratingNames"]) do self.RatingNameToID[v[1]] = v[2] end
 
 	----  Hook tooltips  ----
@@ -22,7 +22,7 @@ function RatingBuster:OnInitialize()
 		local orig = tooltip:GetScript("OnTooltipSetItem")
 		tooltip:SetScript("OnTooltipSetItem", function(frame, ...)
 			local _, link = frame:GetItem()
-			self.ProcessTooltip(frame, link)
+			self:ProcessTooltip(frame, link)
 			if orig then return orig(frame, ...) end
 		end)
 	end
@@ -56,100 +56,77 @@ Method 4
 Equip: Adds 15 critical hit rating (.85% )
 Equip: Adds 12 resilience (-.58% crit, -1.16% crit damage)
 --]]
-function RatingBuster.ProcessTooltip(tooltip, link)
-	local mylevel = UnitLevel("player")
-	local tipname = tooltip:GetName()
 
-	for i = 2, tooltip:NumLines() do
-		local fontString = _G[tipname.."TextLeft"..i]
-		local lineText = fontString:GetText()
-		if lineText and strfind(lineText, "%d") then -- do nothing if we don't find a number
-			for _, p in ipairs(L["numberPatterns"]) do
-				local text = lineText
-				local lowerText = string.lower(text) -- convert to lower so we don't have to worry about same ratings with different cases
-				-- Capture the increased amount
-				local s, e, amount = strfind(lowerText, p.pattern)
-				if amount then
-					-- Check for separators
-					local separator
-					for _, s in ipairs(p.separators) do
-						if strfind(lineText, s) then
-							separator = s
-							-- Replace separator strings found in lineText with a single character "/", so we can use strsplit()
-							lineText = string.gsub(lineText, s, "/")
-							-- only need support for 1 kind of separator per line, we will use the first one found, so break out here
-							break
-						end
-					end
-					-- If this line has a separator, then we do the split and combine algorithm
-					if separator then
-						local splitText = Compost:Acquire(strsplit("/", lineText))
-						for i, text in ipairs(splitText) do
-							local lowerText = string.lower(text) -- convert to lower so we don't have to worry about same ratings with different cases
-							-- Capture the increased amount
-							local s, e, amount = strfind(lowerText, p.pattern)
-							if amount then
-								-- Capture the rating name
-								local ratingID
-								for _, v in ipairs(L["ratingNames"]) do
-									if strfind(lowerText, v[1]) then
-										ratingID = RatingBuster.RatingNameToID[v[1]]
-										break
-									end
-								end
-								if ratingID then
-									-- calculate reverse value
-									local reversedAmount = ReverseRating(tonumber(amount), ratingID, mylevel)
-									-- build reversed string
-									local reversedString
-									-- check if rating is a skill type
-									if ratingID == 1 or ratingID == 2 then
-										reversedString = "("..format("%.2f", reversedAmount)..")"
-									-- check if rating is resilience
-									elseif ratingID == 15 then
-										reversedString = "(-"..format("%.2f", reversedAmount).."%%%%)"
-									else
-										reversedString = "("..format("%.2f", reversedAmount).."%%%%)"
-									end
-									-- build converted string
-									splitText[i] = string.gsub(text, p.pattern, string.gsub(strsub(text, s, e), "%d+", "%0 "..reversedString), 1)
-								end
-							end
-						end -- for i, text in ipairs(splitText)
-						lineText = strjoin(separator, unpack(splitText))
-						Compost:Reclaim(splitText)
-					else
-						-- Capture the rating name
-						local ratingID
-						for _, v in ipairs(L["ratingNames"]) do
-							if strfind(lowerText, v[1]) then
-								ratingID = RatingBuster.RatingNameToID[v[1]]
-								break
-							end
-						end
-						if ratingID then
-							-- calculate reverse value
-							local reversedAmount = ReverseRating(tonumber(amount), ratingID, mylevel)
-							-- build reversed string
-							local reversedString
-							-- check if rating is a skill type
-							if ratingID == 1 or ratingID == 2 then
-								reversedString = "("..format("%.2f", reversedAmount)..")"
-							-- check if rating is resilience
-							elseif ratingID == 15 then
-								reversedString = "(-"..format("%.2f", reversedAmount).."%%%%)"
-							else
-								reversedString = "("..format("%.2f", reversedAmount).."%%%%)"
-							end
-							-- build converted string
-							lineText = string.gsub(text, p.pattern, string.gsub(strsub(text, s, e), "%d+", "%0 "..reversedString), 1)
-						end
-					end
-				end
-			end
-			-- SetText
-			fontString:SetText(lineText)
-		end -- if text then
-	end -- for i = 2, tooltip:NumLines() do
+
+
+function tekiRate:ProcessTooltip(tooltip, link)
+	local tipname = tooltip:GetName()
+	for i = 2, tooltip:NumLines() do self:ParseLine(_G[tipname.."TextLeft"..i]) end
 	tooltip:Show()
 end
+
+
+function tekiRate:ParseLine(fontstring)
+	local lineText = fontstring:GetText()
+	if not lineText or not string.find(lineText, "%d") then return end
+
+	for _, p in ipairs(L["numberPatterns"]) do
+		local lowerText = string.lower(lineText) -- convert to lower so we don't have to worry about same ratings with different cases
+		-- Capture the increased amount
+		local s, e, amount = string.find(lowerText, p.pattern)
+		if not amount then return end
+
+		-- Check for separators
+		local separator, newtext = self:GetSeperator(p, lineText)
+
+		-- If this line has a separator, then we do the split and combine algorithm
+		if separator then
+			local splitText = Compost:Acquire(string.split("/", newtext))
+			for i,text in ipairs(splitText) do
+				local lowerText = string.lower(text) -- convert to lower so we don't have to worry about same ratings with different cases
+				-- Capture the increased amount
+				local s, e, amount = string.find(lowerText, p.pattern)
+				if amount then splitText[i] = self:AppendRating(lowerText, amount, p, text, s, e) end
+			end -- for i, text in ipairs(splitText)
+			lineText = string.join(separator, unpack(splitText))
+			Compost:Reclaim(splitText)
+		else
+			lineText = self:AppendRating(lowerText, amount, p, text, s, e)
+		end
+	end
+
+	fontstring:SetText(lineText)
+end
+
+function tekiRate:AppendRating(lowerText, amount, p, text, s, e)
+	local ratingID = self:GetRatingID(lowerText)
+	if not ratingID then return end
+
+	-- calculate reverse value
+	local reversedAmount = ReverseRating(tonumber(amount), ratingID, UnitLevel("player"))
+	-- build reversed string
+	local reversedString
+
+	reversedString = string.format("(%s%.2f%s)", ratingID == 15 and "-" or "",
+		reversedAmount, (ratingID == 1 or ratingID == 2) and "" or "%%%%")
+
+		-- build converted string
+	return string.gsub(text, p.pattern, string.gsub(string.sub(text, s, e), "%d+", "%0 "..reversedString), 1)
+end
+
+
+function tekiRate:GetRatingID(lowerText)
+	for _, v in ipairs(L["ratingNames"]) do
+		if string.find(lowerText, v[1]) then
+			return self.RatingNameToID[v[1]]
+		end
+	end
+end
+
+
+function tekiRate:GetSeperator(p, lineText)
+	for _, s in ipairs(p.separators) do
+		if string.find(lineText, s) then return s, string.gsub(lineText, s, "/") end
+	end
+end
+

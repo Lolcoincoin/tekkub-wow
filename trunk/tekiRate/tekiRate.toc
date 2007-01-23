@@ -1,43 +1,16 @@
 ﻿## Interface: 20003
+
 ## Title: tekiRate
 ## Notes: Converts combat ratings in tooltips into normal percentages.
-## Author: Whitetooth@Cenarius (hotdogee@巴哈姆特baha)
+## X-Credits: RatingsBuster by Whitetooth@Cenarius
 ## X-Category: Interface Enhancements
-## SavedVariables: RatingBusterDB
-## OptionalDeps:
-###################
-## Ace Libraries ##
-###################
-libs\AceLibrary\AceLibrary.lua
-## AceLocale: AceLibrary
-libs\AceLocale-2.2\AceLocale-2.2.lua
-## Compost: AceLibrary
-libs\Compost-2.0\Compost-2.0.lua
-## AceOO: AceLibrary, Compost-2.0 (optional)
-libs\AceOO-2.0\AceOO-2.0.lua
-## AceConsole: AceLibrary, AceOO
-libs\AceConsole-2.0\AceConsole-2.0.lua
-## AceEvent: AceLibrary, AceOO
-libs\AceEvent-2.0\AceEvent-2.0.lua
-## AceDebug: AceLibrary, AceOO
-libs\AceDebug-2.0\AceDebug-2.0.lua
-## AceDB: AceLibrary, AceOO, AceEvent
-libs\AceDB-2.0\AceDB-2.0.lua
-## AceAddon: AceLibrary, AceOO, AceEvent, (optional) AceConsole
-libs\AceAddon-2.0\AceAddon-2.0.lua
+
+## OptionalDeps: Dongle
 
 ReverseRating.lua
-
-########################
-## Localization Files ##
-########################
 RatingBuster-Locale-enUS.lua
 RatingBuster-Locale-zhTW.lua
 RatingBuster-Locale-deDE.lua
 RatingBuster-Locale-frFR.lua
 RatingBuster-Locale-koKR.lua
-
-##########
-## Core ##
-##########
 RatingBuster.lua
