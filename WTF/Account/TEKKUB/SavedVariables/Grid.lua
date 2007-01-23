@@ -10,95 +10,29 @@ GridDB = {
 							["buff_PowerWordShield"] = true,
 							["buff_Renew"] = true,
 						},
-						["corner3"] = {
+						["border"] = {
 							["debuff_magic"] = false,
 						},
 						["text"] = {
 							["alert_offline"] = false,
+						},
+						["corner3"] = {
+							["debuff_magic"] = false,
 						},
 						["icon"] = {
 							["debuff_curse"] = false,
 							["debuff_poison"] = false,
 							["debuff_disease"] = false,
 						},
-						["border"] = {
-							["debuff_magic"] = false,
-						},
 					},
 				},
 				["Default"] = {
-					["FrameSize"] = 26,
 					["statusmap"] = {
 						["border"] = {
 							["debuff_magic"] = true,
 						},
 					},
-				},
-			},
-		},
-		["GridStatusMana"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_lowMana"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridStatusRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatus"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["range"] = true,
-				},
-			},
-		},
-		["GridStatusName"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
-					},
-				},
-			},
-		},
-		["GridStatusHeals"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_heals"] = {
-						["range"] = true,
-						["text"] = "incoming heals",
-					},
-				},
-			},
-		},
-		["GridStatusAggro"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_aggro"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
+					["FrameSize"] = 26,
 				},
 			},
 		},
@@ -126,25 +60,18 @@ GridDB = {
 				},
 			},
 		},
-		["GridLayout"] = {
+		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
-					["anchorRel"] = "TOPLEFT",
-					["PosY"] = -492.3734026419318,
-					["PosX"] = 220.1066717933606,
-				},
-				["Default"] = {
-					["anchorRel"] = "TOPLEFT",
-					["showParty"] = true,
-					["FrameDisplay"] = "always",
-					["PosY"] = 0,
-					["PosX"] = 222.6666499529367,
 				},
 			},
 		},
-		["GridStatusTarget"] = {
+		["GridStatus"] = {
 			["profiles"] = {
 				["class/Priest"] = {
+				},
+				["Default"] = {
+					["range"] = true,
 				},
 			},
 		},
@@ -171,10 +98,10 @@ GridDB = {
 					["buff_Renew"] = {
 						["range"] = true,
 					},
-					["debuff_WeakenedSoul"] = {
+					["debuff_disease"] = {
 						["range"] = true,
 					},
-					["debuff_disease"] = {
+					["debuff_WeakenedSoul"] = {
 						["range"] = true,
 					},
 					["debuff_magic"] = {
@@ -183,6 +110,82 @@ GridDB = {
 				},
 			},
 		},
+		["GridStatusHeals"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_heals"] = {
+						["range"] = true,
+						["text"] = "incoming heals",
+					},
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_aggro"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
+				},
+			},
+		},
+		["GridStatusTarget"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
+		["GridLayout"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["anchorRel"] = "TOPLEFT",
+					["PosY"] = -492.3734026419318,
+					["PosX"] = 220.1066717933606,
+				},
+				["Default"] = {
+					["anchorRel"] = "TOPLEFT",
+					["showParty"] = true,
+					["FrameDisplay"] = "always",
+					["PosY"] = 0,
+					["PosX"] = 222.6666499529367,
+				},
+			},
+		},
+		["GridRange"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusMana"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_lowMana"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "class",
 	},
 	["profiles"] = {
 		["class/Priest"] = {
@@ -194,8 +197,5 @@ GridDB = {
 			},
 			["showText"] = false,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "class",
 	},
 }

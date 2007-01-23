@@ -12,12 +12,6 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["hidetext"] = true,
 		},
-		["Wuffi of Icecrown"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["version"] = 904,
-		},
 		["char/Beardyhead of Icecrown"] = {
 			["minimapPosition"] = 236.381591896712,
 			["detachedTooltip"] = {
@@ -34,41 +28,6 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["hidetext"] = true,
 		},
-		["Druid"] = {
-			["minimapPositionWild"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1177.999942835307,
-			["minimapPositionY"] = 708.9999658157678,
-			["hidetext"] = true,
-		},
-		["default"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["showIcon"] = 1,
-			["version"] = 904,
-			["minimapPosition"] = 245.4009699091313,
-			["showText"] = true,
-			["textformat"] = "number",
-		},
-		["Priest"] = {
-			["minimapPositionWild"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1176.000049398444,
-			["minimapPositionY"] = 690.9999471003782,
-			["hidetext"] = true,
-		},
-		["Beardyhead of Draka"] = {
-			["hidetext"] = true,
-			["version"] = 20000,
-		},
-		["Hunter"] = {
-			["hidetext"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1176.000049398444,
-			["minimapPositionY"] = 710.9999244382057,
-			["minimapPositionWild"] = true,
-		},
 		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
@@ -80,14 +39,52 @@ FuBar_MailDB = {
 			["minimapPositionY"] = 733.9999374880522,
 			["textformat"] = "number",
 		},
+		["Druid"] = {
+			["minimapPositionWild"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1177.999942835307,
+			["minimapPositionY"] = 708.9999658157678,
+			["hidetext"] = true,
+		},
+		["default"] = {
+			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["version"] = 904,
+			["showText"] = true,
+			["minimapPosition"] = 245.4009699091313,
+			["showIcon"] = 1,
+			["textformat"] = "number",
+		},
+		["Beardyhead of Draka"] = {
+			["hidetext"] = true,
+			["version"] = 20000,
+		},
+		["Priest"] = {
+			["minimapPositionWild"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1176.000049398444,
+			["minimapPositionY"] = 690.9999471003782,
+			["hidetext"] = true,
+		},
+		["Hunter"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1176.000049398444,
+			["minimapPositionY"] = 710.9999244382057,
+			["minimapPositionWild"] = true,
+		},
+		["Wuffi of Icecrown"] = {
+			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["version"] = 904,
+		},
 		["Cubbyhole of Icecrown"] = {
 			["minimapPosition"] = 14.20671743004535,
 			["version"] = 904,
 			["hidetext"] = true,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 	["chars"] = {
 		["UldamanBear"] = {
@@ -150,12 +147,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
+		["StormscaleMongalka"] = {
 			["total"] = 0,
-			["version"] = 904,
+			["version"] = 20000,
 			["new"] = 0,
 		},
-		["Vek'nilashGirth"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -165,17 +162,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["DrakaBeardyhead"] = {
 			["total"] = 0,
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["IllidanBear"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -185,20 +177,28 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["IcecrownTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["StormscaleMongalka"] = {
+		["IcecrownAilurus"] = {
 			["total"] = 0,
-			["version"] = 20000,
+			["version"] = 904,
 			["new"] = 0,
 		},
+		["IllidanBear"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["Vek'nilashGirth"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

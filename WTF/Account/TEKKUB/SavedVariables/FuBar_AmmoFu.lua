@@ -1,5 +1,8 @@
 
 AmmoFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
 			["initialized"] = 1,
@@ -23,33 +26,6 @@ AmmoFuDB = {
 			["initialized"] = 1,
 			["version"] = 102.2054,
 		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Druid"] = {
-			["initialized"] = 1,
-			["version"] = 102.2312,
-		},
-		["default"] = {
-			["initialized"] = 1,
-			["detachedTooltip"] = {
-			},
-			["version"] = 102.2312,
-		},
-		["Priest"] = {
-			["initialized"] = 1,
-			["disabled"] = 1,
-			["version"] = 102.2054,
-		},
-		["Beardyhead of Draka"] = {
-			["initialized"] = 1,
-			["version"] = 10271,
-		},
-		["Hunter"] = {
-			["initialized"] = 1,
-			["version"] = 102.2312,
-		},
 		["Wuffi of Icecrown"] = {
 			["initialized"] = 1,
 			["detachedTooltip"] = {
@@ -57,12 +33,36 @@ AmmoFuDB = {
 			["disabled"] = 1,
 			["version"] = 102.2054,
 		},
+		["Druid"] = {
+			["initialized"] = 1,
+			["version"] = 102.2312,
+		},
+		["default"] = {
+			["initialized"] = 1,
+			["version"] = 102.2312,
+			["detachedTooltip"] = {
+			},
+		},
+		["Beardyhead of Draka"] = {
+			["initialized"] = 1,
+			["version"] = 10271,
+		},
+		["Priest"] = {
+			["initialized"] = 1,
+			["disabled"] = 1,
+			["version"] = 102.2054,
+		},
+		["Hunter"] = {
+			["initialized"] = 1,
+			["version"] = 102.2312,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
 		["Cubbyhole of Icecrown"] = {
 			["initialized"] = 1,
 			["version"] = 102.2054,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }
