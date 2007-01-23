@@ -36,31 +36,13 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusHealth"] = {
+		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
-				["Default"] = {
-					["unit_healthDeficit"] = {
-						["range"] = true,
-					},
-					["alert_offline"] = {
-						["color"] = {
-							["g"] = 0.5,
-							["r"] = 0.5,
-						},
-						["priority"] = 0,
-					},
-					["alert_lowHealth"] = {
-						["range"] = true,
-					},
-					["unit_health"] = {
-						["range"] = true,
-					},
-				},
 			},
 		},
-		["GridStatusRange"] = {
+		["GridStatusTarget"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
@@ -98,10 +80,10 @@ GridDB = {
 					["buff_Renew"] = {
 						["range"] = true,
 					},
-					["debuff_disease"] = {
+					["debuff_WeakenedSoul"] = {
 						["range"] = true,
 					},
-					["debuff_WeakenedSoul"] = {
+					["debuff_disease"] = {
 						["range"] = true,
 					},
 					["debuff_magic"] = {
@@ -144,7 +126,31 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusTarget"] = {
+		["GridStatusHealth"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_offline"] = {
+						["color"] = {
+							["g"] = 0.5,
+							["r"] = 0.5,
+						},
+						["priority"] = 0,
+					},
+					["unit_healthDeficit"] = {
+						["range"] = true,
+					},
+					["alert_lowHealth"] = {
+						["range"] = true,
+					},
+					["unit_health"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+		["GridRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
@@ -163,12 +169,6 @@ GridDB = {
 					["FrameDisplay"] = "always",
 					["PosY"] = 0,
 					["PosX"] = 222.6666499529367,
-				},
-			},
-		},
-		["GridRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
 				},
 			},
 		},

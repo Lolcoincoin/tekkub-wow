@@ -17,13 +17,13 @@ Y: -709
 W: 451
 H: 120
 Frame: ChatFrame3
-FrameLevel: 17
+FrameLevel: 15
 X: 459
 Y: -709
 W: 451
 H: 120
 Frame: ChatFrame4
-FrameLevel: 15
+FrameLevel: 17
 X: 913
 Y: -709
 W: 451

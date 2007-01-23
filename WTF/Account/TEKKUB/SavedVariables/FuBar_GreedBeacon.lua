@@ -23,13 +23,9 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
-		["Wuffi of Icecrown"] = {
+		["Beardyhead of Draka"] = {
 			["version"] = 0,
 			["showtokentracker"] = true,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
 		},
 		["Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -37,12 +33,20 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
 		["Girth of Vek'nilash"] = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
 			},
 			["supressitem"] = true,
+		},
+		["Wuffi of Icecrown"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
 		},
 		["Druid"] = {
 			["version"] = 0,
@@ -52,18 +56,14 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
-				["b"] = 0.02352941176470588,
-				["offsety"] = 2.999905340869312,
 				["r"] = 0.03529411764705882,
+				["offsety"] = 2.999905340869312,
+				["b"] = 0.02352941176470588,
 				["locked"] = true,
 				["offsetx"] = 611.500011108284,
 				["g"] = 0.07450980392156863,
 				["anchor"] = "BOTTOMLEFT",
 			},
-		},
-		["Beardyhead of Draka"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
 		},
 		["Priest"] = {
 			["version"] = 0,

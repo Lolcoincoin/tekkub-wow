@@ -64,13 +64,13 @@ ReagentFuDB = {
 	["chars"] = {
 		["Huslu of Icecrown"] = {
 			["showReagent"] = {
-				["Wild Berries"] = true,
 				["Maple Seed"] = true,
-				["Wild Thornroot"] = true,
+				["Wild Berries"] = true,
+				["Ashwood Seed"] = true,
 				["Ironwood Seed"] = true,
 				["Stranglethorn Seed"] = true,
 				["Hornbeam Seed"] = true,
-				["Ashwood Seed"] = true,
+				["Wild Thornroot"] = true,
 			},
 		},
 		["Ailurus of Icecrown"] = {

@@ -50,8 +50,6 @@ CliqueDB = {
 		},
 		["Warlock"] = {
 		},
-		["Hunter"] = {
-		},
 		["Priest"] = {
 		},
 	},
@@ -144,20 +142,27 @@ CliqueDB = {
 			},
 		},
 		["Mishutka of Area 52"] = {
+			["clicksets"] = {
+				["Default"] = {
+					["Shift-1"] = {
+						["type"] = "spell",
+						["modifier"] = "Shift-",
+						["button"] = 1,
+						["delete"] = true,
+						["arg1"] = "Healing Wave",
+						["texture"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
+					},
+					["Ctrl-1"] = {
+						["type"] = "spell",
+						["modifier"] = "Ctrl-",
+						["button"] = 1,
+						["arg1"] = "Gift of the Naaru",
+						["texture"] = "Interface\\Icons\\Spell_Holy_HolyProtection",
+					},
+				},
+			},
 		},
 		["Tekkub of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Harmful actions"] = {
-				},
-				["Default"] = {
-				},
-				["Out of Combat"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Tekkub of Icecrown"] = {
 		},
@@ -177,8 +182,6 @@ CliqueDB = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
-		},
 		["Alizarian of Icecrown"] = {
 		},
 		["Beardyhead of Icecrown"] = {
@@ -195,13 +198,9 @@ CliqueDB = {
 		},
 		["Alliance - Area 52"] = {
 		},
-		["Alliance"] = {
-		},
 	},
 	["realm"] = {
 		["Icecrown"] = {
-		},
-		["Area 52"] = {
 		},
 	},
 	["factionrealm"] = {

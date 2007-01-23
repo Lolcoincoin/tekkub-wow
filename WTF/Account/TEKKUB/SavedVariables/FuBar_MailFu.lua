@@ -12,16 +12,20 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["hidetext"] = true,
 		},
-		["char/Beardyhead of Icecrown"] = {
-			["minimapPosition"] = 236.381591896712,
-			["detachedTooltip"] = {
-			},
-			["showText"] = false,
+		["Beardyhead of Draka"] = {
+			["hidetext"] = true,
+			["version"] = 20000,
 		},
 		["Tekkub of Icecrown"] = {
 			["minimapPosition"] = 17.79596804289746,
 			["version"] = 904,
 			["hidetext"] = true,
+		},
+		["char/Beardyhead of Icecrown"] = {
+			["minimapPosition"] = 236.381591896712,
+			["detachedTooltip"] = {
+			},
+			["showText"] = false,
 		},
 		["Girth of Vek'nilash"] = {
 			["minimapPosition"] = 14.20671743004535,
@@ -50,15 +54,11 @@ FuBar_MailDB = {
 			["hidetext"] = true,
 			["detachedTooltip"] = {
 			},
-			["version"] = 904,
 			["showText"] = true,
-			["minimapPosition"] = 245.4009699091313,
 			["showIcon"] = 1,
+			["minimapPosition"] = 245.4009699091313,
 			["textformat"] = "number",
-		},
-		["Beardyhead of Draka"] = {
-			["hidetext"] = true,
-			["version"] = 20000,
+			["version"] = 904,
 		},
 		["Priest"] = {
 			["minimapPositionWild"] = true,
@@ -152,12 +152,12 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
+		["IcecrownAilurus"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["FeathermoonAaooeeaaooee"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -182,12 +182,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
+		["IllidanBear"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IllidanBear"] = {
+		["FeathermoonAaooeeaaooee"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,

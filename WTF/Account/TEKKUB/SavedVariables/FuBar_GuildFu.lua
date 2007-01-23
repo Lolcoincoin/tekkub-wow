@@ -16,13 +16,13 @@ FuBar_GuildFuDB = {
 			},
 		},
 		["Default"] = {
-			["text"] = {
-				["show_displayed"] = false,
-			},
 			["detachedTooltip"] = {
 			},
 			["tooltip"] = {
 				["note_showofficer"] = false,
+			},
+			["text"] = {
+				["show_displayed"] = false,
 			},
 		},
 	},

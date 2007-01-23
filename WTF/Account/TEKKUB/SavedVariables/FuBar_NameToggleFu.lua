@@ -27,6 +27,9 @@ FuBar_NameToggleDB = {
 		["IcecrownGirth"] = {
 			["version"] = 1532,
 		},
+		["IcecrownAilurus"] = {
+			["version"] = 1532,
+		},
 		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
@@ -40,9 +43,6 @@ FuBar_NameToggleDB = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {
-			["version"] = 1532,
-		},
-		["IcecrownAilurus"] = {
 			["version"] = 1532,
 		},
 		["IllidanKumanoinkei"] = {
