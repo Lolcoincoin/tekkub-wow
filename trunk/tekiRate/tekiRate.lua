@@ -151,6 +151,8 @@ end
 
 function tekiRate:ParseManyRatings(p, text, ...)
 	assert(type(text) == "text", "Bad value for arg 2, expected text, got "..type(text))
+	self:Debug(1, "Parsing part", text)
+
 	local lowerText = string.lower(text)
 	-- Capture the increased amount
 	local tag = self:GetRatingTag(lowerText, select(3, string.find(lowerText, p.pattern)))
