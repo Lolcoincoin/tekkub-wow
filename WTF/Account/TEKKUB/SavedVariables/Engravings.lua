@@ -14,8 +14,8 @@ EngravingsDB = {
 		[13704] = "Scholomance",
 		[12382] = "Strat",
 		[15778] = "***RAWR!***",
-		[8489] = false,
 		[18249] = "Dire Maul",
+		[8489] = false,
 	},
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
@@ -32,13 +32,7 @@ EngravingsDB = {
 		["Horde - Alterac Mountains"] = {
 		},
 	},
-	["class"] = {
-		["Hunter"] = {
-		},
-		["Shaman"] = {
-		},
-		["Druid"] = {
-		},
+	["factionrealm"] = {
 	},
 	["char"] = {
 		["Tekkub of Area 52"] = {
@@ -48,12 +42,18 @@ EngravingsDB = {
 		["Girth of Alterac Mountains"] = {
 		},
 	},
-	["factionrealm"] = {
+	["class"] = {
+		["Hunter"] = {
+		},
+		["Shaman"] = {
+		},
+		["Druid"] = {
+		},
 	},
 	["realm"] = {
-		["Alterac Mountains"] = {
-		},
 		["Area 52"] = {
+		},
+		["Alterac Mountains"] = {
 		},
 	},
 }

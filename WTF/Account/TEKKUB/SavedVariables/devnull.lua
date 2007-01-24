@@ -5,11 +5,13 @@ devnullDB = {
 			["CHAT_MSG_TEXT_EMOTE"] = false,
 			["chatback"] = false,
 			["cf1Channels"] = {
-				["tsu"] = false,
+				["LocalDefense"] = true,
+				["WorldDefense"] = true,
 				["hoamc"] = false,
+				["tsu"] = false,
 			},
-			["noDrunk"] = false,
 			["CHAT_MSG_MONSTER_SAY"] = false,
+			["noDrunk"] = false,
 		},
 	},
 }

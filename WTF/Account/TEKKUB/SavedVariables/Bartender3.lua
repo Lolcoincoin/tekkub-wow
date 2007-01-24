@@ -47,13 +47,13 @@ BT3DB = {
 					["Rows"] = 3,
 					["HideHotkey"] = true,
 					["StatesEnabled"] = false,
-					["Style"] = "Default",
 					["PosY"] = 169.5799901249606,
+					["Style"] = "Default",
 					["PosX"] = 33.9000079794111,
 					["States"] = {
-						["shift"] = 0,
-						["ctrl"] = 0,
 						["alt"] = 0,
+						["ctrl"] = 0,
+						["shift"] = 0,
 					},
 				}, -- [1]
 				nil, -- [2]
@@ -76,6 +76,7 @@ BT3DB = {
 					["PosY"] = 283.0467139059983,
 				}, -- [6]
 			},
+			["ButtonLock"] = true,
 		},
 	},
 }

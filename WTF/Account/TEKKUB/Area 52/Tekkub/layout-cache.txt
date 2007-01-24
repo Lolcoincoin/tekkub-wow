@@ -76,11 +76,11 @@ X: -3
 Y: -400
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 220
+X: 164
 Y: 4
 Frame: FuBarPluginGuildFuFrame
 FrameLevel: 7
-X: 164
+X: 190
 Y: 4
 Frame: FuBarPluginMiniClockFuFrame
 FrameLevel: 7

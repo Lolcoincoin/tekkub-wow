@@ -11,11 +11,11 @@ MendeleevDB = {
 		},
 		["Girth of Vek'nilash"] = {
 		},
-		["Priest"] = {
-		},
 		["Druid"] = {
 		},
 		["Beardyhead of Draka"] = {
+		},
+		["Priest"] = {
 		},
 		["Hunter"] = {
 		},

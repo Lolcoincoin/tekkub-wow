@@ -22,6 +22,13 @@ CorkFuDB = {
 				},
 			},
 		},
+		["Power Word: Shield"] = {
+			["profiles"] = {
+				["Default"] = {
+					["Filter Everyone"] = -1,
+				},
+			},
+		},
 		["Power Word: Fortitude"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -29,7 +36,7 @@ CorkFuDB = {
 				},
 			},
 		},
-		["Power Word: Shield"] = {
+		["Fear Ward"] = {
 			["profiles"] = {
 				["Default"] = {
 					["Filter Everyone"] = -1,
@@ -54,13 +61,6 @@ CorkFuDB = {
 				},
 				["Mishutka of Icecrown"] = {
 					["Filter Everyone"] = "Find Minerals",
-				},
-			},
-		},
-		["Fear Ward"] = {
-			["profiles"] = {
-				["Default"] = {
-					["Filter Everyone"] = -1,
 				},
 			},
 		},
@@ -96,6 +96,7 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
+			["version"] = 1808,
 			["CorkFu_Priest_InnerFire"] = {
 				["Filters"] = {
 				},
@@ -113,7 +114,6 @@ CorkFuDB = {
 				["g"] = 0.03137254901960784,
 				["detached"] = true,
 			},
-			["version"] = 1808,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,
@@ -195,6 +195,7 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
+			["version"] = 1808,
 			["CorkFu_Priest_InnerFire"] = {
 				["Filters"] = {
 				},
@@ -212,7 +213,6 @@ CorkFuDB = {
 				["g"] = 0.01568627450980392,
 				["detached"] = true,
 			},
-			["version"] = 1808,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,
@@ -297,6 +297,7 @@ CorkFuDB = {
 					["Everyone"] = -1,
 				},
 			},
+			["version"] = 2197,
 			["CorkFu_Mage_IceArmor"] = {
 				["Filters"] = {
 				},
@@ -319,7 +320,6 @@ CorkFuDB = {
 					["Class: HUNTER"] = "Blessing of Wisdom",
 				},
 			},
-			["version"] = 2197,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,
@@ -396,6 +396,7 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
+			["version"] = 7705,
 			["minimapPosition"] = 231.0332959749025,
 			["CorkFu_Paladin_Blessing"] = {
 				["Filters"] = {
@@ -424,7 +425,6 @@ CorkFuDB = {
 				["g"] = 0.01568627450980392,
 				["detached"] = true,
 			},
-			["version"] = 7705,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Target NPC"] = -1,
@@ -476,7 +476,7 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
-			["CorkFu_Mage_IceArmor"] = {
+			["CorkFu_Priest_InnerFire"] = {
 				["Filters"] = {
 				},
 			},
@@ -579,7 +579,7 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
-			["CorkFu_Priest_InnerFire"] = {
+			["CorkFu_Mage_IceArmor"] = {
 				["Filters"] = {
 				},
 			},
@@ -615,6 +615,7 @@ CorkFuDB = {
 					["Everyone"] = -1,
 				},
 			},
+			["version"] = 5596,
 			["CorkFu_Mage_IceArmor"] = {
 				["Filters"] = {
 				},
@@ -632,7 +633,6 @@ CorkFuDB = {
 				["g"] = 0.01568627450980392,
 				["detached"] = true,
 			},
-			["version"] = 5596,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,
@@ -719,6 +719,7 @@ CorkFuDB = {
 					["Everyone"] = -1,
 				},
 			},
+			["version"] = 7705,
 			["CorkFu_Priest_InnerFire"] = {
 				["Filters"] = {
 				},
@@ -741,7 +742,6 @@ CorkFuDB = {
 					["Class: HUNTER"] = "Blessing of Wisdom",
 				},
 			},
-			["version"] = 7705,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,
@@ -820,6 +820,7 @@ CorkFuDB = {
 					["Everyone"] = -1,
 				},
 			},
+			["version"] = 2197,
 			["CorkFu_Mage_IceArmor"] = {
 				["Filters"] = {
 				},
@@ -842,7 +843,6 @@ CorkFuDB = {
 					["Class: HUNTER"] = "Blessing of Wisdom",
 				},
 			},
-			["version"] = 2197,
 			["CorkFu_Druid_Thorns"] = {
 				["Filters"] = {
 					["Class: WARRIOR"] = 1,

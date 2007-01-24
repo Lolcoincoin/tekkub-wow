@@ -1,10 +1,2 @@
 
-KyubiDB = {
-	["profiles"] = {
-		["Default"] = {
-			["filters"] = {
-				"TARGET", -- [1]
-			},
-		},
-	},
-}
+KyubiDB = nil
