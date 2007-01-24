@@ -4,6 +4,23 @@ Revision: $Revision: 1 $
 Translated by:
 - Whitetooth@Cenarius (hotdogee@巴哈姆特baha)
 ]]
+
+local WEAPON_SKILL = 1
+local DEFENSE_SKILL = 2
+local DODGE = 3
+local PARRY = 4
+local BLOCK = 5
+local HIT_MELEE = 6
+local HIT_RANGED = 7
+local HIT_SPELL = 8
+local CRIT_MELEE = 9
+local CRIT_RANGED = 10
+local CRIT_SPELL = 11
+local HASTE_MELEE = 12
+local HASTE_RANGED = 13
+local HASTE_SPELL = 14
+local RESILIENCE = 15
+
 local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
 ----
 -- This file is coded in UTF-8
@@ -48,9 +65,9 @@ L:RegisterTranslations("enUS", function() return {
 	--
 	-- IMPORTANT: there may not exist a one-to-one correspondence, meaning you can't just translate this file,
 	-- but will need to go in game and find out what needs to be put in here.
-	-- For example, in english I found 3 different strings that maps to RB_CRIT_MELEE: "critical strike", "critical hit" and "crit".
-	-- You will need to find out every string that represents RB_CRIT_MELEE, and so on.
-	-- In other languages there may be 5 different strings that should all map to RB_CRIT_MELEE.
+	-- For example, in english I found 3 different strings that maps to CRIT_MELEE: "critical strike", "critical hit" and "crit".
+	-- You will need to find out every string that represents CRIT_MELEE, and so on.
+	-- In other languages there may be 5 different strings that should all map to CRIT_MELEE.
 	-- so please check in game that you have all strings, and not translate directly off this table.
 	--
 	-- Tip1: When doing localizations, I recommend you set debugging to true in RatingBuster.lua
@@ -63,50 +80,50 @@ L:RegisterTranslations("enUS", function() return {
 		{pattern = "%+(%d+)", separators = {"/", " and ", ","},},
 	},
 	["ratingNames"] = {
-		{"defense rating", RB_DEFENSE_SKILL},
-		{"dodge rating", RB_DODGE},
-		{"block rating", RB_BLOCK}, -- block enchant: "+10 Shield Block Rating"
-		{"parry rating", RB_PARRY},
+		{"defense rating", DEFENSE_SKILL},
+		{"dodge rating", DODGE},
+		{"block rating", BLOCK}, -- block enchant: "+10 Shield Block Rating"
+		{"parry rating", PARRY},
 
-		{"spell critical strike rating", RB_CRIT_SPELL},
-		{"spell critical hit rating", RB_CRIT_SPELL},
-		{"spell critical rating", RB_CRIT_SPELL},
-		{"spell crit rating", RB_CRIT_SPELL},
-		{"ranged critical strike rating", RB_CRIT_RANGED},
-		{"ranged critical hit rating", RB_CRIT_RANGED},
-		{"ranged critical rating", RB_CRIT_RANGED},
-		{"ranged crit rating", RB_CRIT_RANGED},
-		{"critical strike rating", RB_CRIT_MELEE},
-		{"critical hit rating", RB_CRIT_MELEE},
-		{"crit rating", RB_CRIT_MELEE},
+		{"spell critical strike rating", CRIT_SPELL},
+		{"spell critical hit rating", CRIT_SPELL},
+		{"spell critical rating", CRIT_SPELL},
+		{"spell crit rating", CRIT_SPELL},
+		{"ranged critical strike rating", CRIT_RANGED},
+		{"ranged critical hit rating", CRIT_RANGED},
+		{"ranged critical rating", CRIT_RANGED},
+		{"ranged crit rating", CRIT_RANGED},
+		{"critical strike rating", CRIT_MELEE},
+		{"critical hit rating", CRIT_MELEE},
+		{"crit rating", CRIT_MELEE},
 
-		{"spell hit rating", RB_HIT_SPELL},
-		{"ranged hit rating", RB_HIT_RANGED},
-		{"hit rating", RB_HIT_MELEE},
+		{"spell hit rating", HIT_SPELL},
+		{"ranged hit rating", HIT_RANGED},
+		{"hit rating", HIT_MELEE},
 
-		{"resilience", RB_RESILIENCE}, -- resilience is implicitly a rating
+		{"resilience", RESILIENCE}, -- resilience is implicitly a rating
 
-		{"spell haste rating", RB_HASTE_SPELL},
-		{"ranged haste rating", RB_HASTE_RANGED},
-		{"haste rating", RB_HASTE_MELEE},
-		{"speed rating", RB_HASTE_MELEE}, -- [Drums of Battle]
+		{"spell haste rating", HASTE_SPELL},
+		{"ranged haste rating", HASTE_RANGED},
+		{"haste rating", HASTE_MELEE},
+		{"speed rating", HASTE_MELEE}, -- [Drums of Battle]
 
-		{"skill rating", RB_WEAPON_SKILL},
+		{"skill rating", WEAPON_SKILL},
 		--[[
-		{"dagger skill rating", RB_WEAPON_SKILL},
-		{"sword skill rating", RB_WEAPON_SKILL},
-		{"two%-handed swords skill rating", RB_WEAPON_SKILL},
-		{"axe skill rating", RB_WEAPON_SKILL},
-		{"bow skill rating", RB_WEAPON_SKILL},
-		{"crossbow skill rating", RB_WEAPON_SKILL},
-		{"gun skill rating", RB_WEAPON_SKILL},
-		{"feral combat skill rating", RB_WEAPON_SKILL},
-		{"mace skill rating", RB_WEAPON_SKILL},
-		{"polearm skill rating", RB_WEAPON_SKILL},
-		{"staff skill rating", RB_WEAPON_SKILL},
-		{"two%-handed axes skill rating", RB_WEAPON_SKILL},
-		{"two%-handed maces skill rating", RB_WEAPON_SKILL},
-		{"fist weapons skill rating", RB_WEAPON_SKILL},
+		{"dagger skill rating", WEAPON_SKILL},
+		{"sword skill rating", WEAPON_SKILL},
+		{"two%-handed swords skill rating", WEAPON_SKILL},
+		{"axe skill rating", WEAPON_SKILL},
+		{"bow skill rating", WEAPON_SKILL},
+		{"crossbow skill rating", WEAPON_SKILL},
+		{"gun skill rating", WEAPON_SKILL},
+		{"feral combat skill rating", WEAPON_SKILL},
+		{"mace skill rating", WEAPON_SKILL},
+		{"polearm skill rating", WEAPON_SKILL},
+		{"staff skill rating", WEAPON_SKILL},
+		{"two%-handed axes skill rating", WEAPON_SKILL},
+		{"two%-handed maces skill rating", WEAPON_SKILL},
+		{"fist weapons skill rating", WEAPON_SKILL},
 		--]]
 	},
 } end)

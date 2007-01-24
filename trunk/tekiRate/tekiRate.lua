@@ -1,4 +1,5 @@
 ﻿
+
 local Compost = AceLibrary("Compost-2.0")
 local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
 
@@ -6,6 +7,7 @@ local _G = getfenv(0)
 
 
 tekiRate = DongleStub("Dongle-Beta0"):New("tekiRate")
+if UnitName("player") == "Tekkub" then tekiRate:EnableDebug(1, ChatFrame5) end
 
 
 ---------------------
@@ -26,6 +28,27 @@ function tekiRate:OnInitialize()
 			if orig then return orig(frame, ...) end
 		end)
 	end
+end
+
+
+--------------------------------
+--      Rating converter      --
+--------------------------------
+
+-- Level 60 base rating
+local RatingBase = {2.5, 1.5, 12, 20, 5, 10, 10, 8, 14, 14, 14, 10, 10, 10, 25}
+
+-- Formula reverse engineered by Whitetooth@Cenarius (hotdogee@¤Ú«¢©i¯Sbaha)
+-- returns percentages
+local function ReverseRating(value, rType)
+	assert(type(value) == "number", "Bad value for arg 1, expected number, got "..type(value))
+	assert(type(rType) == "number", "Bad value for arg 2, expected number, got "..type(rType))
+	assert(rType >=1 and rType <= 15, rType.. " is out of range for arg 2")
+
+	local level = UnitLevel("player")
+	if     level >= 60 then return value/RatingBase[rType] * ( (-3/82) * level + (131/41) )
+	elseif level >= 10 then return value/RatingBase[rType] / ( (1/52)  * level - (8/52) )
+	else return 0 end
 end
 
 
@@ -58,7 +81,6 @@ Equip: Adds 12 resilience (-.58% crit, -1.16% crit damage)
 --]]
 
 
-
 function tekiRate:ProcessTooltip(tooltip, link)
 	local tipname = tooltip:GetName()
 	for i = 2, tooltip:NumLines() do self:ParseLine(_G[tipname.."TextLeft"..i]) end
@@ -74,29 +96,16 @@ function tekiRate:ParseLine(fontstring)
 		local lowerText = string.lower(lineText) -- convert to lower so we don't have to worry about same ratings with different cases
 		-- Capture the increased amount
 		local s, e, amount = string.find(lowerText, p.pattern)
-		if not amount then return end
-
-		-- Check for separators
-		local separator, newtext = self:GetSeperator(p, lineText)
-
-		-- If this line has a separator, then we do the split and combine algorithm
-		if separator then
-			local splitText = Compost:Acquire(string.split("/", newtext))
-			for i,text in ipairs(splitText) do
-				local lowerText = string.lower(text) -- convert to lower so we don't have to worry about same ratings with different cases
-				-- Capture the increased amount
-				local s, e, amount = string.find(lowerText, p.pattern)
-				if amount then splitText[i] = self:AppendRating(lowerText, amount, p, text, s, e) end
-			end -- for i, text in ipairs(splitText)
-			lineText = string.join(separator, unpack(splitText))
-			Compost:Reclaim(splitText)
-		else
-			lineText = self:AppendRating(lowerText, amount, p, text, s, e)
+		if amount then
+			local separator, newtext = self:GetSeperator(lineText)
+			lineText = separator and string.join(separator, self:ParseManyRatings(p, string.split("/,", newtext)))
+				or (text.. self:GetRatingTag(lowerText, amount))
 		end
 	end
 
 	fontstring:SetText(lineText)
 end
+
 
 function tekiRate:AppendRating(lowerText, amount, p, text, s, e)
 	local ratingID = self:GetRatingID(lowerText)
@@ -107,11 +116,20 @@ function tekiRate:AppendRating(lowerText, amount, p, text, s, e)
 	-- build reversed string
 	local reversedString
 
-	reversedString = string.format("(%s%.2f%s)", ratingID == 15 and "-" or "",
-		reversedAmount, (ratingID == 1 or ratingID == 2) and "" or "%%%%")
+	reversedString = string.format(" (%s%.2f%s)", ratingID == 15 and "-" or "", reversedAmount, (ratingID == 1 or ratingID == 2) and "" or "%%%%")
 
-		-- build converted string
+	-- build converted string
 	return string.gsub(text, p.pattern, string.gsub(string.sub(text, s, e), "%d+", "%0 "..reversedString), 1)
+end
+
+
+function tekiRate:GetRatingTag(text, amount)
+	if not amount then return end
+	local ratingID = self:GetRatingID(text)
+	if not ratingID then return end
+
+	return string.format(" (%s%.2f%s)", ratingID == 15 and "-" or "",
+		ReverseRating(tonumber(amount), ratingID, UnitLevel("player")), (ratingID == 1 or ratingID == 2) and "" or "%%%%")
 end
 
 
@@ -124,9 +142,21 @@ function tekiRate:GetRatingID(lowerText)
 end
 
 
-function tekiRate:GetSeperator(p, lineText)
-	for _, s in ipairs(p.separators) do
-		if string.find(lineText, s) then return s, string.gsub(lineText, s, "/") end
-	end
+function tekiRate:GetSeperator(text)
+	if string.find(text, " and ") then return s, string.gsub(text, " and ", ",") end
+	if string.find(text, ",") then return ", ", text end
+	if string.find(text, "/") then return "/", text end
+end
+
+
+function tekiRate:ParseManyRatings(p, text, ...)
+	assert(type(text) == "text", "Bad value for arg 2, expected text, got "..type(text))
+	local lowerText = string.lower(text)
+	-- Capture the increased amount
+	local tag = self:GetRatingTag(lowerText, select(3, string.find(lowerText, p.pattern)))
+	if tag then text = text..tag end
+
+	if select("#", ...) > 0 then return text, self:ParseManyRatings(p, ...)
+	else return text end
 end
 
