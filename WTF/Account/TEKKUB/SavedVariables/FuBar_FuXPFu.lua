@@ -7,6 +7,7 @@ FuXPDB = {
 		["default"] = {
 			["TekAutoRepLink"] = true,
 			["WatchedFaction"] = true,
+			["version"] = 104,
 			["XP"] = {
 				0.9372549019607843, -- [1]
 				1, -- [2]
@@ -15,7 +16,6 @@ FuXPDB = {
 			["detachedTooltip"] = {
 			},
 			["hidden"] = true,
-			["version"] = 104,
 			["showText"] = false,
 			["Faction"] = 3,
 			["Rep"] = {
@@ -49,11 +49,11 @@ FuXPDB = {
 		},
 		["Cubbyhole of Icecrown"] = {
 			["version"] = 100,
+			["showText"] = 0,
 			["Rest"] = {
 				[2] = 0.611764705882353,
 				[3] = 0.3333333333333333,
 			},
-			["showText"] = 0,
 		},
 	},
 }

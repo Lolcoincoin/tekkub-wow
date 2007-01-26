@@ -36,20 +36,20 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatusMana"] = {
+		["GridStatusName"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_lowMana"] = {
-						["range"] = true,
+					["unit_name"] = {
+						["letters"] = 3,
 					},
+				},
+			},
+		},
+		["GridStatusRange"] = {
+			["profiles"] = {
+				["class/Priest"] = {
 				},
 			},
 		},
@@ -62,12 +62,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAggro"] = {
+		["GridStatusMana"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_aggro"] = {
+					["alert_lowMana"] = {
 						["range"] = true,
 					},
 				},
@@ -85,25 +85,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusHealth"] = {
+		["GridStatusAggro"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_offline"] = {
-						["color"] = {
-							["g"] = 0.5,
-							["r"] = 0.5,
-						},
-						["priority"] = 0,
-					},
-					["unit_healthDeficit"] = {
-						["range"] = true,
-					},
-					["alert_lowHealth"] = {
-						["range"] = true,
-					},
-					["unit_health"] = {
+					["alert_aggro"] = {
 						["range"] = true,
 					},
 				},
@@ -131,20 +118,33 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusTarget"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatusName"] = {
+		["GridStatusHealth"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
+					["alert_offline"] = {
+						["color"] = {
+							["g"] = 0.5,
+							["r"] = 0.5,
+						},
+						["priority"] = 0,
 					},
+					["unit_healthDeficit"] = {
+						["range"] = true,
+					},
+					["alert_lowHealth"] = {
+						["range"] = true,
+					},
+					["unit_health"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+		["GridStatusTarget"] = {
+			["profiles"] = {
+				["class/Priest"] = {
 				},
 			},
 		},

@@ -67,9 +67,9 @@ SupplyAndDemandDB = {
 		},
 		["At Merchant"] = {
 			["profiles"] = {
-				["char/Tekkub of Icecrown"] = {
-				},
 				["char/Beardyhead of Icecrown"] = {
+				},
+				["char/Tekkub of Icecrown"] = {
 				},
 			},
 		},

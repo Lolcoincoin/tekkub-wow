@@ -13,20 +13,20 @@ ArcHUDDB = {
 	["profiles"] = {
 		["Default"] = {
 			["NamePlates"] = false,
-			["RingVisibility"] = 1,
 			["TargetFrame"] = false,
+			["RingVisibility"] = 1,
 			["minimapPosition"] = 159.3052276268513,
 			["YLoc"] = 65,
-			["FadeIC"] = 1,
 			["HoverMsg"] = false,
+			["FadeIC"] = 1,
 			["TargetTargetTarget"] = false,
 			["FadeFull"] = 0,
 			["AttachTop"] = true,
 			["detachedTooltip"] = {
 			},
 			["hidden"] = true,
-			["PlayerModel"] = false,
 			["TargetTarget"] = false,
+			["PlayerModel"] = false,
 		},
 	},
 }
