@@ -1,9 +1,10 @@
 ﻿
 
-local Compost = AceLibrary("Compost-2.0")
 local L = AceLibrary("AceLocale-2.2"):new("RatingBuster")
 
 local _G = getfenv(0)
+local cache = {}
+setmetatable(cache, {__mode = "kv"})
 
 
 tekiRate = DongleStub("Dongle-Beta0"):New("tekiRate")
@@ -14,7 +15,7 @@ if UnitName("player") == "Tekkub" then tekiRate:EnableDebug(1, ChatFrame5) end
 -- Initializations --
 ---------------------
 
-function tekiRate:OnInitialize()
+function tekiRate:Initialize()
 	-- Build the RatingNameToID table from L["ratingNames"] table
 	self.RatingNameToID = {}
 	for _, v in ipairs(L["ratingNames"]) do self.RatingNameToID[v[1]] = v[2] end
@@ -52,9 +53,9 @@ local function ReverseRating(value, rType)
 end
 
 
---------------------------
--- Process Tooltip Core --
---------------------------
+------------------------------------
+--      Process Tooltip Core      --
+------------------------------------
 --[[
 Method 1
 "+15 Crit Rating"
@@ -83,27 +84,35 @@ Equip: Adds 12 resilience (-.58% crit, -1.16% crit damage)
 
 function tekiRate:ProcessTooltip(tooltip, link)
 	local tipname = tooltip:GetName()
-	for i = 2, tooltip:NumLines() do self:ParseLine(_G[tipname.."TextLeft"..i]) end
+	for i=2,tooltip:NumLines() do
+		local fontstring = _G[tipname.."TextLeft"..i]
+		local text = self:ParseLine(fontstring:GetText())
+		if text then fontstring:SetText(text) end
+	end
 	tooltip:Show()
 end
 
 
-function tekiRate:ParseLine(fontstring)
-	local lineText = fontstring:GetText()
-	if not lineText or not string.find(lineText, "%d") then return end
+function tekiRate:ParseLine(text)
+	if not text then return end
+	if cache[text] ~= nil then return cache[text] end
+	if not string.find(text, "%d") then
+		cache[text] = false
+		return
+	end
+	self:Debug(1, "Parsing line", text)
 
+	local lowerText = string.lower(text)
 	for _, p in ipairs(L["numberPatterns"]) do
-		local lowerText = string.lower(lineText) -- convert to lower so we don't have to worry about same ratings with different cases
-		-- Capture the increased amount
-		local s, e, amount = string.find(lowerText, p.pattern)
+		local _, _, amount = string.find(lowerText, p.pattern)
 		if amount then
-			local separator, newtext = self:GetSeperator(lineText)
-			lineText = separator and string.join(separator, self:ParseManyRatings(p, string.split("/,", newtext)))
-				or (text.. self:GetRatingTag(lowerText, amount))
+			local separator, newtext = self:GetSeperator(text)
+			if separator then return string.join(separator, self:ParseManyRatings(p, string.split("/,", newtext))) end
+			local tag = self:GetRatingTag(lowerText, amount)
+			if tag then return text..tag end
 		end
 	end
-
-	fontstring:SetText(lineText)
+	cache[text] = false
 end
 
 
@@ -116,7 +125,7 @@ function tekiRate:AppendRating(lowerText, amount, p, text, s, e)
 	-- build reversed string
 	local reversedString
 
-	reversedString = string.format(" (%s%.2f%s)", ratingID == 15 and "-" or "", reversedAmount, (ratingID == 1 or ratingID == 2) and "" or "%%%%")
+	reversedString = string.format(" (%s%.2f%s)", ratingID == 15 and "-" or "", reversedAmount, (ratingID == 1 or ratingID == 2) and "" or "%")
 
 	-- build converted string
 	return string.gsub(text, p.pattern, string.gsub(string.sub(text, s, e), "%d+", "%0 "..reversedString), 1)
@@ -129,7 +138,7 @@ function tekiRate:GetRatingTag(text, amount)
 	if not ratingID then return end
 
 	return string.format(" (%s%.2f%s)", ratingID == 15 and "-" or "",
-		ReverseRating(tonumber(amount), ratingID, UnitLevel("player")), (ratingID == 1 or ratingID == 2) and "" or "%%%%")
+		ReverseRating(tonumber(amount), ratingID, UnitLevel("player")), (ratingID == 1 or ratingID == 2) and "" or "%")
 end
 
 
