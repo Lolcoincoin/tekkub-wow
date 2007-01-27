@@ -36,5 +36,6 @@ GameTooltip:SetScript("OnTooltipSetUnit", function(...)
 			end
 		end
 	end
+	GameTooltip:Show()
 	if orig then return orig(...) end
 end)
