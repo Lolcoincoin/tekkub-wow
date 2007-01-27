@@ -109,7 +109,10 @@ function tekiRate:ParseLine(text)
 			local separator, newtext = self:GetSeperator(text)
 			if separator then return string.join(separator, self:ParseManyRatings(p, string.split("/,", newtext))) end
 			local tag = self:GetRatingTag(lowerText, amount)
-			if tag then return text..tag end
+			if tag then
+				cache[text] = text..tag
+				return text..tag
+			end
 		end
 	end
 	cache[text] = false
