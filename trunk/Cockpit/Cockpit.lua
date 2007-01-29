@@ -3,8 +3,7 @@
 --      Are you local?      --
 ------------------------------
 
-local ontaxi, overidden
-local hideui, flightview, landingview = false, 1, 5
+local ontaxi, overidden, db, slash
 
 
 ---------------------------------
@@ -19,6 +18,12 @@ Cockpit = DongleStub("Dongle-Beta0"):New("Cockpit")
 ------------------------------
 
 function Cockpit:Enable()
+	db = self:InitializeDB("CockpitDB", {hideui = false, flightview = 1, landingview = 5}, "global")
+	slash = self:InitializeSlashCommand("Automatic camera zoom while flying", "COCKPIT", "cockpit", "cock")
+	slash:RegisterSlashHandler("hideui: toggle hiding of the UI while in flight", "^hideui$", function()
+		db.profile.hideui = not db.profile.hideui
+	end)
+
 	self:RegisterEvent("UNIT_FLAGS")
 	self:RegisterEvent("PLAYER_CONTROL_GAINED")
 end
@@ -29,34 +34,34 @@ end
 ------------------------------
 
 function Cockpit:UNIT_FLAGS()
-	if UnitOnTaxi("player") then
-		if IsShiftKeyDown() then
-			overidden = true
-			return
-		end
+	if not UnitOnTaxi("player") then return end
 
-		if hideui then
-			CloseAllWindows()
-			UIParent:Hide()
-		end
-
-		SetView(flightview)
-		ontaxi = true
+	if IsShiftKeyDown() then
+		overidden = true
+		return
 	end
+
+	if db.profile.hideui then
+		CloseAllWindows()
+		UIParent:Hide()
+	end
+
+	SetView(db.profile.flightview)
+	ontaxi = true
 end
 
 
 function Cockpit:PLAYER_CONTROL_GAINED()
-	if ontaxi then
-		if overidden then
-			overidden = false
-			return
-		end
+	if not ontaxi then return end
 
-		if not UIParent:IsVisible() then UIParent:Show() end
-		SetView(landingview)
-		ontaxi = false
+	if overidden then
+		overidden = false
+		return
 	end
+
+	if not UIParent:IsVisible() then UIParent:Show() end
+	SetView(db.profile.landingview)
+	ontaxi = false
 end
 
 
