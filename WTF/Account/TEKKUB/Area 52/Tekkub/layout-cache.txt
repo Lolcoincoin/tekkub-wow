@@ -23,13 +23,13 @@ Y: -708
 W: 451
 H: 120
 Frame: ChatFrame4
-FrameLevel: 17
+FrameLevel: 16
 X: 911
 Y: -708
 W: 451
 H: 120
 Frame: ChatFrame5
-FrameLevel: 13
+FrameLevel: 11
 X: 232
 Y: -578
 W: 451
@@ -52,7 +52,7 @@ X: 473
 Y: -208
 Frame: FuBarPluginBagginsFrame
 FrameLevel: 7
-X: 213
+X: 187
 Y: -833
 Frame: BT3Bar1
 FrameLevel: 1
@@ -76,7 +76,7 @@ X: -3
 Y: -400
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 187
+X: 161
 Y: -833
 Frame: FuBarPluginFactionsFuFrame
 FrameLevel: 7
@@ -84,7 +84,7 @@ X: 1073
 Y: -833
 Frame: FuBarPluginGreedBeaconFrame
 FrameLevel: 7
-X: 227
+X: 239
 Y: 4
 Frame: FuBarPluginGuildFuFrame
 FrameLevel: 7

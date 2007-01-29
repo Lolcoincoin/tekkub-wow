@@ -52,13 +52,13 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
-				["b"] = 0.02352941176470588,
-				["offsety"] = 2.999905340869312,
 				["r"] = 0.03529411764705882,
-				["locked"] = true,
+				["offsety"] = 2.999905340869312,
+				["b"] = 0.02352941176470588,
+				["anchor"] = "BOTTOMLEFT",
 				["offsetx"] = 611.500011108284,
 				["g"] = 0.07450980392156863,
-				["anchor"] = "BOTTOMLEFT",
+				["locked"] = true,
 			},
 		},
 		["Beardyhead of Draka"] = {
@@ -119,10 +119,10 @@ FuBar_GreedBeaconDB = {
 		["StormscaleNunuvit"] = {
 			["version"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["SuramarHuslu"] = {
 			["version"] = 0,
 		},
-		["SuramarHuslu"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 0,
 		},
 		["DrakaTekkub"] = {

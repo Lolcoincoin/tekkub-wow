@@ -31,14 +31,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["mg2-64pre"] = true,
 			["sraid"] = true,
+			["OzRaid"] = true,
 			["squishy"] = true,
-			["ctra"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["OzRaid"] = true,
+			["ctra"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -320,22 +320,6 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
-		["Microfiche of Icecrown"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
-		["Kumanoinkei of Illidan"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
@@ -403,6 +387,22 @@ CliqueDB = {
 					["modifiers"] = 0,
 					["action"] = "Clique:UnitMenu()\n",
 				}, -- [1]
+			},
+		},
+		["Microfiche of Icecrown"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
+		["Kumanoinkei of Illidan"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
 			},
 		},
 		["Wuffi of Icecrown"] = {

@@ -36,13 +36,13 @@ BT3DB = {
 				{
 					["Stances"] = {
 						["prowl"] = 8,
-						["def"] = 8,
+						["bear"] = 9,
 						["berserker"] = 9,
 						["battle"] = 7,
-						["cat"] = 7,
-						["bear"] = 9,
-						["stealth"] = 7,
 						["shadowform"] = 0,
+						["stealth"] = 7,
+						["def"] = 8,
+						["cat"] = 7,
 					},
 					["Rows"] = 3,
 					["PosX"] = 33.9000079794111,

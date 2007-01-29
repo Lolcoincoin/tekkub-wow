@@ -17,8 +17,8 @@ SupplyAndDemandDB = {
 				["char/Tekkub of Icecrown"] = {
 				},
 				["Default"] = {
-					["Kyubi"] = false,
 					["WatchDogOptions"] = false,
+					["Kyubi"] = false,
 				},
 			},
 		},

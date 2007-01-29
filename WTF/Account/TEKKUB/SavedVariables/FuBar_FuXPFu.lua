@@ -7,7 +7,6 @@ FuXPDB = {
 		["default"] = {
 			["TekAutoRepLink"] = true,
 			["WatchedFaction"] = true,
-			["version"] = 104,
 			["XP"] = {
 				0.9372549019607843, -- [1]
 				1, -- [2]
@@ -15,15 +14,16 @@ FuXPDB = {
 			},
 			["detachedTooltip"] = {
 			},
-			["hidden"] = true,
-			["showText"] = false,
-			["Faction"] = 3,
 			["Rep"] = {
 				0.1764705882352941, -- [1]
 				1, -- [2]
 				0.07843137254901961, -- [3]
 			},
 			["ShowText"] = "XP",
+			["version"] = 104,
+			["Faction"] = 3,
+			["hidden"] = true,
+			["showText"] = false,
 			["Rest"] = {
 				0.6235294117647059, -- [1]
 				0.0196078431372549, -- [2]

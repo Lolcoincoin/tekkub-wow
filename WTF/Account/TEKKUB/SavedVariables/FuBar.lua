@@ -38,21 +38,21 @@ FuBar2DB = {
 		["char/Beardyhead of Icecrown"] = {
 			["fontSize"] = 12,
 			["loadOnDemand"] = {
-				["FuBar_ReagentFu"] = {
-					["title"] = "ReagentFu",
-					["category"] = "inventory",
-				},
 				["FuBar_AmmoFu"] = {
 					["title"] = "AmmoFu",
 					["category"] = "inventory",
+				},
+				["FuBar_QuestsFu"] = {
+					["title"] = "QuestsFu",
+					["category"] = "Quest",
 				},
 				["FuBar_ToFu"] = {
 					["title"] = "ToFu",
 					["category"] = "Interface Enhancements",
 				},
-				["FuBar_QuestsFu"] = {
-					["title"] = "QuestsFu",
-					["category"] = "Quest",
+				["FuBar_ReagentFu"] = {
+					["title"] = "ReagentFu",
+					["category"] = "inventory",
 				},
 				["FuBar_FuXPFu"] = {
 					["title"] = "FuXP",
@@ -205,8 +205,8 @@ FuBar2DB = {
 					["PaintBall"] = true,
 					["Experienced"] = true,
 					["CoinPurse"] = true,
-					["Improved Raid Warning Frame"] = true,
 					["oRA Menu"] = true,
+					["Improved Raid Warning Frame"] = true,
 					["KeyQ"] = true,
 					["FarmerFu"] = true,
 				},
@@ -225,9 +225,9 @@ FuBar2DB = {
 		["char/Tekkub of Icecrown"] = {
 			["fontSize"] = 12,
 			["loadOnDemand"] = {
-				["FuBar_ReagentFu"] = {
-					["title"] = "ReagentFu",
-					["category"] = "Inventory",
+				["FuBar_LockFu"] = {
+					["title"] = "LockFu",
+					["category"] = "others",
 				},
 				["PeriodicMenu"] = {
 					["title"] = "Periodic Menu",
@@ -241,9 +241,9 @@ FuBar2DB = {
 					["title"] = "LocationFu",
 					["category"] = "Map",
 				},
-				["FuBar_LockFu"] = {
-					["title"] = "LockFu",
-					["category"] = "others",
+				["FuBar_ReagentFu"] = {
+					["title"] = "ReagentFu",
+					["category"] = "Inventory",
 				},
 				["FuBar_VolumeFu"] = {
 					["title"] = "VolumeFu",
@@ -398,6 +398,7 @@ FuBar2DB = {
 					["xPercent"] = 0,
 					["attachPoint"] = "TOP",
 					["lock"] = true,
+					["widthPercent"] = 1,
 					["plugins"] = {
 						["right"] = {
 							"ExitFu", -- [1]
@@ -436,13 +437,13 @@ FuBar2DB = {
 							"Watersports", -- [6]
 						},
 					},
-					["widthPercent"] = 1,
 					["yPercent"] = 0.9849044486544522,
 				}, -- [1]
 				{
 					["xPercent"] = 1.054329493710426e-007,
 					["attachPoint"] = "BOTTOM",
 					["lock"] = true,
+					["widthPercent"] = 1,
 					["plugins"] = {
 						["right"] = {
 							"VolumeFu", -- [1]
@@ -479,7 +480,6 @@ FuBar2DB = {
 							"Itemized Deductions", -- [6]
 						},
 					},
-					["widthPercent"] = 1,
 					["yPercent"] = 7.812406016415952e-005,
 				}, -- [2]
 			},
@@ -489,9 +489,9 @@ FuBar2DB = {
 			["centerSpacing"] = 10,
 			["skinR"] = 0,
 			["loadOnDemand"] = {
-				["FuBar_LockFu"] = {
-					["title"] = "LockFu",
-					["category"] = "others",
+				["FuBar_ReagentFu"] = {
+					["title"] = "ReagentFu",
+					["category"] = "Inventory",
 				},
 				["FuBar_iTemFu"] = {
 					["title"] = "iTemFu",
@@ -516,26 +516,32 @@ FuBar2DB = {
 					["title"] = "VolumeFu",
 					["category"] = "Audio",
 				},
-				["FuBar_ClockFu"] = {
-					["title"] = "ClockFu",
-					["disabled"] = true,
-					["category"] = "Interface Enhancements",
+				["FuBar_RefreshmentsFu"] = {
 				},
 				["FuBar_PerformanceFu"] = {
 					["title"] = "PerformanceFu",
 					["category"] = "Interface Enhancements",
 				},
-				["Watersports"] = {
+				["FuBar_FuXPFu"] = {
+					["title"] = "FuXP",
+					["category"] = "bars",
 				},
-				["FuBar_ReagentFu"] = {
-					["title"] = "ReagentFu",
+				["FuBar_QuestsFu"] = {
+					["title"] = "QuestsFu",
+					["category"] = "Quest",
+				},
+				["FuBar_LockFu"] = {
+					["title"] = "LockFu",
+					["category"] = "others",
+				},
+				["FuBar_GarbageFu"] = {
+					["title"] = "GarbageFu",
 					["category"] = "Inventory",
 				},
-				["FuBar_RefreshmentsFu"] = {
-				},
-				["FuBar_GroupFu"] = {
-					["title"] = "GroupFu",
-					["category"] = "Miscellaneous",
+				["FuBar_ClockFu"] = {
+					["title"] = "ClockFu",
+					["disabled"] = true,
+					["category"] = "Interface Enhancements",
 				},
 				["FuBar_AmmoFu"] = {
 					["title"] = "AmmoFu",
@@ -549,21 +555,15 @@ FuBar2DB = {
 				},
 				["tekProber"] = {
 				},
-				["FuBar_QuestsFu"] = {
-					["title"] = "QuestsFu",
-					["category"] = "Quest",
+				["Watersports"] = {
 				},
-				["FuBar_FuXPFu"] = {
-					["title"] = "FuXP",
-					["category"] = "bars",
+				["FuBar_GroupFu"] = {
+					["title"] = "GroupFu",
+					["category"] = "Miscellaneous",
 				},
 				["FuBar_Transporter"] = {
 					["title"] = "Transporter",
 					["category"] = "others",
-				},
-				["FuBar_GarbageFu"] = {
-					["title"] = "GarbageFu",
-					["category"] = "Inventory",
 				},
 				["Fubar_ExitFu"] = {
 					["title"] = "ExitFu",
@@ -579,59 +579,59 @@ FuBar2DB = {
 				["PetitionFu"] = true,
 				["Experienced"] = true,
 				["Manufac"] = true,
-				["Improved Raid Warning Frame"] = true,
+				["ArcHUD"] = true,
 				["AceGCInFu"] = true,
 				["FelwoodGather"] = true,
 				["PaintBall"] = true,
-				["Tracker"] = true,
 				["ToFu"] = true,
 				["KeyQ"] = true,
 				["QuestsFu"] = true,
+				["ClockFu"] = true,
+				["Improved Raid Warning Frame"] = true,
 				["oRA Menu"] = true,
 				["OneView"] = true,
-				["ArcHUD"] = true,
 				["oRA2"] = true,
 				["MailFu"] = true,
-				["ClockFu"] = true,
+				["CoinPurse"] = true,
 				["Squishy"] = true,
 				["FarmerFu"] = true,
-				["CoinPurse"] = true,
+				["Tracker"] = true,
 				["Bartender2Fu"] = true,
 			},
-			["thickness"] = 5,
+			["skinG"] = 0,
 			["transparency"] = 1,
 			["overflow"] = true,
-			["leftSpacing"] = 10,
+			["thickness"] = 5,
 			["places"] = {
 				["right"] = {
 					["MailFu"] = true,
-					["PetitionFu"] = true,
 					["Tracker"] = true,
+					["PetitionFu"] = true,
 					["ToFu"] = true,
 					["KeyQ"] = true,
 					["QuestsFu"] = true,
 				},
 				["left"] = {
-					["ClockFu"] = true,
 					["Experienced"] = true,
 					["OneView"] = true,
 					["Manufac"] = true,
-					["ArcHUD"] = true,
+					["oRA Menu"] = true,
 					["AceGCInFu"] = true,
 					["Improved Raid Warning Frame"] = true,
 					["FelwoodGather"] = true,
 					["oRA2"] = true,
-					["oRA Menu"] = true,
-					["CoinPurse"] = true,
+					["ArcHUD"] = true,
+					["ClockFu"] = true,
 					["Squishy"] = true,
 					["FarmerFu"] = true,
 					["PaintBall"] = true,
+					["CoinPurse"] = true,
 					["Bartender2Fu"] = true,
 				},
 				["center"] = {
 				},
 			},
-			["skinG"] = 0,
+			["leftSpacing"] = 10,
 		},
 	},
 }

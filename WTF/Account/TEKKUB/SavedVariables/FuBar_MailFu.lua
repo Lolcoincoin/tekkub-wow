@@ -1,5 +1,8 @@
 
 FuBar_MailDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
 			["hidetext"] = true,
@@ -43,13 +46,15 @@ FuBar_MailDB = {
 		},
 		["default"] = {
 			["hidetext"] = true,
+			["minimapPositionY"] = 677.3334073824916,
+			["minimapPositionX"] = 1223.46671679645,
 			["detachedTooltip"] = {
 			},
-			["textformat"] = "number",
-			["showIcon"] = 1,
-			["minimapPosition"] = 245.4009699091313,
 			["version"] = 904,
+			["minimapPositionWild"] = true,
+			["textformat"] = "number",
 			["showText"] = true,
+			["showIcon"] = 1,
 		},
 		["Priest"] = {
 			["minimapPositionWild"] = true,
@@ -74,11 +79,11 @@ FuBar_MailDB = {
 			},
 			["hidden"] = true,
 			["minimapPositionWild"] = true,
-			["showText"] = true,
-			["minimapPositionX"] = 1225.000046024581,
-			["textformat"] = "number",
-			["minimapPositionY"] = 733.9999374880522,
 			["showIcon"] = 1,
+			["minimapPositionX"] = 1225.000046024581,
+			["showText"] = true,
+			["minimapPositionY"] = 733.9999374880522,
+			["textformat"] = "number",
 		},
 		["Cubbyhole of Icecrown"] = {
 			["hidetext"] = true,
@@ -147,42 +152,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["Vek'nilashGirth"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["IcecrownTekkub"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["Steamwheedle CartelTekkub"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["DrakaBeardyhead"] = {
-			["total"] = 0,
-			["version"] = 20000,
-			["new"] = 0,
-		},
-		["IllidanBear"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["IcecrownNanuq"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["FeathermoonAaooeeaaooee"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
+		["Vek'nilashGirth"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -192,13 +167,40 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
+		["IcecrownAilurus"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["DrakaBeardyhead"] = {
+			["total"] = 0,
+			["version"] = 20000,
+			["new"] = 0,
+		},
+		["Steamwheedle CartelTekkub"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["IcecrownNanuq"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["IllidanBear"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["IcecrownTekkub"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
 		["StormscaleMongalka"] = {
 			["total"] = 0,
 			["version"] = 20000,
 			["new"] = 0,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }
