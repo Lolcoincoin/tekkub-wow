@@ -8,7 +8,7 @@ setmetatable(cache, {__mode = "kv"})
 
 
 tekiRate = DongleStub("Dongle-Beta0"):New("tekiRate")
-if UnitName("player") == "Tekkub" then tekiRate:EnableDebug(1, ChatFrame5) end
+--~ if UnitName("player") == "Tekkub" then tekiRate:EnableDebug(1, ChatFrame5) end
 
 
 ---------------------
