@@ -1,12 +1,15 @@
 
 LocationFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
+			["minimapBar"] = false,
+			["showRecZones"] = false,
+			["version"] = "1.1.1551",
 			["detachedTooltip"] = {
 			},
-			["showRecZones"] = false,
-			["minimapBar"] = false,
-			["version"] = "1.1.1551",
 		},
 		["Ailurus of Icecrown"] = {
 			["showRecZones"] = false,
@@ -14,10 +17,10 @@ LocationFuDB = {
 			["version"] = 101.2436,
 		},
 		["char/Beardyhead of Icecrown"] = {
-			["showIcon"] = false,
+			["minimapBar"] = false,
 			["detachedTooltip"] = {
 			},
-			["minimapBar"] = false,
+			["showIcon"] = false,
 			["showCoords"] = false,
 		},
 		["Tekkub of Icecrown"] = {
@@ -28,12 +31,11 @@ LocationFuDB = {
 			["version"] = 101.2436,
 			["showRecZones"] = false,
 		},
-		["Wuffi of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
+		["char/Tekkub of Icecrown"] = {
 			["showRecZones"] = false,
 			["minimapBar"] = false,
-			["version"] = 101.2027,
+			["detachedTooltip"] = {
+			},
 		},
 		["Druid"] = {
 			["version"] = 101.2436,
@@ -44,25 +46,26 @@ LocationFuDB = {
 			["showCoords"] = false,
 			["detachedTooltip"] = {
 			},
-			["version"] = 101.2436,
-			["minimapBar"] = false,
 			["showIcon"] = false,
-		},
-		["Beardyhead of Draka"] = {
-			["version"] = 10280,
-			["showRecZones"] = false,
+			["minimapBar"] = false,
+			["version"] = 101.2436,
 		},
 		["Priest"] = {
 			["version"] = 101.2436,
+			["showRecZones"] = false,
+		},
+		["Beardyhead of Draka"] = {
+			["version"] = 10280,
 			["showRecZones"] = false,
 		},
 		["Hunter"] = {
 			["version"] = 101.2436,
 			["showRecZones"] = false,
 		},
-		["char/Tekkub of Icecrown"] = {
-			["showRecZones"] = false,
+		["Wuffi of Icecrown"] = {
 			["minimapBar"] = false,
+			["showRecZones"] = false,
+			["version"] = 101.2027,
 			["detachedTooltip"] = {
 			},
 		},
@@ -70,8 +73,5 @@ LocationFuDB = {
 			["version"] = 101.2436,
 			["showRecZones"] = false,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

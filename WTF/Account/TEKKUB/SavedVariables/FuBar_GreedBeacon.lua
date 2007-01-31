@@ -11,84 +11,6 @@ FuBar_GreedBeaconDB = {
 	["currentProfile"] = {
 		["Beardyhead of Icecrown"] = "char",
 	},
-	["profiles"] = {
-		["Huslu of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["version"] = "0",
-			["showtokentracker"] = true,
-		},
-		["Ailurus of Icecrown"] = {
-			["disabled"] = 1,
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["Wuffi of Icecrown"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Girth of Vek'nilash"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-			["detachedTooltip"] = {
-			},
-			["supressitem"] = true,
-		},
-		["Druid"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["default"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-			["detachedTooltip"] = {
-				["r"] = 0.03529411764705882,
-				["offsety"] = 2.999905340869312,
-				["b"] = 0.02352941176470588,
-				["anchor"] = "BOTTOMLEFT",
-				["offsetx"] = 611.500011108284,
-				["g"] = 0.07450980392156863,
-				["locked"] = true,
-			},
-		},
-		["Beardyhead of Draka"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["Priest"] = {
-			["version"] = 0,
-			["supressitem"] = true,
-			["showtokentracker"] = true,
-		},
-		["Hunter"] = {
-			["detachedTooltip"] = {
-				["anchor"] = "BOTTOM",
-				["offsetx"] = -267.0000494621013,
-				["offsety"] = 0,
-			},
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Cubbyhole of Icecrown"] = {
-			["version"] = 0,
-			["supressitem"] = true,
-			["showtokentracker"] = true,
-		},
-	},
 	["realms"] = {
 		["Vek'nilashHorde"] = {
 			["version"] = 0,
@@ -122,17 +44,95 @@ FuBar_GreedBeaconDB = {
 		["SuramarHuslu"] = {
 			["version"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["FeathermoonKub"] = {
 			["version"] = 0,
 		},
 		["DrakaTekkub"] = {
 			["version"] = 0,
 		},
-		["FeathermoonKub"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 0,
 		},
 		["Vek'nilashGirth"] = {
 			["version"] = 0,
+		},
+	},
+	["profiles"] = {
+		["Huslu of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["version"] = "0",
+			["showtokentracker"] = true,
+		},
+		["Ailurus of Icecrown"] = {
+			["version"] = 0,
+			["disabled"] = 1,
+			["showtokentracker"] = true,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["Girth of Vek'nilash"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
+			["detachedTooltip"] = {
+			},
+			["supressitem"] = true,
+		},
+		["Druid"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["default"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
+			["detachedTooltip"] = {
+				["anchor"] = "BOTTOMLEFT",
+				["offsety"] = 2.999905340869312,
+				["b"] = 0.02352941176470588,
+				["locked"] = true,
+				["offsetx"] = 611.500011108284,
+				["g"] = 0.07450980392156863,
+				["r"] = 0.03529411764705882,
+			},
+		},
+		["Priest"] = {
+			["supressitem"] = true,
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["Beardyhead of Draka"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["Hunter"] = {
+			["detachedTooltip"] = {
+				["anchor"] = "BOTTOM",
+				["offsetx"] = -267.0000494621013,
+				["offsety"] = 0,
+			},
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["Wuffi of Icecrown"] = {
+			["version"] = 0,
+			["showtokentracker"] = true,
+		},
+		["Cubbyhole of Icecrown"] = {
+			["supressitem"] = true,
+			["version"] = 0,
+			["showtokentracker"] = true,
 		},
 	},
 }
