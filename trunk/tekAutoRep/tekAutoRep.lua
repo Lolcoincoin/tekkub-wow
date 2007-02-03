@@ -9,7 +9,7 @@ local inactives = {}
 tekAutoRep = DongleStub("Dongle-Beta0"):New("tekAutoRep")
 
 
-function tekAutoRep:OnEnable()
+function tekAutoRep:Enable()
 	self:RegisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
 	self:RegisterEvent("UPDATE_FACTION")
 end
@@ -31,7 +31,7 @@ function tekAutoRep:UPDATE_FACTION()
 end
 
 
-function tekAutoRep:CHAT_MSG_COMBAT_FACTION_CHANGE(msg)
+function tekAutoRep:CHAT_MSG_COMBAT_FACTION_CHANGE(event, msg)
 	local faction = select(3, string.find(msg, L.FACTION_STANDING_CHANGED)) or
 		select(3, string.find(msg, L.FACTION_STANDING_INCREASED)) or
 		select(3, string.find(msg, L.FACTION_STANDING_DECREASED))
