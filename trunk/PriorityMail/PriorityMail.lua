@@ -80,8 +80,9 @@ ContainerFrameItemButton_OnModifiedClick = function(button, ...)
 		local texture, count = GetContainerItemInfo(bag, slot)
 		PickupContainerItem(bag, slot)
 		ClickSendMailItemButton()
-		local smf_texture, smf_count = select(2, GetSendMailItem())
-		if SendMailNameEditBox:GetText() and texture == smf_texture and count == smf_count then
+
+		local _, tex2, count2 = GetSendMailItem()
+		if SendMailNameEditBox:GetText() and texture == tex2 and count == count2 then
 			SendMailFrame_SendMail()
 		end
 	else return orig5(button, ...) end
