@@ -25,8 +25,8 @@ function tekAutoRep:UPDATE_FACTION()
 	end
 
 	if inact then
-		CollapseFactionHeader(inact)
 		self:UnregisterEvent("UPDATE_FACTION")
+		CollapseFactionHeader(inact)
 	end
 end
 
