@@ -4,7 +4,7 @@
 ------------------------------
 
 local last, mailshown
-local SendMailNameEditBox = SendMailNameEditBox
+local SendMailNameEditBox, SendMailFrame = SendMailNameEditBox, SendMailFrame
 
 
 ---------------------------------
