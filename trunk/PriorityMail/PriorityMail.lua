@@ -1,4 +1,13 @@
 
+----------------------------
+--      Localization      --
+----------------------------
+
+local L = {
+	["Alt-Click to mail this item."] = "Alt-Click to mail this item.",
+}
+
+
 ------------------------------
 --      Are you local?      --
 ------------------------------
@@ -67,9 +76,9 @@ end
 local orig4 = GameTooltip:GetScript("OnTooltipSetItem")
 GameTooltip:SetScript("OnTooltipSetItem", function(tooltip, ...)
 	if mailshown and SendMailFrame:IsVisible() and not CursorHasItem() then
-		tooltip:AddLine("Alt-Click to mail this item.")
+		tooltip:AddLine(L["Alt-Click to mail this item."])
 	end
-	return orig4(tooltip, ...)
+	if orig4 then return orig4(tooltip, ...) end
 end)
 
 
