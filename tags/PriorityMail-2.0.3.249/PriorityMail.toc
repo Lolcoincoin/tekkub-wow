@@ -1,0 +1,15 @@
+﻿## Interface: 20003
+
+## Title: PriorityMail
+## Notes: Send mail quickly
+## Author: Tekkub Stoutwrithe
+## X-Credits: Shamelessly stolen from Postal by Grennon
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Mail
+
+## OptionalDeps: Dongle
+
+Dongle.lua
+
+PriorityMail.lua
