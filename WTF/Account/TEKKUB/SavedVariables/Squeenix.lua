@@ -5,44 +5,99 @@ SqueenixDB2 = {
 		},
 		["Ailurus of Icecrown"] = {
 		},
-		["Girth of Alterac Mountains"] = {
+		["Beardyhead of Area 52"] = {
+		},
+		["Wuffi of Icecrown"] = {
 		},
 		["Tekkub of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
+		["Microfiche of Icecrown"] = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
 		["Bear of Illidan"] = {
 		},
-		["Beardyhead of Icecrown"] = {
+		["Tekkub of Area 52"] = {
 		},
 		["Quinacridone of Illidan"] = {
 		},
-		["Alizarian of Icecrown"] = {
-		},
 		["Mishutka of Area 52"] = {
 		},
-		["Microfiche of Icecrown"] = {
+		["Alizarian of Icecrown"] = {
 		},
-		["Wuffi of Icecrown"] = {
+		["Beardyhead of Icecrown"] = {
+		},
+		["Girth of Alterac Mountains"] = {
 		},
 		["Cubbyhole of Icecrown"] = {
 		},
 	},
-	["realm"] = {
-		["Icecrown"] = {
+	["profiles"] = {
+		["Huslu of Icecrown"] = {
 		},
-		["Area 52"] = {
+		["Ailurus of Icecrown"] = {
 		},
-		["Illidan"] = {
+		["Beardyhead of Area 52"] = {
 		},
-		["Alterac Mountains"] = {
+		["Wuffi of Icecrown"] = {
+		},
+		["Tekkub of Icecrown"] = {
+		},
+		["Microfiche of Icecrown"] = {
+		},
+		["Mishutka of Icecrown"] = {
+		},
+		["Bear of Illidan"] = {
+		},
+		["Tekkub of Area 52"] = {
+		},
+		["Quinacridone of Illidan"] = {
+		},
+		["Mishutka of Area 52"] = {
+		},
+		["Alizarian of Icecrown"] = {
+		},
+		["Beardyhead of Icecrown"] = {
+		},
+		["Girth of Alterac Mountains"] = {
+		},
+		["Cubbyhole of Icecrown"] = {
 		},
 	},
 	["global"] = {
 	},
 	["factionrealm"] = {
+	},
+	["profileKeys"] = {
+		["Huslu of Icecrown"] = "Huslu of Icecrown",
+		["Ailurus of Icecrown"] = "Ailurus of Icecrown",
+		["Beardyhead of Area 52"] = "Beardyhead of Area 52",
+		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
+		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
+		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
+		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
+		["Bear of Illidan"] = "Bear of Illidan",
+		["Tekkub of Area 52"] = "Tekkub of Area 52",
+		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
+		["Mishutka of Area 52"] = "Mishutka of Area 52",
+		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
+		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
+		["Girth of Alterac Mountains"] = "Girth of Alterac Mountains",
+		["Cubbyhole of Icecrown"] = "Cubbyhole of Icecrown",
+	},
+	["class"] = {
+		["Warlock"] = {
+		},
+		["Shaman"] = {
+		},
+		["Rogue"] = {
+		},
+		["Hunter"] = {
+		},
+		["Priest"] = {
+		},
+		["Druid"] = {
+		},
 	},
 	["faction"] = {
 		["Alliance"] = {
@@ -56,64 +111,14 @@ SqueenixDB2 = {
 		["Horde - Illidan"] = {
 		},
 	},
-	["class"] = {
-		["Warlock"] = {
+	["realm"] = {
+		["Icecrown"] = {
 		},
-		["Shaman"] = {
+		["Area 52"] = {
 		},
-		["Rogue"] = {
+		["Illidan"] = {
 		},
-		["Hunter"] = {
-		},
-		["Druid"] = {
-		},
-		["Priest"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Huslu of Icecrown"] = "Huslu of Icecrown",
-		["Ailurus of Icecrown"] = "Ailurus of Icecrown",
-		["Girth of Alterac Mountains"] = "Girth of Alterac Mountains",
-		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
-		["Tekkub of Area 52"] = "Tekkub of Area 52",
-		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
-		["Bear of Illidan"] = "Bear of Illidan",
-		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
-		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
-		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
-		["Mishutka of Area 52"] = "Mishutka of Area 52",
-		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
-		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
-		["Cubbyhole of Icecrown"] = "Cubbyhole of Icecrown",
-	},
-	["profiles"] = {
-		["Huslu of Icecrown"] = {
-		},
-		["Ailurus of Icecrown"] = {
-		},
-		["Girth of Alterac Mountains"] = {
-		},
-		["Tekkub of Icecrown"] = {
-		},
-		["Tekkub of Area 52"] = {
-		},
-		["Mishutka of Icecrown"] = {
-		},
-		["Bear of Illidan"] = {
-		},
-		["Beardyhead of Icecrown"] = {
-		},
-		["Quinacridone of Illidan"] = {
-		},
-		["Alizarian of Icecrown"] = {
-		},
-		["Mishutka of Area 52"] = {
-		},
-		["Microfiche of Icecrown"] = {
-		},
-		["Wuffi of Icecrown"] = {
-		},
-		["Cubbyhole of Icecrown"] = {
+		["Alterac Mountains"] = {
 		},
 	},
 }

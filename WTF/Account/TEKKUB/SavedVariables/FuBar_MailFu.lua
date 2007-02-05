@@ -1,93 +1,5 @@
 
 FuBar_MailDB = {
-	["profiles"] = {
-		["Huslu of Icecrown"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["version"] = 904,
-		},
-		["Ailurus of Icecrown"] = {
-			["minimapPosition"] = 10.91110264217992,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["hidden"] = true,
-			["minimapPositionWild"] = true,
-			["showIcon"] = 1,
-			["minimapPositionX"] = 1225.000046024581,
-			["showText"] = true,
-			["minimapPositionY"] = 733.9999374880522,
-			["textformat"] = "number",
-		},
-		["Tekkub of Icecrown"] = {
-			["minimapPosition"] = 17.79596804289746,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["minimapPosition"] = 236.381591896712,
-			["detachedTooltip"] = {
-			},
-			["showText"] = false,
-		},
-		["Girth of Vek'nilash"] = {
-			["minimapPosition"] = 14.20671743004535,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
-		["Druid"] = {
-			["minimapPositionWild"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1177.999942835307,
-			["minimapPositionY"] = 708.9999658157678,
-			["hidetext"] = true,
-		},
-		["default"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["minimapPositionWild"] = true,
-			["version"] = 904,
-			["showIcon"] = 1,
-			["minimapPositionX"] = 1223.46671679645,
-			["showText"] = true,
-			["minimapPositionY"] = 677.3334073824916,
-			["textformat"] = "number",
-		},
-		["Beardyhead of Draka"] = {
-			["hidetext"] = true,
-			["version"] = 20000,
-		},
-		["Priest"] = {
-			["minimapPositionWild"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1176.000049398444,
-			["minimapPositionY"] = 690.9999471003782,
-			["hidetext"] = true,
-		},
-		["Hunter"] = {
-			["hidetext"] = true,
-			["version"] = 904,
-			["minimapPositionX"] = 1176.000049398444,
-			["minimapPositionY"] = 710.9999244382057,
-			["minimapPositionWild"] = true,
-		},
-		["Wuffi of Icecrown"] = {
-			["hidetext"] = true,
-			["detachedTooltip"] = {
-			},
-			["version"] = 904,
-		},
-		["Cubbyhole of Icecrown"] = {
-			["minimapPosition"] = 14.20671743004535,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
-	},
 	["chars"] = {
 		["UldamanBear"] = {
 			["total"] = 3,
@@ -149,17 +61,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
+		["Vek'nilashGirth"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["StormscaleMongalka"] = {
-			["total"] = 0,
-			["version"] = 20000,
-			["new"] = 0,
-		},
-		["IcecrownTekkub"] = {
+		["IcecrownAilurus"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -174,7 +81,7 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["FeathermoonAaooeeaaooee"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -184,23 +91,116 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["FeathermoonAaooeeaaooee"] = {
+		["IcecrownTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["Vek'nilashGirth"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
+			["new"] = 0,
+		},
+		["StormscaleMongalka"] = {
+			["total"] = 0,
+			["version"] = 20000,
 			["new"] = 0,
 		},
 	},
 	["currentProfile"] = {
 		["Beardyhead of Icecrown"] = "char",
+	},
+	["profiles"] = {
+		["Huslu of Icecrown"] = {
+			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["version"] = 904,
+		},
+		["Ailurus of Icecrown"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 10.91110264217992,
+		},
+		["char/Beardyhead of Icecrown"] = {
+			["minimapPosition"] = 236.381591896712,
+			["detachedTooltip"] = {
+			},
+			["showText"] = false,
+		},
+		["Tekkub of Icecrown"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 17.79596804289746,
+		},
+		["Girth of Vek'nilash"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 14.20671743004535,
+		},
+		["Wuffi of Icecrown"] = {
+			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["version"] = 904,
+		},
+		["Druid"] = {
+			["minimapPositionWild"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1177.999942835307,
+			["minimapPositionY"] = 708.9999658157678,
+			["hidetext"] = true,
+		},
+		["default"] = {
+			["hidetext"] = true,
+			["detachedTooltip"] = {
+			},
+			["minimapPositionWild"] = true,
+			["version"] = 904,
+			["showText"] = true,
+			["minimapPositionX"] = 1223.46671679645,
+			["showIcon"] = 1,
+			["minimapPositionY"] = 677.3334073824916,
+			["textformat"] = "number",
+		},
+		["Priest"] = {
+			["minimapPositionWild"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1176.000049398444,
+			["minimapPositionY"] = 690.9999471003782,
+			["hidetext"] = true,
+		},
+		["Beardyhead of Draka"] = {
+			["hidetext"] = true,
+			["version"] = 20000,
+		},
+		["Hunter"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPositionX"] = 1176.000049398444,
+			["minimapPositionY"] = 710.9999244382057,
+			["minimapPositionWild"] = true,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["hidden"] = true,
+			["minimapPositionWild"] = true,
+			["showIcon"] = 1,
+			["minimapPositionX"] = 1225.000046024581,
+			["showText"] = true,
+			["minimapPositionY"] = 733.9999374880522,
+			["textformat"] = "number",
+		},
+		["Cubbyhole of Icecrown"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 14.20671743004535,
+		},
 	},
 }
