@@ -13,13 +13,13 @@ FuBar_FriendsFuDB = {
 			},
 		},
 		["Default"] = {
+			["tooltip"] = {
+				["sort"] = "NAME",
+			},
 			["detachedTooltip"] = {
 			},
 			["text"] = {
 				["show_displayed"] = false,
-			},
-			["tooltip"] = {
-				["sort"] = "NAME",
 			},
 		},
 	},

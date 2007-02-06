@@ -66,12 +66,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
+		["IcecrownTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IllidanBear"] = {
+		["IcecrownAilurus"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -81,7 +81,7 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["FeathermoonAaooeeaaooee"] = {
+		["IllidanBear"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -91,12 +91,12 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
+		["FeathermoonAaooeeaaooee"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownTekkub"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -112,9 +112,6 @@ FuBar_MailDB = {
 			["new"] = 0,
 		},
 	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
 			["hidetext"] = true,
@@ -123,9 +120,9 @@ FuBar_MailDB = {
 			["version"] = 904,
 		},
 		["Ailurus of Icecrown"] = {
-			["hidetext"] = true,
-			["version"] = 904,
 			["minimapPosition"] = 10.91110264217992,
+			["version"] = 904,
+			["hidetext"] = true,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["minimapPosition"] = 236.381591896712,
@@ -134,14 +131,14 @@ FuBar_MailDB = {
 			["showText"] = false,
 		},
 		["Tekkub of Icecrown"] = {
-			["hidetext"] = true,
-			["version"] = 904,
 			["minimapPosition"] = 17.79596804289746,
+			["version"] = 904,
+			["hidetext"] = true,
 		},
 		["Girth of Vek'nilash"] = {
-			["hidetext"] = true,
-			["version"] = 904,
 			["minimapPosition"] = 14.20671743004535,
+			["version"] = 904,
+			["hidetext"] = true,
 		},
 		["Wuffi of Icecrown"] = {
 			["hidetext"] = true,
@@ -162,11 +159,11 @@ FuBar_MailDB = {
 			},
 			["minimapPositionWild"] = true,
 			["version"] = 904,
-			["showText"] = true,
-			["minimapPositionX"] = 1223.46671679645,
-			["showIcon"] = 1,
-			["minimapPositionY"] = 677.3334073824916,
 			["textformat"] = "number",
+			["minimapPositionX"] = 1223.46671679645,
+			["showText"] = true,
+			["minimapPositionY"] = 677.3334073824916,
+			["showIcon"] = 1,
 		},
 		["Priest"] = {
 			["minimapPositionWild"] = true,
@@ -198,9 +195,12 @@ FuBar_MailDB = {
 			["textformat"] = "number",
 		},
 		["Cubbyhole of Icecrown"] = {
-			["hidetext"] = true,
-			["version"] = 904,
 			["minimapPosition"] = 14.20671743004535,
+			["version"] = 904,
+			["hidetext"] = true,
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

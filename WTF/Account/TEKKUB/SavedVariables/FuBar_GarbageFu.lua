@@ -27,12 +27,13 @@ GarbageFuDB = {
 				["potionall"] = true,
 				["faire"] = true,
 			},
-			["showText"] = true,
 			["pricetype"] = true,
 			["dropsets"] = {
 				["foodraw"] = true,
 			},
 			["itemicon"] = true,
+			["version"] = "2.0.26523",
+			["sellonlygrey"] = false,
 			["keepitem"] = {
 				[18594] = true,
 				[2901] = true,
@@ -47,19 +48,18 @@ GarbageFuDB = {
 				[18986] = true,
 				[11122] = true,
 				[11812] = true,
-				[9452] = true,
+				[11285] = true,
 				[15052] = true,
 				[13209] = true,
-				[11285] = true,
-				[18047] = true,
 				[23082] = true,
+				[18047] = true,
 				[23092] = true,
+				[16675] = true,
 				[18684] = true,
 				[18638] = true,
-				[16675] = true,
 				[7005] = true,
+				[9452] = true,
 			},
-			["sellonlygrey"] = false,
 			["sellallbutton"] = false,
 			["vendoraddonsorder"] = {
 				"ludwig_sellvalue", -- [1]
@@ -82,16 +82,16 @@ GarbageFuDB = {
 				[15276] = true,
 				[15284] = true,
 				[4051] = true,
-				[6394] = true,
+				[6601] = true,
 				[19816] = true,
 				[9829] = true,
 				[20744] = true,
 				[4705] = true,
-				[6052] = true,
 				[15223] = true,
+				[6394] = true,
 				[12008] = true,
 				[6585] = true,
-				[6601] = true,
+				[6052] = true,
 			},
 			["threshold"] = 4,
 			["auctionaddonsorder"] = {
@@ -99,7 +99,7 @@ GarbageFuDB = {
 				"-DNU-", -- [2]
 				"-CA-", -- [3]
 			},
-			["version"] = "2.0.26523",
+			["showText"] = true,
 			["detachedTooltip"] = {
 			},
 			["keepsets"] = {

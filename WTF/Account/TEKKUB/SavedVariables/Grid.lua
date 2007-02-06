@@ -36,9 +36,52 @@ GridDB = {
 				},
 			},
 		},
+		["GridStatusMana"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_lowMana"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
 		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatus"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["range"] = true,
+				},
+			},
+		},
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
+				},
+			},
+		},
+		["GridStatusHeals"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_heals"] = {
+						["range"] = true,
+						["text"] = "incoming heals",
+					},
 				},
 			},
 		},
@@ -77,50 +120,37 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatus"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["range"] = true,
-				},
-			},
-		},
-		["GridStatusMana"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_lowMana"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridStatusHeals"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_heals"] = {
-						["range"] = true,
-						["text"] = "incoming heals",
-					},
-				},
-			},
-		},
-		["GridStatusName"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
-					},
-				},
-			},
-		},
 		["GridRange"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusHealth"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_offline"] = {
+						["color"] = {
+							["g"] = 0.5,
+							["r"] = 0.5,
+						},
+						["priority"] = 0,
+					},
+					["unit_healthDeficit"] = {
+						["range"] = true,
+					},
+					["alert_lowHealth"] = {
+						["range"] = true,
+					},
+					["unit_health"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+		["GridStatusTarget"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
@@ -139,36 +169,6 @@ GridDB = {
 					["FrameDisplay"] = "always",
 					["PosY"] = 0,
 					["PosX"] = 222.6666499529367,
-				},
-			},
-		},
-		["GridStatusTarget"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatusHealth"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_healthDeficit"] = {
-						["range"] = true,
-					},
-					["alert_offline"] = {
-						["color"] = {
-							["g"] = 0.5,
-							["r"] = 0.5,
-						},
-						["priority"] = 0,
-					},
-					["alert_lowHealth"] = {
-						["range"] = true,
-					},
-					["unit_health"] = {
-						["range"] = true,
-					},
 				},
 			},
 		},

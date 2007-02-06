@@ -7,11 +7,11 @@ CliqueDB = {
 		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
 		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
 		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
-		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
+		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 		["Bear of Illidan"] = "Bear of Illidan",
-		["Mishutka of Area 52"] = "Mishutka of Area 52",
 		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
+		["Mishutka of Area 52"] = "Mishutka of Area 52",
 		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
 		["Tekkub of Area 52"] = "Tekkub of Area 52",
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
@@ -49,13 +49,15 @@ CliqueDB = {
 		},
 	},
 	["class"] = {
-		["Rogue"] = {
-		},
 		["Warlock"] = {
+		},
+		["Shaman"] = {
+		},
+		["Priest"] = {
 		},
 		["Hunter"] = {
 		},
-		["Priest"] = {
+		["Rogue"] = {
 		},
 	},
 	["profiles"] = {
@@ -71,14 +73,20 @@ CliqueDB = {
 		},
 		["Alizarian of Icecrown"] = {
 		},
-		["Mishutka of Icecrown"] = {
-		},
 		["Tekkub of Uldaman"] = {
+		},
+		["Mishutka of Icecrown"] = {
 		},
 		["Bear of Illidan"] = {
 		},
+		["Quinacridone of Illidan"] = {
+		},
 		["Mishutka of Area 52"] = {
 			["clicksets"] = {
+				["Helpful actions"] = {
+				},
+				["Out of Combat"] = {
+				},
 				["Default"] = {
 					["Ctrl-1"] = {
 						["type"] = "spell",
@@ -104,9 +112,11 @@ CliqueDB = {
 						["texture"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 					},
 				},
+				["Harmful actions"] = {
+				},
 			},
-		},
-		["Quinacridone of Illidan"] = {
+			["blacklist"] = {
+			},
 		},
 		["Tekkub of Icecrown"] = {
 		},
@@ -213,13 +223,15 @@ CliqueDB = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
-		},
 		["Beardyhead of Area 52"] = {
 		},
-		["Alizarian of Icecrown"] = {
+		["Tekkub of Area 52"] = {
+		},
+		["Mishutka of Area 52"] = {
 		},
 		["Microfiche of Icecrown"] = {
+		},
+		["Alizarian of Icecrown"] = {
 		},
 		["Beardyhead of Icecrown"] = {
 		},
@@ -229,13 +241,13 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
-		["Alliance"] = {
-		},
 		["Horde - Alterac Mountains"] = {
 		},
-		["Alliance - Area 52"] = {
+		["Alliance"] = {
 		},
 		["Horde - Illidan"] = {
+		},
+		["Alliance - Area 52"] = {
 		},
 	},
 	["chars"] = {
