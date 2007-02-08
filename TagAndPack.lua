@@ -17,7 +17,7 @@ os.execute(string.format(
 
 os.execute(string.format("svn export trunk/%s %s", addon, addon))
 
-os.execute(string.format("rar a %s.zip %s", fulladdon, addon))
+os.execute(string.format("winrar a %s.zip %s", fulladdon, addon))
 
 os.execute("del /F /S /Q "..addon)
 os.execute("rmdir /Q "..addon)
