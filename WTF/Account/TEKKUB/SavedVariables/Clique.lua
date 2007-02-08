@@ -7,11 +7,11 @@ CliqueDB = {
 		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
 		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
 		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
-		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
 		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
+		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
 		["Bear of Illidan"] = "Bear of Illidan",
-		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
 		["Mishutka of Area 52"] = "Mishutka of Area 52",
+		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
 		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
 		["Tekkub of Area 52"] = "Tekkub of Area 52",
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
@@ -34,14 +34,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["mg2-64pre"] = true,
 			["sraid"] = true,
-			["OzRaid"] = true,
 			["squishy"] = true,
+			["ctra"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["ctra"] = true,
+			["OzRaid"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -49,21 +49,31 @@ CliqueDB = {
 		},
 	},
 	["class"] = {
+		["Rogue"] = {
+		},
 		["Warlock"] = {
 		},
 		["Shaman"] = {
 		},
 		["Priest"] = {
 		},
-		["Hunter"] = {
-		},
-		["Rogue"] = {
-		},
 	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
 		},
 		["Beardyhead of Area 52"] = {
+			["clicksets"] = {
+				["Helpful actions"] = {
+				},
+				["Harmful actions"] = {
+				},
+				["Default"] = {
+				},
+				["Out of Combat"] = {
+				},
+			},
+			["blacklist"] = {
+			},
 		},
 		["Ailurus of Icecrown"] = {
 		},
@@ -73,20 +83,14 @@ CliqueDB = {
 		},
 		["Alizarian of Icecrown"] = {
 		},
-		["Tekkub of Uldaman"] = {
-		},
 		["Mishutka of Icecrown"] = {
+		},
+		["Tekkub of Uldaman"] = {
 		},
 		["Bear of Illidan"] = {
 		},
-		["Quinacridone of Illidan"] = {
-		},
 		["Mishutka of Area 52"] = {
 			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Out of Combat"] = {
-				},
 				["Default"] = {
 					["Ctrl-1"] = {
 						["type"] = "spell",
@@ -112,27 +116,13 @@ CliqueDB = {
 						["texture"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 					},
 				},
-				["Harmful actions"] = {
-				},
 			},
-			["blacklist"] = {
-			},
+		},
+		["Quinacridone of Illidan"] = {
 		},
 		["Tekkub of Icecrown"] = {
 		},
 		["Tekkub of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Harmful actions"] = {
-				},
-				["Default"] = {
-				},
-				["Out of Combat"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Beardyhead of Icecrown"] = {
 			["clicksets"] = {
@@ -225,13 +215,11 @@ CliqueDB = {
 		},
 		["Beardyhead of Area 52"] = {
 		},
-		["Tekkub of Area 52"] = {
-		},
 		["Mishutka of Area 52"] = {
 		},
-		["Microfiche of Icecrown"] = {
-		},
 		["Alizarian of Icecrown"] = {
+		},
+		["Microfiche of Icecrown"] = {
 		},
 		["Beardyhead of Icecrown"] = {
 		},
@@ -241,13 +229,13 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
-		["Horde - Alterac Mountains"] = {
-		},
 		["Alliance"] = {
 		},
-		["Horde - Illidan"] = {
+		["Horde - Alterac Mountains"] = {
 		},
 		["Alliance - Area 52"] = {
+		},
+		["Horde - Illidan"] = {
 		},
 	},
 	["chars"] = {
@@ -363,6 +351,22 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
+		["Microfiche of Icecrown"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
+		["Kumanoinkei of Illidan"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
@@ -430,22 +434,6 @@ CliqueDB = {
 					["modifiers"] = 0,
 					["action"] = "Clique:UnitMenu()\n",
 				}, -- [1]
-			},
-		},
-		["Microfiche of Icecrown"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
-		["Kumanoinkei of Illidan"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
 			},
 		},
 		["Wuffi of Icecrown"] = {

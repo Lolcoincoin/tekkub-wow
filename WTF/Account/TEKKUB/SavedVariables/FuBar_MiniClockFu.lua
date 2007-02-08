@@ -8,11 +8,11 @@ MiniClockFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["Default"] = {
+		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
+		["Default"] = {
 			["detachedTooltip"] = {
 			},
 		},

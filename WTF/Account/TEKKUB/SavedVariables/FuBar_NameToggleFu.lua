@@ -20,6 +20,32 @@ FuBar_NameToggleDB = {
 	["currentProfile"] = {
 		["Beardyhead of Icecrown"] = "char",
 	},
+	["realms"] = {
+		["Vek'nilashHorde"] = {
+			["version"] = 1532,
+		},
+		["FeathermoonAlliance"] = {
+			["version"] = 1532,
+		},
+		["Steamwheedle CartelHorde"] = {
+			["version"] = 1532,
+		},
+		["StormscaleAlliance"] = {
+			["version"] = 1532,
+		},
+		["IllidanHorde"] = {
+			["version"] = 1532,
+		},
+		["Steamwheedle CartelAlliance"] = {
+			["version"] = 1532,
+		},
+		["DrakaHorde"] = {
+			["version"] = 1532,
+		},
+		["SuramarHorde"] = {
+			["version"] = 1532,
+		},
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -66,32 +92,6 @@ FuBar_NameToggleDB = {
 			["version"] = 1532,
 		},
 	},
-	["realms"] = {
-		["Vek'nilashHorde"] = {
-			["version"] = 1532,
-		},
-		["FeathermoonAlliance"] = {
-			["version"] = 1532,
-		},
-		["Steamwheedle CartelHorde"] = {
-			["version"] = 1532,
-		},
-		["StormscaleAlliance"] = {
-			["version"] = 1532,
-		},
-		["IllidanHorde"] = {
-			["version"] = 1532,
-		},
-		["Steamwheedle CartelAlliance"] = {
-			["version"] = 1532,
-		},
-		["DrakaHorde"] = {
-			["version"] = 1532,
-		},
-		["SuramarHorde"] = {
-			["version"] = 1532,
-		},
-	},
 	["chars"] = {
 		["SuramarHuslu"] = {
 			["version"] = 1532,
@@ -102,13 +102,13 @@ FuBar_NameToggleDB = {
 		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
-		["StormscaleNunuvit"] = {
+		["IllidanBear"] = {
 			["version"] = 1532,
 		},
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 1532,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {
@@ -123,7 +123,7 @@ FuBar_NameToggleDB = {
 		["IcecrownAilurus"] = {
 			["version"] = 1532,
 		},
-		["IllidanBear"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 1532,
 		},
 		["Vek'nilashGirth"] = {

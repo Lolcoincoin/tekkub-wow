@@ -114,3 +114,4 @@ WatchDog: enabled
 ZooKeeper: enabled
 FuBar-compat-1.2: disabled
 ag_unitframes: enabled
+prat: disabled

@@ -52,11 +52,11 @@ X: 473
 Y: -208
 Frame: FuBarPluginag_UnitFramesFrame
 FrameLevel: 7
-X: 161
+X: 135
 Y: -833
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
-X: 187
+X: 161
 Y: -833
 Frame: FuBarPluginCorkFuFrame
 FrameLevel: 7
@@ -70,8 +70,12 @@ Frame: LudwigUIParent
 FrameLevel: 1
 X: 265
 Y: -144
+Frame: TotemusSphere
+FrameLevel: 1
+X: 1205
+Y: -483
 Frame: TinyPadFrame
-FrameLevel: 12
+FrameLevel: 9
 X: 533
 Y: -327
 W: 300

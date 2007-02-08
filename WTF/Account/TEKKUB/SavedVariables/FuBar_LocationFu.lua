@@ -2,11 +2,11 @@
 LocationFuDB = {
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["showRecZones"] = false,
 			["detachedTooltip"] = {
 			},
-			["version"] = "1.1.1551",
+			["showRecZones"] = false,
 			["minimapBar"] = false,
+			["version"] = "1.1.1551",
 		},
 		["Ailurus of Icecrown"] = {
 			["showRecZones"] = false,
@@ -29,11 +29,11 @@ LocationFuDB = {
 			["showRecZones"] = false,
 		},
 		["Wuffi of Icecrown"] = {
-			["showRecZones"] = false,
 			["detachedTooltip"] = {
 			},
-			["version"] = 101.2027,
+			["showRecZones"] = false,
 			["minimapBar"] = false,
+			["version"] = 101.2027,
 		},
 		["Druid"] = {
 			["version"] = 101.2436,
