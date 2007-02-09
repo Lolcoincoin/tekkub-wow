@@ -11,9 +11,9 @@ tekiRate = DongleStub("Dongle-Beta0"):New("tekiRate")
 --~ if UnitName("player") == "Tekkub" then tekiRate:EnableDebug(1, ChatFrame5) end
 
 
----------------------
--- Initializations --
----------------------
+-------------------------------
+--      Initializations      --
+-------------------------------
 
 function tekiRate:Initialize()
 	-- Build the RatingNameToID table from L["ratingNames"] table
@@ -81,6 +81,13 @@ Equip: Adds 15 critical hit rating (.85% )
 Equip: Adds 12 resilience (-.58% crit, -1.16% crit damage)
 --]]
 
+-- "Increases your (.+) rating by ($d+)"
+-- "%+(%d+) (.+) Rating"
+-- "Adds (%d+) (.+) rating"
+-- "Increases your (.+) rating by (%d+)"
+-- "Improves (.+) rating by (%d+)"
+-- "(.+) Rating %+(%d+)"
+-- "%+(%d+) Resilience"
 
 function tekiRate:ProcessTooltip(tooltip, link)
 	local tipname = tooltip:GetName()
@@ -101,6 +108,11 @@ function tekiRate:ParseLine(text)
 		return
 	end
 	self:Debug(1, "Parsing line", text)
+
+	if not (string.find(text, "[Rr]ating") or string.find(text, "[Rr]esilience")) then
+		cache[text] = false
+		return
+	end
 
 	local lowerText = string.lower(text)
 	for _, p in ipairs(L["numberPatterns"]) do
