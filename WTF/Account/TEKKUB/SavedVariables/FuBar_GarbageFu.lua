@@ -20,12 +20,6 @@ GarbageFuDB = {
 				["gatherskilldisenchant"] = true,
 				["faire"] = true,
 			},
-			["sellonlygrey"] = false,
-			["pricetype"] = true,
-			["dropsets"] = {
-				["foodraw"] = true,
-			},
-			["itemicon"] = true,
 			["keepitem"] = {
 				[18594] = true,
 				[2901] = true,
@@ -52,6 +46,12 @@ GarbageFuDB = {
 				[7005] = true,
 				[23092] = true,
 			},
+			["pricetype"] = true,
+			["dropsets"] = {
+				["foodraw"] = true,
+			},
+			["itemicon"] = true,
+			["sellonlygrey"] = false,
 			["sellallbutton"] = false,
 			["vendoraddonsorder"] = {
 				"ludwig_sellvalue", -- [1]
@@ -93,14 +93,14 @@ GarbageFuDB = {
 				"-DNU-", -- [2]
 				"-CA-", -- [3]
 			},
-			["showText"] = true,
+			["version"] = "2.0.27519",
 			["keepsets"] = {
 				["waterall"] = true,
 				["reagentpriest"] = true,
 				["minipetall"] = true,
 				["mounts"] = true,
 			},
-			["version"] = "2.0.27519",
+			["showText"] = true,
 		},
 		["char/Tekkub of Icecrown"] = {
 			["auctionaddonsorder"] = {

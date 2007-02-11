@@ -15,19 +15,19 @@ FuBar_GreedBeaconDB = {
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 0,
 		},
-		["StormscaleNunuvit"] = {
+		["FeathermoonKub"] = {
 			["version"] = 0,
 		},
 		["SuramarHuslu"] = {
 			["version"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 0,
 		},
 		["DrakaTekkub"] = {
 			["version"] = 0,
 		},
-		["FeathermoonKub"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 0,
 		},
 		["Vek'nilashGirth"] = {
@@ -100,11 +100,11 @@ FuBar_GreedBeaconDB = {
 			["detachedTooltip"] = {
 				["locked"] = true,
 				["offsety"] = 2.999905340869312,
-				["b"] = 0.02352941176470588,
+				["r"] = 0.03529411764705882,
 				["anchor"] = "BOTTOMLEFT",
 				["offsetx"] = 611.500011108284,
 				["g"] = 0.07450980392156863,
-				["r"] = 0.03529411764705882,
+				["b"] = 0.02352941176470588,
 			},
 		},
 		["Priest"] = {

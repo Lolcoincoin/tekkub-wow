@@ -27,16 +27,16 @@ FuBar_NameToggleDB = {
 		["IcecrownGirth"] = {
 			["version"] = 1532,
 		},
-		["FeathermoonKub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 1532,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 1532,
 		},
-		["IllidanBear"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {
@@ -51,7 +51,7 @@ FuBar_NameToggleDB = {
 		["DrakaTekkub"] = {
 			["version"] = 1532,
 		},
-		["StormscaleNunuvit"] = {
+		["IllidanBear"] = {
 			["version"] = 1532,
 		},
 		["Vek'nilashGirth"] = {
@@ -105,6 +105,11 @@ FuBar_NameToggleDB = {
 			},
 			["version"] = 1532,
 		},
+		["Wuffi of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["version"] = 1532,
+		},
 		["Default"] = {
 			["detachedTooltip"] = {
 			},
@@ -114,11 +119,6 @@ FuBar_NameToggleDB = {
 			["detachedTooltip"] = {
 			},
 			["showText"] = false,
-		},
-		["Wuffi of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["version"] = 1532,
 		},
 		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
