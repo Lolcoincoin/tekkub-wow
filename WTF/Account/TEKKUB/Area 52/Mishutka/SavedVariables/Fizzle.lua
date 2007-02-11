@@ -2,8 +2,8 @@
 FizzleDB = {
 	["profiles"] = {
 		["default"] = {
-			["Border"] = 1,
 			["Percent"] = 1,
+			["Border"] = 1,
 		},
 	},
 }

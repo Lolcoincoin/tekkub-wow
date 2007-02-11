@@ -1,77 +1,77 @@
 
 PerformanceFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["showRate"] = false,
+			["showMemory"] = false,
 			["detachedTooltip"] = {
 			},
-			["showMemory"] = false,
 			["version"] = "1.1.1551",
+			["showRate"] = false,
 		},
 		["Ailurus of Icecrown"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
 		["Tekkub of Icecrown"] = {
-			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
+			["version"] = 101.1551,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
-			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
+			["version"] = 101.1551,
 		},
-		["char/Tekkub of Icecrown"] = {
-			["showMemory"] = false,
+		["Wuffi of Icecrown"] = {
+			["version"] = 101.1551,
 			["detachedTooltip"] = {
 			},
+			["showMemory"] = false,
+			["showRate"] = false,
 		},
 		["Druid"] = {
-			["showRate"] = false,
 			["showMemory"] = false,
 			["version"] = 101.1551,
+			["showRate"] = false,
 		},
 		["default"] = {
 			["detachedTooltip"] = {
 			},
 			["version"] = 101.1551,
 		},
-		["Priest"] = {
-			["version"] = 101.1551,
-			["showRate"] = false,
-			["showMemory"] = false,
-		},
 		["Beardyhead of Draka"] = {
-			["showRate"] = false,
 			["version"] = 10283,
 			["showMemory"] = false,
+			["showRate"] = false,
+		},
+		["Priest"] = {
+			["showRate"] = false,
+			["showMemory"] = false,
+			["version"] = 101.1551,
 		},
 		["Hunter"] = {
 			["showLatency"] = false,
-			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
-		["Wuffi of Icecrown"] = {
-			["showRate"] = false,
+		["char/Tekkub of Icecrown"] = {
+			["showMemory"] = false,
 			["detachedTooltip"] = {
 			},
-			["version"] = 101.1551,
-			["showMemory"] = false,
 		},
 		["Cubbyhole of Icecrown"] = {
-			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
+			["version"] = 101.1551,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

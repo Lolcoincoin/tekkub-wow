@@ -11,8 +11,31 @@ FuBar_GreedBeaconDB = {
 	["currentProfile"] = {
 		["Beardyhead of Icecrown"] = "char",
 	},
+	["chars"] = {
+		["FeathermoonAaooeeaaooee"] = {
+			["version"] = 0,
+		},
+		["StormscaleNunuvit"] = {
+			["version"] = 0,
+		},
+		["SuramarHuslu"] = {
+			["version"] = 0,
+		},
+		["Steamwheedle CartelTekkub"] = {
+			["version"] = 0,
+		},
+		["DrakaTekkub"] = {
+			["version"] = 0,
+		},
+		["FeathermoonKub"] = {
+			["version"] = 0,
+		},
+		["Vek'nilashGirth"] = {
+			["version"] = 0,
+		},
+	},
 	["realms"] = {
-		["Vek'nilashHorde"] = {
+		["StormscaleAlliance"] = {
 			["version"] = 0,
 		},
 		["FeathermoonAlliance"] = {
@@ -30,7 +53,7 @@ FuBar_GreedBeaconDB = {
 		["SuramarHorde"] = {
 			["version"] = 0,
 		},
-		["StormscaleAlliance"] = {
+		["Vek'nilashHorde"] = {
 			["version"] = 0,
 		},
 	},
@@ -42,17 +65,9 @@ FuBar_GreedBeaconDB = {
 			["showtokentracker"] = true,
 		},
 		["Ailurus of Icecrown"] = {
+			["version"] = 0,
 			["disabled"] = 1,
-			["version"] = 0,
 			["showtokentracker"] = true,
-		},
-		["Wuffi of Icecrown"] = {
-			["version"] = 0,
-			["showtokentracker"] = true,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
 		},
 		["Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -60,12 +75,20 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
 		["Girth of Vek'nilash"] = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
 			},
 			["supressitem"] = true,
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
 		},
 		["Druid"] = {
 			["version"] = 0,
@@ -75,22 +98,22 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
-				["r"] = 0.03529411764705882,
+				["locked"] = true,
 				["offsety"] = 2.999905340869312,
 				["b"] = 0.02352941176470588,
-				["locked"] = true,
+				["anchor"] = "BOTTOMLEFT",
 				["offsetx"] = 611.500011108284,
 				["g"] = 0.07450980392156863,
-				["anchor"] = "BOTTOMLEFT",
+				["r"] = 0.03529411764705882,
 			},
 		},
-		["Beardyhead of Draka"] = {
+		["Priest"] = {
+			["supressitem"] = true,
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
-		["Priest"] = {
+		["Beardyhead of Draka"] = {
 			["version"] = 0,
-			["supressitem"] = true,
 			["showtokentracker"] = true,
 		},
 		["Hunter"] = {
@@ -102,37 +125,14 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["Cubbyhole of Icecrown"] = {
+		["Wuffi of Icecrown"] = {
 			["version"] = 0,
-			["supressitem"] = true,
 			["showtokentracker"] = true,
 		},
-	},
-	["chars"] = {
-		["FeathermoonAaooeeaaooee"] = {
+		["Cubbyhole of Icecrown"] = {
+			["supressitem"] = true,
 			["version"] = 0,
-		},
-		["Steamwheedle CartelTekkub"] = {
-			["version"] = 0,
-		},
-		["SuramarHuslu"] = {
-			["version"] = 0,
-		},
-		["FeathermoonKub"] = {
-			["version"] = 0,
-		},
-		["DrakaTekkub"] = {
-			["version"] = 0,
-		},
-		["StormscaleNunuvit"] = {
-			["version"] = 0,
-		},
-		["Vek'nilashGirth"] = {
-			["version"] = 0,
+			["showtokentracker"] = true,
 		},
 	},
 }

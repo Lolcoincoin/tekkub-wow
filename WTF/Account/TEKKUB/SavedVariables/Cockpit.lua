@@ -1,12 +1,8 @@
 
 CockpitDB = {
 	["char"] = {
-		["Tekkub of Area 52"] = {
-		},
 	},
-	["profiles"] = {
-		["global"] = {
-		},
+	["realm"] = {
 	},
 	["profileKeys"] = {
 		["Beardyhead of Area 52"] = "global",
@@ -17,14 +13,14 @@ CockpitDB = {
 		["Alliance - Area 52"] = {
 		},
 	},
-	["factionrealm"] = {
-	},
-	["class"] = {
-		["Hunter"] = {
-		},
-	},
 	["global"] = {
 	},
-	["realm"] = {
+	["class"] = {
+	},
+	["factionrealm"] = {
+	},
+	["profiles"] = {
+		["global"] = {
+		},
 	},
 }

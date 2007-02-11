@@ -1,14 +1,7 @@
 
 GCInFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
@@ -16,5 +9,12 @@ GCInFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

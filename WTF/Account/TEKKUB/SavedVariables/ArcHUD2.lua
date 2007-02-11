@@ -1,18 +1,7 @@
 
 ArcHUDDB = {
-	["disabledModules"] = {
-		["Default"] = {
-			["FocusHealth"] = true,
-			["EnergyTick"] = true,
-			["Anchors"] = true,
-			["FocusMana"] = true,
-			["TargetMana"] = true,
-			["DruidMana"] = true,
-		},
-	},
 	["profiles"] = {
 		["Default"] = {
-			["FadeIC"] = 1,
 			["RingVisibility"] = 1,
 			["TargetFrame"] = false,
 			["minimapPosition"] = 159.3052276268513,
@@ -27,6 +16,17 @@ ArcHUDDB = {
 			["hidden"] = true,
 			["PlayerModel"] = false,
 			["TargetTarget"] = false,
+			["FadeIC"] = 1,
+		},
+	},
+	["disabledModules"] = {
+		["Default"] = {
+			["FocusHealth"] = true,
+			["EnergyTick"] = true,
+			["Anchors"] = true,
+			["FocusMana"] = true,
+			["TargetMana"] = true,
+			["DruidMana"] = true,
 		},
 	},
 }

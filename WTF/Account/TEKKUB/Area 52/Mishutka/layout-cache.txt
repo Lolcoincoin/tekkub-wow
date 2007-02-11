@@ -74,6 +74,10 @@ Frame: TotemusSphere
 FrameLevel: 1
 X: 1205
 Y: -483
+Frame: TotemusTimersFrame
+FrameLevel: 1
+X: 1010
+Y: -120
 Frame: TinyPadFrame
 FrameLevel: 9
 X: 533
