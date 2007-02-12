@@ -1,5 +1,8 @@
 
 ModMenuTuFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -18,8 +21,5 @@ ModMenuTuFuDB = {
 			},
 			["showText"] = 0,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

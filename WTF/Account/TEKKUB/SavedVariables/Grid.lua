@@ -10,35 +10,46 @@ GridDB = {
 							["buff_PowerWordShield"] = true,
 							["buff_Renew"] = true,
 						},
+						["corner3"] = {
+							["debuff_magic"] = false,
+						},
+						["text"] = {
+							["alert_offline"] = false,
+						},
 						["icon"] = {
 							["debuff_curse"] = false,
 							["debuff_poison"] = false,
 							["debuff_disease"] = false,
 						},
-						["text"] = {
-							["alert_offline"] = false,
-						},
 						["border"] = {
-							["debuff_magic"] = false,
-						},
-						["corner3"] = {
 							["debuff_magic"] = false,
 						},
 					},
 				},
 				["Default"] = {
+					["FrameSize"] = 26,
 					["statusmap"] = {
 						["border"] = {
 							["debuff_magic"] = true,
 						},
 					},
-					["FrameSize"] = 26,
 				},
 			},
 		},
 		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
 				},
 			},
 		},
@@ -98,29 +109,23 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusMana"] = {
+		["GridLayout"] = {
 			["profiles"] = {
 				["class/Priest"] = {
+					["anchorRel"] = "TOPLEFT",
+					["PosY"] = -492.3734026419318,
+					["PosX"] = 220.1066717933606,
 				},
 				["Default"] = {
-					["alert_lowMana"] = {
-						["range"] = true,
-					},
+					["anchorRel"] = "TOPLEFT",
+					["showParty"] = true,
+					["FrameDisplay"] = "always",
+					["PosY"] = 0,
+					["PosX"] = 222.6666499529367,
 				},
 			},
 		},
-		["GridStatusAggro"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_aggro"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridStatusTarget"] = {
+		["GridRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
@@ -150,42 +155,34 @@ GridDB = {
 				},
 			},
 		},
-		["GridRange"] = {
+		["GridStatusTarget"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 			},
 		},
-		["GridLayout"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-					["anchorRel"] = "TOPLEFT",
-					["PosY"] = -492.3734026419318,
-					["PosX"] = 220.1066717933606,
-				},
-				["Default"] = {
-					["anchorRel"] = "TOPLEFT",
-					["showParty"] = true,
-					["FrameDisplay"] = "always",
-					["PosY"] = 0,
-					["PosX"] = 222.6666499529367,
-				},
-			},
-		},
-		["GridStatusName"] = {
+		["GridStatusAggro"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
+					["alert_aggro"] = {
+						["range"] = true,
 					},
 				},
 			},
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "class",
+		["GridStatusMana"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_lowMana"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
 	},
 	["profiles"] = {
 		["class/Priest"] = {
@@ -197,5 +194,8 @@ GridDB = {
 			},
 			["showText"] = false,
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "class",
 	},
 }

@@ -1,8 +1,5 @@
 
 FuBar_GuildFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["text"] = {
@@ -16,14 +13,17 @@ FuBar_GuildFuDB = {
 			},
 		},
 		["Default"] = {
+			["text"] = {
+				["show_displayed"] = false,
+			},
 			["tooltip"] = {
 				["note_showofficer"] = false,
 			},
 			["detachedTooltip"] = {
 			},
-			["text"] = {
-				["show_displayed"] = false,
-			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }
