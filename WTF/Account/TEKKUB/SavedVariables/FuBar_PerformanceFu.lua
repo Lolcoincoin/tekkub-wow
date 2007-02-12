@@ -1,28 +1,64 @@
 
 PerformanceFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["showMemory"] = false,
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
+			["showMemory"] = false,
 			["version"] = "1.1.1551",
-			["showRate"] = false,
 		},
 		["Ailurus of Icecrown"] = {
+			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
-			["showRate"] = false,
 		},
 		["Tekkub of Icecrown"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
-			["version"] = 101.1551,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
+			["version"] = 101.1551,
+			["showMemory"] = false,
+			["showRate"] = false,
+		},
+		["Wuffi of Icecrown"] = {
+			["showRate"] = false,
+			["detachedTooltip"] = {
+			},
+			["version"] = 101.1551,
+			["showMemory"] = false,
+		},
+		["Druid"] = {
+			["showRate"] = false,
+			["showMemory"] = false,
+			["version"] = 101.1551,
+		},
+		["default"] = {
+			["detachedTooltip"] = {
+			},
+			["version"] = 101.1551,
+		},
+		["Beardyhead of Draka"] = {
+			["showRate"] = false,
+			["version"] = 10283,
+			["showMemory"] = false,
+		},
+		["Priest"] = {
+			["version"] = 101.1551,
+			["showRate"] = false,
+			["showMemory"] = false,
+		},
+		["Hunter"] = {
+			["showLatency"] = false,
 			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 101.1551,
@@ -32,46 +68,10 @@ PerformanceFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["Druid"] = {
-			["showMemory"] = false,
-			["version"] = 101.1551,
-			["showRate"] = false,
-		},
-		["default"] = {
-			["detachedTooltip"] = {
-			},
-			["version"] = 101.1551,
-		},
-		["Priest"] = {
-			["showRate"] = false,
-			["showMemory"] = false,
-			["version"] = 101.1551,
-		},
-		["Beardyhead of Draka"] = {
-			["version"] = 10283,
-			["showMemory"] = false,
-			["showRate"] = false,
-		},
-		["Hunter"] = {
-			["showLatency"] = false,
-			["showRate"] = false,
-			["version"] = 101.1551,
-			["showMemory"] = false,
-		},
-		["Wuffi of Icecrown"] = {
-			["version"] = 101.1551,
-			["detachedTooltip"] = {
-			},
-			["showMemory"] = false,
-			["showRate"] = false,
-		},
 		["Cubbyhole of Icecrown"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
-			["version"] = 101.1551,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

@@ -1,12 +1,14 @@
 
 ModMenuTuFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["showText"] = 0,
 		},
 		["Default"] = {
 			["minimapPositionWild"] = true,
@@ -16,10 +18,8 @@ ModMenuTuFuDB = {
 			},
 			["minimapPositionY"] = 738.9999318225091,
 		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["showText"] = 0,
-		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }
