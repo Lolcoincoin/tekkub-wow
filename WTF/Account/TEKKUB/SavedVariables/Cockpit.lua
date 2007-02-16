@@ -4,8 +4,8 @@ CockpitDB = {
 		["Tekkub of Area 52"] = {
 		},
 	},
-	["realm"] = {
-		["Area 52"] = {
+	["profiles"] = {
+		["global"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -16,19 +16,15 @@ CockpitDB = {
 	["faction"] = {
 		["Alliance - Area 52"] = {
 		},
-		["Alliance"] = {
-		},
 	},
-	["global"] = {
+	["factionrealm"] = {
 	},
 	["class"] = {
 		["Hunter"] = {
 		},
 	},
-	["factionrealm"] = {
+	["global"] = {
 	},
-	["profiles"] = {
-		["global"] = {
-		},
+	["realm"] = {
 	},
 }
