@@ -1,0 +1,11 @@
+## Interface: 20003
+
+## Title: tekNoDual
+## Notes: Reject dual request from people you don't know
+## Author: Tekkub Stoutwrithe
+## X-Credits: Denial by phyber/Neriak
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Interface Enhancements
+
+tekNoDual.lua
