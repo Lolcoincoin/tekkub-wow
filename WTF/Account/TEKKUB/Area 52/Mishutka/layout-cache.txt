@@ -56,7 +56,7 @@ X: 135
 Y: -833
 Frame: FuBarPluginBagginsFrame
 FrameLevel: 7
-X: 239
+X: 291
 Y: -833
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
@@ -64,7 +64,7 @@ X: 187
 Y: -833
 Frame: FuBarPluginCorkFuFrame
 FrameLevel: 7
-X: 648
+X: 642
 Y: 4
 Frame: FuBarPluginFuXPFuFrame
 FrameLevel: 7
@@ -96,7 +96,3 @@ X: 533
 Y: -327
 W: 300
 H: 200
-Frame: Tablet20DetachedFrame1
-FrameLevel: 10
-X: 1024
-Y: -533

@@ -14,9 +14,6 @@ FuBar_GuildFuDB = {
 			},
 			["detachedTooltip"] = {
 			},
-			["text"] = {
-				["show_displayed"] = false,
-			},
 			["tooltip"] = {
 				["note_showofficer"] = false,
 			},

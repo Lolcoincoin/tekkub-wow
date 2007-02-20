@@ -8,12 +8,12 @@ CliqueDB = {
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
 		["Alizarian of Icecrown"] = "Alizarian of Icecrown",
 		["Tekkub of Area 52"] = "Tekkub of Area 52",
-		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
+		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
 		["Bear of Illidan"] = "Bear of Illidan",
 		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
-		["Mishutka of Area 52"] = "Mishutka of Area 52",
 		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
-		["Tekkub of Uldaman"] = "Tekkub of Uldaman",
+		["Mishutka of Area 52"] = "Mishutka of Area 52",
+		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
 		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
 		["Cubbyhole of Icecrown"] = "Cubbyhole of Icecrown",
@@ -34,14 +34,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["sraid"] = true,
 			["mg2-64pre"] = true,
-			["squishy"] = true,
 			["ctra"] = true,
+			["OzRaid"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["OzRaid"] = true,
+			["squishy"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -49,13 +49,11 @@ CliqueDB = {
 		},
 	},
 	["class"] = {
+		["Rogue"] = {
+		},
 		["Warlock"] = {
 		},
-		["Shaman"] = {
-		},
-		["Priest"] = {
-		},
-		["Rogue"] = {
+		["Hunter"] = {
 		},
 	},
 	["profiles"] = {
@@ -145,12 +143,26 @@ CliqueDB = {
 		["Alizarian of Icecrown"] = {
 		},
 		["Tekkub of Area 52"] = {
+			["clicksets"] = {
+				["Helpful actions"] = {
+				},
+				["Harmful actions"] = {
+				},
+				["Default"] = {
+				},
+				["Out of Combat"] = {
+				},
+			},
+			["blacklist"] = {
+			},
 		},
-		["Mishutka of Icecrown"] = {
+		["Tekkub of Uldaman"] = {
 		},
 		["Bear of Illidan"] = {
 		},
 		["Tekkub of Icecrown"] = {
+		},
+		["Quinacridone of Illidan"] = {
 		},
 		["Mishutka of Area 52"] = {
 			["clicksets"] = {
@@ -181,9 +193,7 @@ CliqueDB = {
 				},
 			},
 		},
-		["Quinacridone of Illidan"] = {
-		},
-		["Tekkub of Uldaman"] = {
+		["Mishutka of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
 		},
@@ -201,13 +211,11 @@ CliqueDB = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Beardyhead of Area 52"] = {
-		},
-		["Mishutka of Area 52"] = {
-		},
-		["Beardyhead of Icecrown"] = {
+		["Tekkub of Area 52"] = {
 		},
 		["Alizarian of Icecrown"] = {
+		},
+		["Beardyhead of Icecrown"] = {
 		},
 		["Microfiche of Icecrown"] = {
 		},
@@ -217,15 +225,19 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
+		["Alliance"] = {
+		},
+		["Horde - Alterac Mountains"] = {
+		},
 		["Alliance - Area 52"] = {
 		},
 		["Horde - Illidan"] = {
 		},
-		["Horde - Alterac Mountains"] = {
-		},
 	},
 	["realm"] = {
 		["Icecrown"] = {
+		},
+		["Area 52"] = {
 		},
 	},
 	["factionrealm"] = {
@@ -345,14 +357,6 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
-		["Microfiche of Icecrown"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
 		["Kumanoinkei of Illidan"] = {
 			["Default Friendly"] = {
 			},
@@ -428,6 +432,14 @@ CliqueDB = {
 					["modifiers"] = 0,
 					["name"] = "Custom",
 				}, -- [1]
+			},
+		},
+		["Microfiche of Icecrown"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
 			},
 		},
 		["Wuffi of Icecrown"] = {

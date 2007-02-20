@@ -17,7 +17,7 @@ FuXPDB = {
 				0.07843137254901961, -- [3]
 			},
 			["ShowText"] = "XP",
-			["Faction"] = 2,
+			["Faction"] = 4,
 			["version"] = 104,
 			["showText"] = false,
 			["Rest"] = {

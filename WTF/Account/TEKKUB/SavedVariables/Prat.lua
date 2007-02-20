@@ -20,25 +20,25 @@ PratDB = {
 				["Default"] = {
 					["shortnames"] = {
 						["guild"] = "",
-						["Party"] = "",
-						["Channel4"] = "[LFG]",
-						["Raid"] = "",
 						["Channel3"] = "[LFG]",
-						["Channel2"] = "[WD]",
-						["raid"] = "",
-						["Guild"] = "",
+						["Channel4"] = "[LFG]",
 						["Channel5"] = "[LD]",
-						["Channel1"] = "[Trade]",
 						["party"] = "",
+						["Channel2"] = "[WD]",
+						["Raid"] = "",
+						["Guild"] = "",
+						["raid"] = "",
+						["Channel1"] = "[Trade]",
+						["Party"] = "",
 					},
 					["chanSave"] = {
 						["raidleader"] = "[Raid Leader] %s: ",
 						["raidwarning"] = "[Raid Warning] %s: ",
 						["battleground"] = "[Battleground] %s: ",
 						["yell"] = "%s yells: ",
-						["whisper"] = "To %s: ",
-						["party"] = "[Party] %s: ",
 						["whisperincome"] = "%s whispers: ",
+						["party"] = "[Party] %s: ",
+						["whisper"] = "To %s: ",
 						["say"] = "%s says: ",
 						["battlegroundleader"] = "[Battleground Leader] %s: ",
 						["raid"] = "[Raid] %s: ",
@@ -55,7 +55,6 @@ PratDB = {
 		["PratChannelColorMemory"] = {
 			["profiles"] = {
 				["Default"] = {
-					["debug"] = false,
 					["colors"] = {
 						["LocalDefense"] = {
 							["r"] = 1.000000059138984,
@@ -74,6 +73,7 @@ PratDB = {
 						},
 					},
 					["on"] = false,
+					["debug"] = false,
 				},
 			},
 		},
@@ -213,6 +213,13 @@ PratDB = {
 				},
 			},
 		},
+		["PratSubstitutions"] = {
+			["profiles"] = {
+				["Default"] = {
+					["debug"] = false,
+				},
+			},
+		},
 		["minimap"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -266,21 +273,6 @@ PratDB = {
 				},
 			},
 		},
-		["PratTimestamps"] = {
-			["profiles"] = {
-				["Default"] = {
-					["debug"] = false,
-				},
-			},
-		},
-		["PratFontSize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["sizeseparate"] = false,
-					["debug"] = false,
-				},
-			},
-		},
 		["PratScroll"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -297,6 +289,21 @@ PratDB = {
 				},
 			},
 		},
+		["PratTimestamps"] = {
+			["profiles"] = {
+				["Default"] = {
+					["debug"] = false,
+				},
+			},
+		},
+		["PratFontSize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["sizeseparate"] = false,
+					["debug"] = false,
+				},
+			},
+		},
 		["PratHistory"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -305,10 +312,22 @@ PratDB = {
 				},
 			},
 		},
-		["TellTarget"] = {
+		["PratCopyChat"] = {
 			["profiles"] = {
 				["Default"] = {
+					["debug"] = false,
 					["on"] = false,
+				},
+			},
+		},
+		["ChatFrames"] = {
+			["profiles"] = {
+				["Default"] = {
+					["initialized"] = true,
+					["defaultmaxchatheight"] = 399.9999786322549,
+					["defaultminchatheight"] = 74.99999824278412,
+					["defaultmaxchatwidth"] = 608.000033738545,
+					["defaultminchatwidth"] = 296.0000050607818,
 				},
 			},
 		},
@@ -324,17 +343,6 @@ PratDB = {
 			["profiles"] = {
 				["Default"] = {
 					["debug"] = false,
-				},
-			},
-		},
-		["ChatFrames"] = {
-			["profiles"] = {
-				["Default"] = {
-					["initialized"] = true,
-					["defaultmaxchatheight"] = 399.9999786322549,
-					["defaultminchatheight"] = 74.99999824278412,
-					["defaultmaxchatwidth"] = 608.000033738545,
-					["defaultminchatwidth"] = 296.0000050607818,
 				},
 			},
 		},
@@ -360,18 +368,18 @@ PratDB = {
 				},
 			},
 		},
-		["PratFiltering"] = {
-			["profiles"] = {
-				["Default"] = {
-					["debug"] = false,
-				},
-			},
-		},
 		["telltarget"] = {
 			["profiles"] = {
 				["Default"] = {
 					["debug"] = false,
 					["on"] = false,
+				},
+			},
+		},
+		["PratFiltering"] = {
+			["profiles"] = {
+				["Default"] = {
+					["debug"] = false,
 				},
 			},
 		},
@@ -421,7 +429,7 @@ PratDB = {
 						["Stalora"] = 60,
 						["Jonls"] = 60,
 						["Maer"] = 60,
-						["Ozabebop"] = 60,
+						["Noxtris"] = 47,
 						["Canthaya"] = 60,
 						["Fathamier"] = 60,
 						["Velanda"] = 12,
@@ -447,10 +455,10 @@ PratDB = {
 						["Meerfrost"] = 60,
 						["Ailurus"] = 0,
 						["Arphaxad"] = 45,
-						["Chepaul"] = 60,
-						["Boombyebye"] = 16,
 						["Archt"] = 30,
+						["Maylena"] = 0,
 						["Sayid"] = 25,
+						["Conradine"] = 0,
 						["Oreyal"] = 58,
 						["Lila"] = 60,
 						["Xathy"] = 60,
@@ -471,10 +479,10 @@ PratDB = {
 						["Tesah"] = 60,
 						["Raaina"] = 60,
 						["Darolak"] = 60,
+						["Chepaul"] = 60,
 						["Diablowag"] = 37,
+						["Boombyebye"] = 16,
 						["Kaourai"] = 60,
-						["Maylena"] = 0,
-						["Conradine"] = 0,
 						["Alterboy"] = 60,
 						["Girt"] = 0,
 						["Tekkub"] = 0,
@@ -485,7 +493,7 @@ PratDB = {
 						["Alla"] = 60,
 						["Seriah"] = 37,
 						["Maleyna"] = 0,
-						["Noxtris"] = 47,
+						["Ozabebop"] = 60,
 						["Zorastan"] = 0,
 						["Everisabel"] = 36,
 					},
@@ -550,13 +558,13 @@ PratDB = {
 						["Fartenfrau"] = "a0a0a0",
 						["Sneakytoe"] = "fff468",
 						["Nachtengel"] = "a0a0a0",
-						["Meerfrost"] = "aad372",
+						["Ailurus"] = "a0a0a0",
 						["Qualerei"] = "a0a0a0",
-						["Maylena"] = "a0a0a0",
-						["Archt"] = "aad372",
 						["Boombyebye"] = "68ccef",
 						["Chepaul"] = "c69b6d",
+						["Maylena"] = "a0a0a0",
 						["Sayid"] = "ffffff",
+						["Conradine"] = "a0a0a0",
 						["Oreyal"] = "ff7c0a",
 						["Lila"] = "9382c9",
 						["Xathy"] = "f48cba",
@@ -567,25 +575,25 @@ PratDB = {
 						["Donuteater"] = "f48cba",
 						["Alterboy"] = "ffffff",
 						["Edrelathis"] = "fff468",
-						["Dyrnassa"] = "ff7c0a",
+						["Pieter"] = "a0a0a0",
 						["Raaina"] = "ff7c0a",
 						["Tesah"] = "aad372",
-						["Tephros"] = "c69b6d",
-						["Pobre"] = "68ccef",
 						["Samrechym"] = "c69b6d",
-						["Wickeds"] = "c69b6d",
+						["Pobre"] = "68ccef",
 						["Breya"] = "ff7c0a",
+						["Wickeds"] = "c69b6d",
+						["Tephros"] = "c69b6d",
 						["Lockbox"] = "a0a0a0",
 						["Jer"] = "c69b6d",
-						["Pieter"] = "a0a0a0",
+						["Dyrnassa"] = "ff7c0a",
 						["Ladymaryjane"] = "f48cba",
 						["Rinnie"] = "9382c9",
+						["Archt"] = "aad372",
 						["Kaourai"] = "ff7c0a",
 						["Diablowag"] = "fff468",
-						["Conradine"] = "a0a0a0",
 						["Tekkub"] = "a0a0a0",
 						["Kwidge"] = "fff468",
-						["Ailurus"] = "a0a0a0",
+						["Meerfrost"] = "aad372",
 						["Girt"] = "a0a0a0",
 						["Bathory"] = "a0a0a0",
 						["Pharoah"] = "68ccef",
@@ -617,6 +625,13 @@ PratDB = {
 				},
 			},
 		},
+		["TellTarget"] = {
+			["profiles"] = {
+				["Default"] = {
+					["on"] = false,
+				},
+			},
+		},
 		["Editbox"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -638,14 +653,6 @@ PratDB = {
 				},
 			},
 		},
-		["PratCopyChat"] = {
-			["profiles"] = {
-				["Default"] = {
-					["debug"] = false,
-					["on"] = false,
-				},
-			},
-		},
 		["PratChatFrames"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -655,39 +662,49 @@ PratDB = {
 				},
 			},
 		},
+		["PratSounds"] = {
+			["profiles"] = {
+				["Default"] = {
+					["debug"] = false,
+				},
+			},
+		},
 	},
 	["disabledModules"] = {
 		["Default"] = {
-			["fading"] = true,
+			["PratChatLangButton"] = true,
 			["PratChatLink"] = true,
-			["AddonMsgs"] = true,
-			["PratServerNames"] = true,
-			["PratAddonMsgs"] = true,
 			["PratChannelColorMemory"] = true,
-			["PratAltNames"] = true,
 			["PratChannelSeparator"] = true,
-			["PratPopupMessage"] = true,
-			["PratUrlCopy"] = true,
-			["PratChatFrames"] = true,
-			["chatlink"] = true,
 			["PratChatTabs"] = true,
 			["PratChannelReordering"] = true,
 			["Clear"] = true,
-			["PratJustify"] = true,
-			["justify"] = true,
-			["PratEventNames"] = true,
 			["channelrenumbering"] = true,
 			["PratFading"] = true,
 			["chattabs"] = true,
-			["PratFiltering"] = true,
-			["telltarget"] = true,
 			["History"] = true,
 			["PratWho"] = true,
+			["PratSounds"] = true,
+			["PratPopupMessage"] = true,
+			["PratServerNames"] = true,
+			["PratAddonMsgs"] = true,
+			["PratSubstitutions"] = true,
+			["PratAltNames"] = true,
+			["PratChatFrames"] = true,
+			["PratJustify"] = true,
+			["justify"] = true,
 			["PratHistory"] = true,
+			["chatlink"] = true,
+			["PratEventNames"] = true,
+			["PratFiltering"] = true,
+			["telltarget"] = true,
 			["history"] = true,
-			["PratChatLog"] = true,
+			["AddonMsgs"] = true,
+			["PratUrlCopy"] = true,
 			["PratCopyChat"] = true,
-			["PratChatLangButton"] = true,
+			["PratChatLog"] = true,
+			["fading"] = true,
+			["FixBlizzardChannelUnhiding"] = true,
 		},
 	},
 }

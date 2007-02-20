@@ -14,9 +14,6 @@ FuBar_FriendsFuDB = {
 			},
 			["detachedTooltip"] = {
 			},
-			["text"] = {
-				["show_displayed"] = false,
-			},
 			["tooltip"] = {
 				["sort"] = "NAME",
 			},

@@ -97,16 +97,6 @@ TTData = {
 	["flash"] = 10,
 	["show"] = 1,
 	["notify"] = "on",
-	["time"] = "ct",
-	["lock"] = 0,
-	["order"] = {
-		"Air", -- [1]
-		"Water", -- [2]
-		"Fire", -- [3]
-		"Earth", -- [4]
-	},
-	["style"] = "sticky",
-	["arrange"] = "horizontal",
 	["Default"] = {
 		["warningTime"] = 10,
 		["expireMsg"] = "is Destroyed",
@@ -122,14 +112,24 @@ TTData = {
 			0, -- [3]
 		},
 	},
+	["lock"] = 0,
+	["order"] = {
+		"Air", -- [1]
+		"Water", -- [2]
+		"Fire", -- [3]
+		"Earth", -- [4]
+	},
+	["style"] = "sticky",
+	["arrange"] = "horizontal",
+	["time"] = "ct",
 }
 TTActiveTotems = {
 	["Earth"] = {
+		["element"] = "Earth",
+		["damage"] = 116,
 		["totem"] = "Stoneclaw",
 		["flashTime"] = 0.1419999748468399,
 		["duration"] = -0.004000630229711533,
-		["element"] = "Earth",
-		["damage"] = 116,
 		["flashState"] = 0,
 		["hits"] = 206,
 	},
@@ -144,20 +144,20 @@ TTActiveTotems = {
 		["damage"] = 0,
 	},
 	["Stoneclaw"] = {
+		["element"] = "Earth",
+		["damage"] = 116,
 		["totem"] = "Stoneclaw",
 		["flashTime"] = 0.1419999748468399,
 		["duration"] = -0.004000630229711533,
-		["element"] = "Earth",
-		["damage"] = 116,
 		["flashState"] = 0,
 		["hits"] = 206,
 	},
 	["Fire"] = {
+		["element"] = "Fire",
+		["damage"] = 0,
 		["totem"] = "Searing",
 		["flashTime"] = 0.75,
 		["duration"] = -0.02300126850605011,
-		["element"] = "Fire",
-		["damage"] = 0,
 		["flashState"] = 1,
 		["hits"] = 5,
 	},
@@ -171,11 +171,11 @@ TTActiveTotems = {
 		["hits"] = 5,
 	},
 	["Searing"] = {
+		["element"] = "Fire",
+		["damage"] = 0,
 		["totem"] = "Searing",
 		["flashTime"] = 0.75,
 		["duration"] = -0.02300126850605011,
-		["element"] = "Fire",
-		["damage"] = 0,
 		["flashState"] = 1,
 		["hits"] = 5,
 	},

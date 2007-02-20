@@ -69,7 +69,7 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["IcecrownAilurus"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -84,7 +84,7 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-		["IcecrownTekkub"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -94,17 +94,17 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
-		["IcecrownAilurus"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["FeathermoonAaooeeaaooee"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["IcecrownTekkub"] = {
+			["total"] = 0,
+			["version"] = 904,
+			["new"] = 0,
+		},
+		["Steamwheedle CartelTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -148,11 +148,11 @@ FuBar_MailDB = {
 			},
 			["hidden"] = true,
 			["minimapPositionWild"] = true,
-			["showText"] = true,
-			["minimapPositionX"] = 1225.000046024581,
 			["textformat"] = "number",
-			["minimapPositionY"] = 733.9999374880522,
+			["minimapPositionX"] = 1225.000046024581,
 			["showIcon"] = 1,
+			["minimapPositionY"] = 733.9999374880522,
+			["showText"] = true,
 		},
 		["Druid"] = {
 			["minimapPositionWild"] = true,
@@ -166,10 +166,10 @@ FuBar_MailDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionWild"] = true,
-			["showText"] = true,
 			["version"] = 904,
-			["minimapPositionX"] = 1223.46671679645,
 			["textformat"] = "number",
+			["minimapPositionX"] = 1223.46671679645,
+			["showText"] = true,
 			["minimapPositionY"] = 677.3334073824916,
 			["showIcon"] = 1,
 		},

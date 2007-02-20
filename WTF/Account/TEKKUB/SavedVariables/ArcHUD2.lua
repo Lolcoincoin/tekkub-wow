@@ -4,7 +4,6 @@ ArcHUDDB = {
 		["Default"] = {
 			["RingVisibility"] = 1,
 			["TargetFrame"] = false,
-			["PlayerModel"] = false,
 			["minimapPosition"] = 159.3052276268513,
 			["YLoc"] = 65,
 			["NamePlates"] = false,
@@ -16,6 +15,7 @@ ArcHUDDB = {
 			},
 			["hidden"] = true,
 			["TargetTarget"] = false,
+			["PlayerModel"] = false,
 			["FadeIC"] = 1,
 		},
 	},
