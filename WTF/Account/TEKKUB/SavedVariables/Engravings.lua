@@ -14,16 +14,16 @@ EngravingsDB = {
 		[13704] = "Scholomance",
 		[12382] = "Strat",
 		[15778] = "***RAWR!***",
-		[18249] = "Dire Maul",
 		[8489] = false,
+		[18249] = "Dire Maul",
 	},
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
 		["Mishutka of Area 52"] = "global",
-		["Beardyhead of Area 52"] = "global",
+		["Bear of Illidan"] = "global",
 		["Quinacridone of Illidan"] = "global",
 		["Girth of Alterac Mountains"] = "global",
-		["Bear of Illidan"] = "global",
+		["Beardyhead of Area 52"] = "global",
 	},
 	["faction"] = {
 		["Alliance"] = {
@@ -37,22 +37,6 @@ EngravingsDB = {
 		["Horde - Illidan"] = {
 		},
 	},
-	["factionrealm"] = {
-	},
-	["char"] = {
-		["Tekkub of Area 52"] = {
-		},
-		["Mishutka of Area 52"] = {
-		},
-		["Beardyhead of Area 52"] = {
-		},
-		["Quinacridone of Illidan"] = {
-		},
-		["Girth of Alterac Mountains"] = {
-		},
-		["Bear of Illidan"] = {
-		},
-	},
 	["class"] = {
 		["Priest"] = {
 		},
@@ -62,6 +46,22 @@ EngravingsDB = {
 		},
 		["Druid"] = {
 		},
+	},
+	["char"] = {
+		["Tekkub of Area 52"] = {
+		},
+		["Mishutka of Area 52"] = {
+		},
+		["Bear of Illidan"] = {
+		},
+		["Quinacridone of Illidan"] = {
+		},
+		["Girth of Alterac Mountains"] = {
+		},
+		["Beardyhead of Area 52"] = {
+		},
+	},
+	["factionrealm"] = {
 	},
 	["realm"] = {
 		["Area 52"] = {

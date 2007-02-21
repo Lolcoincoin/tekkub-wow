@@ -6,8 +6,8 @@ CockpitDB = {
 		["Beardyhead of Area 52"] = {
 		},
 	},
-	["profiles"] = {
-		["global"] = {
+	["realm"] = {
+		["Area 52"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -18,8 +18,10 @@ CockpitDB = {
 	["faction"] = {
 		["Alliance - Area 52"] = {
 		},
+		["Alliance"] = {
+		},
 	},
-	["factionrealm"] = {
+	["global"] = {
 	},
 	["class"] = {
 		["Priest"] = {
@@ -27,8 +29,10 @@ CockpitDB = {
 		["Shaman"] = {
 		},
 	},
-	["global"] = {
+	["factionrealm"] = {
 	},
-	["realm"] = {
+	["profiles"] = {
+		["global"] = {
+		},
 	},
 }
