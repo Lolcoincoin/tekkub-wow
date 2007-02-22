@@ -38,13 +38,13 @@ FuBar_GreedBeaconDB = {
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 0,
 		},
 		["SuramarHuslu"] = {
 			["version"] = 0,
 		},
-		["StormscaleNunuvit"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 0,
 		},
 		["DrakaTekkub"] = {
@@ -69,6 +69,10 @@ FuBar_GreedBeaconDB = {
 			["disabled"] = 1,
 			["showtokentracker"] = true,
 		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
 		["Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
@@ -85,10 +89,6 @@ FuBar_GreedBeaconDB = {
 			["detachedTooltip"] = {
 			},
 			["supressitem"] = true,
-		},
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
 		},
 		["Druid"] = {
 			["version"] = 0,

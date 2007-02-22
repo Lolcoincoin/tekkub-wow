@@ -12,7 +12,6 @@ FuXPDB = {
 				1, -- [2]
 				0, -- [3]
 			},
-			["showText"] = false,
 			["detachedTooltip"] = {
 			},
 			["Rep"] = {
@@ -22,6 +21,7 @@ FuXPDB = {
 			},
 			["ShowText"] = "XP",
 			["Faction"] = 4,
+			["showText"] = false,
 			["version"] = 104,
 			["Rest"] = {
 				0.6235294117647059, -- [1]

@@ -10,19 +10,19 @@ GridDB = {
 							["buff_PowerWordShield"] = true,
 							["buff_Renew"] = true,
 						},
-						["icon"] = {
-							["debuff_curse"] = false,
-							["debuff_poison"] = false,
-							["debuff_disease"] = false,
+						["border"] = {
+							["debuff_magic"] = false,
 						},
 						["text"] = {
 							["alert_offline"] = false,
 						},
-						["border"] = {
-							["debuff_magic"] = false,
-						},
 						["corner3"] = {
 							["debuff_magic"] = false,
+						},
+						["icon"] = {
+							["debuff_curse"] = false,
+							["debuff_poison"] = false,
+							["debuff_disease"] = false,
 						},
 					},
 				},
@@ -51,12 +51,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAggro"] = {
+		["GridStatusMana"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_aggro"] = {
+					["alert_lowMana"] = {
 						["range"] = true,
 					},
 				},
@@ -85,17 +85,6 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusMana"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_lowMana"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
 		["GridStatusTarget"] = {
 			["profiles"] = {
 				["class/Priest"] = {
@@ -115,12 +104,6 @@ GridDB = {
 					["FrameDisplay"] = "always",
 					["PosY"] = 0,
 					["PosX"] = 222.6666499529367,
-				},
-			},
-		},
-		["GridRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
 				},
 			},
 		},
@@ -148,6 +131,12 @@ GridDB = {
 				},
 			},
 		},
+		["GridRange"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
 		["GridStatusAuras"] = {
 			["profiles"] = {
 				["class/Priest"] = {
@@ -171,13 +160,24 @@ GridDB = {
 					["buff_Renew"] = {
 						["range"] = true,
 					},
-					["debuff_WeakenedSoul"] = {
-						["range"] = true,
-					},
 					["debuff_disease"] = {
 						["range"] = true,
 					},
+					["debuff_WeakenedSoul"] = {
+						["range"] = true,
+					},
 					["debuff_magic"] = {
+						["range"] = true,
+					},
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_aggro"] = {
 						["range"] = true,
 					},
 				},

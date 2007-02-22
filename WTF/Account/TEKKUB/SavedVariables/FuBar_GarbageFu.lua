@@ -33,6 +33,7 @@ GarbageFuDB = {
 				["Consumable.Weapon Buff"] = true,
 				["Consumable.Scroll"] = true,
 			},
+			["sellonlygrey"] = false,
 			["pricetype"] = true,
 			["dropsets"] = {
 				["Consumable.Food.Inedible"] = true,
@@ -49,13 +50,13 @@ GarbageFuDB = {
 				[11965] = true,
 				[20645] = true,
 				[9452] = true,
-				[7005] = true,
 				[24429] = true,
+				[7005] = true,
 				[11122] = true,
 				[11285] = true,
-				[18684] = true,
-				[15052] = true,
 				[11812] = true,
+				[15052] = true,
+				[18684] = true,
 				[23082] = true,
 				[18047] = true,
 				[18986] = true,
@@ -65,7 +66,6 @@ GarbageFuDB = {
 				[16675] = true,
 				[22660] = true,
 			},
-			["sellonlygrey"] = false,
 			["sellallbutton"] = false,
 			["vendoraddonsorder"] = {
 				"ludwig_sellvalue", -- [1]
@@ -75,16 +75,18 @@ GarbageFuDB = {
 			["auctionitem"] = {
 				[6601] = true,
 				[4051] = true,
+				[14133] = true,
 				[6575] = true,
-				[24245] = true,
 				[24449] = true,
 				[19816] = true,
 				[18335] = true,
 				[15276] = true,
 				[7362] = true,
-				[14133] = true,
+				[24245] = true,
 				[1486] = true,
 				[6377] = true,
+			},
+			["detachedTooltip"] = {
 			},
 			["threshold"] = 4,
 			["auctionaddonsorder"] = {
@@ -92,13 +94,11 @@ GarbageFuDB = {
 				"-DNU-", -- [2]
 				"-CA-", -- [3]
 			},
-			["showText"] = true,
-			["detachedTooltip"] = {
-			},
+			["version"] = "2.0.28000",
 			["keepsets"] = {
 				["Consumable.Water"] = true,
 			},
-			["version"] = "2.0.28000",
+			["showText"] = true,
 		},
 	},
 	["account"] = {

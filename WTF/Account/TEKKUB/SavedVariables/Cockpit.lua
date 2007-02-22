@@ -1,9 +1,11 @@
 
 CockpitDB = {
 	["char"] = {
+		["Beardyhead of Area 52"] = {
+		},
 		["Mishutka of Area 52"] = {
 		},
-		["Beardyhead of Area 52"] = {
+		["Tekkub of Area 52"] = {
 		},
 	},
 	["realm"] = {
@@ -25,6 +27,8 @@ CockpitDB = {
 	},
 	["class"] = {
 		["Priest"] = {
+		},
+		["Hunter"] = {
 		},
 		["Shaman"] = {
 		},

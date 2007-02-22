@@ -5,42 +5,42 @@ PerformanceFuDB = {
 	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["version"] = "1.1.1551",
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
-			["showRate"] = false,
 			["showMemory"] = false,
+			["version"] = "1.1.1551",
 		},
 		["Ailurus of Icecrown"] = {
-			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
 		["Tekkub of Icecrown"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
 		["Wuffi of Icecrown"] = {
-			["showMemory"] = false,
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
-			["showRate"] = false,
 			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
 		["Druid"] = {
-			["version"] = 101.1551,
 			["showRate"] = false,
 			["showMemory"] = false,
+			["version"] = 101.1551,
 		},
 		["default"] = {
 			["detachedTooltip"] = {
@@ -48,20 +48,20 @@ PerformanceFuDB = {
 			["version"] = 101.1551,
 		},
 		["Beardyhead of Draka"] = {
-			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 10283,
+			["showMemory"] = false,
 		},
 		["Priest"] = {
-			["showMemory"] = false,
 			["version"] = 101.1551,
 			["showRate"] = false,
+			["showMemory"] = false,
 		},
 		["Hunter"] = {
 			["showLatency"] = false,
-			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
+			["version"] = 101.1551,
 		},
 		["char/Tekkub of Icecrown"] = {
 			["showMemory"] = false,
@@ -69,9 +69,9 @@ PerformanceFuDB = {
 			},
 		},
 		["Cubbyhole of Icecrown"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
 	},
 }

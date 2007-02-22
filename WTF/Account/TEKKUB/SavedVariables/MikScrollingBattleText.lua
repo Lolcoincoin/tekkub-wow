@@ -12,16 +12,16 @@ MikSBT_SavedVars = {
 					["Reversed"] = true,
 				}, -- [1]
 				{
-					["Name"] = "Outgoing",
-					["OffsetY"] = -160,
 					["OffsetX"] = 60,
+					["OffsetY"] = -160,
 					["AnimationStyle"] = "RightParabola",
+					["Name"] = "Outgoing",
 				}, -- [2]
 				{
-					["Name"] = "Notification",
-					["OffsetY"] = 100,
 					["TextAlignIndex"] = 2,
 					["ScrollHeight"] = 150,
+					["Name"] = "Notification",
+					["OffsetY"] = 100,
 				}, -- [3]
 			},
 			["EventSettings"] = {
@@ -459,21 +459,21 @@ MikSBT_SavedVars = {
 						["r"] = 0.5,
 					},
 				},
-				["INCOMING_SPELL_DOT"] = {
-					["Message"] = "(%s) -%a",
-					["Color"] = {
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 1,
-					},
-					["ScrollAreaIndex"] = 1,
-				},
 				["INCOMING_MISS"] = {
 					["Message"] = "Miss!",
 					["Color"] = {
 						["b"] = 1,
 						["g"] = 0,
 						["r"] = 0,
+					},
+					["ScrollAreaIndex"] = 1,
+				},
+				["INCOMING_SPELL_DOT"] = {
+					["Message"] = "(%s) -%a",
+					["Color"] = {
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 1,
 					},
 					["ScrollAreaIndex"] = 1,
 				},

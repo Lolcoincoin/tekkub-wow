@@ -87,9 +87,9 @@ SupplyAndDemandDB = {
 		},
 		["PvP Flagged"] = {
 			["profiles"] = {
-				["char/Beardyhead of Icecrown"] = {
-				},
 				["char/Tekkub of Icecrown"] = {
+				},
+				["char/Beardyhead of Icecrown"] = {
 				},
 			},
 		},

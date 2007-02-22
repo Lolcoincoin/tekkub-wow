@@ -5,11 +5,11 @@ LocationFuDB = {
 	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["minimapBar"] = false,
-			["showRecZones"] = false,
 			["version"] = "1.1.1551",
 			["detachedTooltip"] = {
 			},
+			["minimapBar"] = false,
+			["showRecZones"] = false,
 		},
 		["Ailurus of Icecrown"] = {
 			["showRecZones"] = false,
@@ -63,11 +63,11 @@ LocationFuDB = {
 			["showRecZones"] = false,
 		},
 		["Wuffi of Icecrown"] = {
-			["minimapBar"] = false,
-			["showRecZones"] = false,
 			["version"] = 101.2027,
 			["detachedTooltip"] = {
 			},
+			["minimapBar"] = false,
+			["showRecZones"] = false,
 		},
 		["Cubbyhole of Icecrown"] = {
 			["version"] = 101.2436,
