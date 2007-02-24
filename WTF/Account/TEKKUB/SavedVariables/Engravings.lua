@@ -20,8 +20,9 @@ EngravingsDB = {
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
 		["Mishutka of Area 52"] = "global",
-		["Bear of Illidan"] = "global",
 		["Quinacridone of Illidan"] = "global",
+		["Bear of Illidan"] = "global",
+		["Cubbyhole of Area 52"] = "global",
 		["Girth of Alterac Mountains"] = "global",
 		["Beardyhead of Area 52"] = "global",
 	},
@@ -38,13 +39,15 @@ EngravingsDB = {
 		},
 	},
 	["class"] = {
+		["Druid"] = {
+		},
+		["Shaman"] = {
+		},
 		["Priest"] = {
 		},
 		["Hunter"] = {
 		},
-		["Shaman"] = {
-		},
-		["Druid"] = {
+		["Rogue"] = {
 		},
 	},
 	["char"] = {
@@ -52,9 +55,11 @@ EngravingsDB = {
 		},
 		["Mishutka of Area 52"] = {
 		},
+		["Quinacridone of Illidan"] = {
+		},
 		["Bear of Illidan"] = {
 		},
-		["Quinacridone of Illidan"] = {
+		["Cubbyhole of Area 52"] = {
 		},
 		["Girth of Alterac Mountains"] = {
 		},

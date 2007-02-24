@@ -10,19 +10,19 @@ GridDB = {
 							["buff_PowerWordShield"] = true,
 							["buff_Renew"] = true,
 						},
-						["border"] = {
-							["debuff_magic"] = false,
-						},
-						["text"] = {
-							["alert_offline"] = false,
-						},
-						["corner3"] = {
-							["debuff_magic"] = false,
-						},
 						["icon"] = {
 							["debuff_curse"] = false,
 							["debuff_poison"] = false,
 							["debuff_disease"] = false,
+						},
+						["text"] = {
+							["alert_offline"] = false,
+						},
+						["border"] = {
+							["debuff_magic"] = false,
+						},
+						["corner3"] = {
+							["debuff_magic"] = false,
 						},
 					},
 				},
@@ -42,6 +42,17 @@ GridDB = {
 				},
 			},
 		},
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
+				},
+			},
+		},
 		["GridStatus"] = {
 			["profiles"] = {
 				["class/Priest"] = {
@@ -51,12 +62,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusMana"] = {
+		["GridStatusAggro"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_lowMana"] = {
+					["alert_aggro"] = {
 						["range"] = true,
 					},
 				},
@@ -71,23 +82,6 @@ GridDB = {
 						["range"] = true,
 						["text"] = "incoming heals",
 					},
-				},
-			},
-		},
-		["GridStatusName"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
-					},
-				},
-			},
-		},
-		["GridStatusTarget"] = {
-			["profiles"] = {
-				["class/Priest"] = {
 				},
 			},
 		},
@@ -107,20 +101,26 @@ GridDB = {
 				},
 			},
 		},
+		["GridStatusTarget"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
 		["GridStatusHealth"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["unit_healthDeficit"] = {
-						["range"] = true,
-					},
 					["alert_offline"] = {
 						["color"] = {
 							["g"] = 0.5,
 							["r"] = 0.5,
 						},
 						["priority"] = 0,
+					},
+					["unit_healthDeficit"] = {
+						["range"] = true,
 					},
 					["alert_lowHealth"] = {
 						["range"] = true,
@@ -172,12 +172,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAggro"] = {
+		["GridStatusMana"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_aggro"] = {
+					["alert_lowMana"] = {
 						["range"] = true,
 					},
 				},

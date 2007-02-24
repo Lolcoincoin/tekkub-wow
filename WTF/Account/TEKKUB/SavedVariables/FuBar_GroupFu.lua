@@ -130,6 +130,7 @@ GroupFuDB = {
 					["Desc"] = "Poor",
 				},
 			},
+			["OutputChannel"] = "OFF",
 		},
 		["Cubbyhole of Icecrown"] = {
 			["LootColorTable"] = {

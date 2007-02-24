@@ -72,7 +72,7 @@ X: 187
 Y: -833
 Frame: FuBarPluginFactionsFuFrame
 FrameLevel: 7
-X: 1092
+X: 1065
 Y: -833
 Frame: FuBarPluginGreedBeaconFrame
 FrameLevel: 7
@@ -92,7 +92,7 @@ X: 490
 Y: -255
 Frame: TinyPadFrame
 FrameLevel: 8
-X: 355
-Y: -118
+X: 0
+Y: -108
 W: 594
 H: 421

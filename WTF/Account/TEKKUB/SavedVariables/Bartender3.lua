@@ -46,11 +46,11 @@ BT3DB = {
 						["cat"] = 7,
 					},
 					["Rows"] = 3,
-					["PosX"] = 33.9000079794111,
+					["HideHotkey"] = true,
 					["StatesEnabled"] = false,
 					["PosY"] = 169.5799901249606,
 					["Style"] = "Default",
-					["HideHotkey"] = true,
+					["PosX"] = 33.9000079794111,
 					["States"] = {
 						["shift"] = 0,
 						["ctrl"] = 0,
