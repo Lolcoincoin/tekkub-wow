@@ -8,8 +8,34 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 		},
 	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
+	["chars"] = {
+		["FeathermoonAaooeeaaooee"] = {
+			["version"] = 0,
+		},
+		["StormscaleNunuvit"] = {
+			["version"] = 0,
+		},
+		["SuramarHuslu"] = {
+			["version"] = 0,
+		},
+		["FeathermoonKub"] = {
+			["version"] = 0,
+		},
+		["DrakaTekkub"] = {
+			["version"] = 0,
+		},
+		["Steamwheedle CartelTekkub"] = {
+			["version"] = 0,
+		},
+		["Vek'nilashGirth"] = {
+			["version"] = 0,
+		},
+	},
 	["realms"] = {
-		["Vek'nilashHorde"] = {
+		["StormscaleAlliance"] = {
 			["version"] = 0,
 		},
 		["FeathermoonAlliance"] = {
@@ -27,35 +53,9 @@ FuBar_GreedBeaconDB = {
 		["SuramarHorde"] = {
 			["version"] = 0,
 		},
-		["StormscaleAlliance"] = {
+		["Vek'nilashHorde"] = {
 			["version"] = 0,
 		},
-	},
-	["chars"] = {
-		["FeathermoonAaooeeaaooee"] = {
-			["version"] = 0,
-		},
-		["Steamwheedle CartelTekkub"] = {
-			["version"] = 0,
-		},
-		["FeathermoonKub"] = {
-			["version"] = 0,
-		},
-		["SuramarHuslu"] = {
-			["version"] = 0,
-		},
-		["DrakaTekkub"] = {
-			["version"] = 0,
-		},
-		["StormscaleNunuvit"] = {
-			["version"] = 0,
-		},
-		["Vek'nilashGirth"] = {
-			["version"] = 0,
-		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {

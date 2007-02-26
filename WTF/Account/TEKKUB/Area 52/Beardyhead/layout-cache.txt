@@ -44,3 +44,7 @@ Frame: ItemRefTooltip
 FrameLevel: 8
 X: 982
 Y: -208
+Frame: AuditorFuFrame
+FrameLevel: 7
+X: 1150
+Y: -833

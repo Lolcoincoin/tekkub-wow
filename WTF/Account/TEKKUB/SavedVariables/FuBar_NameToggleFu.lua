@@ -17,6 +17,47 @@ FuBar_NameToggleDB = {
 			["version"] = 1532,
 		},
 	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
+	["chars"] = {
+		["SuramarHuslu"] = {
+			["version"] = 1532,
+		},
+		["IcecrownGirth"] = {
+			["version"] = 1532,
+		},
+		["Steamwheedle CartelTekkub"] = {
+			["version"] = 1532,
+		},
+		["FeathermoonKub"] = {
+			["version"] = 1532,
+		},
+		["IllidanBear"] = {
+			["version"] = 1532,
+		},
+		["FeathermoonAaooeeaaooee"] = {
+			["version"] = 1532,
+		},
+		["IcecrownCubbyhole"] = {
+			["version"] = 1532,
+		},
+		["IcecrownAilurus"] = {
+			["version"] = 1532,
+		},
+		["IllidanKumanoinkei"] = {
+			["version"] = 1532,
+		},
+		["DrakaTekkub"] = {
+			["version"] = 1532,
+		},
+		["StormscaleNunuvit"] = {
+			["version"] = 1532,
+		},
+		["Vek'nilashGirth"] = {
+			["version"] = 1532,
+		},
+	},
 	["realms"] = {
 		["Vek'nilashHorde"] = {
 			["version"] = 1532,
@@ -42,47 +83,6 @@ FuBar_NameToggleDB = {
 		["SuramarHorde"] = {
 			["version"] = 1532,
 		},
-	},
-	["chars"] = {
-		["StormscaleNunuvit"] = {
-			["version"] = 1532,
-		},
-		["SuramarHuslu"] = {
-			["version"] = 1532,
-		},
-		["IcecrownGirth"] = {
-			["version"] = 1532,
-		},
-		["FeathermoonKub"] = {
-			["version"] = 1532,
-		},
-		["IllidanBear"] = {
-			["version"] = 1532,
-		},
-		["FeathermoonAaooeeaaooee"] = {
-			["version"] = 1532,
-		},
-		["IcecrownCubbyhole"] = {
-			["version"] = 1532,
-		},
-		["IcecrownAilurus"] = {
-			["version"] = 1532,
-		},
-		["IllidanKumanoinkei"] = {
-			["version"] = 1532,
-		},
-		["DrakaTekkub"] = {
-			["version"] = 1532,
-		},
-		["Steamwheedle CartelTekkub"] = {
-			["version"] = 1532,
-		},
-		["Vek'nilashGirth"] = {
-			["version"] = 1532,
-		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {

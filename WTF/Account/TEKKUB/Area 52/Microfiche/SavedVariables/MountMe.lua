@@ -1,2 +1,4 @@
 
 MountMeDBPerChar = nil
+MountMeItemSwapDB = {
+}

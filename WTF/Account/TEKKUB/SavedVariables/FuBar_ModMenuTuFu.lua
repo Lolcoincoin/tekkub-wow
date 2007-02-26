@@ -1,19 +1,6 @@
 
 ModMenuTuFuDB = {
-	["currentProfile"] = {
-		["Cubbyhole - Area 52"] = "char",
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
-		["char/Tekkub of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-			["showText"] = 0,
-		},
-		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
 		["Default"] = {
 			["minimapPositionWild"] = true,
 			["showText"] = 0,
@@ -21,6 +8,15 @@ ModMenuTuFuDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionY"] = 738.9999318225091,
+		},
+		["char/Beardyhead of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+			["showText"] = 0,
 		},
 		["char/Cubbyhole - Area 52"] = {
 			["minimapPositionWild"] = true,
@@ -30,5 +26,9 @@ ModMenuTuFuDB = {
 			},
 			["minimapPositionY"] = 738.9999318225091,
 		},
+	},
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

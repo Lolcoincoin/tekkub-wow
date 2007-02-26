@@ -97,6 +97,16 @@ TTData = {
 	["flash"] = 10,
 	["show"] = 1,
 	["notify"] = "on",
+	["time"] = "ct",
+	["lock"] = 0,
+	["order"] = {
+		"Air", -- [1]
+		"Water", -- [2]
+		"Fire", -- [3]
+		"Earth", -- [4]
+	},
+	["style"] = "sticky",
+	["arrange"] = "horizontal",
 	["Default"] = {
 		["warningTime"] = 10,
 		["expireMsg"] = "is Destroyed",
@@ -112,16 +122,6 @@ TTData = {
 			0, -- [3]
 		},
 	},
-	["lock"] = 0,
-	["order"] = {
-		"Air", -- [1]
-		"Water", -- [2]
-		"Fire", -- [3]
-		"Earth", -- [4]
-	},
-	["style"] = "sticky",
-	["arrange"] = "horizontal",
-	["time"] = "ct",
 }
 TTActiveTotems = {
 	["Earth"] = {

@@ -45,7 +45,7 @@ EquipCompare: enabled
 ErrorRedirect: enabled
 FeralFighter: enabled
 FireShow: enabled
-FuzzyLogic: enabled
+FuzzyLogic: disabled
 GFW_AutoCraft: enabled
 GFW_FeedOMatic: enabled
 GFW_Guildentipper: enabled
@@ -113,3 +113,4 @@ Visor: enabled
 WatchDog: enabled
 ZooKeeper: enabled
 ag_UnitFrames: enabled
+FuBar-compat-1.2: disabled

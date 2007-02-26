@@ -6,9 +6,9 @@ ReagentFuCharDB = {
 			["Healthstone"] = true,
 			["Soulstone"] = true,
 			["Soul Shard"] = true,
-			["Demonic Figurine"] = true,
-			["Infernal Stone"] = true,
 			["Spellstone"] = true,
+			["Infernal Stone"] = true,
+			["Demonic Figurine"] = true,
 		},
 	},
 }

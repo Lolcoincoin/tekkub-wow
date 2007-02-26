@@ -1,23 +1,5 @@
 
 ArcHUDDB = {
-	["profiles"] = {
-		["Default"] = {
-			["RingVisibility"] = 1,
-			["TargetFrame"] = false,
-			["TargetTarget"] = false,
-			["minimapPosition"] = 159.3052276268513,
-			["YLoc"] = 65,
-			["HoverMsg"] = false,
-			["NamePlates"] = false,
-			["TargetTargetTarget"] = false,
-			["FadeFull"] = 0,
-			["AttachTop"] = true,
-			["detachedTooltip"] = {
-			},
-			["FadeIC"] = 1,
-			["PlayerModel"] = false,
-		},
-	},
 	["disabledModules"] = {
 		["Default"] = {
 			["FocusHealth"] = true,
@@ -26,6 +8,25 @@ ArcHUDDB = {
 			["FocusMana"] = true,
 			["TargetMana"] = true,
 			["DruidMana"] = true,
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+			["RingVisibility"] = 1,
+			["TargetFrame"] = false,
+			["NamePlates"] = false,
+			["minimapPosition"] = 184.1430835585422,
+			["YLoc"] = 65,
+			["HoverMsg"] = false,
+			["TargetTargetTarget"] = false,
+			["FadeFull"] = 0,
+			["AttachTop"] = true,
+			["FadeIC"] = 1,
+			["detachedTooltip"] = {
+			},
+			["hidden"] = true,
+			["PlayerModel"] = false,
+			["TargetTarget"] = false,
 		},
 	},
 }
