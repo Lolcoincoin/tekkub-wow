@@ -3,11 +3,7 @@ OneBagDB = {
 	["profiles"] = {
 		["default"] = {
 			["colorCoding"] = 1,
-			["point"] = {
-				["top"] = 257.392475222026,
-				["left"] = 636.3632277694092,
-				["parent"] = "UIParent",
-			},
+			["disabled"] = 1,
 			["cols"] = 16,
 			["openAtMcht"] = 1,
 			["openAtTrade"] = 1,
@@ -20,7 +16,11 @@ OneBagDB = {
 					["a"] = 0.75,
 				},
 			},
-			["disabled"] = 1,
+			["point"] = {
+				["parent"] = "UIParent",
+				["left"] = 636.3632277694092,
+				["top"] = 257.392475222026,
+			},
 		},
 	},
 }

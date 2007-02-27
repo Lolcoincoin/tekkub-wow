@@ -10,18 +10,18 @@ GridDB = {
 							["buff_PowerWordShield"] = true,
 							["buff_Renew"] = true,
 						},
+						["corner3"] = {
+							["debuff_magic"] = false,
+						},
+						["text"] = {
+							["alert_offline"] = false,
+						},
 						["icon"] = {
 							["debuff_curse"] = false,
 							["debuff_poison"] = false,
 							["debuff_disease"] = false,
 						},
-						["text"] = {
-							["alert_offline"] = false,
-						},
 						["border"] = {
-							["debuff_magic"] = false,
-						},
-						["corner3"] = {
 							["debuff_magic"] = false,
 						},
 					},
@@ -39,17 +39,6 @@ GridDB = {
 		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatusAggro"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["alert_aggro"] = {
-						["range"] = true,
-					},
 				},
 			},
 		},
@@ -105,6 +94,17 @@ GridDB = {
 					["alert_heals"] = {
 						["range"] = true,
 						["text"] = "incoming heals",
+					},
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_aggro"] = {
+						["range"] = true,
 					},
 				},
 			},

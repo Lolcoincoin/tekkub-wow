@@ -52,13 +52,13 @@ FuBar_GreedBeaconDB = {
 			["version"] = 0,
 			["showtokentracker"] = true,
 			["detachedTooltip"] = {
-				["b"] = 0.02352941176470588,
-				["offsety"] = 2.999905340869312,
 				["r"] = 0.03529411764705882,
-				["anchor"] = "BOTTOMLEFT",
+				["offsety"] = 2.999905340869312,
+				["b"] = 0.02352941176470588,
+				["locked"] = true,
 				["offsetx"] = 611.500011108284,
 				["g"] = 0.07450980392156863,
-				["locked"] = true,
+				["anchor"] = "BOTTOMLEFT",
 			},
 		},
 		["Beardyhead of Draka"] = {
@@ -116,7 +116,7 @@ FuBar_GreedBeaconDB = {
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 0,
 		},
-		["FeathermoonKub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 0,
 		},
 		["SuramarHuslu"] = {
@@ -128,7 +128,7 @@ FuBar_GreedBeaconDB = {
 		["DrakaTekkub"] = {
 			["version"] = 0,
 		},
-		["StormscaleNunuvit"] = {
+		["FeathermoonKub"] = {
 			["version"] = 0,
 		},
 		["Vek'nilashGirth"] = {

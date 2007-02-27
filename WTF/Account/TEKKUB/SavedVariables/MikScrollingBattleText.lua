@@ -12,10 +12,10 @@ MikSBT_SavedVars = {
 					["Reversed"] = true,
 				}, -- [1]
 				{
-					["Name"] = "Outgoing",
-					["OffsetY"] = -160,
-					["OffsetX"] = 60,
 					["AnimationStyle"] = "RightParabola",
+					["OffsetY"] = -160,
+					["Name"] = "Outgoing",
+					["OffsetX"] = 60,
 				}, -- [2]
 				{
 					["OffsetY"] = 100,

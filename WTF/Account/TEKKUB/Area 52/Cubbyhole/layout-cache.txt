@@ -1,6 +1,6 @@
 Frame: FuBarPluginGarbageFuFrame
 FrameLevel: 7
-X: 1158
+X: 1161
 Y: 4
 Frame: FuBarPluginModMenuTuFuFrame
 FrameLevel: 7

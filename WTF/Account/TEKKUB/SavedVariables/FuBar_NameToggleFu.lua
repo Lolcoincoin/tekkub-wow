@@ -102,13 +102,13 @@ FuBar_NameToggleDB = {
 		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
-		["IllidanBear"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 1532,
 		},
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 1532,
 		},
-		["StormscaleNunuvit"] = {
+		["IllidanBear"] = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {

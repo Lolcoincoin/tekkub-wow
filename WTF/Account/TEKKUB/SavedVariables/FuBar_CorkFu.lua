@@ -396,6 +396,11 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
+			["CorkFu_Priest_PWShield"] = {
+				["Filters"] = {
+					["Everyone"] = -1,
+				},
+			},
 			["CorkFu_Paladin_Blessing"] = {
 				["Filters"] = {
 					["Class: PRIEST"] = "Blessing of Wisdom",
@@ -408,11 +413,6 @@ CorkFuDB = {
 					["Class: PALADIN"] = "Blessing of Wisdom",
 					["Class: SHAMAN"] = "Blessing of Wisdom",
 					["Class: HUNTER"] = "Blessing of Wisdom",
-				},
-			},
-			["CorkFu_Priest_PWShield"] = {
-				["Filters"] = {
-					["Everyone"] = -1,
 				},
 			},
 			["CorkFu_Huntert_Hawk"] = {
@@ -499,10 +499,6 @@ CorkFuDB = {
 				["Filters"] = {
 				},
 			},
-			["CorkFu_Hunter_Hawk"] = {
-				["Filters"] = {
-				},
-			},
 			["CorkFu_Paladin_Aura"] = {
 				["Filters"] = {
 				},
@@ -513,6 +509,10 @@ CorkFuDB = {
 				},
 			},
 			["CorkFu_Huntert_Hawk"] = {
+				["Filters"] = {
+				},
+			},
+			["CorkFu_Hunter_Hawk"] = {
 				["Filters"] = {
 				},
 			},

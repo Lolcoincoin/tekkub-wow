@@ -74,7 +74,6 @@ GroupFuDB = {
 			},
 			["ShowClassLevel"] = true,
 			["version"] = 104.00070004,
-			["ShowRollCount"] = true,
 			["LootColorTable"] = {
 				{
 					["Hex"] = "|cffffffff",
@@ -133,6 +132,7 @@ GroupFuDB = {
 					["Red"] = 0.615686274509804,
 				},
 			},
+			["ShowRollCount"] = true,
 			["OutputChannel"] = "OFF",
 		},
 		["Girth of Vek'nilash"] = {
