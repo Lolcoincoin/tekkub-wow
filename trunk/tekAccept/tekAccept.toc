@@ -2,6 +2,7 @@
 ## Title: tekAccept
 ## Notes: Auto-accept invites from guild members and friends
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 
 tekAccept.lua
 

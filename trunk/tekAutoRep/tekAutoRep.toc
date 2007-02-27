@@ -3,6 +3,7 @@
 ## Title: tekAutoRep
 ## Notes: Automatically track the last faction you gained reputation with.
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Quest

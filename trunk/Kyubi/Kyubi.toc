@@ -3,6 +3,7 @@
 ## Title: Kyubi no Kitsune
 ## Notes: Find out which events are firing and when.
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Credits: Based off Rowne's FireShow
 ## X-Category: Development Tools
 

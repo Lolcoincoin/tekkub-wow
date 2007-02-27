@@ -3,6 +3,7 @@
 ## Title: tekAutoGreed
 ## Notes: Automatically roll greed on non-BOP items when in a duo
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Inventory

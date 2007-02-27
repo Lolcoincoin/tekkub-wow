@@ -3,6 +3,7 @@
 ## Title: KMFDM
 ## Notes: KLH Meter Fake Data Mimic
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Credits: Jerry on the WoWAce forum
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com

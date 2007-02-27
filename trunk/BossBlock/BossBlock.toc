@@ -3,6 +3,7 @@
 ## Title: Boss Block
 ## Notes: Block CT_RABossMods and oRA_Bigwigs spam.
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication

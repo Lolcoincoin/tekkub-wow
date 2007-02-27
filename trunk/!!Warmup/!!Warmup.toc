@@ -4,6 +4,7 @@
 ## Title: Warmup
 ## Notes: Tracks how long between loadup events
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Development Tools

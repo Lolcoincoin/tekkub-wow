@@ -3,6 +3,7 @@
 ## Title: WoWWiki Dataminer
 ## Notes: Saves item data for WoWWiki
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 

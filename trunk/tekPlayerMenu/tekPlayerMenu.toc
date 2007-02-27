@@ -3,6 +3,7 @@
 ## Title: tekPlayerMenu
 ## Notes: Add extra options to player link menu
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Credits: Based off PlayerMenu by hshh
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com

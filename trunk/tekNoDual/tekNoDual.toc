@@ -3,6 +3,7 @@
 ## Title: tekNoDual
 ## Notes: Reject dual request from people you don't know
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Credits: Denial by phyber/Neriak
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com

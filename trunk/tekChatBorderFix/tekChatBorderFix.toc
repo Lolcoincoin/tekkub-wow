@@ -3,6 +3,7 @@
 ## Title: tekChatBorderFix
 ## Notes: Fixes the "dead spot" caused by chat frame resize borders when they are locked
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Frame Modification

@@ -3,6 +3,7 @@
 ## Title: tekBuffTimers
 ## Notes: Displays buffs in a "#:##" format instead of Blizzards default "#m" format.
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Credits: Based off Doppelganger_BuffTimers by Kayde of Kargath

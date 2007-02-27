@@ -3,6 +3,7 @@
 ## Title: tekErr
 ## Notes: Dumps error popup dialog text to a chat frame
 ## Author: Tekkub Stoutwrithe
+## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
