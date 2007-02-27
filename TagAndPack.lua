@@ -69,13 +69,11 @@ if string.find(tocfile, "## Version:") then
 	print("Updating TOC version")
 	os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
 end
-os.execute("del /F /S /Q "..fulladdon)
-os.execute("rmdir /Q "..fulladdon)
+os.execute("rmdir /Q /S "..fulladdon)
 
 
 -- Make zip package
 print("Packaging release")
-os.execute(string.format("svn export trunk/%s %s", addon, addon))
+os.execute(string.format("svn export %s/tags/%s %s", svnpath, fulladdon, addon))
 os.execute(string.format("winrar a %s.zip %s", fulladdon, addon))
-os.execute("del /F /S /Q "..addon)
-os.execute("rmdir /Q "..addon)
+os.execute("rmdir /Q /S "..addon)
