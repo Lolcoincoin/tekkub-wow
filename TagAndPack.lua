@@ -2,22 +2,80 @@
 local svnpath = "https://tekkub-wow.googlecode.com/svn"
 
 
-io.write("Tag name (Addon-T.O.C.rev): ")
-local version = io.read()
+local function shell(c)
+	local o, h
+	h = assert(io.popen(c, "r"))
+	o = h:read("*all")
+	h:close()
+	return o
+end
 
-local _, _, addon, toc, rev = string.find(version, "^(.+)-(%d+%.%d+%.%d+)%.(%d+)$")
-assert(addon and toc and rev, "Invalid input!")
+local function readfile(file)
+	local f = io.open(file, "r")
+	if not f then return "" end
+	local o = f:read("*all")
+	f:close()
+	return o
+end
 
-local fulladdon = string.format("%s-%s.%s", addon, toc, rev)
+local function writefile(file, data)
+	local f = assert(io.open(file, "w"), "Cannot open file to write")
+	f:write(data)
+	f:close()
+end
 
 
+-- Request addon name
+io.write("Addon name: ")
+local addon = io.read()
+
+
+-- Find last Rev
+print("Finding version number")
+local info = shell(string.format("svn info %s/trunk/%s", svnpath, addon))
+local _, _, rev = string.find(info, "Last Changed Rev: (%d+)")
+assert(rev, "Cannot find revision info!")
+
+
+-- Find TOC value
+local tocfile = readfile(string.format("trunk/%s/%s.toc", addon, addon))
+local _, _, a,b,c = string.find(tocfile, "## Interface: (%d)(%d%d)(%d%d)")
+assert(a and b and c, "Cannot find TOC info!")
+
+local version = string.format("%d.%d.%d.%d", tonumber(a), tonumber(b), tonumber(c), tonumber(rev))
+local fulladdon = string.format("%s-%s", addon, version)
+
+print(fulladdon)
+
+
+-- Verify tag doesn't exist
+print("Verifying tag path")
+local taginfo = shell(string.format("svn info %s/tags/%s", svnpath, fulladdon))
+assert(#taginfo == 0, "This tag already exists!")
+
+
+-- Make the tag
+print("Tagging")
 os.execute(string.format(
 	"svn copy -r %s %s/trunk/%s %s/tags/%s -m \"Tagging %s\"",
 	rev, svnpath, addon, svnpath, fulladdon, fulladdon))
 
+
+-- Update tag's TOC Version
+os.execute(string.format("svn co %s/tags/%s", svnpath, fulladdon))
+if string.find(tocfile, "## Version:") then
+	tocfile = string.gsub(tocfile, "## Version:[^\n]+\n", "## Version: "..version.."\n")
+	writefile(string.format("%s/%s.toc", fulladdon, addon), tocfile)
+	print("Updating TOC version")
+	os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
+end
+os.execute("del /F /S /Q "..fulladdon)
+os.execute("rmdir /Q "..fulladdon)
+
+
+-- Make zip package
+print("Packaging release")
 os.execute(string.format("svn export trunk/%s %s", addon, addon))
-
 os.execute(string.format("winrar a %s.zip %s", fulladdon, addon))
-
 os.execute("del /F /S /Q "..addon)
 os.execute("rmdir /Q "..addon)
