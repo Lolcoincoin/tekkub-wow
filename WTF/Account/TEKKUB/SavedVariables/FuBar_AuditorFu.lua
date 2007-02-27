@@ -12,9 +12,9 @@ Fubar_AuditorDB = {
 				["toolTip"] = "Condensed",
 				["Bar"] = "Condensed",
 			},
+			["iconVisible"] = false,
 			["detachedTooltip"] = {
 			},
-			["iconVisible"] = false,
 		},
 	},
 	["currentProfile"] = {
@@ -24,6 +24,495 @@ Fubar_AuditorDB = {
 AuditorDB = {
 	["realms"] = {
 		["Area 52 - Alliance"] = {
+			["Microfiche"] = {
+				["data"] = {
+					["other"] = {
+						["week"] = {
+							["incomings"] = 4911,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 4911,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 4911,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 4911,
+							["outgoings"] = 0,
+						},
+					},
+					["ah"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["taxi"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["train"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["merch"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["loot"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["trade"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["mail"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["repairs"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["quest"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["totals"] = {
+						["incomings"] = 4911,
+						["outgoings"] = 0,
+						["actual"] = 4911,
+					},
+				},
+				["timeDate"] = {
+					["timeDate"] = 1172361600,
+					["niceDate"] = "02/25/07",
+				},
+				["historical"] = {
+					["6days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["4days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["5days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["2days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["3days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["0days"] = {
+						["other"] = {
+							["incomings"] = 4911,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["1days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+				},
+			},
 			["Beardyhead"] = {
 				["data"] = {
 					["other"] = {
@@ -62,7 +551,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["merch"] = {
+					["taxi"] = {
 						["total"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -98,7 +587,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["taxi"] = {
+					["merch"] = {
 						["total"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -157,24 +646,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["loot"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
 					["quest"] = {
 						["total"] = {
 							["incomings"] = 0,
@@ -211,6 +682,24 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
+					["loot"] = {
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
 				},
 				["timeDate"] = {
 					["timeDate"] = 1172361600,
@@ -226,11 +715,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -243,10 +736,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -268,11 +757,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -285,10 +778,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -310,11 +799,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -327,10 +820,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -352,11 +841,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -369,10 +862,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -394,11 +883,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -411,10 +904,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -436,11 +925,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -453,10 +946,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -478,11 +967,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -498,505 +991,12 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
 						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
 							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-				},
-			},
-			["Tekkub"] = {
-				["timeDate"] = {
-					["timeDate"] = 1172361600,
-					["niceDate"] = "02/25/07",
-				},
-				["data"] = {
-					["other"] = {
-						["total"] = {
-							["incomings"] = 3182611,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 3182611,
-							["outgoings"] = 0,
-						},
-					},
-					["ah"] = {
-						["total"] = {
-							["incomings"] = 64054,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 64054,
-							["outgoings"] = 0,
-						},
-					},
-					["taxi"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 4080,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 4080,
-						},
-					},
-					["train"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["merch"] = {
-						["total"] = {
-							["incomings"] = 132386,
-							["outgoings"] = 24000,
-						},
-						["day"] = {
-							["incomings"] = 45502,
-							["outgoings"] = 1600,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 132386,
-							["outgoings"] = 24000,
-						},
-					},
-					["totals"] = {
-						["incomings"] = 3495051,
-						["outgoings"] = 68080,
-						["actual"] = 3426971,
-					},
-					["trade"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["mail"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 40000,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 40000,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 40000,
-						},
-					},
-					["loot"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["quest"] = {
-						["total"] = {
-							["incomings"] = 116000,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 116000,
-							["outgoings"] = 0,
-						},
-					},
-					["repairs"] = {
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-				},
-				["historical"] = {
-					["6days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["4days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["5days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["2days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["3days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["0days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 45502,
-							["outgoings"] = 1600,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 40000,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["1days"] = {
-						["other"] = {
-							["incomings"] = 3182611,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 64054,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 86884,
-							["outgoings"] = 22400,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 4080,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 116000,
 							["outgoings"] = 0,
 						},
 					},
@@ -1040,7 +1040,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["taxi"] = {
+					["merch"] = {
 						["week"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1076,7 +1076,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["merch"] = {
+					["taxi"] = {
 						["week"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1135,24 +1135,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["loot"] = {
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
 					["quest"] = {
 						["week"] = {
 							["incomings"] = 0,
@@ -1189,6 +1171,24 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
+					["loot"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
 				},
 				["timeDate"] = {
 					["timeDate"] = 1172361600,
@@ -1204,11 +1204,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1221,10 +1225,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1246,11 +1246,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1263,10 +1267,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1288,11 +1288,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1305,10 +1309,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1330,11 +1330,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1347,10 +1351,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1372,11 +1372,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1389,10 +1393,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1414,11 +1414,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1431,10 +1435,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1456,11 +1456,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1473,10 +1477,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1491,197 +1491,197 @@ AuditorDB = {
 					},
 				},
 			},
-			["Microfiche"] = {
+			["Tekkub"] = {
+				["timeDate"] = {
+					["timeDate"] = 1172534400,
+					["niceDate"] = "02/26/07",
+				},
 				["data"] = {
 					["other"] = {
-						["week"] = {
-							["incomings"] = 4911,
+						["total"] = {
+							["incomings"] = 3182611,
 							["outgoings"] = 0,
 						},
 						["day"] = {
-							["incomings"] = 4911,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
-							["incomings"] = 4911,
+							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["total"] = {
-							["incomings"] = 4911,
+						["week"] = {
 							["outgoings"] = 0,
+							["incomings"] = 3182611,
 						},
 					},
 					["ah"] = {
-						["week"] = {
-							["incomings"] = 0,
+						["total"] = {
+							["incomings"] = 64054,
 							["outgoings"] = 0,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["total"] = {
-							["incomings"] = 0,
+						["week"] = {
 							["outgoings"] = 0,
+							["incomings"] = 64054,
 						},
 					},
 					["merch"] = {
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
+						["total"] = {
+							["incomings"] = 132386,
+							["outgoings"] = 24000,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
+						["week"] = {
+							["outgoings"] = 24000,
+							["incomings"] = 132386,
 						},
 					},
 					["train"] = {
-						["week"] = {
+						["total"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["total"] = {
-							["incomings"] = 0,
+						["week"] = {
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 					},
 					["taxi"] = {
-						["week"] = {
+						["total"] = {
 							["incomings"] = 0,
-							["outgoings"] = 0,
+							["outgoings"] = 4080,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["loot"] = {
 						["week"] = {
+							["outgoings"] = 4080,
 							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["trade"] = {
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["mail"] = {
-						["week"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["day"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["total"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
 						},
 					},
 					["totals"] = {
-						["incomings"] = 4911,
-						["outgoings"] = 0,
-						["actual"] = 4911,
+						["incomings"] = 3495051,
+						["outgoings"] = 68080,
+						["actual"] = 3426971,
 					},
-					["repairs"] = {
-						["week"] = {
+					["trade"] = {
+						["total"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["week"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+					},
+					["mail"] = {
 						["total"] = {
 							["incomings"] = 0,
+							["outgoings"] = 40000,
+						},
+						["day"] = {
 							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["week"] = {
+							["outgoings"] = 40000,
+							["incomings"] = 0,
 						},
 					},
 					["quest"] = {
-						["week"] = {
-							["incomings"] = 0,
+						["total"] = {
+							["incomings"] = 116000,
 							["outgoings"] = 0,
 						},
 						["day"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["week"] = {
+							["outgoings"] = 0,
+							["incomings"] = 116000,
+						},
+					},
+					["repairs"] = {
 						["total"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["day"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["week"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
 					},
-				},
-				["timeDate"] = {
-					["timeDate"] = 1172361600,
-					["niceDate"] = "02/25/07",
+					["loot"] = {
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["week"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+					},
 				},
 				["historical"] = {
 					["6days"] = {
@@ -1701,6 +1701,10 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
 						["loot"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1713,15 +1717,11 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1743,6 +1743,10 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
 						["loot"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1755,15 +1759,11 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1785,6 +1785,10 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
 						["loot"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1797,15 +1801,11 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1827,6 +1827,10 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["merch"] = {
+							["incomings"] = 45502,
+							["outgoings"] = 1600,
+						},
 						["loot"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1837,37 +1841,37 @@ AuditorDB = {
 						},
 						["mail"] = {
 							["incomings"] = 0,
-							["outgoings"] = 0,
+							["outgoings"] = 40000,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 					},
 					["3days"] = {
 						["other"] = {
-							["incomings"] = 0,
+							["incomings"] = 3182611,
 							["outgoings"] = 0,
 						},
 						["ah"] = {
-							["incomings"] = 0,
+							["incomings"] = 64054,
 							["outgoings"] = 0,
 						},
 						["taxi"] = {
 							["incomings"] = 0,
-							["outgoings"] = 0,
+							["outgoings"] = 4080,
 						},
 						["train"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 86884,
+							["outgoings"] = 22400,
 						},
 						["loot"] = {
 							["incomings"] = 0,
@@ -1881,59 +1885,55 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
+							["incomings"] = 116000,
 							["outgoings"] = 0,
 						},
 					},
 					["0days"] = {
 						["other"] = {
-							["incomings"] = 4911,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["ah"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["taxi"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["train"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
-						},
-						["loot"] = {
 							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
 						},
 						["merch"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
-						["quest"] = {
-							["incomings"] = 0,
+						["loot"] = {
 							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["trade"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["mail"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 						["repairs"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
+							["incomings"] = 0,
+						},
+						["quest"] = {
+							["outgoings"] = 0,
+							["incomings"] = 0,
 						},
 					},
 					["1days"] = {
@@ -1953,6 +1953,10 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
 						["loot"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -1965,15 +1969,11 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -1984,12 +1984,12 @@ AuditorDB = {
 				["data"] = {
 					["other"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 202639,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2002,48 +2002,48 @@ AuditorDB = {
 					},
 					["ah"] = {
 						["week"] = {
-							["outgoings"] = 446154,
-							["incomings"] = 317693,
+							["incomings"] = 458783,
+							["outgoings"] = 453714,
 						},
 						["day"] = {
-							["outgoings"] = 110800,
-							["incomings"] = 0,
+							["incomings"] = 141090,
+							["outgoings"] = 7560,
 						},
 						["session"] = {
-							["incomings"] = 55200,
-							["outgoings"] = 110800,
+							["incomings"] = 141090,
+							["outgoings"] = 7560,
 						},
 						["total"] = {
-							["incomings"] = 317693,
-							["outgoings"] = 446154,
+							["incomings"] = 458783,
+							["outgoings"] = 453714,
 						},
 					},
-					["taxi"] = {
+					["merch"] = {
 						["week"] = {
+							["incomings"] = 100,
 							["outgoings"] = 0,
-							["incomings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["total"] = {
-							["incomings"] = 0,
+							["incomings"] = 100,
 							["outgoings"] = 0,
 						},
 					},
 					["train"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2054,37 +2054,37 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["merch"] = {
+					["taxi"] = {
 						["week"] = {
+							["incomings"] = 0,
 							["outgoings"] = 0,
-							["incomings"] = 100,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["total"] = {
-							["incomings"] = 100,
+							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 					},
 					["totals"] = {
-						["incomings"] = 560432,
-						["outgoings"] = 446154,
-						["actual"] = 114278,
+						["incomings"] = 701522,
+						["outgoings"] = 453714,
+						["actual"] = 247808,
 					},
 					["trade"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2097,12 +2097,12 @@ AuditorDB = {
 					},
 					["mail"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 40000,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2110,35 +2110,17 @@ AuditorDB = {
 						},
 						["total"] = {
 							["incomings"] = 40000,
-							["outgoings"] = 0,
-						},
-					},
-					["loot"] = {
-						["week"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["day"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["session"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["total"] = {
-							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 					},
 					["quest"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2151,12 +2133,30 @@ AuditorDB = {
 					},
 					["repairs"] = {
 						["week"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["day"] = {
-							["outgoings"] = 0,
 							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["session"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["total"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["loot"] = {
+						["week"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["day"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
 						},
 						["session"] = {
 							["incomings"] = 0,
@@ -2169,8 +2169,8 @@ AuditorDB = {
 					},
 				},
 				["timeDate"] = {
-					["timeDate"] = 1172448000,
-					["niceDate"] = "02/25/07",
+					["timeDate"] = 1172534400,
+					["niceDate"] = "02/26/07",
 				},
 				["historical"] = {
 					["6days"] = {
@@ -2182,11 +2182,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2199,10 +2203,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2224,11 +2224,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2241,10 +2245,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2266,11 +2266,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2283,10 +2287,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2301,132 +2301,6 @@ AuditorDB = {
 					},
 					["2days"] = {
 						["other"] = {
-							["incomings"] = 202639,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 39987,
-							["outgoings"] = 235874,
-						},
-						["merch"] = {
-							["incomings"] = 100,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["3days"] = {
-						["other"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["ah"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["train"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["loot"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["trade"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["taxi"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["quest"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["repairs"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-					},
-					["0days"] = {
-						["other"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["ah"] = {
-							["outgoings"] = 110800,
-							["incomings"] = 0,
-						},
-						["merch"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["train"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["loot"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["trade"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["mail"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["taxi"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["quest"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-						["repairs"] = {
-							["outgoings"] = 0,
-							["incomings"] = 0,
-						},
-					},
-					["1days"] = {
-						["other"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2434,11 +2308,15 @@ AuditorDB = {
 							["incomings"] = 277706,
 							["outgoings"] = 99480,
 						},
-						["merch"] = {
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2454,7 +2332,129 @@ AuditorDB = {
 							["incomings"] = 40000,
 							["outgoings"] = 0,
 						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["3days"] = {
+						["other"] = {
+							["incomings"] = 202639,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 39987,
+							["outgoings"] = 235874,
+						},
 						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 100,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["0days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 141090,
+							["outgoings"] = 7560,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["quest"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["repairs"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+					},
+					["1days"] = {
+						["other"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["ah"] = {
+							["incomings"] = 0,
+							["outgoings"] = 110800,
+						},
+						["taxi"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["merch"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["loot"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["trade"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["mail"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2511,7 +2511,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["taxi"] = {
+					["merch"] = {
 						["week"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -2547,7 +2547,7 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["merch"] = {
+					["taxi"] = {
 						["week"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -2619,11 +2619,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
-					["totals"] = {
-						["incomings"] = 216802,
-						["outgoings"] = 0,
-						["actual"] = 216802,
-					},
 					["quest"] = {
 						["week"] = {
 							["incomings"] = 0,
@@ -2660,6 +2655,11 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 					},
+					["totals"] = {
+						["incomings"] = 216802,
+						["outgoings"] = 0,
+						["actual"] = 216802,
+					},
 				},
 				["historical"] = {
 					["6days"] = {
@@ -2671,11 +2671,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2688,10 +2692,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2713,11 +2713,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2730,10 +2734,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2755,11 +2755,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2772,10 +2776,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2797,11 +2797,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2814,10 +2818,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2839,11 +2839,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2856,10 +2860,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2881,11 +2881,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2898,10 +2902,6 @@ AuditorDB = {
 							["outgoings"] = 0,
 						},
 						["mail"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
-						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2923,11 +2923,15 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["taxi"] = {
+						["merch"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
 						["train"] = {
+							["incomings"] = 0,
+							["outgoings"] = 0,
+						},
+						["taxi"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
@@ -2943,10 +2947,6 @@ AuditorDB = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
 						},
-						["merch"] = {
-							["incomings"] = 0,
-							["outgoings"] = 0,
-						},
 						["repairs"] = {
 							["incomings"] = 0,
 							["outgoings"] = 0,
@@ -2959,10 +2959,10 @@ AuditorDB = {
 				},
 			},
 			["chars"] = {
-				["Microfiche"] = 4911,
-				["Bear"] = 0,
 				["Tekkub"] = 3426971,
-				["Cubbyhole"] = 114278,
+				["Bear"] = 0,
+				["Microfiche"] = 4911,
+				["Cubbyhole"] = 247808,
 				["Mishutka"] = 216802,
 				["Beardyhead"] = 3668888,
 			},

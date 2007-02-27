@@ -28,11 +28,11 @@ FuBar_MailDB = {
 			},
 			["hidden"] = true,
 			["minimapPositionWild"] = true,
-			["showText"] = true,
-			["minimapPositionX"] = 1225.000046024581,
-			["textformat"] = "number",
-			["minimapPositionY"] = 733.9999374880522,
 			["showIcon"] = 1,
+			["minimapPositionX"] = 1225.000046024581,
+			["showText"] = true,
+			["minimapPositionY"] = 733.9999374880522,
+			["textformat"] = "number",
 		},
 		["Girth of Vek'nilash"] = {
 			["hidetext"] = true,
@@ -44,12 +44,12 @@ FuBar_MailDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionWild"] = true,
-			["showIcon"] = 1,
 			["textformat"] = "number",
-			["minimapPositionX"] = 1223.46671679645,
-			["version"] = 904,
-			["minimapPositionY"] = 677.3334073824916,
 			["showText"] = true,
+			["minimapPositionX"] = 1223.46671679645,
+			["showIcon"] = 1,
+			["minimapPositionY"] = 677.3334073824916,
+			["version"] = 904,
 		},
 		["Druid"] = {
 			["minimapPositionWild"] = true,
@@ -63,12 +63,12 @@ FuBar_MailDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionWild"] = true,
-			["version"] = 904,
+			["showIcon"] = 1,
 			["showText"] = true,
 			["minimapPositionX"] = 1223.46671679645,
-			["showIcon"] = 1,
-			["minimapPositionY"] = 677.3334073824916,
 			["textformat"] = "number",
+			["minimapPositionY"] = 677.3334073824916,
+			["version"] = 904,
 		},
 		["Beardyhead of Draka"] = {
 			["hidetext"] = true,
@@ -165,14 +165,14 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IllidanBear"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["StormscaleMongalka"] = {
 			["total"] = 0,
 			["version"] = 20000,
+			["new"] = 0,
+		},
+		["IllidanBear"] = {
+			["total"] = 0,
+			["version"] = 904,
 			["new"] = 0,
 		},
 		["IcecrownMicrofiche"] = {
@@ -180,14 +180,14 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownAilurus"] = {
-			["total"] = 0,
-			["version"] = 904,
-			["new"] = 0,
-		},
 		["DrakaBeardyhead"] = {
 			["total"] = 0,
 			["version"] = 20000,
+			["new"] = 0,
+		},
+		["IcecrownAilurus"] = {
+			["total"] = 0,
+			["version"] = 904,
 			["new"] = 0,
 		},
 		["IcecrownNanuq"] = {

@@ -3,16 +3,16 @@ aUFDB = {
 	["profiles"] = {
 		["Default"] = {
 			["target"] = {
-				["ClassColorBars"] = true,
-				["HealthStyle"] = "Smart",
 				["Scale"] = 1.25,
+				["HealthStyle"] = "Smart",
 				["ManaStyle"] = "Smart",
+				["ClassColorBars"] = true,
 				["HideFrame"] = false,
 				["ShowRaidTargetIcon"] = false,
 			},
 			["Positions"] = {
-				["aUFtarget"] = "194.32001080196 -13.960012496608",
 				["aUFfocus"] = "377.58751718821 -15.337597774119",
+				["aUFtarget"] = "194.32001080196 -13.960012496608",
 			},
 			["BarStyle"] = "Charcoal",
 			["detachedTooltip"] = {
@@ -20,34 +20,34 @@ aUFDB = {
 			["pet"] = {
 				["AuraFilter"] = 0,
 				["HealthStyle"] = "Smart",
-				["HideMana"] = true,
 				["Scale"] = 1.25,
-				["ShowXP"] = false,
 				["ManaStyle"] = "Smart",
+				["HideMana"] = true,
+				["ShowXP"] = false,
 			},
 			["player"] = {
 				["Scale"] = 1.25,
 				["AuraFilter"] = 0,
+				["CastBar"] = false,
 				["HealthStyle"] = "Smart",
 				["AuraStyle"] = "Hide",
-				["CastBar"] = false,
-				["ManaStyle"] = "Smart",
-				["ClassColorBars"] = true,
-				["HideMana"] = false,
-				["NameFormat"] = "[statuscolor][name]",
 				["ShowXP"] = false,
+				["NameFormat"] = "[statuscolor][name]",
+				["ClassColorBars"] = true,
 				["AuraPos"] = "Hidden",
+				["HideMana"] = false,
+				["ManaStyle"] = "Smart",
 			},
 			["showText"] = false,
 			["party"] = {
-				["Scale"] = 1.25,
 				["AuraFilter"] = 0,
-				["ClassColorBars"] = true,
+				["Scale"] = 1.25,
 				["HealthStyle"] = "Smart",
+				["ClassColorBars"] = true,
 				["ManaStyle"] = "Smart",
-				["CastBar"] = true,
 				["NameFormat"] = "[statuscolor][name]",
 				["HideFrame"] = false,
+				["CastBar"] = true,
 			},
 			["focus"] = {
 				["HealthStyle"] = "Smart",
@@ -60,21 +60,21 @@ aUFDB = {
 			["partypet"] = {
 				["AuraFilter"] = 0,
 				["HealthStyle"] = "Hide",
-				["ManaStyle"] = "Smart",
 				["Scale"] = 1.25,
+				["ManaStyle"] = "Smart",
 				["HideFrame"] = false,
 			},
-			["BlizzCastbar"] = true,
+			["partyPlayer"] = {
+				["ShowAnchor"] = true,
+				["Grow"] = "down",
+			},
 			["BorderStyle"] = "Classic",
 			["subgroups"] = {
 				["party"] = {
 					["AnchorOffset"] = 0,
 				},
 			},
-			["partyPlayer"] = {
-				["ShowAnchor"] = true,
-				["Grow"] = "down",
-			},
+			["BlizzCastbar"] = true,
 		},
 	},
 }

@@ -6,9 +6,9 @@ VolumeFuDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["quickfix"] = true,
 			["detachedTooltip"] = {
 			},
+			["quickfix"] = true,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
@@ -21,9 +21,9 @@ VolumeFuDB = {
 		},
 		["char/Cubbyhole - Area 52"] = {
 			["master"] = 0.51,
+			["quickfix"] = true,
 			["detachedTooltip"] = {
 			},
-			["quickfix"] = true,
 		},
 	},
 }

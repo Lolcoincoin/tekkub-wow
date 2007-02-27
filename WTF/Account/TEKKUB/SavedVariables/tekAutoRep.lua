@@ -1,13 +1,13 @@
 
 tekAutoRepDB = {
-	["profiles"] = {
-		["char/Beardyhead of Icecrown"] = {
-		},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 	["disabled"] = {
 		["char"] = true,
 	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
+	["profiles"] = {
+		["char/Beardyhead of Icecrown"] = {
+		},
 	},
 }

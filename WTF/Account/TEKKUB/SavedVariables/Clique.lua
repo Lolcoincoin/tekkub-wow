@@ -37,14 +37,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["mg2-64pre"] = true,
 			["sraid"] = true,
+			["ctra"] = true,
 			["OzRaid"] = true,
-			["squishy"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["ctra"] = true,
+			["squishy"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -58,10 +58,6 @@ CliqueDB = {
 		},
 		["Shaman"] = {
 		},
-		["Rogue"] = {
-		},
-		["Hunter"] = {
-		},
 		["Priest"] = {
 		},
 	},
@@ -69,18 +65,6 @@ CliqueDB = {
 		["Huslu of Icecrown"] = {
 		},
 		["Bear of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Harmful actions"] = {
-				},
-				["Default"] = {
-				},
-				["Out of Combat"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Ailurus of Icecrown"] = {
 		},
@@ -92,10 +76,6 @@ CliqueDB = {
 		},
 		["Mishutka of Area 52"] = {
 			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Out of Combat"] = {
-				},
 				["Default"] = {
 					["Ctrl-1"] = {
 						["type"] = "spell",
@@ -121,10 +101,6 @@ CliqueDB = {
 						["texture"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 					},
 				},
-				["Harmful actions"] = {
-				},
-			},
-			["blacklist"] = {
 			},
 		},
 		["Beardyhead of Icecrown"] = {
@@ -205,64 +181,16 @@ CliqueDB = {
 		["Girth of Alterac Mountains"] = {
 		},
 		["Tekkub of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Out of Combat"] = {
-				},
-				["Default"] = {
-				},
-				["Harmful actions"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Tekkub of Icecrown"] = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
 		["Cubbyhole of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Harmful actions"] = {
-				},
-				["Default"] = {
-				},
-				["Out of Combat"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Beardyhead of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Out of Combat"] = {
-				},
-				["Default"] = {
-				},
-				["Harmful actions"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Microfiche of Area 52"] = {
-			["clicksets"] = {
-				["Helpful actions"] = {
-				},
-				["Harmful actions"] = {
-				},
-				["Default"] = {
-				},
-				["Out of Combat"] = {
-				},
-			},
-			["blacklist"] = {
-			},
 		},
 		["Quinacridone of Illidan"] = {
 		},
@@ -280,17 +208,13 @@ CliqueDB = {
 		},
 		["Ailurus of Icecrown"] = {
 		},
-		["Tekkub of Area 52"] = {
-		},
 		["Tekkub of Icecrown"] = {
-		},
-		["Beardyhead of Area 52"] = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Microfiche of Area 52"] = {
+		["Beardyhead of Area 52"] = {
 		},
-		["Cubbyhole of Area 52"] = {
+		["Microfiche of Area 52"] = {
 		},
 		["Mishutka of Area 52"] = {
 		},
@@ -308,11 +232,9 @@ CliqueDB = {
 	["faction"] = {
 		["Horde - Alterac Mountains"] = {
 		},
-		["Alliance"] = {
+		["Alliance - Area 52"] = {
 		},
 		["Horde - Illidan"] = {
-		},
-		["Alliance - Area 52"] = {
 		},
 	},
 	["chars"] = {
@@ -428,6 +350,14 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
+		["Kumanoinkei of Illidan"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
@@ -505,14 +435,6 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
-		["Kumanoinkei of Illidan"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
 		["Wuffi of Icecrown"] = {
 			["Click on Dead Unit"] = {
 			},
@@ -550,8 +472,6 @@ CliqueDB = {
 	},
 	["realm"] = {
 		["Icecrown"] = {
-		},
-		["Area 52"] = {
 		},
 	},
 }

@@ -1,11 +1,10 @@
 
 MiniClockFuDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
-			["detachedTooltip"] = {
-			},
-		},
-		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
@@ -13,8 +12,9 @@ MiniClockFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
+		["char/Tekkub of Icecrown"] = {
+			["detachedTooltip"] = {
+			},
+		},
 	},
 }
