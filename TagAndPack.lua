@@ -1,5 +1,6 @@
 
 local svnpath = "https://tekkub-wow.googlecode.com/svn"
+local arg1 = select(1, ...)
 
 
 local function shell(c)
@@ -51,25 +52,26 @@ print(fulladdon)
 -- Verify tag doesn't exist
 print("Verifying tag path")
 local taginfo = shell(string.format("svn info %s/tags/%s", svnpath, fulladdon))
-assert(#taginfo == 0, "This tag already exists!")
+if #taginfo ~= 0 and (not arg1 or arg1 ~= "zip") then
+
+	-- Make the tag
+	print("Tagging")
+	os.execute(string.format(
+		"svn copy -r %s %s/trunk/%s %s/tags/%s -m \"Tagging %s\"",
+		rev, svnpath, addon, svnpath, fulladdon, fulladdon))
 
 
--- Make the tag
-print("Tagging")
-os.execute(string.format(
-	"svn copy -r %s %s/trunk/%s %s/tags/%s -m \"Tagging %s\"",
-	rev, svnpath, addon, svnpath, fulladdon, fulladdon))
-
-
--- Update tag's TOC Version
-os.execute(string.format("svn co %s/tags/%s", svnpath, fulladdon))
-if string.find(tocfile, "## Version:") then
-	tocfile = string.gsub(tocfile, "## Version:[^\n]+\n", "## Version: "..version.."\n")
-	writefile(string.format("%s/%s.toc", fulladdon, addon), tocfile)
-	print("Updating TOC version")
-	os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
-end
-os.execute("rmdir /Q /S "..fulladdon)
+	-- Update tag's TOC Version
+	os.execute(string.format("svn co %s/tags/%s", svnpath, fulladdon))
+	if string.find(tocfile, "## Version:") then
+		tocfile = string.gsub(tocfile, "## Version:[^\n]+\n", "## Version: "..version.."\n")
+		writefile(string.format("%s/%s.toc", fulladdon, addon), tocfile)
+		print("Updating TOC version")
+		os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
+	end
+	os.execute("rmdir /Q /S "..fulladdon)
+elseif arg1 and arg1 == "zip" then -- nothing
+else print("This tag already exists!  Skipping tag ops.") end
 
 
 -- Make zip package
