@@ -50,9 +50,7 @@ print(fulladdon)
 
 
 -- Verify tag doesn't exist
-print("Verifying tag path")
-local taginfo = shell(string.format("svn info %s/tags/%s", svnpath, fulladdon))
-if #taginfo ~= 0 and (not arg1 or arg1 ~= "zip") then
+if not arg1 or arg1 ~= "zip" then
 
 	-- Make the tag
 	print("Tagging")
@@ -70,8 +68,7 @@ if #taginfo ~= 0 and (not arg1 or arg1 ~= "zip") then
 		os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
 	end
 	os.execute("rmdir /Q /S "..fulladdon)
-elseif arg1 and arg1 == "zip" then -- nothing
-else print("This tag already exists!  Skipping tag ops.") end
+end
 
 
 -- Make zip package
