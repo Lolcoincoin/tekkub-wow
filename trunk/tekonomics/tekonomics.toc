@@ -1,0 +1,11 @@
+## Interface: 20003
+
+## Title: tekonomics
+## Notes: A minimal yet verstile LoadOnDemand stub
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+
+conditionals.lua
+tekonomics.lua
