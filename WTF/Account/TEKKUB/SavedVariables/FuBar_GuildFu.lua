@@ -1,10 +1,17 @@
 
 FuBar_GuildFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
+			["text"] = {
+				["show_displayed"] = false,
+			},
+			["detachedTooltip"] = {
+			},
+		},
+		["Default"] = {
+			["tooltip"] = {
+				["note_showofficer"] = false,
+			},
 			["text"] = {
 				["show_displayed"] = false,
 			},
@@ -15,15 +22,8 @@ FuBar_GuildFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["Default"] = {
-			["tooltip"] = {
-				["note_showofficer"] = false,
-			},
-			["detachedTooltip"] = {
-			},
-			["text"] = {
-				["show_displayed"] = false,
-			},
-		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

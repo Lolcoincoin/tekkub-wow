@@ -1,10 +1,17 @@
 
 FuBar_FriendsFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
+			["text"] = {
+				["show_displayed"] = false,
+			},
+			["detachedTooltip"] = {
+			},
+		},
+		["Default"] = {
+			["tooltip"] = {
+				["sort"] = "NAME",
+			},
 			["text"] = {
 				["show_displayed"] = false,
 			},
@@ -15,15 +22,8 @@ FuBar_FriendsFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["Default"] = {
-			["tooltip"] = {
-				["sort"] = "NAME",
-			},
-			["detachedTooltip"] = {
-			},
-			["text"] = {
-				["show_displayed"] = false,
-			},
-		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

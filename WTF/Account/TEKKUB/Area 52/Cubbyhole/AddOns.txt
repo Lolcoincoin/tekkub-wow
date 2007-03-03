@@ -146,7 +146,7 @@ FuBar_ReagentFu: disabled
 Grid: disabled
 FuBar_GroupFu: disabled
 FuBar_GreedBeacon: disabled
-SupplyAndDemand: disabled
+SupplyAndDemand: enabled
 FuBar_FuXPFu: disabled
 TinyPad: disabled
 FuBar_AmmoFu: disabled

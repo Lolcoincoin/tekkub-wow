@@ -1,5 +1,15 @@
 
 ArcHUDDB = {
+	["disabledModules"] = {
+		["Default"] = {
+			["FocusHealth"] = true,
+			["EnergyTick"] = true,
+			["Anchors"] = true,
+			["FocusMana"] = true,
+			["TargetMana"] = true,
+			["DruidMana"] = true,
+		},
+	},
 	["profiles"] = {
 		["Default"] = {
 			["NamePlates"] = false,
@@ -11,22 +21,12 @@ ArcHUDDB = {
 			["TargetTargetTarget"] = false,
 			["FadeFull"] = 0,
 			["AttachTop"] = true,
-			["FadeIC"] = 1,
 			["detachedTooltip"] = {
 			},
 			["hidden"] = true,
-			["PlayerModel"] = false,
 			["TargetTarget"] = false,
-		},
-	},
-	["disabledModules"] = {
-		["Default"] = {
-			["FocusHealth"] = true,
-			["EnergyTick"] = true,
-			["Anchors"] = true,
-			["FocusMana"] = true,
-			["TargetMana"] = true,
-			["DruidMana"] = true,
+			["FadeIC"] = 1,
+			["PlayerModel"] = false,
 		},
 	},
 }

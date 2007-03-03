@@ -27,18 +27,42 @@ GridDB = {
 					},
 				},
 				["Default"] = {
-					["FrameSize"] = 26,
 					["statusmap"] = {
 						["border"] = {
 							["debuff_magic"] = true,
 						},
 					},
+					["FrameSize"] = 26,
 				},
 			},
 		},
 		["GridStatusRange"] = {
 			["profiles"] = {
 				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusHealth"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["unit_healthDeficit"] = {
+						["range"] = true,
+					},
+					["alert_offline"] = {
+						["color"] = {
+							["g"] = 0.5,
+							["r"] = 0.5,
+						},
+						["priority"] = 0,
+					},
+					["alert_lowHealth"] = {
+						["range"] = true,
+					},
+					["unit_health"] = {
+						["range"] = true,
+					},
 				},
 			},
 		},
@@ -98,53 +122,12 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAggro"] = {
+		["GridStatusMana"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_aggro"] = {
-						["range"] = true,
-					},
-				},
-			},
-		},
-		["GridStatusName"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
-					},
-				},
-			},
-		},
-		["GridRange"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-			},
-		},
-		["GridStatusHealth"] = {
-			["profiles"] = {
-				["class/Priest"] = {
-				},
-				["Default"] = {
-					["unit_healthDeficit"] = {
-						["range"] = true,
-					},
-					["alert_offline"] = {
-						["color"] = {
-							["g"] = 0.5,
-							["r"] = 0.5,
-						},
-						["priority"] = 0,
-					},
-					["alert_lowHealth"] = {
-						["range"] = true,
-					},
-					["unit_health"] = {
+					["alert_lowMana"] = {
 						["range"] = true,
 					},
 				},
@@ -172,17 +155,37 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusMana"] = {
+		["GridRange"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+			},
+		},
+		["GridStatusName"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_lowMana"] = {
+					["unit_name"] = {
+						["letters"] = 3,
+					},
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+				},
+				["Default"] = {
+					["alert_aggro"] = {
 						["range"] = true,
 					},
 				},
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "class",
 	},
 	["profiles"] = {
 		["class/Priest"] = {
@@ -194,8 +197,5 @@ GridDB = {
 			},
 			["showText"] = false,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "class",
 	},
 }

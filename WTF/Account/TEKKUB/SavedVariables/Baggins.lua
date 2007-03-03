@@ -4,14 +4,18 @@ BagginsDB = {
 		["Default"] = {
 			["hideduplicates"] = true,
 			["hidedefaultbank"] = true,
+			["highlightnew"] = false,
+			["qualitycolorintensity"] = 0.5,
+			["showspecialcount"] = false,
 			["detachedTooltip"] = {
 			},
+			["showammocount"] = false,
 			["categories"] = {
-				["Other"] = {
+				["AmmoBag"] = {
 					{
-						["type"] = "Other",
+						["type"] = "AmmoBag",
 					}, -- [1]
-					["name"] = "Other",
+					["name"] = "AmmoBag",
 				},
 				["Nature Resist"] = {
 					{
@@ -24,13 +28,6 @@ BagginsDB = {
 						["text"] = "Nature Resistance",
 					}, -- [2]
 					["name"] = "Nature Resist",
-				},
-				["Pets"] = {
-					{
-						["type"] = "PTSet",
-						["setname"] = "Misc.Minipet",
-					}, -- [1]
-					["name"] = "Pets",
 				},
 				["Bags"] = {
 					{
@@ -75,11 +72,34 @@ BagginsDB = {
 					}, -- [1]
 					["name"] = "Gathered",
 				},
-				["AmmoBag"] = {
+				["Other"] = {
 					{
-						["type"] = "AmmoBag",
+						["type"] = "Other",
 					}, -- [1]
-					["name"] = "AmmoBag",
+					["name"] = "Other",
+				},
+				["Pets"] = {
+					{
+						["type"] = "PTSet",
+						["setname"] = "Misc.Minipet",
+					}, -- [1]
+					["name"] = "Pets",
+				},
+				["EngineeringBag"] = {
+					{
+						["operation"] = "AND",
+						["type"] = "ContainerType",
+						["ctype"] = "Engineering Bag",
+					}, -- [1]
+					["name"] = "EngineeringBag",
+				},
+				["KeyRing"] = {
+					{
+						["noempty"] = true,
+						["bagid"] = -2,
+						["type"] = "Bag",
+					}, -- [1]
+					["name"] = "KeyRing",
 				},
 				["Consumables"] = {
 					{
@@ -130,13 +150,23 @@ BagginsDB = {
 					}, -- [8]
 					["name"] = "BankBags",
 				},
-				["KeyRing"] = {
+				["Trinkets"] = {
 					{
-						["noempty"] = true,
-						["bagid"] = -2,
-						["type"] = "Bag",
+						["type"] = "EquipLoc",
+						["equiploc"] = "INVTYPE_TRINKET",
 					}, -- [1]
-					["name"] = "KeyRing",
+					["name"] = "Trinkets",
+				},
+				["Quest"] = {
+					{
+						["type"] = "ItemType",
+						["itype"] = "Quest",
+					}, -- [1]
+					{
+						["text"] = "ITEM_BIND_QUEST",
+						["type"] = "Tooltip",
+					}, -- [2]
+					["name"] = "Quest",
 				},
 				["Water"] = {
 					{
@@ -144,6 +174,13 @@ BagginsDB = {
 						["setname"] = "Consumable.Water",
 					}, -- [1]
 					["name"] = "Water",
+				},
+				["Potions"] = {
+					{
+						["type"] = "PTSet",
+						["setname"] = "Consumable.Potion",
+					}, -- [1]
+					["name"] = "Potions",
 				},
 				["Undead"] = {
 					{
@@ -156,6 +193,33 @@ BagginsDB = {
 						["text"] = "when fighting Undead",
 					}, -- [2]
 					["name"] = "Undead",
+				},
+				["Trash"] = {
+					{
+						["type"] = "Quality",
+						["comp"] = "<=",
+						["quality"] = 0,
+					}, -- [1]
+					["name"] = "Trash",
+				},
+				["Food"] = {
+					{
+						["type"] = "PTSet",
+						["setname"] = "Consumable.Food.Edible",
+					}, -- [1]
+					["name"] = "Food",
+				},
+				["Fire Resist"] = {
+					{
+						["type"] = "ItemType",
+						["itype"] = "Armor",
+					}, -- [1]
+					{
+						["operation"] = "AND",
+						["text"] = "Fire Resistance",
+						["type"] = "Tooltip",
+					}, -- [2]
+					["name"] = "Fire Resist",
 				},
 				["Empty"] = {
 					{
@@ -179,64 +243,6 @@ BagginsDB = {
 						["type"] = "Empty",
 					}, -- [5]
 					["name"] = "Empty",
-				},
-				["Quest"] = {
-					{
-						["type"] = "ItemType",
-						["itype"] = "Quest",
-					}, -- [1]
-					{
-						["text"] = "ITEM_BIND_QUEST",
-						["type"] = "Tooltip",
-					}, -- [2]
-					["name"] = "Quest",
-				},
-				["Trinkets"] = {
-					{
-						["type"] = "EquipLoc",
-						["equiploc"] = "INVTYPE_TRINKET",
-					}, -- [1]
-					["name"] = "Trinkets",
-				},
-				["Potions"] = {
-					{
-						["type"] = "PTSet",
-						["setname"] = "Consumable.Potion",
-					}, -- [1]
-					["name"] = "Potions",
-				},
-				["Tradeskill Mats"] = {
-					{
-						["type"] = "PTSet",
-						["setname"] = "Tradeskill.Mat",
-					}, -- [1]
-					["name"] = "Tradeskill Mats",
-				},
-				["Food"] = {
-					{
-						["type"] = "PTSet",
-						["setname"] = "Consumable.Food.Edible",
-					}, -- [1]
-					["name"] = "Food",
-				},
-				["Armor"] = {
-					{
-						["type"] = "ItemType",
-						["itype"] = "Armor",
-					}, -- [1]
-					["name"] = "Armor",
-				},
-				["Fire Resist"] = {
-					{
-						["type"] = "ItemType",
-						["itype"] = "Armor",
-					}, -- [1]
-					{
-						["operation"] = "AND",
-						["text"] = "Fire Resistance",
-						["type"] = "Tooltip",
-					}, -- [2]
-					["name"] = "Fire Resist",
 				},
 				["TrashEquip"] = {
 					{
@@ -278,12 +284,12 @@ BagginsDB = {
 					}, -- [2]
 					["name"] = "Arcane Resist",
 				},
-				["FirstAid"] = {
+				["Armor"] = {
 					{
-						["type"] = "PTSet",
-						["setname"] = "CraftedBy - First Aid",
+						["type"] = "ItemType",
+						["itype"] = "Armor",
 					}, -- [1]
-					["name"] = "FirstAid",
+					["name"] = "Armor",
 				},
 				["SoulBag"] = {
 					{
@@ -292,13 +298,12 @@ BagginsDB = {
 					}, -- [1]
 					["name"] = "SoulBag",
 				},
-				["EngineeringBag"] = {
+				["FirstAid"] = {
 					{
-						["operation"] = "AND",
-						["type"] = "ContainerType",
-						["ctype"] = "Engineering Bag",
+						["type"] = "PTSet",
+						["setname"] = "CraftedBy - First Aid",
 					}, -- [1]
-					["name"] = "EngineeringBag",
+					["name"] = "FirstAid",
 				},
 				["Misc Consumables"] = {
 					{
@@ -344,21 +349,6 @@ BagginsDB = {
 					}, -- [2]
 					["name"] = "Shadow Resist",
 				},
-				["Scrolls"] = {
-					{
-						["type"] = "PTSet",
-						["setname"] = "Consumable.Scroll",
-					}, -- [1]
-					["name"] = "Scrolls",
-				},
-				["Trash"] = {
-					{
-						["type"] = "Quality",
-						["comp"] = "<=",
-						["quality"] = 0,
-					}, -- [1]
-					["name"] = "Trash",
-				},
 				["Weapons"] = {
 					{
 						["type"] = "ItemType",
@@ -371,9 +361,21 @@ BagginsDB = {
 					}, -- [2]
 					["name"] = "Weapons",
 				},
+				["Tradeskill Mats"] = {
+					{
+						["type"] = "PTSet",
+						["setname"] = "Tradeskill.Mat",
+					}, -- [1]
+					["name"] = "Tradeskill Mats",
+				},
+				["Scrolls"] = {
+					{
+						["type"] = "PTSet",
+						["setname"] = "Consumable.Scroll",
+					}, -- [1]
+					["name"] = "Scrolls",
+				},
 			},
-			["showammocount"] = false,
-			["qualitycolorintensity"] = 0.5,
 			["bags"] = {
 				{
 					["y"] = 282.6832769110072,
@@ -383,122 +385,122 @@ BagginsDB = {
 					["openWithAll"] = true,
 					["sections"] = {
 						{
+							["name"] = "Ammo",
 							["cats"] = {
 								"AmmoBag", -- [1]
 							},
-							["name"] = "Ammo",
 						}, -- [1]
 						{
+							["name"] = "SoulBag",
 							["cats"] = {
 								"SoulBag", -- [1]
 							},
-							["name"] = "SoulBag",
 						}, -- [2]
 						{
+							["name"] = "FR",
 							["cats"] = {
 								"Fire Resist", -- [1]
 							},
-							["name"] = "FR",
 						}, -- [3]
 						{
+							["name"] = "NR",
 							["cats"] = {
 								"Nature Resist", -- [1]
 							},
-							["name"] = "NR",
 						}, -- [4]
 						{
+							["name"] = "SR",
 							["cats"] = {
 								"Shadow Resist", -- [1]
 							},
-							["name"] = "SR",
 						}, -- [5]
 						{
+							["name"] = "AR",
 							["cats"] = {
 								"Arcane Resist", -- [1]
 							},
-							["name"] = "AR",
 						}, -- [6]
 						{
+							["name"] = "Undead",
 							["cats"] = {
 								"Undead", -- [1]
 							},
-							["name"] = "Undead",
 						}, -- [7]
 						{
-							["hidden"] = false,
-							["name"] = "Trinkets",
 							["cats"] = {
 								"Trinkets", -- [1]
 							},
+							["hidden"] = false,
+							["name"] = "Trinkets",
 						}, -- [8]
 						{
+							["name"] = "Armor",
 							["cats"] = {
 								"Armor", -- [1]
 							},
-							["name"] = "Armor",
 						}, -- [9]
 						{
+							["name"] = "Weapons",
 							["cats"] = {
 								"Weapons", -- [1]
 							},
-							["name"] = "Weapons",
 						}, -- [10]
 						{
+							["hidden"] = false,
 							["cats"] = {
 								"Water", -- [1]
 							},
 							["name"] = "Drinks",
-							["hidden"] = false,
 						}, -- [11]
 						{
-							["name"] = "Food",
 							["cats"] = {
 								"Food", -- [1]
 							},
+							["name"] = "Food",
 						}, -- [12]
 						{
-							["name"] = "Potions",
 							["cats"] = {
 								"Potions", -- [1]
 							},
+							["name"] = "Potions",
 						}, -- [13]
 						{
-							["name"] = "Scrolls",
 							["cats"] = {
 								"Scrolls", -- [1]
 							},
+							["name"] = "Scrolls",
 						}, -- [14]
 						{
+							["name"] = "Consumables",
 							["cats"] = {
 								"Consumables", -- [1]
 							},
-							["name"] = "Consumables",
 						}, -- [15]
 						{
+							["name"] = "Trade Goods",
 							["cats"] = {
 								"Tradeskill Mats", -- [1]
 								"Gathered", -- [2]
 							},
-							["name"] = "Trade Goods",
 						}, -- [16]
 						{
+							["name"] = "Quest",
 							["cats"] = {
 								"Quest", -- [1]
 							},
-							["name"] = "Quest",
 						}, -- [17]
 						{
+							["hidden"] = true,
 							["name"] = "KeyRing",
 							["cats"] = {
 								"KeyRing", -- [1]
 							},
-							["hidden"] = true,
 						}, -- [18]
 						{
+							["name"] = "Other",
 							["cats"] = {
 								"Other", -- [1]
 							},
-							["name"] = "Other",
 						}, -- [19]
 					},
 				}, -- [1]
@@ -510,112 +512,110 @@ BagginsDB = {
 					["openWithAll"] = true,
 					["sections"] = {
 						{
+							["name"] = "Engineering",
 							["hidden"] = false,
 							["cats"] = {
 								"EngineeringBag", -- [1]
 							},
-							["name"] = "Engineering",
 						}, -- [1]
 						{
+							["name"] = "Pets",
 							["cats"] = {
 								"Pets", -- [1]
 							},
 							["hidden"] = true,
-							["name"] = "Pets",
 						}, -- [2]
 						{
+							["name"] = "FR",
 							["cats"] = {
 								"Fire Resist", -- [1]
 							},
 							["hidden"] = true,
-							["name"] = "FR",
 						}, -- [3]
 						{
-							["hidden"] = true,
-							["name"] = "NR",
 							["cats"] = {
 								"Nature Resist", -- [1]
 							},
+							["hidden"] = true,
+							["name"] = "NR",
 						}, -- [4]
 						{
-							["hidden"] = true,
-							["name"] = "AR",
 							["cats"] = {
 								"Arcane Resist", -- [1]
 							},
+							["hidden"] = true,
+							["name"] = "AR",
 						}, -- [5]
 						{
-							["hidden"] = true,
-							["name"] = "SR",
 							["cats"] = {
 								"Shadow Resist", -- [1]
 							},
+							["hidden"] = true,
+							["name"] = "SR",
 						}, -- [6]
 						{
-							["hidden"] = true,
-							["name"] = "Undead",
 							["cats"] = {
 								"Undead", -- [1]
 							},
+							["hidden"] = true,
+							["name"] = "Undead",
 						}, -- [7]
 						{
-							["hidden"] = true,
-							["name"] = "Trinkets",
 							["cats"] = {
 								"Trinkets", -- [1]
 							},
+							["hidden"] = true,
+							["name"] = "Trinkets",
 						}, -- [8]
 						{
+							["name"] = "Bank Equipment",
 							["cats"] = {
 								"Armor", -- [1]
 								"Weapons", -- [2]
 							},
-							["name"] = "Bank Equipment",
 						}, -- [9]
 						{
+							["name"] = "Bank Consumables",
 							["cats"] = {
 								"Consumables", -- [1]
 							},
-							["name"] = "Bank Consumables",
 						}, -- [10]
 						{
+							["name"] = "Bank Quest",
 							["cats"] = {
 								"Quest", -- [1]
 							},
-							["name"] = "Bank Quest",
 						}, -- [11]
 						{
+							["name"] = "Bank Trade Goods",
 							["cats"] = {
 								"Tradeskill Mats", -- [1]
 								"Gathered", -- [2]
 							},
-							["name"] = "Bank Trade Goods",
 						}, -- [12]
 						{
+							["hidden"] = false,
 							["cats"] = {
 								"Other", -- [1]
 							},
 							["name"] = "Bank Other",
-							["hidden"] = false,
 						}, -- [13]
 						{
-							["name"] = "Empty",
 							["cats"] = {
 								"Empty", -- [1]
 							},
+							["name"] = "Empty",
 						}, -- [14]
 					},
 				}, -- [2]
 			},
 			["showtotal"] = false,
-			["showused"] = false,
+			["layout"] = "manual",
 			["optimizesectionlayout"] = true,
 			["columns"] = 16,
 			["sorttype"] = "quality",
 			["showsoulcount"] = false,
-			["showspecialcount"] = false,
-			["highlightnew"] = false,
-			["layout"] = "manual",
+			["showused"] = false,
 		},
 	},
 }

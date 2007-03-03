@@ -1,19 +1,18 @@
 
 PerformanceFuDB = {
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["version"] = "1.1.1551",
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
-			["showRate"] = false,
 			["showMemory"] = false,
+			["version"] = "1.1.1551",
 		},
 		["Ailurus of Icecrown"] = {
-			["showMemory"] = false,
-			["showRate"] = false,
-			["version"] = 101.1551,
-		},
-		["Tekkub of Icecrown"] = {
 			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
@@ -22,10 +21,17 @@ PerformanceFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
+		["Tekkub of Icecrown"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
+		},
+		["Wuffi of Icecrown"] = {
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
+			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
 		["char/Cubbyhole - Area 52"] = {
 			["version"] = 101.1551,
@@ -33,51 +39,45 @@ PerformanceFuDB = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
 		["Druid"] = {
-			["version"] = 101.1551,
 			["showRate"] = false,
 			["showMemory"] = false,
+			["version"] = 101.1551,
 		},
 		["default"] = {
 			["detachedTooltip"] = {
 			},
 			["version"] = 101.1551,
 		},
-		["Priest"] = {
-			["showMemory"] = false,
-			["version"] = 101.1551,
-			["showRate"] = false,
-		},
 		["Beardyhead of Draka"] = {
-			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 10283,
+			["showMemory"] = false,
+		},
+		["Priest"] = {
+			["version"] = 101.1551,
+			["showRate"] = false,
+			["showMemory"] = false,
 		},
 		["Hunter"] = {
 			["showLatency"] = false,
-			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
+			["version"] = 101.1551,
 		},
-		["Wuffi of Icecrown"] = {
+		["char/Tekkub of Icecrown"] = {
 			["showMemory"] = false,
 			["detachedTooltip"] = {
 			},
-			["showRate"] = false,
-			["version"] = 101.1551,
 		},
 		["Cubbyhole of Icecrown"] = {
-			["showRate"] = false,
 			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
 		},
-	},
-	["currentProfile"] = {
-		["Cubbyhole - Area 52"] = "char",
-		["Beardyhead of Icecrown"] = "char",
 	},
 }
