@@ -1,30 +1,36 @@
 
 CockpitDB = {
 	["char"] = {
+		["Beardyhead of Area 52"] = {
+		},
 		["Bear of Area 52"] = {
 		},
 		["Mishutka of Area 52"] = {
 		},
 		["Microfiche of Area 52"] = {
 		},
-		["Beardyhead of Area 52"] = {
+		["Tekkub of Area 52"] = {
 		},
 	},
-	["realm"] = {
+	["profiles"] = {
+		["global"] = {
+		},
 	},
 	["profileKeys"] = {
 		["Tekkub of Area 52"] = "global",
 		["Bear of Area 52"] = "global",
 		["Mishutka of Area 52"] = "global",
 		["Cubbyhole of Area 52"] = "global",
-		["Beardyhead of Area 52"] = "global",
 		["Microfiche of Area 52"] = "global",
+		["Beardyhead of Area 52"] = "global",
 	},
 	["faction"] = {
 		["Alliance - Area 52"] = {
 		},
+		["Alliance"] = {
+		},
 	},
-	["global"] = {
+	["factionrealm"] = {
 	},
 	["class"] = {
 		["Warrior"] = {
@@ -35,11 +41,13 @@ CockpitDB = {
 		},
 		["Priest"] = {
 		},
+		["Hunter"] = {
+		},
 	},
-	["factionrealm"] = {
+	["global"] = {
 	},
-	["profiles"] = {
-		["global"] = {
+	["realm"] = {
+		["Area 52"] = {
 		},
 	},
 }

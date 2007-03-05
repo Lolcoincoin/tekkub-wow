@@ -8,7 +8,7 @@ Blizzard_RaidUI: enabled
 Blizzard_TalentUI: enabled
 Blizzard_TradeSkillUI: enabled
 Blizzard_TrainerUI: enabled
-!!Warmup: enabled
+!!Warmup: disabled
 Ace: enabled
 AceDebug: enabled
 AceGUI: enabled

@@ -1,12 +1,10 @@
 
 FuXPDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["default"] = {
 			["TekAutoRepLink"] = true,
 			["WatchedFaction"] = true,
+			["version"] = 104,
 			["XP"] = {
 				0.9372549019607843, -- [1]
 				1, -- [2]
@@ -21,7 +19,6 @@ FuXPDB = {
 			},
 			["ShowText"] = "XP",
 			["Faction"] = 3,
-			["version"] = 104,
 			["showText"] = false,
 			["Rest"] = {
 				0.6235294117647059, -- [1]
@@ -51,8 +48,11 @@ FuXPDB = {
 				[2] = 0.611764705882353,
 				[3] = 0.3333333333333333,
 			},
-			["version"] = 100,
 			["showText"] = 0,
+			["version"] = 100,
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

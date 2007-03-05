@@ -37,24 +37,24 @@ BT3DB = {
 				{
 					["Stances"] = {
 						["prowl"] = 8,
-						["def"] = 8,
+						["bear"] = 9,
 						["berserker"] = 9,
 						["battle"] = 7,
-						["shadowform"] = 0,
-						["stealth"] = 7,
-						["bear"] = 9,
 						["cat"] = 7,
+						["stealth"] = 7,
+						["def"] = 8,
+						["shadowform"] = 0,
 					},
 					["Rows"] = 3,
-					["HideHotkey"] = true,
-					["StatesEnabled"] = false,
 					["PosY"] = 169.5799901249606,
-					["Style"] = "Default",
 					["PosX"] = 33.9000079794111,
+					["StatesEnabled"] = false,
+					["Style"] = "Default",
+					["HideHotkey"] = true,
 					["States"] = {
-						["shift"] = 0,
-						["ctrl"] = 0,
 						["alt"] = 0,
+						["ctrl"] = 0,
+						["shift"] = 0,
 					},
 				}, -- [1]
 				nil, -- [2]

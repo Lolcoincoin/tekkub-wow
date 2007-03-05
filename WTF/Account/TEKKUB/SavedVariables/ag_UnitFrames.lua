@@ -3,9 +3,9 @@ aUFDB = {
 	["profiles"] = {
 		["Default"] = {
 			["target"] = {
-				["HealthStyle"] = "Smart",
-				["ClassColorBars"] = true,
 				["Scale"] = 1.25,
+				["ClassColorBars"] = true,
+				["HealthStyle"] = "Smart",
 				["ManaStyle"] = "Smart",
 				["HideFrame"] = false,
 				["ShowRaidTargetIcon"] = false,
@@ -18,36 +18,36 @@ aUFDB = {
 			["detachedTooltip"] = {
 			},
 			["pet"] = {
-				["AuraFilter"] = 0,
+				["Scale"] = 1.25,
 				["HealthStyle"] = "Smart",
 				["HideMana"] = true,
-				["Scale"] = 1.25,
+				["AuraFilter"] = 0,
 				["ManaStyle"] = "Smart",
 				["ShowXP"] = false,
 			},
 			["player"] = {
 				["Scale"] = 1.25,
-				["AuraFilter"] = 0,
+				["ManaStyle"] = "Smart",
 				["CastBar"] = false,
 				["HealthStyle"] = "Smart",
-				["ManaStyle"] = "Smart",
-				["HideMana"] = false,
+				["AuraStyle"] = "Hide",
+				["AuraFilter"] = 0,
 				["ClassColorBars"] = true,
 				["NameFormat"] = "[statuscolor][name]",
-				["AuraStyle"] = "Hide",
+				["HideMana"] = false,
 				["AuraPos"] = "Hidden",
 				["ShowXP"] = false,
 			},
 			["showText"] = false,
 			["party"] = {
-				["Scale"] = 1.25,
 				["AuraFilter"] = 0,
-				["CastBar"] = true,
+				["HideFrame"] = false,
+				["ClassColorBars"] = true,
 				["HealthStyle"] = "Smart",
 				["ManaStyle"] = "Smart",
+				["Scale"] = 1.25,
+				["CastBar"] = true,
 				["NameFormat"] = "[statuscolor][name]",
-				["ClassColorBars"] = true,
-				["HideFrame"] = false,
 			},
 			["focus"] = {
 				["HealthStyle"] = "Smart",
@@ -60,21 +60,21 @@ aUFDB = {
 			["partypet"] = {
 				["Scale"] = 1.25,
 				["HealthStyle"] = "Hide",
-				["ManaStyle"] = "Smart",
 				["AuraFilter"] = 0,
+				["ManaStyle"] = "Smart",
 				["HideFrame"] = false,
 			},
-			["BlizzCastbar"] = true,
+			["partyPlayer"] = {
+				["ShowAnchor"] = true,
+				["Grow"] = "down",
+			},
 			["BorderStyle"] = "Classic",
 			["subgroups"] = {
 				["party"] = {
 					["AnchorOffset"] = 0,
 				},
 			},
-			["partyPlayer"] = {
-				["Grow"] = "down",
-				["ShowAnchor"] = true,
-			},
+			["BlizzCastbar"] = true,
 		},
 	},
 }
