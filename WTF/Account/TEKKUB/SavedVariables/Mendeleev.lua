@@ -5,8 +5,6 @@ MendeleevDB = {
 		},
 		["Ailurus of Icecrown"] = {
 		},
-		["Beardyhead of Draka"] = {
-		},
 		["Tekkub of Icecrown"] = {
 			["Cats"] = {
 			},
@@ -16,6 +14,8 @@ MendeleevDB = {
 		["Druid"] = {
 		},
 		["Priest"] = {
+		},
+		["Beardyhead of Draka"] = {
 		},
 		["Hunter"] = {
 		},

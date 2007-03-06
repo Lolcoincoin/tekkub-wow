@@ -1,31 +1,37 @@
 
 PerformanceFuDB = {
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["Huslu of Icecrown"] = {
-			["showMemory"] = false,
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
+			["showMemory"] = false,
 			["version"] = "1.1.1551",
-			["showRate"] = false,
 		},
 		["Ailurus of Icecrown"] = {
-			["version"] = 101.1551,
-			["showMemory"] = false,
-			["showRate"] = false,
-		},
-		["Tekkub of Icecrown"] = {
-			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
+		["Tekkub of Icecrown"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
+			["showRate"] = false,
+		},
+		["Wuffi of Icecrown"] = {
+			["showRate"] = false,
 			["detachedTooltip"] = {
 			},
+			["version"] = 101.1551,
+			["showMemory"] = false,
 		},
 		["char/Cubbyhole - Area 52"] = {
 			["version"] = 101.1551,
@@ -33,51 +39,45 @@ PerformanceFuDB = {
 			},
 		},
 		["Girth of Vek'nilash"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
-			["version"] = 101.1551,
 		},
 		["Druid"] = {
+			["showRate"] = false,
 			["showMemory"] = false,
 			["version"] = 101.1551,
-			["showRate"] = false,
 		},
 		["default"] = {
 			["detachedTooltip"] = {
 			},
 			["version"] = 101.1551,
 		},
-		["Priest"] = {
-			["showRate"] = false,
-			["showMemory"] = false,
-			["version"] = 101.1551,
-		},
 		["Beardyhead of Draka"] = {
+			["showRate"] = false,
 			["version"] = 10283,
 			["showMemory"] = false,
+		},
+		["Priest"] = {
+			["version"] = 101.1551,
 			["showRate"] = false,
+			["showMemory"] = false,
 		},
 		["Hunter"] = {
 			["showLatency"] = false,
+			["showMemory"] = false,
 			["showRate"] = false,
 			["version"] = 101.1551,
-			["showMemory"] = false,
 		},
-		["Wuffi of Icecrown"] = {
-			["version"] = 101.1551,
+		["char/Tekkub of Icecrown"] = {
+			["showMemory"] = false,
 			["detachedTooltip"] = {
 			},
-			["showMemory"] = false,
-			["showRate"] = false,
 		},
 		["Cubbyhole of Icecrown"] = {
+			["version"] = 101.1551,
 			["showMemory"] = false,
 			["showRate"] = false,
-			["version"] = 101.1551,
 		},
-	},
-	["currentProfile"] = {
-		["Cubbyhole - Area 52"] = "char",
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

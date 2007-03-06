@@ -55,7 +55,7 @@ InformaTips: disabled
 Inspector: disabled
 InspectorAce: disabled
 InvSort: disabled
-KC_Items: enabled
+KC_Items: disabled
 Kennel: enabled
 KeyMinderPhoenix: enabled
 Lern2Spell: enabled

@@ -1,9 +1,5 @@
 
 ModMenuTuFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-		["Cubbyhole - Area 52"] = "char",
-	},
 	["profiles"] = {
 		["Default"] = {
 			["minimapPositionWild"] = true,
@@ -30,5 +26,9 @@ ModMenuTuFuDB = {
 			},
 			["minimapPositionY"] = 738.9999318225091,
 		},
+	},
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

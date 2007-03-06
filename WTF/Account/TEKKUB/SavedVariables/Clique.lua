@@ -11,13 +11,14 @@ CliqueDB = {
 		["Beardyhead of Icecrown"] = "Beardyhead of Icecrown",
 		["Girth of Alterac Mountains"] = "Girth of Alterac Mountains",
 		["Tekkub of Area 52"] = "Tekkub of Area 52",
+		["Wuffi of Area 52"] = "Wuffi of Area 52",
 		["Tekkub of Icecrown"] = "Tekkub of Icecrown",
 		["Mishutka of Icecrown"] = "Mishutka of Icecrown",
 		["Cubbyhole of Area 52"] = "Cubbyhole of Area 52",
 		["Beardyhead of Area 52"] = "Beardyhead of Area 52",
-		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
-		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
 		["Microfiche of Area 52"] = "Microfiche of Area 52",
+		["Quinacridone of Illidan"] = "Quinacridone of Illidan",
+		["Microfiche of Icecrown"] = "Microfiche of Icecrown",
 		["Wuffi of Icecrown"] = "Wuffi of Icecrown",
 		["Cubbyhole of Icecrown"] = "Cubbyhole of Icecrown",
 	},
@@ -33,22 +34,22 @@ CliqueDB = {
 			["healassist"] = true,
 			["aofhclique"] = true,
 			["needylist"] = true,
-			["nuf"] = true,
+			["blizzraid"] = true,
 			["oramtf"] = true,
-			["sraid"] = true,
 			["mg2-64pre"] = true,
-			["ctra"] = true,
+			["sraid"] = true,
 			["OzRaid"] = true,
+			["squishy"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["squishy"] = true,
+			["ctra"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
-			["blizzraid"] = true,
+			["nuf"] = true,
 		},
 	},
 	["class"] = {
@@ -82,7 +83,7 @@ CliqueDB = {
 			["clicksets"] = {
 				["Helpful actions"] = {
 				},
-				["Harmful actions"] = {
+				["Out of Combat"] = {
 				},
 				["Default"] = {
 					["Ctrl-1"] = {
@@ -109,7 +110,7 @@ CliqueDB = {
 						["texture"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 					},
 				},
-				["Out of Combat"] = {
+				["Harmful actions"] = {
 				},
 			},
 			["blacklist"] = {
@@ -126,13 +127,13 @@ CliqueDB = {
 						["arg1"] = "Heal",
 						["texture"] = "Interface\\Icons\\Spell_Holy_Heal02",
 					},
-					["2"] = {
+					["Shift-1"] = {
 						["type"] = "spell",
-						["modifier"] = "",
-						["button"] = 2,
+						["modifier"] = "Shift-",
+						["button"] = 1,
 						["delete"] = true,
-						["arg1"] = "Flash Heal",
-						["texture"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
+						["arg1"] = "Power Word: Fortitude",
+						["texture"] = "Interface\\Icons\\Spell_Holy_WordFortitude",
 					},
 					["3"] = {
 						["type"] = "spell",
@@ -142,13 +143,13 @@ CliqueDB = {
 						["arg1"] = "Renew",
 						["texture"] = "Interface\\Icons\\Spell_Holy_Renew",
 					},
-					["Shift-1"] = {
+					["2"] = {
 						["type"] = "spell",
-						["modifier"] = "Shift-",
-						["button"] = 1,
+						["modifier"] = "",
+						["button"] = 2,
 						["delete"] = true,
-						["arg1"] = "Power Word: Fortitude",
-						["texture"] = "Interface\\Icons\\Spell_Holy_WordFortitude",
+						["arg1"] = "Flash Heal",
+						["texture"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
 					},
 					["Shift-4"] = {
 						["type"] = "spell",
@@ -196,6 +197,20 @@ CliqueDB = {
 			["clicksets"] = {
 				["Helpful actions"] = {
 				},
+				["Harmful actions"] = {
+				},
+				["Default"] = {
+				},
+				["Out of Combat"] = {
+				},
+			},
+			["blacklist"] = {
+			},
+		},
+		["Wuffi of Area 52"] = {
+			["clicksets"] = {
+				["Helpful actions"] = {
+				},
 				["Out of Combat"] = {
 				},
 				["Default"] = {
@@ -214,11 +229,11 @@ CliqueDB = {
 			["clicksets"] = {
 				["Helpful actions"] = {
 				},
-				["Out of Combat"] = {
+				["Harmful actions"] = {
 				},
 				["Default"] = {
 				},
-				["Harmful actions"] = {
+				["Out of Combat"] = {
 				},
 			},
 			["blacklist"] = {
@@ -226,11 +241,11 @@ CliqueDB = {
 		},
 		["Beardyhead of Area 52"] = {
 		},
-		["Microfiche of Icecrown"] = {
+		["Microfiche of Area 52"] = {
 		},
 		["Quinacridone of Illidan"] = {
 		},
-		["Microfiche of Area 52"] = {
+		["Microfiche of Icecrown"] = {
 		},
 		["Wuffi of Icecrown"] = {
 		},
@@ -244,6 +259,8 @@ CliqueDB = {
 		},
 		["Ailurus of Icecrown"] = {
 		},
+		["Wuffi of Area 52"] = {
+		},
 		["Tekkub of Area 52"] = {
 		},
 		["Tekkub of Icecrown"] = {
@@ -252,17 +269,17 @@ CliqueDB = {
 		},
 		["Mishutka of Icecrown"] = {
 		},
-		["Beardyhead of Icecrown"] = {
+		["Cubbyhole of Area 52"] = {
 		},
-		["Alizarian of Icecrown"] = {
+		["Microfiche of Icecrown"] = {
 		},
 		["Mishutka of Area 52"] = {
 		},
 		["Microfiche of Area 52"] = {
 		},
-		["Microfiche of Icecrown"] = {
+		["Alizarian of Icecrown"] = {
 		},
-		["Cubbyhole of Area 52"] = {
+		["Beardyhead of Icecrown"] = {
 		},
 		["Wuffi of Icecrown"] = {
 		},
@@ -270,24 +287,14 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
-		["Horde - Illidan"] = {
+		["Alliance"] = {
 		},
 		["Horde - Alterac Mountains"] = {
 		},
+		["Horde - Illidan"] = {
+		},
 		["Alliance - Area 52"] = {
 		},
-		["Alliance"] = {
-		},
-	},
-	["realm"] = {
-		["Icecrown"] = {
-		},
-		["Area 52"] = {
-		},
-	},
-	["factionrealm"] = {
-	},
-	["global"] = {
 	},
 	["chars"] = {
 		["Huslu of Icecrown"] = {
@@ -325,9 +332,9 @@ CliqueDB = {
 				{
 					["action"] = "Clique:UnitMenu()\n",
 					["button"] = "RightButton",
-					["custom"] = true,
-					["modifiers"] = 0,
 					["name"] = "Menu",
+					["modifiers"] = 0,
+					["custom"] = true,
 				}, -- [1]
 			},
 			["Out-of-combat"] = {
@@ -350,23 +357,23 @@ CliqueDB = {
 				{
 					["custom"] = true,
 					["button"] = "LeftButton",
-					["action"] = "MSaver(\"Healing Touch\", Clique.unit)",
-					["modifiers"] = 0,
 					["name"] = "Healing Touch",
+					["modifiers"] = 0,
+					["action"] = "MSaver(\"Healing Touch\", Clique.unit)",
 				}, -- [1]
 				{
 					["custom"] = true,
 					["button"] = "MiddleButton",
-					["action"] = "MSaver(\"Regrowth\", Clique.unit)",
-					["modifiers"] = 0,
 					["name"] = "Regrowth",
+					["modifiers"] = 0,
+					["action"] = "MSaver(\"Regrowth\", Clique.unit)",
 				}, -- [2]
 				{
 					["custom"] = true,
 					["button"] = "Button4",
-					["action"] = "MSaver(\"Rejuvenation\", Clique.unit)",
-					["modifiers"] = 0,
 					["name"] = "Rejuv",
+					["modifiers"] = 0,
+					["action"] = "MSaver(\"Rejuvenation\", Clique.unit)",
 				}, -- [3]
 			},
 			["Default Hostile"] = {
@@ -402,20 +409,12 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
-		["Kumanoinkei of Illidan"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
 					["button"] = "LeftButton",
-					["name"] = "Resurrection",
 					["modifiers"] = 0,
+					["name"] = "Resurrection",
 					["texture"] = "Interface\\Icons\\Spell_Holy_Resurrection",
 				}, -- [1]
 			},
@@ -423,14 +422,14 @@ CliqueDB = {
 				{
 					["action"] = "",
 					["button"] = "Binding not defined",
-					["name"] = "Custom",
-					["modifiers"] = 0,
 					["custom"] = true,
+					["modifiers"] = 0,
+					["name"] = "Custom",
 				}, -- [1]
 				{
 					["button"] = "Button5",
-					["name"] = "Dispel Magic",
 					["modifiers"] = 0,
+					["name"] = "Dispel Magic",
 					["texture"] = "Interface\\Icons\\Spell_Holy_DispelMagic",
 				}, -- [2]
 				{
@@ -443,20 +442,20 @@ CliqueDB = {
 				}, -- [3]
 				{
 					["button"] = "Button4",
-					["name"] = "Heal",
 					["modifiers"] = 0,
+					["name"] = "Heal",
 					["texture"] = "Interface\\Icons\\Spell_Holy_Heal",
 				}, -- [4]
 				{
 					["button"] = "MiddleButton",
-					["name"] = "Power Word: Shield",
 					["modifiers"] = 0,
+					["name"] = "Power Word: Shield",
 					["texture"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
 				}, -- [5]
 				{
 					["button"] = "RightButton",
-					["name"] = "Renew",
 					["modifiers"] = 0,
+					["name"] = "Renew",
 					["texture"] = "Interface\\Icons\\Spell_Holy_Renew",
 				}, -- [6]
 			},
@@ -464,22 +463,30 @@ CliqueDB = {
 				{
 					["name"] = "Menu",
 					["button"] = "RightButton",
-					["custom"] = true,
-					["modifiers"] = 0,
 					["action"] = "Clique:UnitMenu()\n",
+					["modifiers"] = 0,
+					["custom"] = true,
 				}, -- [1]
 			},
 			["Default Hostile"] = {
 				{
 					["custom"] = true,
 					["button"] = "RightButton",
-					["action"] = "Clique:UnitMenu()\n",
-					["modifiers"] = 0,
 					["name"] = "Custom",
+					["modifiers"] = 0,
+					["action"] = "Clique:UnitMenu()\n",
 				}, -- [1]
 			},
 		},
 		["Microfiche of Icecrown"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
+		["Kumanoinkei of Illidan"] = {
 			["Default Friendly"] = {
 			},
 			["Out-of-combat"] = {
@@ -494,16 +501,16 @@ CliqueDB = {
 				{
 					["name"] = "Lesser Heal",
 					["button"] = "LeftButton",
-					["rank"] = "3",
-					["modifiers"] = 0,
 					["texture"] = "Interface\\Icons\\Spell_Holy_LesserHeal02",
+					["modifiers"] = 0,
+					["rank"] = "3",
 				}, -- [1]
 				{
 					["name"] = "Renew",
 					["button"] = "Button4",
-					["rank"] = "1",
-					["modifiers"] = 0,
 					["texture"] = "Interface\\Icons\\Spell_Holy_Renew",
+					["modifiers"] = 0,
+					["rank"] = "1",
 				}, -- [2]
 			},
 			["Default Hostile"] = {
@@ -516,6 +523,16 @@ CliqueDB = {
 			},
 			["Default Hostile"] = {
 			},
+		},
+	},
+	["global"] = {
+	},
+	["factionrealm"] = {
+	},
+	["realm"] = {
+		["Icecrown"] = {
+		},
+		["Area 52"] = {
 		},
 	},
 }
