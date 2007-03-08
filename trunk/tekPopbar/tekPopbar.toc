@@ -2,4 +2,5 @@
 
 ## Title: tekPopbar
 
-tekPopbar.lua
+Mainbar.lua
+Sidebar.lua
