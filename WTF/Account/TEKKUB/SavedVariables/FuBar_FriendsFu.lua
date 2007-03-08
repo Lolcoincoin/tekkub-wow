@@ -9,13 +9,13 @@ FuBar_FriendsFuDB = {
 			},
 		},
 		["Default"] = {
-			["detachedTooltip"] = {
-			},
 			["tooltip"] = {
 				["sort"] = "NAME",
 			},
 			["text"] = {
 				["show_displayed"] = false,
+			},
+			["detachedTooltip"] = {
 			},
 		},
 		["char/Tekkub of Icecrown"] = {

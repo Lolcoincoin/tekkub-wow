@@ -38,14 +38,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["mg2-64pre"] = true,
 			["sraid"] = true,
+			["ctra"] = true,
 			["OzRaid"] = true,
-			["squishy"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["ctra"] = true,
+			["squishy"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -198,10 +198,53 @@ CliqueDB = {
 				["Helpful actions"] = {
 				},
 				["Harmful actions"] = {
+					["Ctrl-harmbutton1"] = {
+						["type"] = "spell",
+						["modifier"] = "Ctrl-",
+						["button"] = "harmbutton1",
+						["delete"] = true,
+						["arg1"] = "Distracting Shot",
+						["texture"] = "Interface\\Icons\\Spell_Arcane_Blink",
+					},
+					["harmbutton2"] = {
+						["type"] = "spell",
+						["modifier"] = "",
+						["button"] = "harmbutton2",
+						["delete"] = true,
+						["arg1"] = "Serpent Sting",
+						["texture"] = "Interface\\Icons\\Ability_Hunter_Quickshot",
+					},
+					["harmbutton3"] = {
+						["type"] = "spell",
+						["modifier"] = "",
+						["button"] = "harmbutton3",
+						["delete"] = true,
+						["arg1"] = "Silencing Shot",
+						["texture"] = "Interface\\Icons\\Ability_TheBlackArrow",
+					},
+					["harmbutton1"] = {
+						["type"] = "spell",
+						["modifier"] = "",
+						["button"] = "harmbutton1",
+						["delete"] = true,
+						["arg1"] = "Steady Shot",
+						["texture"] = "Interface\\Icons\\Ability_Hunter_SteadyShot",
+					},
 				},
 				["Default"] = {
+					["Ctrl-Shift-1"] = {
+						["button"] = 1,
+						["type"] = "focus",
+						["modifier"] = "Ctrl-Shift-",
+					},
 				},
 				["Out of Combat"] = {
+					["3"] = {
+						["button"] = 3,
+						["type"] = "focus",
+						["delete"] = true,
+						["modifier"] = "",
+					},
 				},
 			},
 			["blacklist"] = {
@@ -409,6 +452,14 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
+		["Kumanoinkei of Illidan"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
@@ -479,14 +530,6 @@ CliqueDB = {
 			},
 		},
 		["Microfiche of Icecrown"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
-		["Kumanoinkei of Illidan"] = {
 			["Default Friendly"] = {
 			},
 			["Out-of-combat"] = {

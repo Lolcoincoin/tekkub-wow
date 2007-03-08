@@ -50,16 +50,16 @@ FuBar_NameToggleDB = {
 		["IcecrownGirth"] = {
 			["version"] = 1532,
 		},
-		["FeathermoonKub"] = {
+		["StormscaleNunuvit"] = {
 			["version"] = 1532,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["FeathermoonKub"] = {
 			["version"] = 1532,
 		},
 		["FeathermoonAaooeeaaooee"] = {
 			["version"] = 1532,
 		},
-		["StormscaleNunuvit"] = {
+		["IllidanBear"] = {
 			["version"] = 1532,
 		},
 		["IcecrownCubbyhole"] = {
@@ -74,7 +74,7 @@ FuBar_NameToggleDB = {
 		["DrakaTekkub"] = {
 			["version"] = 1532,
 		},
-		["IllidanBear"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["version"] = 1532,
 		},
 		["Vek'nilashGirth"] = {

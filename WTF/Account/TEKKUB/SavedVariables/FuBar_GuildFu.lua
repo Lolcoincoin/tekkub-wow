@@ -9,13 +9,14 @@ FuBar_GuildFuDB = {
 			},
 		},
 		["Default"] = {
-			["detachedTooltip"] = {
-			},
 			["tooltip"] = {
+				["sort"] = "CLASS",
 				["note_showofficer"] = false,
 			},
 			["text"] = {
 				["show_displayed"] = false,
+			},
+			["detachedTooltip"] = {
 			},
 		},
 		["char/Tekkub of Icecrown"] = {

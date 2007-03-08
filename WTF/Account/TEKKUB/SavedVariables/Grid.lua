@@ -16,23 +16,23 @@ GridDB = {
 						["text"] = {
 							["alert_offline"] = false,
 						},
-						["border"] = {
-							["debuff_magic"] = false,
-						},
 						["icon"] = {
 							["debuff_curse"] = false,
 							["debuff_poison"] = false,
 							["debuff_disease"] = false,
 						},
+						["border"] = {
+							["debuff_magic"] = false,
+						},
 					},
 				},
 				["Default"] = {
-					["FrameSize"] = 26,
 					["statusmap"] = {
 						["border"] = {
 							["debuff_magic"] = true,
 						},
 					},
+					["FrameSize"] = 26,
 				},
 			},
 		},
@@ -51,13 +51,13 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusName"] = {
+		["GridStatusAggro"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["unit_name"] = {
-						["letters"] = 3,
+					["alert_aggro"] = {
+						["range"] = true,
 					},
 				},
 			},
@@ -68,8 +68,8 @@ GridDB = {
 				},
 				["Default"] = {
 					["alert_heals"] = {
-						["range"] = true,
 						["text"] = "incoming heals",
+						["range"] = true,
 					},
 				},
 			},
@@ -85,37 +85,13 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAuras"] = {
+		["GridStatusName"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["debuff_curse"] = {
-						["range"] = true,
-					},
-					["debuff_poison"] = {
-						["range"] = true,
-					},
-					["debuff_MortalStrike"] = {
-						["range"] = true,
-					},
-					["buff_Rejuvenation"] = {
-						["range"] = true,
-					},
-					["buff_PowerWordShield"] = {
-						["range"] = true,
-					},
-					["buff_Renew"] = {
-						["range"] = true,
-					},
-					["debuff_WeakenedSoul"] = {
-						["range"] = true,
-					},
-					["debuff_disease"] = {
-						["range"] = true,
-					},
-					["debuff_magic"] = {
-						["range"] = true,
+					["unit_name"] = {
+						["letters"] = 3,
 					},
 				},
 			},
@@ -131,15 +107,15 @@ GridDB = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
+					["unit_healthDeficit"] = {
+						["range"] = true,
+					},
 					["alert_offline"] = {
 						["color"] = {
 							["g"] = 0.5,
 							["r"] = 0.5,
 						},
 						["priority"] = 0,
-					},
-					["unit_healthDeficit"] = {
-						["range"] = true,
 					},
 					["alert_lowHealth"] = {
 						["range"] = true,
@@ -172,12 +148,36 @@ GridDB = {
 				},
 			},
 		},
-		["GridStatusAggro"] = {
+		["GridStatusAuras"] = {
 			["profiles"] = {
 				["class/Priest"] = {
 				},
 				["Default"] = {
-					["alert_aggro"] = {
+					["debuff_curse"] = {
+						["range"] = true,
+					},
+					["debuff_poison"] = {
+						["range"] = true,
+					},
+					["debuff_MortalStrike"] = {
+						["range"] = true,
+					},
+					["buff_Rejuvenation"] = {
+						["range"] = true,
+					},
+					["buff_PowerWordShield"] = {
+						["range"] = true,
+					},
+					["buff_Renew"] = {
+						["range"] = true,
+					},
+					["debuff_disease"] = {
+						["range"] = true,
+					},
+					["debuff_WeakenedSoul"] = {
+						["range"] = true,
+					},
+					["debuff_magic"] = {
 						["range"] = true,
 					},
 				},

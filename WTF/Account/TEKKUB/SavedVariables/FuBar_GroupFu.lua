@@ -71,6 +71,7 @@ GroupFuDB = {
 			},
 			["ShowClassLevel"] = true,
 			["version"] = 104.00070004,
+			["ShowRollCount"] = true,
 			["LootColorTable"] = {
 				{
 					["Hex"] = "|cffffffff",
@@ -129,7 +130,6 @@ GroupFuDB = {
 					["Desc"] = "Poor",
 				},
 			},
-			["ShowRollCount"] = true,
 			["OutputChannel"] = "OFF",
 		},
 		["Cubbyhole of Icecrown"] = {

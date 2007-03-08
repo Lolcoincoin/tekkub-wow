@@ -4,9 +4,9 @@ OneBagDB = {
 		["default"] = {
 			["colorCoding"] = 1,
 			["point"] = {
-				["top"] = 281.3332927533612,
-				["left"] = 650.2301116373309,
 				["parent"] = "UIParent",
+				["left"] = 675.8301638196137,
+				["top"] = 278.1334751664277,
 			},
 			["cols"] = 16,
 			["openAtMcht"] = 1,

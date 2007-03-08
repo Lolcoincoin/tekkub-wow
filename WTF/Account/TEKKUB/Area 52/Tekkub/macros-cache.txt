@@ -1,3 +1,7 @@
+MACRO 16777363 "Feed" Ability_Hunter_BeastTraining
+/cast Feed Pet
+/use Marsh Lichen
+END
 MACRO 16777357 "Follow" Ability_Tracking
 /t Rohona !follow
 END
