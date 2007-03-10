@@ -1,23 +1,19 @@
 
 VolumeFuDB = {
-	["currentProfile"] = {
-		["Cubbyhole - Area 52"] = "char",
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
-		["Default"] = {
+		["char/Tekkub of Icecrown"] = {
+			["quickfix"] = true,
 			["detachedTooltip"] = {
 			},
-			["quickfix"] = true,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
-			["quickfix"] = true,
+		["Default"] = {
 			["detachedTooltip"] = {
 			},
+			["quickfix"] = true,
 		},
 		["char/Cubbyhole - Area 52"] = {
 			["master"] = 0.51,
@@ -25,5 +21,9 @@ VolumeFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 	},
 }

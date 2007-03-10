@@ -7,6 +7,7 @@ EngravingsDB = {
 	["profiles"] = {
 		["global"] = {
 			[27676] = "Sporeling Snacks",
+			[25744] = "Scryer rep",
 		},
 	},
 	["items"] = {
@@ -14,8 +15,8 @@ EngravingsDB = {
 		[13704] = "Scholomance",
 		[12382] = "Strat",
 		[15778] = "***RAWR!***",
-		[8489] = false,
 		[18249] = "Dire Maul",
+		[8489] = false,
 	},
 	["profileKeys"] = {
 		["Beardyhead of Area 52"] = "global",
@@ -23,11 +24,11 @@ EngravingsDB = {
 		["Wuffi of Area 52"] = "global",
 		["Bear of Illidan"] = "global",
 		["Quinacridone of Illidan"] = "global",
-		["Mishutka of Area 52"] = "global",
-		["Cubbyhole of Area 52"] = "global",
-		["Microfiche of Area 52"] = "global",
-		["Girth of Alterac Mountains"] = "global",
 		["Tekkub of Area 52"] = "global",
+		["Microfiche of Area 52"] = "global",
+		["Cubbyhole of Area 52"] = "global",
+		["Girth of Alterac Mountains"] = "global",
+		["Mishutka of Area 52"] = "global",
 	},
 	["faction"] = {
 		["Alliance"] = {
@@ -41,21 +42,7 @@ EngravingsDB = {
 		["Horde - Illidan"] = {
 		},
 	},
-	["class"] = {
-		["Warrior"] = {
-		},
-		["Druid"] = {
-		},
-		["Shaman"] = {
-		},
-		["Priest"] = {
-		},
-		["Hunter"] = {
-		},
-		["Rogue"] = {
-		},
-		["Warlock"] = {
-		},
+	["factionrealm"] = {
 	},
 	["char"] = {
 		["Beardyhead of Area 52"] = {
@@ -68,18 +55,32 @@ EngravingsDB = {
 		},
 		["Quinacridone of Illidan"] = {
 		},
-		["Mishutka of Area 52"] = {
-		},
-		["Cubbyhole of Area 52"] = {
+		["Tekkub of Area 52"] = {
 		},
 		["Microfiche of Area 52"] = {
 		},
+		["Cubbyhole of Area 52"] = {
+		},
 		["Girth of Alterac Mountains"] = {
 		},
-		["Tekkub of Area 52"] = {
+		["Mishutka of Area 52"] = {
 		},
 	},
-	["factionrealm"] = {
+	["class"] = {
+		["Warrior"] = {
+		},
+		["Druid"] = {
+		},
+		["Shaman"] = {
+		},
+		["Priest"] = {
+		},
+		["Hunter"] = {
+		},
+		["Warlock"] = {
+		},
+		["Rogue"] = {
+		},
 	},
 	["realm"] = {
 		["Area 52"] = {
