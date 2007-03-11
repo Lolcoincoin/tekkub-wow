@@ -9,7 +9,7 @@ if true then table.insert(usebars, 8) end
 if true then table.insert(usebars, 9) end
 
 
-local gap = -4
+local gap = -6
 
 
 local anch1 = MultiBarRightButton1
@@ -50,7 +50,13 @@ end
 
 
 tekPopbar25:ClearAllPoints()
-tekPopbar25:SetPoint("TOPRIGHT", MultiBarRightButton1, "TOPRIGHT", gap, 0)
+--~ tekPopbar25:SetPoint("TOPRIGHT", MultiBarRightButton1, "TOPRIGHT", gap, 0)
+tekPopbar25:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 598)
 
+local function movetracker()
+	QuestWatchFrame:ClearAllPoints()
+	QuestWatchFrame:SetPoint("TOPRIGHT", tekPopbar25, "TOPLEFT", -6, 0)
+end
 
-
+hooksecurefunc("UIParent_ManageFramePositions", movetracker)
+movetracker()
