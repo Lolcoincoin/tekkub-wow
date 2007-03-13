@@ -44,7 +44,7 @@ PerfectTargetsDB = {
 			["maxframes"] = 10,
 			["baserate"] = 0.25,
 		},
-		["Cubbyhole of Area 52"] = {
+		["Microfiche of Area 52"] = {
 			["maxframes"] = 10,
 			["baserate"] = 0.25,
 		},
@@ -54,7 +54,7 @@ PerfectTargetsDB = {
 			["PosY"] = 567.7201978423345,
 			["baserate"] = 0.25,
 		},
-		["Microfiche of Area 52"] = {
+		["Cubbyhole of Area 52"] = {
 			["maxframes"] = 10,
 			["baserate"] = 0.25,
 		},

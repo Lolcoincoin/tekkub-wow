@@ -34,6 +34,8 @@ BT3DB = {
 					["PosX"] = 49.03999812170531,
 				},
 				["MICROMENU"] = {
+					["PosY"] = 72.30032612878549,
+					["PosX"] = 1040.746612952672,
 					["Hide"] = true,
 				},
 			},
@@ -43,22 +45,22 @@ BT3DB = {
 						["prowl"] = 8,
 						["def"] = 8,
 						["berserker"] = 9,
+						["bear"] = 9,
 						["battle"] = 7,
 						["cat"] = 7,
-						["bear"] = 9,
 						["stealth"] = 7,
 						["shadowform"] = 0,
 					},
-					["PosX"] = 20.46002142600461,
-					["StatesEnabled"] = false,
-					["Hide"] = true,
-					["Style"] = "Default",
-					["PosY"] = 130.2198299648809,
 					["HideHotkey"] = true,
+					["PosY"] = 271.8731234979225,
+					["StatesEnabled"] = false,
+					["Enabled"] = false,
+					["PosX"] = 27.28670205202507,
+					["Style"] = "Default",
 					["States"] = {
-						["alt"] = 0,
-						["ctrl"] = 0,
 						["shift"] = 0,
+						["ctrl"] = 0,
+						["alt"] = 0,
 					},
 				}, -- [1]
 				{
@@ -142,6 +144,7 @@ BT3DB = {
 		},
 	},
 	["currentProfile"] = {
+		["Mishutka - Area 52"] = "Default",
 		["Tekkub - Area 52"] = "Default",
 	},
 }

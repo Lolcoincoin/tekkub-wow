@@ -9,7 +9,6 @@ FuXPDB = {
 				1, -- [2]
 				0, -- [3]
 			},
-			["version"] = 104,
 			["detachedTooltip"] = {
 			},
 			["Rep"] = {
@@ -19,6 +18,7 @@ FuXPDB = {
 			},
 			["ShowText"] = "XP",
 			["Faction"] = 3,
+			["version"] = 104,
 			["showText"] = false,
 			["Rest"] = {
 				0.6235294117647059, -- [1]
@@ -44,12 +44,12 @@ FuXPDB = {
 			["Faction"] = 5,
 		},
 		["Cubbyhole of Icecrown"] = {
-			["showText"] = 0,
 			["version"] = 100,
 			["Rest"] = {
 				[2] = 0.611764705882353,
 				[3] = 0.3333333333333333,
 			},
+			["showText"] = 0,
 		},
 	},
 	["currentProfile"] = {

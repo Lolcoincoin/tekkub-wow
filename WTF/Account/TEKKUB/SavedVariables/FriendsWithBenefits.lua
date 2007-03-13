@@ -5,16 +5,10 @@ FriendsWithBenefitsDB = {
 		},
 		["Bear of Area 52"] = {
 		},
-		["Mishutka of Area 52"] = {
-		},
 		["Microfiche of Area 52"] = {
-		},
-		["Tekkub of Area 52"] = {
 		},
 	},
 	["realm"] = {
-		["Area 52"] = {
-		},
 	},
 	["global"] = {
 	},
@@ -33,29 +27,24 @@ FriendsWithBenefitsDB = {
 		},
 		["Warlock"] = {
 		},
-		["Shaman"] = {
-		},
 		["Priest"] = {
-		},
-		["Hunter"] = {
 		},
 	},
 	["faction"] = {
 		["Alliance - Area 52"] = {
-		},
-		["Alliance"] = {
 		},
 	},
 	["profiles"] = {
 		["Alliance - Area 52"] = {
 			["friends"] = {
 				["rohona"] = true,
-				["microfiche"] = true,
-				["cubbyhole"] = true,
-				["misstaken"] = true,
-				["tekkub"] = true,
-				["mishutka"] = true,
 				["beardyhead"] = true,
+				["misstaken"] = true,
+				["microfiche"] = true,
+				["tekkub"] = true,
+				["cubbyhole"] = true,
+				["mishutka"] = true,
+				["mokoto"] = true,
 			},
 			["removed"] = {
 				["angellus"] = true,

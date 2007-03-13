@@ -1,8 +1,8 @@
 
 ModMenuTuFuDB = {
 	["currentProfile"] = {
-		["Cubbyhole - Area 52"] = "char",
 		["Beardyhead of Icecrown"] = "char",
+		["Cubbyhole - Area 52"] = "char",
 	},
 	["profiles"] = {
 		["Default"] = {

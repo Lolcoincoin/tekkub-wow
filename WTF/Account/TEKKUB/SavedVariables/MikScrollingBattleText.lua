@@ -12,16 +12,16 @@ MikSBT_SavedVars = {
 					["Reversed"] = true,
 				}, -- [1]
 				{
-					["OffsetX"] = 60,
-					["OffsetY"] = -160,
 					["AnimationStyle"] = "RightParabola",
+					["OffsetY"] = -160,
 					["Name"] = "Outgoing",
+					["OffsetX"] = 60,
 				}, -- [2]
 				{
-					["OffsetY"] = 100,
 					["ScrollHeight"] = 150,
-					["TextAlignIndex"] = 2,
+					["OffsetY"] = 100,
 					["Name"] = "Notification",
+					["TextAlignIndex"] = 2,
 				}, -- [3]
 			},
 			["EventSettings"] = {
@@ -475,12 +475,12 @@ MikSBT_SavedVars = {
 						["b"] = 0,
 					},
 				},
-				["INCOMING_MISS"] = {
-					["Message"] = "Miss!",
+				["INCOMING_SPELL_DOT"] = {
+					["Message"] = "(%s) -%a",
 					["Color"] = {
-						["r"] = 0,
+						["r"] = 1,
 						["g"] = 0,
-						["b"] = 1,
+						["b"] = 0,
 					},
 					["ScrollAreaIndex"] = 1,
 				},
@@ -638,12 +638,12 @@ MikSBT_SavedVars = {
 					},
 					["ScrollAreaIndex"] = 1,
 				},
-				["INCOMING_SPELL_DOT"] = {
-					["Message"] = "(%s) -%a",
+				["INCOMING_MISS"] = {
+					["Message"] = "Miss!",
 					["Color"] = {
-						["r"] = 1,
+						["r"] = 0,
 						["g"] = 0,
-						["b"] = 0,
+						["b"] = 1,
 					},
 					["ScrollAreaIndex"] = 1,
 				},

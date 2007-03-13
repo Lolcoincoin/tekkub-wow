@@ -8,11 +8,11 @@ GCInFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
+		["Default"] = {
 			["detachedTooltip"] = {
 			},
 		},
-		["Default"] = {
+		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},

@@ -17,13 +17,13 @@ Y: -708
 W: 451
 H: 120
 Frame: ChatFrame3
-FrameLevel: 17
+FrameLevel: 15
 X: 457
 Y: -708
 W: 451
 H: 120
 Frame: ChatFrame4
-FrameLevel: 15
+FrameLevel: 16
 X: 911
 Y: -708
 W: 451
@@ -78,6 +78,10 @@ Frame: BT3BarPET
 FrameLevel: 1
 X: -2
 Y: -516
+Frame: BT3BarMICROMENU
+FrameLevel: 1
+X: 1156
+Y: -728
 Frame: FuBarPluginBartender3Frame
 FrameLevel: 7
 X: 161
@@ -108,3 +112,9 @@ X: 0
 Y: -108
 W: 594
 H: 421
+Frame: FuBarFrame1
+FrameLevel: 6
+X: 0
+Y: 1
+W: 1365
+H: 18
