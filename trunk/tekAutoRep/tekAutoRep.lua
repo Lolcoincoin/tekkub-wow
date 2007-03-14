@@ -33,8 +33,7 @@ end
 
 function tekAutoRep:CHAT_MSG_COMBAT_FACTION_CHANGE(event, msg)
 	local faction = select(3, string.find(msg, L.FACTION_STANDING_CHANGED)) or
-		select(3, string.find(msg, L.FACTION_STANDING_INCREASED)) or
-		select(3, string.find(msg, L.FACTION_STANDING_DECREASED))
+		select(3, string.find(msg, L.FACTION_STANDING_INCREASED))
 
 	if not faction then return end
 
