@@ -7,21 +7,21 @@ FuBar_MailDB = {
 			},
 			["version"] = 904,
 		},
-		["Ailurus of Icecrown"] = {
-			["minimapPosition"] = 10.91110264217992,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
 		["Wuffi of Icecrown"] = {
 			["hidetext"] = true,
 			["detachedTooltip"] = {
 			},
 			["version"] = 904,
 		},
-		["Tekkub of Icecrown"] = {
-			["minimapPosition"] = 17.79596804289746,
-			["version"] = 904,
+		["Ailurus of Icecrown"] = {
 			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 10.91110264217992,
+		},
+		["Tekkub of Icecrown"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 17.79596804289746,
 		},
 		["char/Beardyhead of Icecrown"] = {
 			["minimapPosition"] = 236.381591896712,
@@ -29,22 +29,22 @@ FuBar_MailDB = {
 			},
 			["showText"] = false,
 		},
-		["Girth of Vek'nilash"] = {
-			["minimapPosition"] = 14.20671743004535,
-			["version"] = 904,
-			["hidetext"] = true,
-		},
 		["char/Cubbyhole - Area 52"] = {
 			["hidetext"] = true,
 			["detachedTooltip"] = {
 			},
 			["minimapPositionWild"] = true,
 			["showText"] = true,
-			["showIcon"] = 1,
-			["minimapPositionX"] = 1223.46671679645,
 			["textformat"] = "number",
-			["minimapPositionY"] = 677.3334073824916,
+			["minimapPositionX"] = 1223.46671679645,
 			["version"] = 904,
+			["minimapPositionY"] = 677.3334073824916,
+			["showIcon"] = 1,
+		},
+		["Girth of Vek'nilash"] = {
+			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 14.20671743004535,
 		},
 		["Druid"] = {
 			["hidetext"] = true,
@@ -58,10 +58,10 @@ FuBar_MailDB = {
 			["detachedTooltip"] = {
 			},
 			["minimapPositionWild"] = true,
-			["version"] = 904,
+			["textformat"] = "number",
 			["showText"] = true,
 			["minimapPositionX"] = 1223.46671679645,
-			["textformat"] = "number",
+			["version"] = 904,
 			["minimapPositionY"] = 677.3334073824916,
 			["showIcon"] = 1,
 		},
@@ -88,17 +88,21 @@ FuBar_MailDB = {
 			},
 			["hidden"] = true,
 			["minimapPositionWild"] = true,
-			["textformat"] = "number",
-			["minimapPositionX"] = 1225.000046024581,
-			["showIcon"] = 1,
-			["minimapPositionY"] = 733.9999374880522,
 			["showText"] = true,
+			["minimapPositionX"] = 1225.000046024581,
+			["textformat"] = "number",
+			["minimapPositionY"] = 733.9999374880522,
+			["showIcon"] = 1,
 		},
 		["Cubbyhole of Icecrown"] = {
-			["minimapPosition"] = 14.20671743004535,
-			["version"] = 904,
 			["hidetext"] = true,
+			["version"] = 904,
+			["minimapPosition"] = 14.20671743004535,
 		},
+	},
+	["currentProfile"] = {
+		["Cubbyhole - Area 52"] = "char",
+		["Beardyhead of Icecrown"] = "char",
 	},
 	["chars"] = {
 		["UldamanBear"] = {
@@ -166,7 +170,7 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["Steamwheedle CartelTekkub"] = {
+		["IcecrownMicrofiche"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -196,7 +200,7 @@ FuBar_MailDB = {
 			["version"] = 904,
 			["new"] = 0,
 		},
-		["IcecrownMicrofiche"] = {
+		["Steamwheedle CartelTekkub"] = {
 			["total"] = 0,
 			["version"] = 904,
 			["new"] = 0,
@@ -211,9 +215,5 @@ FuBar_MailDB = {
 			["version"] = 20000,
 			["new"] = 0,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-		["Cubbyhole - Area 52"] = "char",
 	},
 }

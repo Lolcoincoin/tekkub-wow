@@ -38,14 +38,14 @@ CliqueDB = {
 			["oramtf"] = true,
 			["sraid"] = true,
 			["mg2-64pre"] = true,
+			["ctra"] = true,
 			["OzRaid"] = true,
-			["squishy"] = true,
 			["xperl"] = true,
 			["squeaky"] = true,
 			["xraid"] = true,
 			["auf"] = true,
 			["marsraid"] = true,
-			["ctra"] = true,
+			["squishy"] = true,
 			["pcuf"] = true,
 			["watchdog"] = true,
 			["easyraid"] = true,
@@ -257,6 +257,18 @@ CliqueDB = {
 		["Mishutka of Icecrown"] = {
 		},
 		["Cubbyhole of Area 52"] = {
+			["clicksets"] = {
+				["Helpful actions"] = {
+				},
+				["Out of Combat"] = {
+				},
+				["Default"] = {
+				},
+				["Harmful actions"] = {
+				},
+			},
+			["blacklist"] = {
+			},
 		},
 		["Beardyhead of Area 52"] = {
 		},
@@ -306,13 +318,13 @@ CliqueDB = {
 		},
 	},
 	["faction"] = {
-		["Alliance - Area 52"] = {
-		},
-		["Alliance"] = {
-		},
 		["Horde - Illidan"] = {
 		},
 		["Horde - Alterac Mountains"] = {
+		},
+		["Alliance - Area 52"] = {
+		},
+		["Alliance"] = {
 		},
 	},
 	["realm"] = {
@@ -438,6 +450,14 @@ CliqueDB = {
 			["Default Hostile"] = {
 			},
 		},
+		["Kumanoinkei of Illidan"] = {
+			["Default Friendly"] = {
+			},
+			["Out-of-combat"] = {
+			},
+			["Default Hostile"] = {
+			},
+		},
 		["Beardyhead of Icecrown"] = {
 			["Click on Dead Unit"] = {
 				{
@@ -508,14 +528,6 @@ CliqueDB = {
 			},
 		},
 		["Microfiche of Icecrown"] = {
-			["Default Friendly"] = {
-			},
-			["Out-of-combat"] = {
-			},
-			["Default Hostile"] = {
-			},
-		},
-		["Kumanoinkei of Illidan"] = {
 			["Default Friendly"] = {
 			},
 			["Out-of-combat"] = {

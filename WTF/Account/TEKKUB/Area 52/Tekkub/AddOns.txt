@@ -115,3 +115,4 @@ ZooKeeper: enabled
 FuBar-compat-1.2: disabled
 ag_UnitFrames: enabled
 prat: disabled
+bartender3: disabled

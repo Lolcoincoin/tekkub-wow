@@ -1,5 +1,8 @@
 
 FuXPDB = {
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
+	},
 	["profiles"] = {
 		["default"] = {
 			["TekAutoRepLink"] = true,
@@ -51,8 +54,5 @@ FuXPDB = {
 			},
 			["showText"] = 0,
 		},
-	},
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
 	},
 }

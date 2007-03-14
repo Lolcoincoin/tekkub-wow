@@ -54,16 +54,16 @@ TTData = {
 		["Frost Resistance"] = {
 			["dmg"] = 0,
 		},
-		["Fire Nova"] = {
+		["Tranquil Air"] = {
 			["dmg"] = 0,
 		},
-		["Fire Resistance"] = {
+		["Nature Resistance"] = {
 			["dmg"] = 0,
 		},
 		["Strength of Earth"] = {
 			["dmg"] = 0,
 		},
-		["Nature Resistance"] = {
+		["Fire Resistance"] = {
 			["dmg"] = 0,
 		},
 		["Windfury"] = {
@@ -87,7 +87,7 @@ TTData = {
 		["of Wrath"] = {
 			["dmg"] = 0,
 		},
-		["Tranquil Air"] = {
+		["Fire Nova"] = {
 			["dmg"] = 0,
 		},
 	},
@@ -96,6 +96,7 @@ TTData = {
 	["dragging"] = 0,
 	["flash"] = 10,
 	["show"] = 1,
+	["notify"] = "on",
 	["Default"] = {
 		["warningTime"] = 10,
 		["expireMsg"] = "is Destroyed",
@@ -111,7 +112,6 @@ TTData = {
 			0, -- [3]
 		},
 	},
-	["time"] = "ct",
 	["lock"] = 0,
 	["order"] = {
 		"Air", -- [1]
@@ -121,17 +121,17 @@ TTData = {
 	},
 	["style"] = "sticky",
 	["arrange"] = "horizontal",
-	["notify"] = "on",
+	["time"] = "ct",
 }
 TTActiveTotems = {
 	["Earth"] = {
-		["hits"] = 206,
+		["element"] = "Earth",
 		["damage"] = 116,
 		["totem"] = "Stoneclaw",
 		["flashTime"] = 0.1419999748468399,
 		["duration"] = -0.004000630229711533,
 		["flashState"] = 0,
-		["element"] = "Earth",
+		["hits"] = 206,
 	},
 	["Stoneskin"] = {
 		["warningTime"] = 10,
@@ -139,44 +139,44 @@ TTActiveTotems = {
 		["flashTime"] = 0.75,
 		["duration"] = 120,
 		["element"] = "Earth",
-		["damage"] = 0,
-		["flashState"] = 0,
 		["hits"] = 5,
+		["flashState"] = 0,
+		["damage"] = 0,
 	},
 	["Stoneclaw"] = {
-		["hits"] = 206,
+		["element"] = "Earth",
 		["damage"] = 116,
 		["totem"] = "Stoneclaw",
 		["flashTime"] = 0.1419999748468399,
 		["duration"] = -0.004000630229711533,
 		["flashState"] = 0,
-		["element"] = "Earth",
+		["hits"] = 206,
 	},
 	["Fire"] = {
-		["hits"] = 5,
+		["element"] = "Fire",
 		["damage"] = 0,
 		["totem"] = "Searing",
 		["flashTime"] = 0.75,
 		["duration"] = -0.02300126850605011,
 		["flashState"] = 1,
-		["element"] = "Fire",
+		["hits"] = 5,
 	},
 	["Strength of Earth"] = {
-		["hits"] = 5,
+		["element"] = "Earth",
 		["damage"] = 0,
 		["totem"] = "Strength of Earth",
 		["flashTime"] = 0.75,
 		["duration"] = -0.04700381867587566,
 		["flashState"] = 1,
-		["element"] = "Earth",
+		["hits"] = 5,
 	},
 	["Searing"] = {
-		["hits"] = 5,
+		["element"] = "Fire",
 		["damage"] = 0,
 		["totem"] = "Searing",
 		["flashTime"] = 0.75,
 		["duration"] = -0.02300126850605011,
 		["flashState"] = 1,
-		["element"] = "Fire",
+		["hits"] = 5,
 	},
 }

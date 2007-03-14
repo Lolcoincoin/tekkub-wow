@@ -1,8 +1,5 @@
 
 FuBar_GuildFuDB = {
-	["currentProfile"] = {
-		["Beardyhead of Icecrown"] = "char",
-	},
 	["profiles"] = {
 		["char/Beardyhead of Icecrown"] = {
 			["text"] = {
@@ -11,11 +8,9 @@ FuBar_GuildFuDB = {
 			["detachedTooltip"] = {
 			},
 		},
-		["char/Tekkub of Icecrown"] = {
+		["Default"] = {
 			["detachedTooltip"] = {
 			},
-		},
-		["Default"] = {
 			["tooltip"] = {
 				["sort"] = "CLASS",
 				["note_showofficer"] = false,
@@ -23,8 +18,13 @@ FuBar_GuildFuDB = {
 			["text"] = {
 				["show_displayed"] = false,
 			},
+		},
+		["char/Tekkub of Icecrown"] = {
 			["detachedTooltip"] = {
 			},
 		},
+	},
+	["currentProfile"] = {
+		["Beardyhead of Icecrown"] = "char",
 	},
 }
