@@ -47,5 +47,5 @@ end
 tekPopbar1:ClearAllPoints()
 tekPopbar1:SetPoint("BOTTOMLEFT", ChatFrame1, "TOPLEFT", 0, 10)
 
-
+MainMenuBar:Hide()
 
