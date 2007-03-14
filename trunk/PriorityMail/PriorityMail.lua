@@ -20,7 +20,7 @@ local SendMailNameEditBox, SendMailFrame = SendMailNameEditBox, SendMailFrame
 --      Addon Declaration      --
 ---------------------------------
 
-PriorityMail = DongleStub("Dongle-Beta0"):New("PriorityMail")
+PriorityMail = DongleStub("Dongle-Beta1"):New("PriorityMail")
 
 function PriorityMail:Enable()
 	SendMailNameEditBox:SetHistoryLines(15)
