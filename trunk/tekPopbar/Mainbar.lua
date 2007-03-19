@@ -4,13 +4,37 @@ if not users[UnitName("player")] then return DisableAddOn("tekPopBar") end
 
 
 local usebars = {2,5,6}
-local gap = 4
+local gap = 5
+local icons, ids, onupdates = {}, {}, {}
+local colors = {
+	none = {1.0, 1.0, 1.0},
+	grey = {0.4, 0.4, 0.4},
+	blue = {0.1, 0.3, 1.0},
+	red  = {0.8, 0.1, 0.1},
+}
+
+local function OnUpdate(self, elapsed, ...)
+	local id = ids[self]
+	local oor, isUsable, notEnoughMana = IsActionInRange(id), IsUsableAction(id)
+	local c = notEnoughMana and "blue" or oor == 0 and "red" or isUsable and "none" or "grey"
+	icons[self]:SetVertexColor(unpack(colors[c]))
+	if onupdates[self] then return onupdates[self](self, elapsed, ...) end
+end
 
 
+-----------------------------------
+--      Create mah buttons!      --
+-----------------------------------
+
+local _G = getfenv()
 local anch1 = ChatFrame1
 for actionID=1,12 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, UIParent, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
+	ids[mainbtn] = actionID
+	icons[mainbtn] = _G["tekPopbar"..actionID.."Icon"]
 	mainbtn:SetPoint("LEFT", anch1, "RIGHT", gap, 0)
+	onupdates[mainbtn] = mainbtn:GetScript("OnUpdate")
+	mainbtn:SetScript("OnUpdate", OnUpdate)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
 	mainbtn:SetAttribute("*type*", "action")
 	mainbtn:SetAttribute("*action*", actionID)
@@ -31,6 +55,8 @@ for actionID=1,12 do
 	for _,bar in ipairs(usebars) do
 		local btnID = actionID - 12 + bar*12
 		local btn = CreateFrame("CheckButton", "tekPopbar"..btnID, hdr, "ActionBarButtonTemplate")
+		ids[btn] = btnID
+		icons[btn] = _G["tekPopbar"..btnID.."Icon"]
 		btn:SetScript("OnAttributeChanged", ActionButton_Update)
 		btn:SetAttribute("hidestates", 0)
 		btn:SetAttribute("*type*", "action")
