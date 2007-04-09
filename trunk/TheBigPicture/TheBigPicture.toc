@@ -4,14 +4,8 @@
 ## Notes: Never forget to zoom out your minimap again!
 ## Author: Tekkub Stoutwrithe
 ## Version: Alpha
-## X-Credits: Based off RoarSounds by Feador/Barilla
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Map
-
-## OptionalDeps: Dongle
-
-Dongle.lua
-DongleUtils.lua
 
 TheBigPicture.lua

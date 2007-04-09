@@ -1,39 +1,40 @@
 ﻿
 
-local metro = DongleStub("MetrognomeNano-Beta0")
-
-TheBigPicture = DongleStub("Dongle-Beta1"):New("TheBigPicture")
-
-
-local orig = Minimap.SetZoom
-local scrolldowns = {}
-local delay = 20  -- Change this value if you want a different delay between your last scroll
-	                -- and the time the frame resets.  This value is in seconds.
-
-function TheBigPicture:Initialize()
-	metro:Register(self, "TheBigPicture Timeout", "ResetFrame", delay)
-	metro:Register(self, "TheBigPicture Tick", "ScrollOnce", 0.2)
-	Minimap.SetZoom = function(...)
-		metro:Stop("TheBigPicture Tick")
-		metro:Start("TheBigPicture Timeout")
-		orig(...)
-	end
-end
+local resetframe, timeoutframe = CreateFrame("Frame"), CreateFrame("Frame")
+local delay, tickdelay, orig = 20, 0.2
+-- Change 'delay' value if you want a different delay between your last scroll and the time the frame resets.  This value is in seconds.
+-- Change 'tickdelay' to change the speed the map zooms out
 
 
-function TheBigPicture:ResetFrame(elapsed)
-	metro:Stop("TheBigPicture Timeout")
-	metro:Start("TheBigPicture Tick")
-end
+timeoutframe:SetScript("OnUpdate", function(self, elapsed)
+	self.elapsed = elapsed + self.elapsed
+	if self.elapsed < delay then return end
+
+	self:Hide()
+	resetframe.elapsed = 0
+	resetframe:Show()
+end)
 
 
-function TheBigPicture:ScrollOnce(elapsed)
+resetframe:SetScript("OnUpdate", function(self, elapsed)
+	self.elapsed = elapsed + self.elapsed
+	if self.elapsed < tickdelay then return end
+
 	local z = Minimap:GetZoom()
 	if z <= 0 then
-		metro:Stop("TheBigPicture Tick")
+		self:Hide()
 		MinimapZoomIn:Enable()
 		MinimapZoomOut:Disable()
 	else orig(Minimap, z - 1) end
-end
+	self.elapsed = 0
+end)
 
+
+orig = Minimap.SetZoom
+Minimap.SetZoom = function(...)
+	resetframe:Hide()
+	timeoutframe.elapsed = 0
+	timeoutframe:Show()
+	orig(...)
+end
 
