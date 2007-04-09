@@ -11,7 +11,7 @@ frame:SetScript("OnUpdate", function (frame, elapsed)
 		if running[name] then
 			v.elapsed = v.elapsed + elapsed
 			if v.elapsed >= v.rate then
-				v.handler[v.func](v.handler, unpack(v))
+				v.func(unpack(v))
 				v.elapsed = 0
 			end
 		end
@@ -19,9 +19,8 @@ frame:SetScript("OnUpdate", function (frame, elapsed)
 end)
 
 
-local function Register(addon, name, func, rate, ...)
+local function Register(name, func, rate, ...)
 	handlers[name] = {
-		handler = addon,
 		name = name,
 		func = func,
 		rate = rate or 0,
@@ -45,10 +44,21 @@ end
 -------------------
 
 
-
 local scrolldowns = {}
 local delay = 20  -- Change this value if you want a different delay between your last scroll
 	                -- and the time the frame resets.  This value is in seconds.
+
+local function ResetFrame(name, frame)
+	Stop(name.."DownTimeout")
+	Start(name.."DownTick")
+end
+
+
+local function ScrollOnce(name, frame)
+	if frame:AtBottom() then Stop(name.."DownTick")
+	else scrolldowns[name](frame) end
+end
+
 
 local _G = getfenv(0)
 local funcs = {"ScrollUp", "ScrollDown", "ScrollToTop", "PageUp", "PageDown"}
@@ -57,8 +67,8 @@ for i=1,7 do
 	local name = "ChatFrame" .. i
 	local frame = _G[name]
 	scrolldowns[name] = frame.ScrollDown
-	Register(self, name.."DownTick", "ScrollOnce", 0.1, name, frame)
-	Register(self, name.."DownTimeout", "ResetFrame", delay, name, frame)
+	Register(name.."DownTick", ScrollOnce, 0.1, name, frame)
+	Register(name.."DownTimeout", ResetFrame, delay, name, frame)
 	for _,func in ipairs(funcs) do
 		local orig = frame[func]
 		frame[func] = function(...)
@@ -69,15 +79,4 @@ for i=1,7 do
 	end
 end
 
-
-function TheLowDown:ResetFrame(name, frame)
-	Stop(name.."DownTimeout")
-	Start(name.."DownTick")
-end
-
-
-function TheLowDown:ScrollOnce(name, frame)
-	if frame:AtBottom() then Stop(name.."DownTick")
-	else scrolldowns[name](frame) end
-end
 
