@@ -10,7 +10,7 @@ local ontaxi, overidden, db, slash
 --      Addon Declaration      --
 ---------------------------------
 
-Cockpit = DongleStub("Dongle-Beta1"):New("Cockpit")
+Cockpit = DongleStub("Dongle-1.0-RC3"):New("Cockpit")
 
 
 ------------------------------

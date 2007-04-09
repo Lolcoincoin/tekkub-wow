@@ -1,5 +1,5 @@
 local name = "oXP"
-local addon = DongleStub('Dongle-Beta1'):New(name)
+local addon = DongleStub('Dongle-1.0-RC3'):New(name)
 
 function addon:Enable()
 	self:createXPBar()
