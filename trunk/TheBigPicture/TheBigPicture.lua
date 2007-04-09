@@ -5,6 +5,9 @@ local delay, tickdelay, orig = 20, 0.2
 -- Change 'delay' value if you want a different delay between your last scroll and the time the frame resets.  This value is in seconds.
 -- Change 'tickdelay' to change the speed the map zooms out
 
+resetframe:Hide()
+timeoutframe:Hide()
+
 
 timeoutframe:SetScript("OnUpdate", function(self, elapsed)
 	self.elapsed = elapsed + self.elapsed
