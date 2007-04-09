@@ -1,5 +1,5 @@
 
-local users = {Tekkub = true, Wuffi = true, Beardyhead = true, Mishutka = true}
+local users = {Cub = true, Tekkub = true, Wuffi = true, Beardyhead = true, Mishutka = true}
 if not users[UnitName("player")] then return DisableAddOn("tekPopBar") end
 
 
