@@ -8,9 +8,4 @@
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
 
-## OptionalDeps: Dongle
-
-Dongle.lua
-DongleUtils.lua
-
 TheLowDown.lua
