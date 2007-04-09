@@ -1,7 +1,7 @@
 
 local f = CreateFrame("Frame")
 f:SetScript("OnEvent", function(self, event, txt)
-	if string.find(txt, "Divine Shield") then  PlaySoundFile("Interface\\AddOns\\ImbaPalas\\imba.wav") end
+	if string.find(txt, "Divine Shield") then  PlaySoundFile("Interface\\AddOns\\tekImbaPalas\\imba.wav") end
 end)
 
 f:RegisterEvent("CHAT_MSG_SPELL_SELF_BUFF")
