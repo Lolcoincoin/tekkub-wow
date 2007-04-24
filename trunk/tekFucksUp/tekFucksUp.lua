@@ -1,98 +1,63 @@
-local name = "oXP"
-local addon = DongleStub('Dongle-1.0'):New(name)
 
-function addon:Enable()
-	self:createXPBar()
-	self:updateXP()
-
-	self:RegisterEvent("PLAYER_XP_UPDATE", "updateXP")
-end
+local swidth = GetScreenWidth()
 
 
-function addon:createXPBar()
-	local frame = CreateFrame("Frame", "oXP", UIParent)
-	frame:SetHeight(2)
-
-	local tex = frame:CreateTexture(nil, "BORDER")
-	tex:SetTexture("Interface\\AddOns\\oXP\\textures\\texture")
-	tex:SetVertexColor(0, .4, .9)
-	tex:ClearAllPoints()
-	tex:SetAllPoints(frame)
-
-	local rested = CreateFrame("Frame", nil, frame)
-	rested:SetFrameLevel(1)
-	rested:SetHeight(2)
-
-	local rtex = rested:CreateTexture(nil, "BORDER")
-	rtex:SetTexture("Interface\\AddOns\\oXP\\textures\\texture")
-	rtex:SetVertexColor(1, .2, 1)
-	rtex:SetAllPoints(rested)
-
-	local noxp = CreateFrame("Frame", nil, frame)
-	noxp:SetFrameLevel(1)
-	noxp:SetHeight(2)
-
-	local ntex = noxp:CreateTexture(nil, "BORDER")
-	ntex:SetTexture("Interface\\AddOns\\oXP\\textures\\texture")
-	ntex:SetVertexColor(.25, .25, .35)
-	ntex:SetAllPoints(noxp)
-
-	local spark = frame:CreateTexture(nil, "OVERLAY")
-	spark:SetTexture("Interface\\AddOns\\oXP\\textures\\glow")
-	spark:SetVertexColor(0, .4, .9)
-	spark:SetWidth(128)
-	spark:SetHeight(16)
-	spark:SetBlendMode("ADD")
-	spark:SetParent(frame)
-
-	local spark2 = frame:CreateTexture(nil, "OVERLAY")
-	spark2:SetTexture("Interface\\AddOns\\oXP\\textures\\glow2")
-	spark2:SetWidth(128)
-	spark2:SetHeight(16)
-	spark2:SetBlendMode("ADD")
-	spark2:SetParent(frame)
-
-	self.XP = frame
-	self.XP.spark = spark
-	self.XP.spark2 = spark2
-	self.XP.rested = rested
-	self.XP.none = noxp
-
-	frame:SetPoint("TOPLEFT", oDesktopBottom, 8, -2)
-	rested:SetPoint("LEFT", frame, "RIGHT")
-	noxp:SetPoint("LEFT", rested, "RIGHT")
-	spark:SetPoint("RIGHT", frame, "RIGHT", 11, 0)
-	spark2:SetPoint("RIGHT", frame, "RIGHT", 11, 0)
-end
+local frame = CreateFrame("Frame", "tekFucksUp", UIParent)
+frame:SetHeight(2)
+frame:SetWidth(swidth/2)
+frame:SetPoint("BOTTOMLEFT", WorldFrame, "BOTTOMLEFT")
 
 
-function addon:updateXP()
-		local xp = self.XP
-		local none = xp.none
-		local rested = xp.rested
+local tex = frame:CreateTexture(nil, "BORDER")
+tex:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\texture")
+tex:SetVertexColor(0, .4, .9)
+tex:ClearAllPoints()
+tex:SetAllPoints(frame)
 
-		local total = GetScreenWidth()
-		if UnitLevel("player") == MAX_PLAYER_LEVEL then
-			none:SetWidth(total)
-			return
-		end
-		local currentXP = UnitXP("player")
-		local maxXP = UnitXPMax("player")
-		local restXP = GetXPExhaustion() or 0
-		local remainXP = maxXP - (currentXP + restXP)
 
-		if remainXP < 0 then
-			remainXP = 0
-		end
+local spark = frame:CreateTexture(nil, "OVERLAY")
+spark:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\glow")
+spark:SetVertexColor(0, .4, .9)
+spark:SetWidth(128)
+spark:SetHeight(16)
+spark:SetBlendMode("ADD")
+spark:SetPoint("RIGHT", frame, "RIGHT", 11, 0)
 
-		xp:SetWidth((currentXP/maxXP)*total)
-		if (restXP + currentXP)/maxXP > 1 then
-			rested:SetWidth(total - xp:GetWidth())
-		else
-			rested:SetWidth((restXP/maxXP)*total + 0.001)
-		end
-		none:SetWidth((remainXP/maxXP)*total)
 
-end
+local spark2 = frame:CreateTexture(nil, "OVERLAY")
+spark2:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\glow2")
+spark2:SetWidth(128)
+spark2:SetHeight(16)
+spark2:SetBlendMode("ADD")
+spark2:SetPoint("RIGHT", frame, "RIGHT", 11, 0)
 
-_G[name] = addon
+
+local rested = frame:CreateTexture(nil, "BORDER")
+rested:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\texture")
+rested:SetVertexColor(1, .2, 1)
+rested:SetWidth(swidth/4)
+rested:SetPoint("TOP", frame, "TOP")
+rested:SetPoint("BOTTOM", frame, "BOTTOM")
+rested:SetPoint("LEFT", frame, "RIGHT")
+
+
+local notex = frame:CreateTexture(nil, "BORDER")
+notex:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\texture")
+notex:SetVertexColor(.5, .5, .5)
+notex:SetPoint("TOPRIGHT", frame, "TOPLEFT", swidth, 0)
+notex:SetPoint("BOTTOMLEFT", rested, "BOTTOMRIGHT")
+
+
+frame:RegisterEvent("PLAYER_LOGIN")
+frame:RegisterEvent("PLAYER_XP_UPDATE")
+frame:SetScript("OnEvent", function(self)
+	if UnitLevel("player") == MAX_PLAYER_LEVEL then return self:SetWidth(0) end
+
+	local currentXP, maxXP, restXP = UnitXP("player"), UnitXPMax("player"), GetXPExhaustion() or 0
+	self:SetWidth(currentXP/maxXP * swidth)
+
+	if (restXP + currentXP) >= maxXP then rested:SetWidth(swidth - frame:GetWidth())
+	else rested:SetWidth(restXP/maxXP * swidth + 0.001) end
+end)
+
+
