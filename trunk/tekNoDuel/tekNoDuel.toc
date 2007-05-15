@@ -1,7 +1,7 @@
 ## Interface: 20003
 
-## Title: tekNoDual
-## Notes: Reject dual request from people you don't know
+## Title: tekNoDuel
+## Notes: Reject duel requests
 ## Author: Tekkub Stoutwrithe
 ## Version: Alpha
 ## X-Credits: Denial by phyber/Neriak
