@@ -2,11 +2,12 @@
 local _, _, _, enabled = GetAddOnInfo("tekPopBar")
 if not enabled then return end
 
+local _, class = UnitClass("player")
 
 local usebars = {4, 10}
-if true then table.insert(usebars, 7) end
-if true then table.insert(usebars, 8) end
-if true then table.insert(usebars, 9) end
+if class ~= "DRUID" then table.insert(usebars, 7) end
+if class ~= "DRUID" then table.insert(usebars, 8) end
+if class ~= "DRUID" then table.insert(usebars, 9) end
 
 
 local gap = -6
