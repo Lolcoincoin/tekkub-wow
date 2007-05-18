@@ -19,7 +19,7 @@ local colors = {
 -- stealth = 7
 
 local function OnUpdate(self, elapsed, ...)
-	local id = ids[self]
+	local id = ids[self][GetShapeshiftForm(true)] or ids[self][0]
 	local oor, isUsable, notEnoughMana = IsActionInRange(id), IsUsableAction(id)
 	local c = notEnoughMana and "blue" or oor == 0 and "red" or isUsable and "none" or "grey"
 	icons[self]:SetVertexColor(unpack(colors[c]))
@@ -42,7 +42,7 @@ end
 
 for actionID=1,12 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, driver, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
-	ids[mainbtn] = actionID
+	ids[mainbtn] = {[0] = actionID}
 	icons[mainbtn] = _G["tekPopbar"..actionID.."Icon"]
 	mainbtn:SetPoint("LEFT", anch1, "RIGHT", gap, 0)
 	onupdates[mainbtn] = mainbtn:GetScript("OnUpdate")
@@ -59,6 +59,9 @@ for actionID=1,12 do
 		mainbtn:SetAttribute("*action-cat", 6*12 + actionID) -- cat
 		mainbtn:SetAttribute("*action-moon", 7*12 + actionID) -- moonkin/tree
 		mainbtn:SetAttribute("*action-bear", 8*12 + actionID) -- bear
+		ids[mainbtn][3] = 6*12 + actionID
+		ids[mainbtn][5] = 7*12 + actionID
+		ids[mainbtn][1] = 8*12 + actionID
 	end
 	mainbtn:SetAttribute("*action*", actionID)
 
