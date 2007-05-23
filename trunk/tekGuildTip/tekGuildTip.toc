@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 
 ## Title: tekGuildTip
 ## Notes: Adds a player's guild name to the mouseover tooltip.

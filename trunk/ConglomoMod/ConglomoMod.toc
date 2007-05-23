@@ -1,4 +1,4 @@
-## Interface: 11100
+## Interface: 21000
 ## Author: Tekkub Stoutwrithe
 ## Version: Alpha
 ## Title: ConglomoMod

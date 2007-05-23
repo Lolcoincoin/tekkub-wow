@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 
 ## Title: tekPlayerMenu
 ## Notes: Add extra options to player link menu

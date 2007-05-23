@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 
 ## Title: tekErr
 ## Notes: Dumps error popup dialog text to a chat frame

@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 ## Title: tekAccept
 ## Notes: Auto-accept invites from guild members and friends
 ## Author: Tekkub Stoutwrithe

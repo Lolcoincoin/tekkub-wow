@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 
 ## Title: Express Mail
 ## Notes: Open mail quickly
