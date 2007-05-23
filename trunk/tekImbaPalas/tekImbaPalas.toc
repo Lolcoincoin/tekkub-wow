@@ -1,4 +1,4 @@
-## Interface: 21000
+## Interface: 20100
 
 ## Title: tekImbaPalas
 ## Notes: Play music when a paladin uses his shield.

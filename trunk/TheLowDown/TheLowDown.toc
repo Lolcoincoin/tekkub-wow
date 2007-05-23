@@ -1,4 +1,4 @@
-## Interface: 21000
+## Interface: 20100
 
 ## Title: The Low Down
 ## Notes: Never forget to scroll a chatframe to the bottom again!
