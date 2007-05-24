@@ -1,32 +1,26 @@
 
+TEKONOMICS_EVENTS = {
+	AtMerchant = "MERCHANT_SHOW",
+	CraftFrameOpen = "CRAFT_SHOW",
+	TradeskillFrameOpen = "TRADE_SHOW",
+	CraftFrameOpen = "CRAFT_SHOW",
+	PvPFlagged = "UNIT_FACTION",
+	InParty = "PARTY_MEMBERS_CHANGED",
+	InRaid = "RAID_ROSTER_UPDATE",
+	IsResting = {"PLAYER_UPDATE_RESTING", "PLAYER_LOGIN"},
+	IsNotResting = {"PLAYER_UPDATE_RESTING", "PLAYER_LOGIN"},
+	AtMailbox = "MAIL_SHOW",
+}
+
 TEKONOMICS_CONDITIONALS = {
-	-- MERCHANT_SHOW
 	AtMerchant = function() return MerchantFrame:IsVisible() end,
-
-	-- CRAFT_SHOW
 	CraftFrameOpen = function() return CraftFrame and CraftFrame:IsVisible() end,
-
-	-- TRADE_SHOW
 	TradeskillFrameOpen = function() return TradeSkillFrame and TradeSkillFrame:IsVisible() end,
-
-	-- CRAFT_SHOW and TRADE_SHOW
-	Crafting = function() return (CraftFrame and CraftFrame:IsVisible()) or (TradeSkillFrame and TradeSkillFrame:IsVisible()) end,
-
-	-- UNIT_FACTION
+	CraftFrameOpen = function() return CraftFrame and CraftFrame:IsVisible() end,
 	PvPFlagged = function() return UnitIsPVP("player") end,
-
-	-- PARTY_MEMBERS_CHANGED
 	InParty = function() return GetNumPartyMembers() > 0 or GetNumRaidMembers() > 0 end,
-
-	-- RAID_ROSTER_UPDATE
 	InRaid = function() return GetNumRaidMembers() > 0 end,
-
-	-- PLAYER_UPDATE_RESTING
 	IsResting = IsResting,
-
-	-- PLAYER_UPDATE_RESTING
 	IsNotResting = function() return not IsResting() end,
-
-	-- MAIL_SHOW
 	AtMailbox = function() return MailFrame:IsVisible() end,
 }
