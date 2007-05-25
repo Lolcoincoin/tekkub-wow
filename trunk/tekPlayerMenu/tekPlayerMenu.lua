@@ -1,5 +1,5 @@
 
-local order = {"WHISPER", "INVITE", "TARGET", "GUILD_PROMOTE", "GUILD_LEAVE", "ADD_FRIEND", "IGNORE", "WHO", "CANCEL"}
+local order = {"WHISPER", "INVITE", "TARGET", "GUILD_PROMOTE", "GUILD_LEAVE", "ADD_FRIEND", "IGNORE", "WHO", "REPORT_SPAM", "CANCEL"}
 local clickers = {["ADD_FRIEND"] = AddFriend, ["IGNORE"] = AddIgnore, ["WHO"] = SendWho, ["GUILD_INVITE"] = GuildInviteByName}
 
 
