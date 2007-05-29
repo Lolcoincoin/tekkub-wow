@@ -76,3 +76,4 @@ print("Packaging release")
 os.execute(string.format("svn export %s/tags/%s %s", svnpath, fulladdon, addon))
 os.execute(string.format("\"c:\\Program Files\\WinRAR\\WinRAR.exe\" a %s.zip %s", fulladdon, addon))
 os.execute("rmdir /Q /S "..addon)
+
