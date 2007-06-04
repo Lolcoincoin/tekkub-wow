@@ -27,6 +27,18 @@ local function OnUpdate(self, elapsed, ...)
 end
 
 
+local function SetTooltip(frame)
+	local id = ids[self][GetShapeshiftForm(true)] or ids[self][0]
+	GameTooltip:SetOwner(frame, "ANCHOR_RIGHT")
+	GameTooltip:SetAction(id)
+end
+
+
+local function HideTooltip(frame)
+	GameTooltip:Hide()
+end
+
+
 -----------------------------------
 --      Create mah buttons!      --
 -----------------------------------
@@ -48,6 +60,8 @@ for actionID=1,12 do
 	onupdates[mainbtn] = mainbtn:GetScript("OnUpdate")
 	mainbtn:SetScript("OnUpdate", OnUpdate)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
+	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
+	mainbtn:HookScript("OnLeave", HideTooltip)
 	if class == "DRUID" then
 		driver:SetAttribute('addchild', mainbtn)
 		mainbtn:SetAttribute('useparent-statebutton', 'true')

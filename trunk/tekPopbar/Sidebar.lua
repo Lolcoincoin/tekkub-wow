@@ -13,11 +13,18 @@ if class ~= "DRUID" then table.insert(usebars, 9) end
 local gap = -6
 
 
+local function HideTooltip(frame)
+	GameTooltip:Hide()
+end
+
+
 local anch1 = MultiBarRightButton1
 for actionID=25,36 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, UIParent, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
 	mainbtn:SetPoint("TOP", anch1, "BOTTOM", 0, gap)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
+	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
+	mainbtn:HookScript("OnLeave", HideTooltip)
 	mainbtn:SetAttribute("*type*", "action")
 	mainbtn:SetAttribute("*action*", actionID)
 	mainbtn:SetAttribute("*childraise-OnEnter", true)
