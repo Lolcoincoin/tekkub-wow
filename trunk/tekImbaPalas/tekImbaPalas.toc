@@ -2,6 +2,7 @@
 
 ## Title: tekImbaPalas
 ## Notes: Play music when a paladin uses his shield.
+## Author: Tekkub Stoutwrithe
 ## Version: Alpha
 
 tekImbaPalas.lua
