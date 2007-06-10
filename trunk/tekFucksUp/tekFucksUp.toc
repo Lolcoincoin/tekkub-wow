@@ -1,5 +1,7 @@
 ## Interface: 20100
 
 ## Title: tekFucksUp
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
 
 tekFucksUp.lua
