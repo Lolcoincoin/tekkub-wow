@@ -1,6 +1,8 @@
 ## Interface: 20100
 
 ## Title: tekPopbar
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
 
 Mainbar.lua
 Sidebar.lua
