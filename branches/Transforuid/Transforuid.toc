@@ -1,0 +1,7 @@
+## Interface: 20100
+## Title: Transforuid
+## Notes: Roll-Out!
+## Author: Augustus Mayo - [Eronn] on [Uldaman]
+## Version: 0.1
+
+Transforuid.lua
