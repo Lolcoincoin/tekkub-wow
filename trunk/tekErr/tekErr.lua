@@ -1,46 +1,85 @@
 
-local cf = ChatFrame5
+
 local linkstr = "|cffff4040|Htekerr:%s|h%s|h|r"
-local lastName
+local lastName, editbox
 
 
-ScriptErrors.Show = function(objData)
-	cf:AddMessage(string.format(linkstr, debugstack(), ScriptErrors_Message:GetText()))
+local function OnHyperlinkClick(frame, link, text)
+	local _, _, msg = string.find(link, "tekerr:(.+)")
+	editbox:SetText(text.. "\n".. msg)
+--~ 	editbox:SetFocus()
+--~ 	editbox:HighlightText()
 end
 
 
-local f = CreateFrame("Frame")
+local f = CreateFrame("ScrollingMessageFrame")
+f:SetMaxLines(250)
+f:SetFontObject(GameFontHighlightSmall)
+f:SetJustifyH("LEFT")
+f:SetFading(false)
+f:EnableMouseWheel(true)
+f:SetScript("OnMouseWheel", function(frame, delta)
+	if delta > 0 then
+		if IsShiftKeyDown() then frame:ScrollToTop()
+		else frame:ScrollUp() end
+	elseif delta < 0 then
+		if IsShiftKeyDown() then frame:ScrollToBottom()
+		else frame:ScrollDown() end
+	end
+end)
+f:SetScript("OnHide", f.ScrollToBottom)
+f:SetScript("OnHyperlinkClick", OnHyperlinkClick)
+f:Hide()
+TheLowDownRegisterFrame(f)
+TheLowDownRegisterFrame = nil
+
+
+seterrorhandler(function(msg)
+	local _, _, stacktrace = string.find(debugstack() or "", "[^\n]+\n(.*)")
+	f:AddMessage(string.format(linkstr, stacktrace, msg))
+end)
+
+
 f:SetScript("OnEvent", function(self, ...)
-	cf:AddMessage(string.join(", ", ...), 0.0, 1.0, 1.0)
+	self:AddMessage(string.join(", ", ...), 0.0, 1.0, 1.0)
 end)
 f:RegisterEvent("ADDON_ACTION_FORBIDDEN")
 --~ f:RegisterEvent("ADDON_ACTION_BLOCKED")  -- We usually don't care about these, as they aren't fatal
 
 
-local orig = SetItemRef
-SetItemRef = function(link, text, ...)
-	local _, _, msg = string.find(link, "tekerr:(.+)");
-	if msg then
-		if ItemRefTooltip:IsVisible() and lastName and lastName == msg then
-			HideUIPanel(ItemRefTooltip)
-			lastName = nil
-			return
-		else
-			lastName = msg
+local OptionHouse = DongleStub("OptionHouse-1.0")
+local _, title = GetAddOnInfo("tekErr")
+local author, version = GetAddOnMetadata("tekErr", "Author"), GetAddOnMetadata("tekErr", "Version")
+local oh = OptionHouse:RegisterAddOn("tekErr", title, author, version)
+oh:RegisterCategory("Errors", function()
+	local frame = CreateFrame("Frame", nil, OptionHouseOptionsFrame)
+	frame:SetWidth(630)
+	frame:SetHeight(305)
+	frame:SetPoint("TOPLEFT", 190, -103)
 
-			ShowUIPanel(ItemRefTooltip)
-			if not ItemRefTooltip:IsVisible() then ItemRefTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE") end
+	editbox = CreateFrame("EditBox", nil, frame)
+	editbox:SetPoint("TOPLEFT")
+	editbox:SetPoint("BOTTOMRIGHT", frame, "TOPRIGHT", 0, -100)
+	editbox:SetFontObject(GameFontHighlightSmall)
+	editbox:SetTextInsets(8,8,8,8)
+	editbox:SetBackdrop{
+		bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		edgeSize = 16,
+		insets = {left = 4, right = 4, top = 4, bottom = 4},
+	}
+	editbox:SetBackdropColor(.1,.1,.1,.3)
+	editbox:SetMultiLine(true)
+	editbox:SetAutoFocus(false)
+	editbox:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
 
-			ItemRefTooltip:ClearLines()
-			ItemRefTooltip:AddLine(text, 1,0,0)
-			ItemRefTooltip:AddLine(msg)
-			ItemRefTooltip:Show()
-		end
+	f:SetParent(frame)
+	f:SetFrameStrata(frame:GetFrameStrata())
+	f:SetFrameLevel(frame:GetFrameLevel())
+	f:SetPoint("BOTTOMLEFT")
+	f:SetPoint("TOPRIGHT", editbox, "BOTTOMRIGHT")
+	f:Show()
 
-		return
-	end
-
-	lastName = nil
-	orig(link, text, ...)
-end
+	return frame
+end)
 

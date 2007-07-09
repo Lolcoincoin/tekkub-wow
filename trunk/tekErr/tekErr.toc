@@ -8,4 +8,5 @@
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
 
+TheLowDown.lua
 tekErr.lua
