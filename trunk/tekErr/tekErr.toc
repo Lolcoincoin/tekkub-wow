@@ -1,12 +1,15 @@
 ## Interface: 20100
 
 ## Title: tekErr
-## Notes: Dumps error popup dialog text to a chat frame
+## Notes: Dumps error popup dialog text to an OptionHouse frame
 ## Author: Tekkub Stoutwrithe
 ## Version: Alpha
 ## X-Website: http://code.google.com/p/tekkub-wow/
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
 
+## OptionalDeps: OptionHouse
+
+OptionHouse.lua
 TheLowDown.lua
 tekErr.lua

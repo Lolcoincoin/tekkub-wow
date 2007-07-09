@@ -1,14 +1,12 @@
 
 
-local linkstr = "|cffff4040|Htekerr:%s|h%s|h|r"
+local linkstr = "|cffff4040[%s] |Htekerr:%s|h%s|h|r"
 local lastName, editbox
 
 
 local function OnHyperlinkClick(frame, link, text)
 	local _, _, msg = string.find(link, "tekerr:(.+)")
 	editbox:SetText(text.. "\n".. msg)
---~ 	editbox:SetFocus()
---~ 	editbox:HighlightText()
 end
 
 
@@ -36,7 +34,7 @@ TheLowDownRegisterFrame = nil
 
 seterrorhandler(function(msg)
 	local _, _, stacktrace = string.find(debugstack() or "", "[^\n]+\n(.*)")
-	f:AddMessage(string.format(linkstr, stacktrace, msg))
+	f:AddMessage(string.format(linkstr, date("%X"), stacktrace, msg))
 end)
 
 
