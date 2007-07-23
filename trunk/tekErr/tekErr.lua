@@ -1,7 +1,11 @@
 
 
 local linkstr = "|cffff4040[%s] |Htekerr:%s|h%s|h|r"
-local lastName, editbox
+local lastName, editbox, butt
+
+
+local buttfunc = tekErrMinimapButton
+tekErrMinimapButton = nil
 
 
 local function OnHyperlinkClick(frame, link, text)
@@ -25,8 +29,12 @@ f:SetScript("OnMouseWheel", function(frame, delta)
 		else frame:ScrollDown() end
 	end
 end)
+f:SetScript("OnShow", function() if butt then butt:Hide() end end)
 f:SetScript("OnHide", f.ScrollToBottom)
 f:SetScript("OnHyperlinkClick", OnHyperlinkClick)
+f:SetScript("OnEvent", function(self, ...) self:AddMessage(string.join(", ", ...), 0.0, 1.0, 1.0) end)
+f:RegisterEvent("ADDON_ACTION_FORBIDDEN")
+--~ f:RegisterEvent("ADDON_ACTION_BLOCKED")  -- We usually don't care about these, as they aren't fatal
 f:Hide()
 TheLowDownRegisterFrame(f)
 TheLowDownRegisterFrame = nil
@@ -35,14 +43,9 @@ TheLowDownRegisterFrame = nil
 seterrorhandler(function(msg)
 	local _, _, stacktrace = string.find(debugstack() or "", "[^\n]+\n(.*)")
 	f:AddMessage(string.format(linkstr, date("%X"), stacktrace, msg))
+	if not butt then butt = buttfunc(f); buttfunc = nil end
+	if not f:IsVisible() then butt:Show() end
 end)
-
-
-f:SetScript("OnEvent", function(self, ...)
-	self:AddMessage(string.join(", ", ...), 0.0, 1.0, 1.0)
-end)
-f:RegisterEvent("ADDON_ACTION_FORBIDDEN")
---~ f:RegisterEvent("ADDON_ACTION_BLOCKED")  -- We usually don't care about these, as they aren't fatal
 
 
 local OptionHouse = DongleStub("OptionHouse-1.0")

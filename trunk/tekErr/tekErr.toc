@@ -12,4 +12,5 @@
 
 OptionHouse.lua
 TheLowDown.lua
+MinimapButton.lua
 tekErr.lua
