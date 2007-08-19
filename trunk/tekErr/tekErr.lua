@@ -14,7 +14,7 @@ local function OnHyperlinkClick(frame, link, text)
 end
 
 
-local f = CreateFrame("ScrollingMessageFrame")
+local f = CreateFrame("ScrollingMessageFrame", nil, UIParent)
 f:SetMaxLines(250)
 f:SetFontObject(GameFontHighlightSmall)
 f:SetJustifyH("LEFT")
@@ -53,10 +53,7 @@ local _, title = GetAddOnInfo("tekErr")
 local author, version = GetAddOnMetadata("tekErr", "Author"), GetAddOnMetadata("tekErr", "Version")
 local oh = OptionHouse:RegisterAddOn("tekErr", title, author, version)
 oh:RegisterCategory("Errors", function()
-	local frame = CreateFrame("Frame", nil, OptionHouseOptionsFrame)
-	frame:SetWidth(630)
-	frame:SetHeight(305)
-	frame:SetPoint("TOPLEFT", 190, -103)
+	local frame = CreateFrame("Frame", nil, UIParent)
 
 	editbox = CreateFrame("EditBox", nil, frame)
 	editbox:SetPoint("TOPLEFT")
@@ -75,11 +72,16 @@ oh:RegisterCategory("Errors", function()
 	editbox:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
 
 	f:SetParent(frame)
-	f:SetFrameStrata(frame:GetFrameStrata())
-	f:SetFrameLevel(frame:GetFrameLevel())
 	f:SetPoint("BOTTOMLEFT")
 	f:SetPoint("TOPRIGHT", editbox, "BOTTOMRIGHT")
+	f:SetFrameStrata("HIGH")
 	f:Show()
+
+--~ 	frame:Hide()
+--~ 	frame:SetScript("OnShow", Function()
+--~ 		f:SetFrameLevel(frame:GetFrameLevel())
+--~ 		frame:SetScript("OnShow", nil)
+--~ 	end)
 
 	return frame
 end)
