@@ -10,7 +10,7 @@
 
 ## SavedVariables: CockpitDB
 
-## OptionalDeps: Dongle
+## OptionalDeps: Dongle, tekDebug
 
 Dongle.lua
 
