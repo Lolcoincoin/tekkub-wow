@@ -1,10 +1,9 @@
 
-local swidth = GetScreenWidth()
+local swidth = UIParent:GetWidth()
 
 
 local frame = CreateFrame("Frame", "tekFucksUp", UIParent)
 frame:SetHeight(2)
-frame:SetWidth(swidth/2)
 frame:SetPoint("BOTTOMLEFT", WorldFrame, "BOTTOMLEFT")
 
 
@@ -35,7 +34,6 @@ spark2:SetPoint("RIGHT", frame, "RIGHT", 11, 0)
 local rested = frame:CreateTexture(nil, "BORDER")
 rested:SetTexture("Interface\\AddOns\\tekFucksUp\\textures\\texture")
 rested:SetVertexColor(1, .2, 1)
-rested:SetWidth(swidth/4)
 rested:SetPoint("TOP", frame, "TOP")
 rested:SetPoint("BOTTOM", frame, "BOTTOM")
 rested:SetPoint("LEFT", frame, "RIGHT")
@@ -53,11 +51,9 @@ frame:RegisterEvent("PLAYER_XP_UPDATE")
 frame:SetScript("OnEvent", function(self)
 	if UnitLevel("player") == MAX_PLAYER_LEVEL then return self:SetWidth(0) end
 
-	local currentXP, maxXP, restXP = UnitXP("player"), UnitXPMax("player"), GetXPExhaustion() or 0
-	self:SetWidth(currentXP/maxXP * swidth)
-
-	if (restXP + currentXP) >= maxXP then rested:SetWidth(swidth - frame:GetWidth())
-	else rested:SetWidth(restXP/maxXP * swidth + 0.001) end
+	local currentXP, maxXP, restXP, width = UnitXP("player"), UnitXPMax("player"), GetXPExhaustion() or 0, UIParent:GetWidth()
+	self:SetWidth(currentXP/maxXP * width)
+	rested:SetWidth( math.min(restXP, maxXP-currentXP)/maxXP * width + 0.001)
 end)
 
 
