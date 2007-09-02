@@ -19,9 +19,9 @@ end
 
 
 local anch1 = MultiBarRightButton1
-for actionID=25,36 do
+for actionID=36,25,-1 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, UIParent, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
-	mainbtn:SetPoint("TOP", anch1, "BOTTOM", 0, gap)
+	mainbtn:SetPoint("BOTTOM", anch1, "TOP", 0, -gap)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
 	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
 	mainbtn:HookScript("OnLeave", HideTooltip)
@@ -57,13 +57,13 @@ for actionID=25,36 do
 end
 
 
-tekPopbar25:ClearAllPoints()
---~ tekPopbar25:SetPoint("TOPRIGHT", MultiBarRightButton1, "TOPRIGHT", gap, 0)
-tekPopbar25:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 598)
+tekPopbar36:ClearAllPoints()
+tekPopbar36:SetPoint("BOTTOMRIGHT", WorldFrame, "BOTTOMRIGHT", 0, -gap)
 
 local function movetracker()
-	QuestWatchFrame:ClearAllPoints()
-	QuestWatchFrame:SetPoint("TOPRIGHT", tekPopbar25, "TOPLEFT", -6, 0)
+		QuestWatchFrame:ClearAllPoints()
+		QuestWatchFrame:SetPoint("TOP", MinimapCluster, "BOTTOM", 0, 0)
+		QuestWatchFrame:SetPoint("RIGHT", tekPopbar25, "LEFT", -6, 0)
 end
 
 hooksecurefunc("UIParent_ManageFramePositions", movetracker)
