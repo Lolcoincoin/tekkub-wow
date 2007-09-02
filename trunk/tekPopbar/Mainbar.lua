@@ -183,7 +183,7 @@ if myclass == "HUNTER" or myclass == "WARLOCK" then
 	local call = makebutt("2", "spell", "Call Pet", "Interface\\Icons\\Ability_Hunter_BeastCall", "BOTTOM", base, "TOP", 0, gap)
 	local rez  = makebutt("2", "spell", "Revive Pet", "Interface\\Icons\\Ability_Hunter_BeastSoothe", "BOTTOM", call, "TOP", 0, gap)
 	local tame = makebutt("2", "spell", "Tame Beast", "Interface\\Icons\\Ability_Hunter_BeastTaming", "BOTTOM", rez, "TOP", 0, gap)
-	local lore = makebutt("2", "spell", "Beast Lore", "Interface\\Icons\\Ability_Physical_Taunt", "BOTTOM", tame, "TOP", gap, 0)
+	local lore = makebutt("2", "spell", "Beast Lore", "Interface\\Icons\\Ability_Physical_Taunt", "BOTTOM", tame, "TOP", 0, gap)
 
 	local mend = makebutt("3", "spell", "Mend Pet", "Interface\\Icons\\Ability_Hunter_MendPet", "BOTTOM", base, "TOP", 0, gap)
 	local kill = makebutt("3", "spell", "Kill Command", "Interface\\Icons\\Ability_Hunter_KillCommand", "BOTTOM", mend, "TOP", 0, gap)
