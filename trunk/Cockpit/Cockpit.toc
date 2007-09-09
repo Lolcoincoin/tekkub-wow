@@ -12,6 +12,11 @@
 
 ## OptionalDeps: Dongle, tekDebug
 
+## LoadManagers: AddonLoader
+## X-LoadOn-Events: TAXIMAP_OPENED
+## X-LoadOn-TAXIMAP_OPENED: LoadAddOn('Cockpit')
+## X-LoadOn-Slash: /cockpit, /cock
+
 Dongle.lua
 
 Cockpit.lua

@@ -9,4 +9,7 @@
 ## X-Credits: Based off Doppelganger_BuffTimers by Kayde of Kargath
 ## X-Category: Buffs
 
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
 tekBuffTimers.lua

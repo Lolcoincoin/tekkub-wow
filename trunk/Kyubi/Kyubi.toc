@@ -1,15 +1,13 @@
-## Interface: 20100
+## Interface: 20000
 
 ## Title: Kyubi no Kitsune
 ## Notes: Find out which events are firing and when.
 ## Author: Tekkub Stoutwrithe
-## Version: Alpha
 ## X-Credits: Based off Rowne's FireShow
 ## X-Category: Development Tools
 
 ## LoadOnDemand: 1
-## X-S&D-Placeholder: true
-
+## X-LoadOn-Slash: /kyubi
 ## SavedVariables: KyubiDB
 
 Core.lua

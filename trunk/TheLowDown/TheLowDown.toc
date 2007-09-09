@@ -8,4 +8,7 @@
 ## X-Email: tekkub-wow@googlegroups.com
 ## X-Category: Chat/Communication
 
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
 TheLowDown.lua

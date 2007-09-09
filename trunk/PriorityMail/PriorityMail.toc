@@ -11,6 +11,9 @@
 
 ## OptionalDeps: Dongle
 
+## LoadManagers: AddonLoader
+## X-LoadOn-Mailbox: true
+
 Dongle.lua
 
 PriorityMail.lua
