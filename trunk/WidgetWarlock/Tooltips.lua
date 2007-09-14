@@ -1,6 +1,6 @@
 
 local lib = LibStub("WidgetWarlock-Alpha1", true)
-if not lib.upgrading or lib.upgrading > 1 then return end
+if not lib.upgrading or lib.upgrading >= 2 then return end
 
 
 lib.tipvalues = {}
