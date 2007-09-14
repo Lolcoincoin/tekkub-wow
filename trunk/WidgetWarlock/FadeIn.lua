@@ -1,6 +1,6 @@
 
-local lib, oldminor = LibStub:NewLibrary("WidgetWarlock-Alpha1", 2)
-if not lib then return end
+local lib = LibStub("WidgetWarlock-Alpha1", true)
+if not lib.upgrading then return end
 
 
 
@@ -20,16 +20,20 @@ do
 end
 
 
--- Fade a frame in, note that this will overwrite the frame's OnUpdate while fading
-function lib:FadeIn(frame, time)
+-- Fade a frame in
+-- Note that this will overwrite the frame's OnUpdate while fading
+-- Also note this function does not take a self (don't call it with a colon).
+-- This allows you to set it directly as your frame's OnShow handler if you wish.
+function lib.FadeIn(frame, time)
+	frame = frame or self
 	assert(frame, "No frame passed")
 	assert(type(time) == "number" or type(time) == "nil", "Time must be a number or nil")
 	assert(time == nil or time > 0, "Time must be positive")
 
-	self.fadetimes[frame] = time
-	self.OnUpdates[frame] = frame:GetScript("OnUpdate")
-	self.elapsed[frame] = 0
+	lib.fadetimes[frame] = time
+	lib.OnUpdates[frame] = frame:GetScript("OnUpdate")
+	lib.elapsed[frame] = 0
 	frame:SetAlpha(0)
-	frame:SetScript("OnUpdate", self.OnUpdate)
+	frame:SetScript("OnUpdate", lib.OnUpdate)
 end
 

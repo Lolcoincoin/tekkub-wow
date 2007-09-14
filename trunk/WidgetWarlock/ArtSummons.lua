@@ -1,6 +1,6 @@
 
-local lib, oldminor = LibStub:NewLibrary("WidgetWarlock-Alpha1", 4)
-if not lib then return end
+local lib = LibStub("WidgetWarlock-Alpha1", true)
+if not lib.upgrading then return end
 
 
 
@@ -58,3 +58,5 @@ function lib:EnslaveLabel(parent, text, a1, aframe, a2, dx, dy)
 	return fs
 end
 
+
+lib.upgrading = nil

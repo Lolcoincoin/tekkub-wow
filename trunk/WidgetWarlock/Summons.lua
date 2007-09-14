@@ -1,6 +1,7 @@
 
-local lib, oldminor = LibStub:NewLibrary("WidgetWarlock-Alpha1", 5)
+local lib, oldminor = LibStub:NewLibrary("WidgetWarlock-Alpha1", 1)
 if not lib then return end
+lib.upgrading = oldminor or 0
 
 
 
