@@ -55,25 +55,25 @@ if not arg1 or arg1 ~= "zip" then
 	-- Make the tag
 	print("Tagging")
 	os.execute(string.format(
-		"svn copy -r %s %s/trunk/%s %s/tags/%s -m \"Tagging %s\"",
-		rev, svnpath, addon, svnpath, fulladdon, fulladdon))
+		"svn copy -r %s %s/trunk/%s tags/%s",-- -m \"Tagging %s\"",
+		rev, svnpath, addon, fulladdon))--, fulladdon))
 
 
 	-- Update tag's TOC Version
-	os.execute(string.format("svn co %s/tags/%s", svnpath, fulladdon))
+--~ 	os.execute(string.format("svn co %s/tags/%s", svnpath, fulladdon))
 	if string.find(tocfile, "## Version:") then
 		tocfile = string.gsub(tocfile, "## Version:[^\n]+\n", "## Version: "..version.."\n")
-		writefile(string.format("%s/%s.toc", fulladdon, addon), tocfile)
+		writefile(string.format("tags/%s/%s.toc", fulladdon, addon), tocfile)
 		print("Updating TOC version")
-		os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
+--~ 		os.execute("svn commit "..fulladdon.." -m \"Updating TOC version\"")
 	end
-	os.execute("rmdir /Q /S "..fulladdon)
+--~ 	os.execute("rmdir /Q /S "..fulladdon)
 end
 
 
 -- Make zip package
 print("Packaging release")
-os.execute(string.format("svn export %s/tags/%s %s", svnpath, fulladdon, addon))
+os.execute(string.format("svn export tags/%s %s", fulladdon, addon))
 os.execute(string.format("\"c:\\Program Files\\WinRAR\\WinRAR.exe\" a %s.zip %s", fulladdon, addon))
 os.execute("rmdir /Q /S "..addon)
 
