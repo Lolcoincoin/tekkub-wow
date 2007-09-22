@@ -50,19 +50,24 @@ local driver = CreateFrame("Frame", nil, UIParent, "SecureStateDriverTemplate")
 if class == "DRUID" then
 	driver:SetAttribute("statemap-stance", "$input")
 	driver:SetAttribute("statebutton", "1:bear;3:cat;5:moon")
+elseif class == "PRIEST" then
+	driver:SetAttribute("statemap-stance", "$input")
+	driver:SetAttribute("statebutton", "1:shadowform")
 end
 
 for actionID=1,12 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, driver, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
+	_G["tekPopbar"..actionID.."Name"]:Hide()
+	_G["tekPopbar"..actionID.."Name"].Show = _G["tekPopbar"..actionID.."Name"].Hide
 	ids[mainbtn] = {[0] = actionID}
 	icons[mainbtn] = _G["tekPopbar"..actionID.."Icon"]
-	mainbtn:SetPoint("LEFT", anch1, "RIGHT", gap, 0)
+	mainbtn:SetPoint("LEFT", anch1, "RIGHT", (actionID == 4 or actionID == 9) and gap * 2.5 or gap, 0)
 	onupdates[mainbtn] = mainbtn:GetScript("OnUpdate")
 	mainbtn:SetScript("OnUpdate", OnUpdate)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
 	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
 	mainbtn:HookScript("OnLeave", HideTooltip)
-	if class == "DRUID" then
+	if class == "DRUID" or class == "PRIEST" then
 		driver:SetAttribute('addchild', mainbtn)
 		mainbtn:SetAttribute('useparent-statebutton', 'true')
 	end
@@ -76,6 +81,10 @@ for actionID=1,12 do
 		ids[mainbtn][3] = 6*12 + actionID
 		ids[mainbtn][5] = 7*12 + actionID
 		ids[mainbtn][1] = 8*12 + actionID
+	end
+	if class == "PRIEST" then
+		mainbtn:SetAttribute("*action-shadowform", 6*12 + actionID)
+		ids[mainbtn][1] = 6*12 + actionID
 	end
 	mainbtn:SetAttribute("*action*", actionID)
 
@@ -93,6 +102,8 @@ for actionID=1,12 do
 	for _,bar in ipairs(usebars) do
 		local btnID = actionID - 12 + bar*12
 		local btn = CreateFrame("CheckButton", "tekPopbar"..btnID, hdr, "ActionBarButtonTemplate")
+		_G["tekPopbar"..btnID.."Name"]:Hide()
+		_G["tekPopbar"..btnID.."Name"].Show = _G["tekPopbar"..btnID.."Name"].Hide
 		ids[btn] = btnID
 		icons[btn] = _G["tekPopbar"..btnID.."Icon"]
 		btn:SetScript("OnAttributeChanged", ActionButton_Update)

@@ -5,7 +5,7 @@ if not enabled then return end
 local _, class = UnitClass("player")
 
 local usebars = {4, 10}
-if class ~= "DRUID" then table.insert(usebars, 7) end
+if class ~= "DRUID" and class ~= "PRIEST" then table.insert(usebars, 7) end
 if class ~= "DRUID" then table.insert(usebars, 8) end
 if class ~= "DRUID" then table.insert(usebars, 9) end
 
@@ -21,6 +21,8 @@ end
 local anch1 = MultiBarRightButton1
 for actionID=36,25,-1 do
 	local mainbtn = CreateFrame("CheckButton", "tekPopbar"..actionID, UIParent, "ActionBarButtonTemplate,SecureAnchorEnterTemplate")
+	_G["tekPopbar"..actionID.."Name"]:Hide()
+	_G["tekPopbar"..actionID.."Name"].Show = _G["tekPopbar"..actionID.."Name"].Hide
 	mainbtn:SetPoint("BOTTOM", anch1, "TOP", 0, -gap)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
 	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
@@ -44,6 +46,8 @@ for actionID=36,25,-1 do
 	for _,bar in ipairs(usebars) do
 		local btnID = actionID - 36 + bar*12
 		local btn = CreateFrame("CheckButton", "tekPopbar"..btnID, hdr, "ActionBarButtonTemplate")
+		_G["tekPopbar"..btnID.."Name"]:Hide()
+		_G["tekPopbar"..btnID.."Name"].Show = _G["tekPopbar"..btnID.."Name"].Hide
 		btn:SetScript("OnAttributeChanged", ActionButton_Update)
 		btn:SetAttribute("hidestates", 0)
 		btn:SetAttribute("*type*", "action")
