@@ -1,5 +1,5 @@
 ﻿
-local OptionHouse = LibStub("OptionHouse-1.1"))
+local OptionHouse = LibStub("OptionHouse-1.1")
 
 
 local _, title = GetAddOnInfo("RatingTargets")

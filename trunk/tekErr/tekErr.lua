@@ -48,7 +48,7 @@ seterrorhandler(function(msg)
 end)
 
 
-local OptionHouse = LibStub("OptionHouse-1.1"))
+local OptionHouse = LibStub("OptionHouse-1.1")
 local _, title = GetAddOnInfo("tekErr")
 local author, version = GetAddOnMetadata("tekErr", "Author"), GetAddOnMetadata("tekErr", "Version")
 local oh = OptionHouse:RegisterAddOn("tekErr", title, author, version)

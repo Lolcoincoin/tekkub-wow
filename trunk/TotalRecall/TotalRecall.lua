@@ -68,7 +68,7 @@ local function RegisterEvents(frame, ...)
 end
 
 
-local OptionHouse = LibStub("OptionHouse-1.1"))
+local OptionHouse = LibStub("OptionHouse-1.1")
 local _, title = GetAddOnInfo("TotalRecall")
 local author, version = GetAddOnMetadata("TotalRecall", "Author"), GetAddOnMetadata("TotalRecall", "Version")
 local oh = OptionHouse:RegisterAddOn("Total Recall", title, author, version)
