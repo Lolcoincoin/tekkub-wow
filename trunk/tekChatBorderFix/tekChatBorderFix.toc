@@ -1,4 +1,4 @@
-## Interface: 20100
+## Interface: 20200
 
 ## Title: tekChatBorderFix
 ## Notes: Fixes the "dead spot" caused by chat frame resize borders when they are locked

@@ -1,4 +1,4 @@
-## Interface: 20100
+## Interface: 20200
 ## Title: Ludwig_SellValue
 ## Author: Tuller
 ## Notes: Stores the sellvalue data of items
