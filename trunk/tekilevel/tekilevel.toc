@@ -1,0 +1,11 @@
+## Interface: 20100
+
+## Title: tek iLevel
+## Notes: Insert item levels into their tooltips
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Interface Enhancements
+
+tekilevel.lua
