@@ -15,9 +15,10 @@ end
 
 
 hooksecurefunc("InboxFrame_Update", function()
-	for i=1, INBOXITEMS_TO_DISPLAY do
-		local index, frametxt, attachments = buttons[i].index, frames[i], 0
-		for j=1, ATTACHMENTS_MAX_RECEIVE do if GetInboxItem(index, j) then attachments = attachments + 1 end end
+	local offset = (InboxFrame.pageNum - 1) * INBOXITEMS_TO_DISPLAY
+	for i=1,INBOXITEMS_TO_DISPLAY do
+		local frametxt, attachments = frames[i], 0
+		for j=1, ATTACHMENTS_MAX_RECEIVE do if GetInboxItem(i + offset, j) then attachments = attachments + 1 end end
 		frametxt:SetText(attachments > 1 and attachments or "")
 	end
 end)
