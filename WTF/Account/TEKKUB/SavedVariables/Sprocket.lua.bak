@@ -1,2 +1,0 @@
-
-SprocketGlobalConfig = nil

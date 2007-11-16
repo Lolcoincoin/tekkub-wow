@@ -1,2 +1,0 @@
-
-ClosetGnomeOhNoesDB = nil

@@ -1,2 +1,0 @@
-
-Postal_BlackBookDB = nil

@@ -1,9 +1,0 @@
-
-WatersportsDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

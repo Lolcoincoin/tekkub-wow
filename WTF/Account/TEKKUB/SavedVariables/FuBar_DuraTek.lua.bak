@@ -1,3 +1,0 @@
-
-BigWigsDB = nil
-BigWigsFubarDB = nil

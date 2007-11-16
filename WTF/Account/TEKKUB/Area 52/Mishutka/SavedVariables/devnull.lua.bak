@@ -1,2 +1,0 @@
-
-devnullDBPerChar = nil

@@ -1,9 +1,0 @@
-
-DetoxDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

@@ -1,9 +1,0 @@
-
-PoisonFuDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

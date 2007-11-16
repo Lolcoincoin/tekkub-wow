@@ -1,9 +1,0 @@
-
-ExitFuDB = {
-	["profiles"] = {
-		["default"] = {
-			["version"] = 1,
-			["usered"] = true,
-		},
-	},
-}

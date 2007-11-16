@@ -1,7 +1,0 @@
-
-MountMeDBPerChar = {
-	["namespaces"] = {
-		["ItemSwap"] = {
-		},
-	},
-}

@@ -1,2 +1,0 @@
-
-PopDB = nil

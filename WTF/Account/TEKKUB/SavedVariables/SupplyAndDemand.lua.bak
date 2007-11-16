@@ -1,9 +1,0 @@
-
-SupplyAndDemandDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

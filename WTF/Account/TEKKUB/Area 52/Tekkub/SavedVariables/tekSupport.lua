@@ -1,2 +1,0 @@
-
-tekSupportDBPC = nil

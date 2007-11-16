@@ -1,2 +1,0 @@
-
-TransporterFuCharDB = nil

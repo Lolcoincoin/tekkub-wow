@@ -1,2 +1,0 @@
-
-PoisonFuDBPC = nil

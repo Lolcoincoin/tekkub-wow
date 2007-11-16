@@ -1,2 +1,0 @@
-
-Ludwig_MinQuality = nil

@@ -1,4 +1,0 @@
-
-MountMeDBPerChar = nil
-MountMeItemSwapDB = {
-}

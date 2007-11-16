@@ -1,6 +1,0 @@
-
-CHATLOG_SAVED_CONF = {
-	["chatlog"] = false,
-	["combatlog"] = false,
-	["defaultlog"] = true,
-}

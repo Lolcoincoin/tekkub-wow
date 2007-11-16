@@ -1,4 +1,0 @@
-
-LexanConfig = {
-	["Esc"] = false,
-}

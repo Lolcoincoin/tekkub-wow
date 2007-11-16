@@ -1,2 +1,0 @@
-
-MessageEventDB = nil

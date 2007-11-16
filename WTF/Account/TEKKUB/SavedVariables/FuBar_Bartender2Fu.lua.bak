@@ -1,9 +1,0 @@
-
-Bartender2FuDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

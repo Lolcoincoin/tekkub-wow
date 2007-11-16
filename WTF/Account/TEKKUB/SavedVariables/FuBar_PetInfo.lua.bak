@@ -1,9 +1,0 @@
-
-FuBar_PetInfoDB = {
-	["profiles"] = {
-		["default"] = {
-			["version"] = 100.0003,
-			["disabled"] = 1,
-		},
-	},
-}

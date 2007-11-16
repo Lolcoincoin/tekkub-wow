@@ -1,2 +1,0 @@
-
-BossBlockDB = nil

@@ -1,2 +1,0 @@
-
-Reloadtime = nil
