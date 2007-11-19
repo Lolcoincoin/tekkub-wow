@@ -12,7 +12,7 @@ local function OnTooltipSetItem(frame, ...)
 	assert(frame, "arg 1 is nil, someone isn't hooking correctly")
 
 	local _, link = frame:GetItem()
-	local stack = stacks[link]
+	local stack = link and stacks[link]
 	if stack and stack > 0 then frame:AddLine("Stack size: ".. stack) end
 	if origs[frame] then return origs[frame](frame, ...) end
 end
