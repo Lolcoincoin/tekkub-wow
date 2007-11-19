@@ -12,7 +12,7 @@ local function OnTooltipSetItem(frame, ...)
 	assert(frame, "arg 1 is nil, someone isn't hooking correctly")
 
 	local _, link = frame:GetItem()
-	local level = ilvl[link]
+	local level = link and ilvl[link]
 	if level and level > 0 then frame:AddLine("iLevel: ".. level) end
 	if origs[frame] then return origs[frame](frame, ...) end
 end
