@@ -10,7 +10,26 @@ if class ~= "DRUID" then table.insert(usebars, 8) end
 if class ~= "DRUID" then table.insert(usebars, 9) end
 
 
+local colors = {
+	none = {1.0, 1.0, 1.0},
+	grey = {0.4, 0.4, 0.4},
+	blue = {0.1, 0.3, 1.0},
+	red  = {0.8, 0.1, 0.1},
+}
+
+
 local gap = -6
+
+
+local icons, ids, onupdates = {}, {}, {}
+local function OnUpdate(self, elapsed, ...)
+	ActionButton_UpdateAction()
+	local id = ids[self]
+	local oor, isUsable, notEnoughMana = IsActionInRange(id), IsUsableAction(id)
+	local c = notEnoughMana and "blue" or oor == 0 and "red" or isUsable and "none" or "grey"
+	icons[self]:SetVertexColor(unpack(colors[c]))
+	if onupdates[self] then return onupdates[self](self, elapsed, ...) end
+end
 
 
 local function HideTooltip(frame)
@@ -24,6 +43,10 @@ for actionID=36,25,-1 do
 	_G["tekPopbar"..actionID.."Name"]:Hide()
 	_G["tekPopbar"..actionID.."Name"].Show = _G["tekPopbar"..actionID.."Name"].Hide
 	mainbtn:SetPoint("BOTTOM", anch1, "TOP", 0, -gap)
+	ids[mainbtn] = actionID
+	icons[mainbtn] = _G["tekPopbar"..actionID.."Icon"]
+	onupdates[mainbtn] = mainbtn:GetScript("OnUpdate")
+	mainbtn:SetScript("OnUpdate", OnUpdate)
 	mainbtn:SetScript("OnAttributeChanged", ActionButton_Update)
 	mainbtn:HookScript("OnEnter", ActionButton_SetTooltip)
 	mainbtn:HookScript("OnLeave", HideTooltip)
@@ -48,6 +71,10 @@ for actionID=36,25,-1 do
 		local btn = CreateFrame("CheckButton", "tekPopbar"..btnID, hdr, "ActionBarButtonTemplate")
 		_G["tekPopbar"..btnID.."Name"]:Hide()
 		_G["tekPopbar"..btnID.."Name"].Show = _G["tekPopbar"..btnID.."Name"].Hide
+		ids[btn] = btnID
+		icons[btn] = _G["tekPopbar"..btnID.."Icon"]
+		onupdates[btn] = btn:GetScript("OnUpdate")
+		btn:SetScript("OnUpdate", OnUpdate)
 		btn:SetScript("OnAttributeChanged", ActionButton_Update)
 		btn:SetAttribute("hidestates", 0)
 		btn:SetAttribute("*type*", "action")

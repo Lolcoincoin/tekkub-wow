@@ -5,4 +5,5 @@
 ## Version: Alpha
 
 Mainbar.lua
+Petbar.lua
 Sidebar.lua
