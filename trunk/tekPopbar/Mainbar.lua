@@ -17,6 +17,7 @@ local icons, onupdates, ids, colors = {}, {}, {}, {
 
 
 local function OnUpdate(self, elapsed, ...)
+	ActionButton_UpdateAction()
 	local id = ids[self][GetShapeshiftForm(true)] or ids[self][0]
 		local oor, isUsable, notEnoughMana = IsActionInRange(id), IsUsableAction(id)
 		local c = notEnoughMana and "blue" or oor == 0 and "red" or isUsable and "none" or "grey"
