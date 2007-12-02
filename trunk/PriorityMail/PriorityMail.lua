@@ -27,6 +27,7 @@ function PriorityMail:Enable()
 
 	self:RegisterEvent("MAIL_SHOW", function() mailshown = true end)
 	self:RegisterEvent("MAIL_CLOSED", function() mailshown = false end)
+	self:RegisterEvent("MAIL_SEND_INFO_UPDATE")
 end
 
 
@@ -70,7 +71,7 @@ end
 
 
 --------------------------------------
---      Alt-click item filling      --
+--      Alt-click item sending      --
 --------------------------------------
 
 local orig4 = GameTooltip:GetScript("OnTooltipSetItem")
@@ -96,4 +97,18 @@ ContainerFrameItemButton_OnModifiedClick = function(button, ...)
 		end
 	else return orig5(button, ...) end
 end
+
+
+---------------------------------------------
+--      Auto-send when 12 attachments      --
+---------------------------------------------
+
+function PriorityMail:MAIL_SEND_INFO_UPDATE()
+	if not SendMailNameEditBox:GetText() then return end
+
+	local attachments = 0
+	for i=1,ATTACHMENTS_MAX_SEND do if GetSendMailItem(i) then attachments = attachments + 1 end end
+	if attachments == 12 then SendMailFrame_SendMail() end
+end
+
 
