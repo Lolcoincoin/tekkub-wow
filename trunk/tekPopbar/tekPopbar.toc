@@ -4,6 +4,7 @@
 ## Author: Tekkub Stoutwrithe
 ## Version: Alpha
 
+Button.lua
 Mainbar.lua
 Petbar.lua
 Sidebar.lua
