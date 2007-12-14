@@ -1,0 +1,15 @@
+## Interface: 20300
+
+## Title: tekKompare
+## Notes: Simple item compare tooltips
+## Author: Tekkub Stoutwrithe
+## Version: 2.3.0.736
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Interface Enhancements
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+tekKompare.lua
+HoverTips.lua
