@@ -1,0 +1,11 @@
+## Interface: 20300
+
+## Title: Mail Enhancement
+## Notes: Super size means super satisfaction!
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Website: http://code.google.com/p/tekkub-wow/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Mail
+
+MailEnhancement.lua
