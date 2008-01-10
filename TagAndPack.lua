@@ -30,20 +30,22 @@ end
 io.write("Addon name: ")
 local addon = io.read()
 
+-- Request addon version
+io.write("Version (blank to auto-detect): ")
+local revinput = io.read()
 
 -- Find last Rev
-print("Finding version number")
+print("Finding full version number")
 local info = shell(string.format("svn info %s/trunk/%s", svnpath, addon))
-local _, _, rev = string.find(info, "Last Changed Rev: (%d+)")
+_, _, rev = string.find(info, "Last Changed Rev: (%d+)")
 assert(rev, "Cannot find revision info!")
-
 
 -- Find TOC value
 local tocfile = readfile(string.format("trunk/%s/%s.toc", addon, addon))
 local _, _, a,b,c = string.find(tocfile, "## Interface: (%d)(%d%d)(%d%d)")
 assert(a and b and c, "Cannot find TOC info!")
 
-local version = string.format("%d.%d.%d.%d", tonumber(a), tonumber(b), tonumber(c), tonumber(rev))
+local version = string.format("%d.%d.%d.%d", tonumber(a), tonumber(b), tonumber(c), tonumber(revinput ~= "" and revinput or rev))
 local fulladdon = string.format("%s-%s", addon, version)
 
 print(fulladdon)
