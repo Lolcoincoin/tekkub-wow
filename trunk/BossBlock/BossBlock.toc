@@ -1,4 +1,4 @@
-## Interface: 20300
+## Interface: 20302
 
 ## Title: Boss Block
 ## Notes: Block CT_RABossMods and oRA_Bigwigs spam.

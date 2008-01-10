@@ -1,4 +1,4 @@
-## Interface: 20300
+## Interface: 20302
 
 ## Title: tekErr
 ## Notes: Dumps error popup dialog text to an OptionHouse frame
