@@ -1,4 +1,4 @@
-## Interface: 20302
+## Interface: 20300
 
 ## Title: tekAutoGreed
 ## Notes: Automatically roll greed on non-BOP items when in a duo

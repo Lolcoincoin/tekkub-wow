@@ -1,4 +1,4 @@
-## Interface: 20302
+## Interface: 20300
 
 ## Title: tekBuffTimers
 ## Notes: Displays buffs in a "#:##" format instead of Blizzards default "#m" format.

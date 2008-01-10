@@ -1,4 +1,4 @@
-## Interface: 20302
+## Interface: 20300
 
 ## Title: Total Recall
 ## Notes: Smart chat log, includes previous session chat

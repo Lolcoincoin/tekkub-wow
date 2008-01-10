@@ -1,4 +1,4 @@
-## Interface: 20302
+## Interface: 20300
 
 ## Title: The Big Picture
 ## Notes: Never forget to zoom out your minimap again!
